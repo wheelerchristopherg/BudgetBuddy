@@ -1,7 +1,6 @@
 
 
-public class Category {
-
+public class Category  {
 
   double name;
   double spendingGoal;
