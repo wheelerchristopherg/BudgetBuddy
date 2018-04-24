@@ -1,9 +1,13 @@
-import userinterface;
+import userinterface.Window;
+import javax.swing.SwingUtilities;
 
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello, World");
-    //Test
-    //Jack's Test
-  }
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(
+            new Runnable() {
+                public void run() {
+                    new Window();
+                }
+            });
+    }
 }
