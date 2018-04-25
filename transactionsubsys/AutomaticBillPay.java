@@ -1,12 +1,13 @@
 
-class Poo {
-    Poo() {
 
-    }
-}
-
-import Bill.java;
 
 public class AutomaticBillPay {
-    private Poo billsOnAutoPay[];
+    //private Bill billsOnAutoPay[];
+    private int currentState;
+    // private Form form;
+
+    public AutomaticBillPay() {
+        
+    }
+
 }
