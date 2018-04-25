@@ -14,9 +14,9 @@ public class Main {
         // Controllers
         BillPayReminderController billReminderController = new BillPayReminderController();
 
-
         // Program startup check
         billReminderController.loadBillReminders();
+        billReminderController.checkDate();
 
         SwingUtilities.invokeLater(
             new Runnable() {
