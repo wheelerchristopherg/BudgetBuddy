@@ -1,5 +1,12 @@
 
+class Poo {
+    Poo() {
+
+    }
+}
+
+import Bill.java;
 
 public class AutomaticBillPay {
-    //private Bill[] billsOnAutoPay;
+    private Poo billsOnAutoPay[];
 }
