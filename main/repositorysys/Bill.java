@@ -9,6 +9,6 @@ public class Bill {
   double value;
   Date dueDate;
   boolean recurrance;
-  Account desiredAccount;
+ // Account desiredAccount;
 
 }
