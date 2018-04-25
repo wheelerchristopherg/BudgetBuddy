@@ -9,5 +9,6 @@ public class Form extends JPanel{
     public Form(Window parent) {
         this.parent = parent;
     }
+
     
 }
