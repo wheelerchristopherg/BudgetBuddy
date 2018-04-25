@@ -13,4 +13,8 @@ public class Category  {
     public String getName(){
         return name;
     }
+    
+    public double getSpendingGoal() {
+        return this.spendingGoal;
+    }
 }
