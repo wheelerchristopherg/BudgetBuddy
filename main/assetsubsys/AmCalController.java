@@ -14,7 +14,10 @@ public class AmCalController {
     private double[] interest = new double[1200];
 
     public AmCalController(Form formIn, Loan loanIn) {
+        form = formIn;
+        loan = loanIn;
 
+        createAmCal(loan);
     }
 
     private void createAmCal(Loan loanIn) {

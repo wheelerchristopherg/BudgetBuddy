@@ -10,4 +10,12 @@ public class SavingsNetWorthValueController {
     public void SavingsNetWorthValueController() {
         
     }
+
+    public double[] savingsOverTime(Date startTimeIn) {
+
+    }
+
+    public double[] netWorthOverTime(Date startTimeIn) {
+
+    }
 }
