@@ -1,4 +1,6 @@
-import userinterface.Window;
+package main;
+
+import main.userinterface.Window;
 import javax.swing.SwingUtilities;
 
 public class Main {
