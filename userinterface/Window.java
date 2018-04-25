@@ -8,6 +8,8 @@ public class Window extends JFrame {
         super("3D Projection");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setFocusable(true);
+        this.requestFocusInWindow();
+        setVisible(true);
     }
     
 }
