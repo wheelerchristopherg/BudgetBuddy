@@ -28,6 +28,10 @@ public abstract class Form extends JPanel implements ActionListener {
         
     }
     
+    public Window getParent() {
+        return parent;
+    }
+    
     public void setGridLayout(int rows, int columns) {
         this.setLayout(new GridLayout(rows, columns, 3, 3));
     }
@@ -35,6 +39,7 @@ public abstract class Form extends JPanel implements ActionListener {
     public void addButton(String name, String label) {
         JButton newButton = new JButton(label);
         newButton.addActionListener(this);
+        newButton.setSize(25, 80);
         buttons.put(newButton, name);
         this.add(newButton);
     }
