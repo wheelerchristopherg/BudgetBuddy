@@ -1,3 +1,5 @@
+package main.repositorysys;
+
 import java.util.*;
 
 public class Bill {
@@ -7,6 +9,6 @@ public class Bill {
   double value;
   Date dueDate;
   boolean recurrance;
-  Account desiredAccount;
+ // Account desiredAccount;
 
 }
