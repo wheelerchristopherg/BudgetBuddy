@@ -12,7 +12,7 @@ import java.util.Date;
 import javax.swing.JOptionPane;
 
 public class BillPayReminderController {
-    private ArrayList<BillPayReminder> billReminders;
+    private ArrayList<BillPayReminder> billReminders = new ArrayList<BillPayReminder>();
     //private int currentState;
     //private Form form;
 
@@ -21,17 +21,15 @@ public class BillPayReminderController {
     }
 
     public void addBillPayReminder(BillPayReminder billPayReminder) {
-        BillPayReminder testReminder = new BillPayReminder("Test", 20, "08-27-1996");
-        billReminders.add(testReminder);
+        billReminders.add(billPayReminder);
     }
 
     public void checkDate() {
         Date today = new Date();
         for (BillPayReminder r : billReminders) {
-            System.out.println("test");
-            //if (r.getReminderDate().before(today)) {
-            //    sendNotification();
-            //}
+            if (r.getReminderDate().before(today)) {
+                sendNotification();
+            }
         }
     }
 

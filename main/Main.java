@@ -12,7 +12,8 @@ public class Main {
     public static void main(String[] args) {
 
         // Program startup check
-
+             //Check BillPayReminder Dates
+             //Check AutomaticBillPay Dates
 
         SwingUtilities.invokeLater(
             new Runnable() {
@@ -20,8 +21,6 @@ public class Main {
                     new Window();
                 }
             });
-
-        BillPayReminderController test = new BillPayReminderController();
-        test.checkDate();
+        
     }
 }
