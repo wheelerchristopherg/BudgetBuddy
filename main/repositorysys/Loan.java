@@ -9,9 +9,10 @@ public class Loan {
   private double monthlyPayment;
   private Date startDate;
 
-  public Loan(double amountIn, double interestRateIn, Date startDateIn) {
+  public Loan(double amountIn, double interestRateIn, double monthlyPaymentIn, Date startDateIn) {
       amount = amountIn;
       interestRate = interestRateIn;
+      monthlyPayment = monthlyPaymentIn;
       startDate = startDateIn;
   }
 

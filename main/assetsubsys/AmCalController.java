@@ -4,6 +4,7 @@ import main.repositorysys.Loan;
 import main.userinterface.Form;
 
 public class AmCalController {
+    private Form form;
     private Loan loan;
     private double balance;
     private double interestRate;
