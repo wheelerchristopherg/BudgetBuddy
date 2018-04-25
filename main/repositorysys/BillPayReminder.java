@@ -1,4 +1,4 @@
-package repositorysys;
+package main.repositorysys;
 
 import java.util.Date;
 
@@ -16,6 +16,17 @@ public class BillPayReminder {
         this.reminderDate = reminderDate;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public void setReminderDate(Date reminderDate) {
+        this.reminderDate = reminderDate;
+    }
     public String getName() {
         return name;
     }
