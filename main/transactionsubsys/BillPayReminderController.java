@@ -5,7 +5,7 @@ import main.repositorysys.BillPayReminder;
 
 public class BillPayReminderController {
 
-    public BillPayReminderController(form Form) {
+    public BillPayReminderController() {
 
     }
 
