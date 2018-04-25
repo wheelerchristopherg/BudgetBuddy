@@ -4,11 +4,8 @@ import java.awt.event.ActionEvent;
 
 public class MainForm extends Form {
     
-    private Window parent;
-    
     public MainForm(Window parent) {
         super(parent);
-        this.parent = parent;
         setGridLayout(3, 3);
         
         addPlaceholders(4);
@@ -22,7 +19,8 @@ public class MainForm extends Form {
         
         switch (name) {
             case "button1":
-                changeForm(new ExampleForm(this.parent));
+                System.out.println(getParent());
+                changeForm(new ExampleForm(this.getParent()));
                 break;
         }
         

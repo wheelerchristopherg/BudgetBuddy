@@ -36,7 +36,9 @@ public class ExampleForm extends Form {
                 output = getTextFromInput("input3");
                 break;
             case "back":
-                javax.swing.JOptionPane.showMessageDialog(this, "Doesn't work yet");
+                //javax.swing.JOptionPane.showMessageDialog(this, "Doesn't work yet");
+                goBack();
+                break;
             
         }
         
