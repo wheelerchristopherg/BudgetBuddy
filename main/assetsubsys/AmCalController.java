@@ -1,6 +1,7 @@
 package main.assetsubsys;
 
 import main.repositorysys.Loan;
+import main.userinterface.Form;
 
 public class AmCalController {
     private Loan loan;
@@ -11,7 +12,11 @@ public class AmCalController {
     private double[] principal = new double[1200];
     private double[] interest = new double[1200];
 
-    public void createAmCal(Loan loanIn) {
+    public AmCalController(Form formIn, Loan loanIn) {
+
+    }
+
+    private void createAmCal(Loan loanIn) {
         getInformation(loanIn);
 
         double currentBalance = balance;
