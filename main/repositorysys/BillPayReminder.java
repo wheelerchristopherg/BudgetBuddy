@@ -12,8 +12,8 @@ public class BillPayReminder {
     private Date reminderDate; // MM-dd-yyyy Format
 
     public BillPayReminder(String name, double amount, String reminderDate) {
-        DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
         try {
+            DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
             Date date = format.parse(reminderDate);
             this.reminderDate = date;
         } catch (ParseException e) {
@@ -22,6 +22,14 @@ public class BillPayReminder {
         this.name = name;
         this.amount = amount;
 
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Double getAmount() {
+        return amount;
     }
 
     public Date getReminderDate() {

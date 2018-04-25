@@ -10,8 +10,4 @@ public class Repository{
         return new Budget(inName, inStart, inEnd, inSpend);
     }
 
-    public static BillPayReminder createBillPayReminder(String name, double amount, Date reminderDate) {
-        return new BillPayReminder(name, amount,reminderDate);
-    }
-
 }
