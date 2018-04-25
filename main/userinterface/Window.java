@@ -19,6 +19,7 @@ public class Window extends JFrame {
         
         getContentPane().add(formStack.peekFirst());
         this.requestFocusInWindow();
+        pack();
         setVisible(true);
     }
     
