@@ -83,6 +83,14 @@ public abstract class Form extends JPanel implements ActionListener {
         return inputText.getText();
     }
     
+    public void goBack() {
+        parent.goBack();
+    }
+    
+    public void changeForm(Form form) {
+        parent.changeForm(form);
+    }
+    
     public abstract void actionPerformed(ActionEvent event);
 
 }

@@ -1,6 +1,7 @@
 package main.userinterface;
 
 import javax.swing.JFrame;
+import java.awt.Graphics;
 import java.util.Deque;
 import java.util.ArrayDeque;
 
@@ -17,10 +18,24 @@ public class Window extends JFrame {
         
         formStack.addFirst(new MainForm(this));
         
-        getContentPane().add(formStack.peekFirst());
-        this.requestFocusInWindow();
-        pack();
+        updateWindow();
         setVisible(true);
     }
     
+    public void changeForm(Form newForm) {
+        getContentPane().remove(formStack.peekFirst());
+        formStack.addFirst(newForm);
+        updateWindow();
+    }
+    
+    public void goBack() {
+        formStack.removeFirst();
+        updateWindow();
+    }
+    
+    public void updateWindow() {
+        getContentPane().add(formStack.peekFirst());
+        this.requestFocusInWindow();
+        pack();
+    }
 }
