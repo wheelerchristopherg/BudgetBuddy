@@ -7,41 +7,38 @@ public class ExampleForm extends Form {
     public ExampleForm(Window parent) {
         super(parent);
         
-        setGridLayout(9, 2);
+        setGridLayout(5, 2);
         
-        addPlaceholders(2);
+        addLabel("Example Form");
+        addPlaceholder();
         addButton("button1","Print text");
-        addTextField("input1", "box 1");
-        addPlaceholders(2);
+        addTextField("text1", "box 1");
         addButton("button2","Print text");
-        addTextField("input2", "box 2");
-        addPlaceholders(2);
-        addButton("button3","Print text");
-        addTextField("input3", "box 3");
-        addPlaceholders(5);
+        addTextField("text2", "box 2");
+        addLabel("uneditable text area:");
+        addTextArea("output", 5, 20, false);
+        addButton("change","change the output");
         addButton("back", "Back");
     }
     
     public void actionPerformed(ActionEvent event) {
         String name = buttonPressed(event);
-        String output = "";
         switch (name) {
             case "button1":
-                output = getTextFromInput("input1");
+                System.out.println(getTextFromInput("text1"));
                 break;
             case "button2":
-                output = getTextFromInput("input2");
+                System.out.println(getTextFromInput("text2"));
                 break;
-            case "button3":
-                output = getTextFromInput("input3");
+            case "change":
+                setText("text1", "hello there, these");
+                setText("text2", "fields have changed");
+                setText("output", "Hello there\nthis field\nhas changed too\nnewline\nnewline\nnewline\nnewline\nnewline\nnewline");
                 break;
             case "back":
-                //javax.swing.JOptionPane.showMessageDialog(this, "Doesn't work yet");
                 goBack();
                 break;
             
         }
-        
-        System.out.println(output);
     }
 }

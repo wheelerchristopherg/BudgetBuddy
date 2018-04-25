@@ -8,7 +8,9 @@ public class MainForm extends Form {
         super(parent);
         setGridLayout(3, 3);
         
-        addPlaceholders(4);
+        addPlaceholder();
+        addLabel("Main Form");
+        addPlaceholders(2);
         addButton("button1", "Example Form");
         addPlaceholders(4);
         
@@ -19,11 +21,8 @@ public class MainForm extends Form {
         
         switch (name) {
             case "button1":
-                System.out.println(getParent());
                 changeForm(new ExampleForm(this.getParent()));
                 break;
         }
-        
-        System.out.println("got here");
     }
 }
