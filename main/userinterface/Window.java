@@ -1,4 +1,4 @@
-package userinterface;
+package main.userinterface;
 
 import javax.swing.JFrame;
 
