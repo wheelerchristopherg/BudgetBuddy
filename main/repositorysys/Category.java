@@ -2,8 +2,8 @@ package main.repositorysys;
 
 public class Category  {
 
-    String name;
-    double spendingGoal;
+    private String name;
+    private double spendingGoal;
 
     public Category(String inName, double inSpend){
         this.name = inName;
@@ -12,5 +12,9 @@ public class Category  {
 
     public String getName(){
         return name;
+    }
+
+    public double getGoal() {
+        return spendingGoal;
     }
 }
