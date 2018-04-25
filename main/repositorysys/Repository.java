@@ -1,7 +1,8 @@
 package main.repositorysys;
+
 import java.util.*;
 
-public class Repository{
+public class Repository {
 
     static Collection<Account>
     static Collection<Asset>
@@ -19,4 +20,5 @@ public class Repository{
         budgetCollection.add(constructedBudget);
         return constructedBudget;
     }
+
 }
