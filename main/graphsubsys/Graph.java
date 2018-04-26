@@ -8,38 +8,40 @@ import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Graph extends JPanel {
     
     protected static final int LINEGRAPH = 0;
-    protected static final int BARGRAPH = 1;
-    protected static final int PIECHART = 2;
-    protected static final int AMORCAL = 3;
+    protected static final int PIECHART = 1;
+    protected static final int AMORCAL = 2;
     
     private int type;
 
-    private String xAxisLabel;
-    private String yAxisLabel;
+    private Date startDate;
+    private Date endDate;
     
     private double[] xPointData;
     private double[] yPointData;
     private double maxX;
     private double minX;
     private double maxY;
-    private double minY;
+    private double minY; 
     private HashMap<String, Double> labelToValue;
     
     private double maxHeight;
     
     private Graph() {
-        this.setSize(250, 250);
+        this.setSize(300, 300);
     }
     
-    protected Graph(int type, double[] x, double[] y) {
+    protected Graph(double[] x, double[] y, Date startDate, Date endDate) {
         this();
-        this.type = type;
+        this.type = LINEGRAPH;
         
+        this.startDate = startDate;
+        this.endDate = endDate;
         
         xPointData = x.clone();
         yPointData = y.clone();
@@ -93,10 +95,6 @@ public class Graph extends JPanel {
             }
         }
         
-        System.out.println("maxX: " + maxX);
-        System.out.println("minX: " + minX);
-        System.out.println("maxY: " + maxY);
-        System.out.println("minY: " + minY);
     }
     
     protected void addLabels(String x, String y) {
@@ -110,9 +108,6 @@ public class Graph extends JPanel {
             case LINEGRAPH:
                 drawLineGraph(g2d);
                 break;
-            case BARGRAPH:
-                drawBarGraph(g2d);
-                break;
             case PIECHART:
                 drawPieChart(g2d);
                 break;
@@ -123,22 +118,28 @@ public class Graph extends JPanel {
     }
     
     private double[] convertPoint(double x, double y) {
-        double convertedX = (((x-minX) / (maxX - minX)) * 200.0) + 30.0;
+        double convertedX = (((x-minX) / (maxX - minX)) * 200.0) + 60.0;
         double convertedY = (((y-minY) / (maxY - minY)) * 200.0);
         convertedY = 210 - convertedY;
         double[] point = new double[2];
         point[0] = convertedX;
         point[1] = convertedY;
         
-        System.out.println("x: " + convertedX);
-        System.out.println("y: " + convertedY);
-        System.out.println();
-        
         return point;
     }
     
     private void drawLineGraph(Graphics2D g) {
         drawAxes(g);
+        
+        GregorianCalendar cal = new GregorianCalendar();
+        
+        cal.setTime(startDate);
+        String startString = cal.get(cal.MONTH) + "/" + cal.get(cal.DATE) + "/" + cal.get(cal.YEAR);
+        cal.setTime(endDate);
+        String endString = cal.get(cal.MONTH) + "/" + cal.get(cal.DATE) + "/" + cal.get(cal.YEAR);
+        
+        g.drawString(startString, 40, 245);
+        g.drawString(endString, 230, 245);
         
         double[] point = convertPoint(xPointData[0], yPointData[0]);
         Path2D.Double path = new Path2D.Double();
@@ -148,15 +149,11 @@ public class Graph extends JPanel {
             point = convertPoint(xPointData[i], yPointData[i]);
             path.lineTo(point[0], point[1]);
         }
-        System.out.println(path);
+        
         
         g.setColor(Color.RED);
         g.draw(path);
         
-    }
-    
-    private void drawBarGraph(Graphics2D g) {
-        drawAxes(g);
     }
     
     private void drawPieChart(Graphics2D g) {
@@ -169,11 +166,13 @@ public class Graph extends JPanel {
     
     private void drawAxes(Graphics2D g) {
         Path2D.Double axes = new Path2D.Double();
-        axes.moveTo(30.0, 10.0);
-        axes.lineTo(30.0, 230.0);
-        axes.lineTo(230.0, 230.0);
+        axes.moveTo(60.0, 10.0);
+        axes.lineTo(60.0, 230.0);
+        axes.lineTo(260.0, 230.0);
         
         g.setColor(Color.BLACK);
         g.draw(axes);
+        g.drawString("$" + minY, 2, 210);
+        g.drawString("$" + maxY, 2, 20);
     }
 }
