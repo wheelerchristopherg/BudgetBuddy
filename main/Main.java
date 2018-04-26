@@ -20,7 +20,10 @@ public class Main {
 
         BillPayReminderController billReminderController = new BillPayReminderController();
 
-        // Program startup check
+        billReminderController.loadBillReminders();
+        billReminderController.checkDate();
+        
+        // start window
         SwingUtilities.invokeLater(
                 new Runnable() {
                     public void run() {
@@ -28,17 +31,11 @@ public class Main {
                     }
                 });
 
-        billReminderController.loadBillReminders();
-        billReminderController.checkDate();
-
-
-
         // Testing
         //BillPayReminder test1 = new BillPayReminder("Test4", 10, "10-12-2019");
         //BillPayReminder test2 = new BillPayReminder("Test5", 200, "12-2-2019");
         //BillPayReminder test3 = new BillPayReminder("Test6", 340, "01-20-2029");
 
-
-
     }
+
 }

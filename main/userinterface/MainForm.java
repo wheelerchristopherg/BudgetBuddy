@@ -1,11 +1,13 @@
 package main.userinterface;
 
 import java.awt.event.ActionEvent;
+import main.budgetsubsys.BudgetController;
 
 public class MainForm extends Form {
     
     public MainForm(Window parent) {
         super(parent);
+        
         setGridLayout(6, 3);
 
         //addPlaceholder();
@@ -13,19 +15,11 @@ public class MainForm extends Form {
         //addPlaceholder();
         addButton("BillPayReminder_Button", "Add a Bill Reminder");
         addButton("RecordTransaction_Button", "Add a Transaction");
-
-        addButton("Test1", "Test1");
-        addButton("Test2", "Test2");
-        addButton("Test3", "Test3");
-        addButton("Test4", "Test4");
-        addButton("Test5", "Test5");
-        addButton("Test6", "Test6");
-        addButton("Test7", "Test7");
-        addButton("Test8", "Test8");
-        addButton("Test9", "Test9");
-        addButton("Test10", "Test10");
-
-        //addPlaceholders(3);
+        addPlaceholder();
+        addButton("example", "Example Form");
+        addButton("print_budget", "Print Budgets");
+        addButton("budget", "Create Budget");
+        addPlaceholders(3);
         
     }
     
@@ -38,6 +32,17 @@ public class MainForm extends Form {
                 break;
             case "RecordTransaction_Button":
                 changeForm(new RecordTransactionForm(this.getParent()));
+                break;
+            case "example":
+                changeForm(new ExampleForm(this.getParent()));
+                break;
+            case "budget":
+                BudgetController budgetController = new BudgetController();
+                budgetController.sendBudgetData(this);
+                budgetController.sendSpendingGoals(this);
+                break;
+            case "print_budget":
+                main.repositorysys.Repository.printBudgetCollection();
                 break;
         }
     }
