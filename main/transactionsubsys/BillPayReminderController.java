@@ -23,7 +23,7 @@ public final class BillPayReminderController {
 
     //Loads Bill
     public void loadBillReminders() {
-        String csvFile = "billreminders.csv";
+        String csvFile = "main/data/billreminders.csv";
         String line = "";
         String cvsSplitBy = ",";
 
@@ -42,7 +42,7 @@ public final class BillPayReminderController {
     // Save BillReminders
     public void saveBillReminders() {
         try {
-            PrintWriter pw = new PrintWriter(new File("billreminders.csv"));
+            PrintWriter pw = new PrintWriter(new File("main/data/billreminders.csv"));
             for (BillPayReminder r : billReminders) {
                 StringBuilder sb = new StringBuilder();
                 sb.append(r.getName());
@@ -74,6 +74,13 @@ public final class BillPayReminderController {
                 sendNotification(r);
                 //billReminders.remove(r);
             }
+        }
+    }
+
+    public void checkSingleDate(BillPayReminder billReminder) {
+        Date today = new Date();
+        if(billReminder.getReminderDate().before(today)) {
+            sendNotification(billReminder);
         }
     }
 

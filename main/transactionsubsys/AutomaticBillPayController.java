@@ -22,7 +22,7 @@ public class AutomaticBillPayController {
 
     //Loads Bill
     public void loadBillOnAutoPay() {
-        String csvFile = "billsOnAutoPay.csv";
+        String csvFile = "main/data/billsOnAutoPay.csv";
         String line = "";
         String cvsSplitBy = ",";
 
@@ -52,7 +52,7 @@ public class AutomaticBillPayController {
     // Save BillReminders
     public void saveBillsOnAutoPay() {
         try {
-            PrintWriter pw = new PrintWriter(new File("billreminders.csv"));
+            PrintWriter pw = new PrintWriter(new File("main/data/billreminders.csv"));
             for (Bill r : billsOnAutoPay) {
                 StringBuilder sb = new StringBuilder();
                 sb.append(r.getName());
