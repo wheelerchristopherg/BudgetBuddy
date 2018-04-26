@@ -77,6 +77,13 @@ public final class BillPayReminderController {
         }
     }
 
+    public void checkSingleDate(BillPayReminder billReminder) {
+        Date today = new Date();
+        if(billReminder.getReminderDate().before(today)) {
+            sendNotification(billReminder);
+        }
+    }
+
     // Sends BillPay Notification to user
     public void sendNotification(BillPayReminder rmdr) {
         JOptionPane.showMessageDialog(null, "Pay Bill: "+ rmdr.getName() + "!");
