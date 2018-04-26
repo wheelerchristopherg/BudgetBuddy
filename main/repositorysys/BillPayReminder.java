@@ -6,7 +6,7 @@ public class BillPayReminder {
 
     private String name;
     private double amount;
-    private Date reminderDate; // MM-dd-yyyy format
+    private Date reminderDate; // MM-dd-yyyy Format
 
 
 
