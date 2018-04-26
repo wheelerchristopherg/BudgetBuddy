@@ -11,17 +11,18 @@ import main.repositorysys.BudgetReport;
 import main.repositorysys.FinancialReport;
 
 
-public class Repository{
+public class Repository {
 
-    static Collection<Account> accounts;
-    static Collection<Asset> assets;
-    static Collection<Loan> loans;
-    static Collection<Bill> bills;
-    static Collection<BillPayReminder> billPayReminders;
-    static Collection<Budget> budgetCollection;
-    static Collection<BudgetReport> budgetReports;
+    private static Collection<Account> accounts;
+    private static Collection<Asset> assets;
+    private static Collection<Loan> loans;
+    private static Collection<Bill> bills;
+    private static Collection<BillPayReminder> billPayReminders;
+    private static Collection<Budget> budgetCollection;
+    private static Collection<BudgetReport> budgetReports;
     // Categories are located as a collection within Budget
-    static Collection<FinancialReport>
+    private static Collection<FinancialReport>
+    //private static Collection<FinancialReport> financialReports;
     // Transactions are located as a collection within Account
 
     public static Collection<Asset> getAssets() {
@@ -48,9 +49,25 @@ public class Repository{
         return loans;
     }
 
+    public static void init() {
+        accounts = new ArrayList<Account>();
+        //assets = new ArrayList<Assets>();
+        //bills = new ArrayList<Bill>();
+        //billPayReminders = new ArrayList<BillPayReminder>();
+        budgetCollection = new ArrayList<Budget>();
+        //budgetReports = new ArrayList<BudgetReport>();
+        //financialReports = new ArrayList<FinancialReport>();
+        loans = new ArrayList<Loan>();
+    }
+
     public static Budget createBudget(String inName, Date inStart, Date inEnd, double inSpend){
         Budget constructedBudget =  new Budget(inName, inStart, inEnd, inSpend);
         budgetCollection.add(constructedBudget);
         return constructedBudget;
     }
+
+    public static void printBudgetCollection() {
+        System.out.println(budgetCollection);
+    }
+
 }

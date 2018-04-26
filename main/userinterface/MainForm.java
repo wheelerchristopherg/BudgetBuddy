@@ -1,18 +1,25 @@
 package main.userinterface;
 
 import java.awt.event.ActionEvent;
+import main.budgetsubsys.BudgetController;
 
 public class MainForm extends Form {
     
     public MainForm(Window parent) {
         super(parent);
-        setGridLayout(3, 3);
         
+        setGridLayout(6, 3);
+
+        //addPlaceholder();
+        //addLabel("Budget Buddy");
+        //addPlaceholder();
+        addButton("BillPayReminder_Button", "Add a Bill Reminder");
+        addButton("RecordTransaction_Button", "Add a Transaction");
         addPlaceholder();
-        addLabel("Main Form");
-        addPlaceholders(2);
-        addButton("button1", "Example Form");
-        addPlaceholders(4);
+        addButton("example", "Example Form");
+        addButton("print_budget", "Print Budgets");
+        addButton("budget", "Create Budget");
+        addPlaceholders(3);
         
     }
     
@@ -20,8 +27,22 @@ public class MainForm extends Form {
         String name = buttonPressed(event);
         
         switch (name) {
-            case "button1":
+            case "BillPayReminder_Button":
+                changeForm(new BillPayReminderForm(this.getParent()));
+                break;
+            case "RecordTransaction_Button":
+                changeForm(new RecordTransactionForm(this.getParent()));
+                break;
+            case "example":
                 changeForm(new ExampleForm(this.getParent()));
+                break;
+            case "budget":
+                BudgetController budgetController = new BudgetController();
+                budgetController.sendBudgetData(this);
+                budgetController.sendSpendingGoals(this);
+                break;
+            case "print_budget":
+                main.repositorysys.Repository.printBudgetCollection();
                 break;
         }
     }
