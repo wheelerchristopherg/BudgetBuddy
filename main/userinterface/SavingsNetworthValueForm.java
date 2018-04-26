@@ -48,10 +48,10 @@ public class SavingsNetworthValueForm extends Form {
         
         switch (name) {
             case "savings":
-                //call the savingsnetworthcontroller here
+                AssetSystem.createSavingsNetWorthController("savings", cal.getTime(), this);
                 break;
             case "networth":
-                //call the savingsnetworthcontroller here
+                AssetSystem.createSavingsNetWorthController("net worth", cal.getTime(), this);
                 break;
             case "back":
                 goBack();

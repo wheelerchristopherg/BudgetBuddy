@@ -5,7 +5,7 @@ public class AssetSystem {
 
     private static SavingsNetWorthValueController savNetWorthController;
 
-    public static void createNetWorthSavingsController(String userChoice, Date startDate, Form formIn) {
+    public static void createSavingsNetWorthController(String userChoice, Date startDate, SavingsNetworthValueForm formIn) {
         savNetWorthController = new SavingsNetWorthController(userChoice, startDate, formIn);
     }
 

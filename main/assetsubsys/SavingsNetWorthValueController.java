@@ -14,7 +14,7 @@ public class SavingsNetWorthValueController {
 
     private Graph graph;
 
-    public SavingsNetWorthValueController(String userChoice, Date startDateIn, Form formIn) {
+    public SavingsNetWorthValueController(String userChoice, Date startDateIn, SavingsNetworthValueFormForm formIn) {
         double[] graphXData = new double[10];
         double[] yAxis = [0,1,2,3,4,5,6,7,8,9];
         if(userChoice.equals("savings")) {
@@ -25,10 +25,10 @@ public class SavingsNetWorthValueController {
         }
         Date now = new Date();
         Graph graph = GraphFactory.createLineGraph(graphXData, yAxis, startDateIn, now);
-        
+        form.setGraph(graph);
     }
 
-    public double[] savingsOverTime(Date startingDateIn) {
+    private double[] savingsOverTime(Date startingDateIn) {
         double[] savingsOTData = new double[10];
         Date currentDate = new Date();
         long currDateMil = currentDate.getTime();
@@ -48,7 +48,7 @@ public class SavingsNetWorthValueController {
         return savingsOTData;
     }
 
-    public double[] netWorthOverTime(Date startingDateIn) {
+    private double[] netWorthOverTime(Date startingDateIn) {
         double[] netWorthOTData = new double[10];
         Date currentDate = new Date();
         long currDateMil = currentDate.getTime();
@@ -65,7 +65,8 @@ public class SavingsNetWorthValueController {
             Date thisDate = new Date(datesInMil[i]);
             netWorthOTData[i] = calculateSavingsAtDate(thisDate) +
                 calculateAssetsAtDate(thisDate) +
-                calculateLoansAtDate(thisDate);
+                calculateLoansAtDate(thisDate) +
+                calculateCreditAtDate(thisDate);
         }
         return netWorthOTData;
     }
@@ -113,6 +114,28 @@ public class SavingsNetWorthValueController {
             }
 
             return totalSavings;
+        }
+    }
+
+    private double calculateCreditAtDate(Date dateIn) {
+        Collection<Account> cAccounts = Repository.getCreditAccounts();
+        Collection<Transaction> transactions = null;
+        double totalCredit;
+
+        for (Account acc : cAccounts) {
+            totalCredit -= acc.getBalance();
+            Collection<Transaction> currentTransactions = acc.getTransactions();
+            for (Transaction t : currentTransactions) {
+                transactions.add(t);
+            }
+        }
+
+        for (Transaction t : transactions) {
+            if (t.isAfter(dateIn)) {
+                totalCredit += t.getValue();
+            }
+
+            return totalCredit;
         }
     }
 }

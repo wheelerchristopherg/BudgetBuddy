@@ -45,6 +45,18 @@ public class Repository {
         return sAccounts;
     }
 
+    public static Collection<Account> getCreditAccounts() {
+        Collection<Account> cAccounts = null;
+        Iterator i = accounts.iterator();
+        while(i.hasNext()) {
+            Account a = i.next();
+            if(a.isSavings()) {
+                cAccounts.add(a);
+            }
+        }
+        return cAccounts;
+    }
+
     public static Collection<Loan> getLoans() {
         return loans;
     }

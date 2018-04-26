@@ -45,5 +45,9 @@ public class Transaction {
       return date.before(dateIn);
   }
 
+  public boolean isAfter(Date dateIn) {
+      return date.after(dateIn);
+  }
+
 }
 

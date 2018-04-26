@@ -50,6 +50,13 @@ public class Account {
       return false;
   }
 
+    public boolean isCredit() {
+        if(type.equals("credit")) {
+            return true;
+        }
+        return false;
+    }
+
   public Collection<Transaction> getTransactions() {
       return transactions;
   }
