@@ -1,5 +1,4 @@
 package main.repositorysys;
-
 import java.util.*;
 
 public class Budget{
@@ -32,10 +31,9 @@ public class Budget{
         Iterator<Category> itr = categoriesList.iterator();
         while(itr.hasNext()){
             Category checkMe = itr.next();
-            if(findMe.equals(checkMe))
+            if(findMe.equals(checkMe.getName()))
                 return checkMe;
         }
         return null;
     }
-
 }
