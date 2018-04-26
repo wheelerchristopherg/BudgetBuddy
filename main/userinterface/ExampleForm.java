@@ -11,8 +11,8 @@ public class ExampleForm extends Form {
         
         setGridLayout(1, 1);
         
-        double[] x = {1, 2, 3, 5, 6, 7};
-        double[] y = {10, 13, 5, 20, 12, 12};
+        double[] x = {1, 2, 3, 4};
+        double[] y = {8000, 8000.75, 8000.25, 8001};
         
         Graph lineGraph = GraphFactory.createLineGraph(x, y, "", "");
         

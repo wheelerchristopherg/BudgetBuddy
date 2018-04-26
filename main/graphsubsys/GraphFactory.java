@@ -7,11 +7,6 @@ public class GraphFactory {
         return lineGraph;
     }
     
-    public static Graph createBarGraph(double[] x, double[] y, String xaxisLabel, String yaxisLabel) {
-        Graph barGraph = new Graph(Graph.BARGRAPH, x, y);
-        barGraph.addLabels(xaxisLabel, yaxisLabel);
-        return barGraph;
-    }
     
     public static Graph createPieChart(double[] percentages, String[] labels) {
         Graph pieChart = new Graph(percentages, labels);

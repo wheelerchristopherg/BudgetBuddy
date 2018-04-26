@@ -79,11 +79,6 @@ public class Graph extends JPanel {
                 minY = y[i];
             }
         }
-        
-        System.out.println("maxX: " + maxX);
-        System.out.println("minX: " + minX);
-        System.out.println("maxY: " + maxY);
-        System.out.println("minY: " + minY);
     }
     
     private void setMinMax(double[] y) {
@@ -128,7 +123,7 @@ public class Graph extends JPanel {
     }
     
     private double[] convertPoint(double x, double y) {
-        double convertedX = (((x-minX) / (maxX - minX)) * 200.0) + 10.0;
+        double convertedX = (((x-minX) / (maxX - minX)) * 200.0) + 30.0;
         double convertedY = (((y-minY) / (maxY - minY)) * 200.0);
         convertedY = 210 - convertedY;
         double[] point = new double[2];
@@ -174,9 +169,9 @@ public class Graph extends JPanel {
     
     private void drawAxes(Graphics2D g) {
         Path2D.Double axes = new Path2D.Double();
-        axes.moveTo(10.0, 10.0);
-        axes.lineTo(10.0, 210.0);
-        axes.lineTo(210.0, 210.0);
+        axes.moveTo(30.0, 10.0);
+        axes.lineTo(30.0, 230.0);
+        axes.lineTo(230.0, 230.0);
         
         g.setColor(Color.BLACK);
         g.draw(axes);
