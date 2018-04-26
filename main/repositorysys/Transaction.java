@@ -10,8 +10,10 @@ public class Transaction {
   private String type;
   private double value;
   private Date date;
+  private String dateString;
 
   public Transaction(String type, double value, String transDate) {
+      this.dateString = transDate;
       try {
           DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
           Date date = format.parse(transDate);
@@ -35,5 +37,8 @@ public class Transaction {
       return date;
   }
 
+  public String getDateString() {
+      return dateString;
+  }
 
 }

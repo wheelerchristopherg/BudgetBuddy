@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class TransactionSystem {
-    private ArrayList<Transaction> transactions = new ArrayList<Transaction>();
+    public ArrayList<Transaction> transactions = new ArrayList<Transaction>();
 
     public void TransactionSystem() {
 
