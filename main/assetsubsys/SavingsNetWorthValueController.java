@@ -7,6 +7,8 @@ import main.repositorysys.Asset;
 import main.repositorysys.Loan;
 import main.repositorysys.Transaction;
 import main.graphsubsys.Graph;
+import main.graphsubsys.GraphFactory;
+import main.userinterface.Form;
 
 public class SavingsNetWorthValueController {
 
@@ -21,7 +23,9 @@ public class SavingsNetWorthValueController {
         else {
             graphXData = netWorthOverTime(startDateIn);
         }
-        Graph graph = main.graphsubsys.GraphFactory.createLineGraph(graphXData, yAxis);
+        Date now = new Date();
+        Graph graph = GraphFactory.createLineGraph(graphXData, yAxis, startDateIn, now);
+        
     }
 
     public double[] savingsOverTime(Date startingDateIn) {
