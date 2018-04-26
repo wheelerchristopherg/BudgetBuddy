@@ -3,7 +3,7 @@ package main.repositorysys;
 
 public class Asset {
 
-  String type;
-  String name;
-  double value;
+    String name;
+    String type;
+    double value;
 }
