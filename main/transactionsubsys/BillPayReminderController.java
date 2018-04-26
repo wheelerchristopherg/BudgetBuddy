@@ -6,10 +6,8 @@ import main.repositorysys.BillPayReminder;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import javax.swing.JOptionPane;
-import java.io.FileWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -25,6 +23,7 @@ public class BillPayReminderController {
         //Form
     }
 
+    //Loads Bill
     public void loadBillReminders() {
         String csvFile = "billreminders.csv";
         String line = "";
@@ -64,7 +63,7 @@ public class BillPayReminderController {
     }
 
 
-
+    // Adds BillPayReminder to arraylist
     public void addBillPayReminder(BillPayReminder billPayReminder) {
         billReminders.add(billPayReminder);
     }
@@ -79,8 +78,8 @@ public class BillPayReminderController {
         }
     }
 
+    // Sends BillPay Notification to user
     public void sendNotification(BillPayReminder rmdr) {
-        //send notification
         JOptionPane.showMessageDialog(null, "Pay Bill: "+ rmdr.getName() + "!");
     }
 
