@@ -28,7 +28,6 @@ public class Loan {
       return this.monthlyPayment;
   }
 
-  public Date getStartDate() {
-      return this.startDate;
-  }
+  public boolean isBefore(Date dateIn) {
+      return startDate.before(dateIn);
 }
