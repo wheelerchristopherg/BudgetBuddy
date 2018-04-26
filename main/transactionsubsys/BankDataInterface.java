@@ -18,7 +18,8 @@ public class BankDataInterface {
             //Generate Random Value
             double upper = 10000;
             double lower = -10000;
-            double randValue = Math.random() * (upper - lower) + lower;
+            double randValue = Math.round( (Math.random() * (upper - lower) + lower) * 100.0) / 100.0;
+
 
             //Generate Random Date
             Random rand = new Random();

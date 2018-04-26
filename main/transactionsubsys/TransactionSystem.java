@@ -1,6 +1,5 @@
 package main.transactionsubsys;
 
-import main.repositorysys.BillPayReminder;
 import main.repositorysys.Transaction;
 
 import java.io.*;
@@ -16,7 +15,7 @@ public class TransactionSystem {
 
     //Loads Bill
     public void loadTransactions() {
-        String csvFile = "transactions.csv";
+        String csvFile = "main/data/transactions.csv";
         String line = "";
         String cvsSplitBy = ",";
 
@@ -35,7 +34,7 @@ public class TransactionSystem {
     // Save BillReminders
     public void saveTransactions() {
         try {
-            PrintWriter pw = new PrintWriter(new File("transactions.csv"));
+            PrintWriter pw = new PrintWriter(new File("main/data/transactions.csv"));
             for (Transaction t : transactions) {
                 StringBuilder sb = new StringBuilder();
                 sb.append(t.getType());
