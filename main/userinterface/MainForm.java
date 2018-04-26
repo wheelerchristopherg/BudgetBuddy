@@ -19,7 +19,8 @@ public class MainForm extends Form {
         addButton("example", "Example Form");
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
-        addPlaceholders(3);
+        addButton("savings networth over time", "Savings Networth Over Time");
+        addPlaceholders(2);
         
     }
     
@@ -43,6 +44,9 @@ public class MainForm extends Form {
                 break;
             case "print_budget":
                 main.repositorysys.Repository.printBudgetCollection();
+                break;
+            case "savings networth over time":
+                changeForm(new SavingsNetworthValueForm(this.getParent()));
                 break;
         }
     }
