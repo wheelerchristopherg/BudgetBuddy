@@ -21,11 +21,18 @@ public class Bill {
         return dueDate;
     }
 
+    public double getValue() {
+        return value;
+    }
+
     public boolean equals(Bill bill) {
         return this.name == bill.name &&
             this.value == bill.value &&
             this.dueDate == bill.dueDate;
     } // compareTo
 
+    public String getName() {
+        return name;
+    }
 
 }
