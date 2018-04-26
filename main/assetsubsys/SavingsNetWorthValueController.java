@@ -13,14 +13,15 @@ public class SavingsNetWorthValueController {
     private Graph graph;
 
     public SavingsNetWorthValueController(String userChoice, Date startDateIn, Form formIn) {
-        double[] graphXData;
+        double[] graphXData = new double[10];
+        double[] yAxis = [0,1,2,3,4,5,6,7,8,9];
         if(userChoice.equals("savings")) {
             graphXData = savingsOverTime(startDateIn);
         }
         else {
             graphXData = netWorthOverTime(startDateIn);
         }
-        
+        Graph graph = main.graphsubsys.GraphFactory.createLineGraph(graphXData, yAxis);
     }
 
     public double[] savingsOverTime(Date startingDateIn) {
