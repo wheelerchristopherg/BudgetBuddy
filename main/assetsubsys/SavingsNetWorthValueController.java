@@ -3,17 +3,24 @@ package main.assetsubsys;
 import java.util.*;
 import main.repositorysys.Account;
 import main.repositorysys.Repository;
-
 import main.repositorysys.Asset;
 import main.repositorysys.Loan;
 import main.repositorysys.Transaction;
+import main.graphsubsys.Graph;
 
 public class SavingsNetWorthValueController {
 
-    private Date startDate;
+    private Graph graph;
 
-    public void SavingsNetWorthValueController(Date startDateIn) {
-        startDate = startDateIn;
+    public SavingsNetWorthValueController(String userChoice, Date startDateIn, Form formIn) {
+        double[] graphXData;
+        if(userChoice.equals("savings")) {
+            graphXData = savingsOverTime(startDateIn);
+        }
+        else {
+            graphXData = netWorthOverTime(startDateIn);
+        }
+        
     }
 
     public double[] savingsOverTime(Date startingDateIn) {

@@ -17,6 +17,7 @@ public class ExampleForm extends Form {
         Graph lineGraph = GraphFactory.createLineGraph(x, y, "", "");
         
         add(lineGraph);
+
         
     }
     
