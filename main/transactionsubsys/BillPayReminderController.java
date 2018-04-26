@@ -74,14 +74,14 @@ public class BillPayReminderController {
         Date today = new Date();
         for (BillPayReminder r : billReminders) {
             if (r.getReminderDate().before(today)) {
-                sendNotification();
+                sendNotification(r);
             }
         }
     }
 
-    public void sendNotification() {
+    public void sendNotification(BillPayReminder rmdr) {
         //send notification
-        JOptionPane.showMessageDialog(null, "My Goodness, this is so concise");
+        JOptionPane.showMessageDialog(null, "Pay Bill: "+ rmdr.getName() + "!");
     }
 
 }

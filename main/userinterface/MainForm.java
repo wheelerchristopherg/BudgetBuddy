@@ -11,8 +11,10 @@ public class MainForm extends Form {
         addPlaceholder();
         addLabel("Main Form");
         addPlaceholders(2);
+        addButton("BillPayReminder_Button", "BillPayReminderForm");
         addButton("button1", "Example Form");
-        addPlaceholders(4);
+
+        addPlaceholders(3);
         
     }
     
@@ -22,6 +24,9 @@ public class MainForm extends Form {
         switch (name) {
             case "button1":
                 changeForm(new ExampleForm(this.getParent()));
+                break;
+            case "BillPayReminder_Button":
+                changeForm(new BillPayReminderForm(this.getParent()));
                 break;
         }
     }

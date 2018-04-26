@@ -15,15 +15,17 @@ public class Main {
         BillPayReminderController billReminderController = new BillPayReminderController();
 
         // Program startup check
+        SwingUtilities.invokeLater(
+                new Runnable() {
+                    public void run() {
+                        new Window();
+                    }
+                });
+
         billReminderController.loadBillReminders();
         billReminderController.checkDate();
 
-        SwingUtilities.invokeLater(
-            new Runnable() {
-                public void run() {
-                    new Window();
-                }
-            });
+
 
         // Testing
         //BillPayReminder test1 = new BillPayReminder("Test4", 10, "10-12-2019");
