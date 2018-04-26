@@ -2,13 +2,13 @@ package main.graphsubsys;
 
 public class GraphFactory {
     public static Graph createLineGraph(double[] x, double[] y, String xaxisLabel, String yaxisLabel) {
-        Graph lineGraph = new Graph("line graph", x, y);
+        Graph lineGraph = new Graph(Graph.LINEGRAPH, x, y);
         lineGraph.addLabels(xaxisLabel, yaxisLabel);
         return lineGraph;
     }
     
     public static Graph createBarGraph(double[] x, double[] y, String xaxisLabel, String yaxisLabel) {
-        Graph barGraph = new Graph("bar graph", x, y);
+        Graph barGraph = new Graph(Graph.BARGRAPH, x, y);
         barGraph.addLabels(xaxisLabel, yaxisLabel);
         return barGraph;
     }
