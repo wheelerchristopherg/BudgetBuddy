@@ -84,9 +84,12 @@ public final class BillPayReminderController {
         }
     }
 
+
     // Sends BillPay Notification to user
     public void sendNotification(BillPayReminder rmdr) {
         JOptionPane.showMessageDialog(null, "Pay Bill: "+ rmdr.getName() + "!");
     }
+
+
 
 }
