@@ -1,6 +1,7 @@
 package main.userinterface;
 
 import java.awt.event.ActionEvent;
+import main.budgetsubsys.BudgetController;
 
 public class MainForm extends Form {
     
@@ -10,9 +11,11 @@ public class MainForm extends Form {
         
         addPlaceholder();
         addLabel("Main Form");
-        addPlaceholders(2);
+        addPlaceholder();
         addButton("button1", "Example Form");
-        addPlaceholders(4);
+        addButton("print_budget", "Print Budgets");
+        addButton("budget", "Create Budget");
+        addPlaceholders(3);
         
     }
     
@@ -22,6 +25,14 @@ public class MainForm extends Form {
         switch (name) {
             case "button1":
                 changeForm(new ExampleForm(this.getParent()));
+                break;
+            case "budget":
+                BudgetController budgetController = new BudgetController();
+                budgetController.sendBudgetData(this);
+                budgetController.sendSpendingGoals(this);
+                break;
+            case "print_budget":
+                main.repositorysys.Repository.printBudgetCollection();
                 break;
         }
     }

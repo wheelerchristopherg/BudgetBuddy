@@ -4,6 +4,7 @@ import main.repositorysys.Repository;
 import main.userinterface.Form;
 import java.util.*; // REPLACE ME WITH SPECIFIC CLASSES
 import javax.swing.JOptionPane;
+//import java.text.DateFormat;
 
 public class BudgetController{
 
@@ -23,14 +24,18 @@ public class BudgetController{
     }
 
     public void sendBudgetData(Form someForm){
-        this.budgetName = JOptionPane.showInputDialog("Input the name of the budget");
-        int L = Integer.parse(JOptionPane.showInputDialog("Input the number of categories"));
+        this.budgetName = JOptionPane.showInputDialog(someForm, "Input the name of the budget");
+        int L = Integer.parseInt(JOptionPane.showInputDialog(someForm, "Input the number of categories"));
         categoriesArray = new String[L];
-        this.budgetStartDate = Date.parse(JOptionPane.showInputDialog("Input the budget start date"));
-        this.budgetEndDate = Date.parse(JOptionPane.showInputDialog("Input the budget end date"));
-        this.spendingCap = Double.parse(JOptionPane.showInputDialog("Input the budget's overall spendingCap"));
+        this.budgetStartDate = new Date(Date.parse(JOptionPane.showInputDialog(someForm, "Input the budget start date")));
+        this.budgetEndDate = new Date(Date.parse(JOptionPane.showInputDialog(someForm, "Input the budget end date")));
+        
+        System.out.println(budgetStartDate);
+        System.out.println(budgetEndDate);
+        
+        this.spendingCap = Double.parseDouble(JOptionPane.showInputDialog(someForm, "Input the budget's overall spendingCap"));
         for (int i = 0; i<L; i++){
-            this.categoriesArray[i] = JOptionPane.showInputDialog("Input a category")
+            this.categoriesArray[i] = JOptionPane.showInputDialog(someForm, "Input a category");
         }
         currentState = 2;
     }
@@ -38,7 +43,7 @@ public class BudgetController{
     public void sendSpendingGoals(Form someForm){
         this.spendingGoalsData = new double[categoriesArray.length];
         for (int i = 0; i<categoriesArray.length;i++){
-            this.spendingGoalsData[i] = Double.parse(JOptionPane.showInputDialog(someForm,"Input the spending goal for this category"));
+            this.spendingGoalsData[i] = Double.parseDouble(JOptionPane.showInputDialog(someForm,"Input the spending goal for this category"));
         }
         sum = 0;
         for (int i = 0;i<spendingGoalsData.length;i++){
@@ -62,7 +67,7 @@ public class BudgetController{
     }
 
     private void overSum(){
-        JOptionPane.createDialog("Your spending goals sum to more than your spending cap! Retry.");
+        //JOptionPane.createDialog("Your spending goals sum to more than your spending cap! Retry.");
         Arrays.fill(spendingGoalsData, 0);
     }
 
@@ -92,6 +97,7 @@ public class BudgetController{
         }
 
         Budget nuevoBudget = Repository.createBudget(budgetName, budgetStartDate, budgetEndDate, spendingCap); //
+        
         // Categories?
         for(int e = 0; e < categoriesArray.length; e++){
             nuevoBudget.createCategory(categoriesArray[e],spendingGoalsData[e]);
