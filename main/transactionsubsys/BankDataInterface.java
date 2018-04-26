@@ -16,9 +16,9 @@ public class BankDataInterface {
             String randString = getRandomWord(5); //Replace with categories
 
             //Generate Random Value
-            double upper = 10000;
-            double lower = -10000;
-            double randValue = Math.random() * (upper - lower) + lower;
+            double upper = 1000;
+            double lower = -1000;
+            double randValue = (double) Math.round( (Math.random() * (upper - lower) + lower) * 100.0) / 100.0;
 
             //Generate Random Date
             Random rand = new Random();

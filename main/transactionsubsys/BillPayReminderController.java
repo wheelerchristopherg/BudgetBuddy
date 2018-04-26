@@ -72,6 +72,7 @@ public final class BillPayReminderController {
         for (BillPayReminder r : billReminders) {
             if (r.getReminderDate().before(today)) {
                 sendNotification(r);
+                //billReminders.remove(r);
             }
         }
     }
