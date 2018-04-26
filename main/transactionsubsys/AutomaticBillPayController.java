@@ -57,10 +57,10 @@ public class AutomaticBillPayController {
                 StringBuilder sb = new StringBuilder();
                 sb.append(r.getName());
                 sb.append(',');
-                sb.append(r.getAmount());
+                sb.append(r.getValue());
                 sb.append(',');
                 SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
-                sb.append(sdf.format(r.getReminderDate()));
+                sb.append(sdf.format(r.getDueDate()));
                 sb.append('\n');
                 pw.write(sb.toString());
             }
