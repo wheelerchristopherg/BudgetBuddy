@@ -9,10 +9,10 @@ public class MainForm extends Form {
         setGridLayout(3, 3);
         
         addPlaceholder();
-        addLabel("Main Form");
-        addPlaceholders(2);
-        addButton("BillPayReminder_Button", "BillPayReminderForm");
-        addButton("button1", "Example Form");
+        addLabel("Budget Buddy");
+        addPlaceholders(1);
+        addButton("BillPayReminder_Button", "Add a Bill Reminder");
+        addButton("RecordTransaction_Button", "Add a Transaction");
 
         addPlaceholders(3);
         
@@ -22,11 +22,11 @@ public class MainForm extends Form {
         String name = buttonPressed(event);
         
         switch (name) {
-            case "button1":
-                changeForm(new ExampleForm(this.getParent()));
-                break;
             case "BillPayReminder_Button":
                 changeForm(new BillPayReminderForm(this.getParent()));
+                break;
+            case "RecordTransaction_Button":
+                changeForm(new RecordTransactionForm(this.getParent()));
                 break;
         }
     }

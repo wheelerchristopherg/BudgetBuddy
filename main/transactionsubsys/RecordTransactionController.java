@@ -5,14 +5,16 @@ import java.util.ArrayList;
 
 public class RecordTransactionController {
     private ArrayList<Transaction> billReminders = new ArrayList<Transaction>();
+    TransactionSystem tsys = new TransactionSystem();
 
     public void RecordTransactionController() {
 
     }
 
-
-
-    // Use this to manually record transactions
-
+    public void recordTransaction(Transaction trans) {
+        tsys.loadTransactions();
+        tsys.addTransaction(trans);
+        tsys.saveTransactions();
+    }
 
 }
