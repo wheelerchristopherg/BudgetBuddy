@@ -17,4 +17,8 @@ public class Transaction {
         return this.date;
     }
 
+    public boolean isBefore(Date dateIn) {
+        return date.before(dateIn);
+    }
+
 }
