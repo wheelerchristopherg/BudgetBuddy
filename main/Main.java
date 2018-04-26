@@ -4,6 +4,7 @@ package main;
 //java main.Main
 
 import main.repositorysys.BillPayReminder;
+import main.transactionsubsys.BankDataInterface;
 import main.userinterface.Window;
 import javax.swing.SwingUtilities;
 import main.transactionsubsys.BillPayReminderController;
@@ -12,6 +13,11 @@ public class Main {
     public static void main(String[] args) {
 
         // Controllers
+
+        //Create Bank Interface and generate transactions
+        BankDataInterface bank = new BankDataInterface();
+        bank.generateTransactions(1000);
+
         BillPayReminderController billReminderController = new BillPayReminderController();
 
         // Program startup check
