@@ -1,14 +1,9 @@
 package main.budgetsubsys;
-
 import main.repositorysys.Budget;
 import main.repositorysys.Repository;
 import main.userinterface.Form;
 import java.util.*; // REPLACE ME WITH SPECIFIC CLASSES
-
-// TO DO
-// import Form (?)
-// Does Form need to be an attribute? Somehow we need to know which Form to talk to, right?
-// What about categories?
+import javax.swing.JOptionPane;
 
 public class BudgetController{
 
@@ -22,28 +17,28 @@ public class BudgetController{
     private double[] spendingGoalsData;
     private double sum;
 
-    BudgetController(){
+    public BudgetController(){
         currentState = 1;
         goalsDone = false;
     }
 
-    public void sendBudgetData(){
-        this.budgetName = Form.getInput("Input the name of the budget"); // .getInput is a placeholder
-        int L = Form.getInput("Input the number of categories"); // .getInput is a placeholder
+    public void sendBudgetData(Form someForm){
+        this.budgetName = JOptionPane.showInputDialog("Input the name of the budget");
+        int L = Integer.parse(JOptionPane.showInputDialog("Input the number of categories"));
         categoriesArray = new String[L];
-        this.budgetStartDate = Form.getInput("Input the budget start date"); // .getInput is a placeholder
-        this.budgetEndDate = Form.getInput("Input the budget end date"); // .getInput is a placeholder
-        this.spendingCap = Form.getInput("Input the budget's overall spendingCap"); // .getInput is a placeholder
+        this.budgetStartDate = Date.parse(JOptionPane.showInputDialog("Input the budget start date"));
+        this.budgetEndDate = Date.parse(JOptionPane.showInputDialog("Input the budget end date"));
+        this.spendingCap = Double.parse(JOptionPane.showInputDialog("Input the budget's overall spendingCap"));
         for (int i = 0; i<L; i++){
-            this.categoriesArray[i] = Form.getInput("Input a category"); // .getInput is a placeholder
+            this.categoriesArray[i] = JOptionPane.showInputDialog("Input a category")
         }
         currentState = 2;
     }
 
-    public void sendSpendingGoals(){
+    public void sendSpendingGoals(Form someForm){
         this.spendingGoalsData = new double[categoriesArray.length];
         for (int i = 0; i<categoriesArray.length;i++){
-            this.spendingGoalsData[i] = Form.getInput("Input the spending goal for this category",categoriesArray[i]); // .getInput is a placeholder
+            this.spendingGoalsData[i] = Double.parse(JOptionPane.showInputDialog(someForm,"Input the spending goal for this category"));
         }
         sum = 0;
         for (int i = 0;i<spendingGoalsData.length;i++){
@@ -67,9 +62,8 @@ public class BudgetController{
     }
 
     private void overSum(){
-        //print "Your spending goals sum to more than your spending cap! Retry.";
-        for(int i = 0;i < spendingGoalsData.length;i++)
-            spendingGoalsData[i] = 0;
+        JOptionPane.createDialog("Your spending goals sum to more than your spending cap! Retry.");
+        Arrays.fill(spendingGoalsData, 0);
     }
 
     private void underSum() {
