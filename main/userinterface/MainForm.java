@@ -4,10 +4,10 @@ import java.awt.event.ActionEvent;
 import main.budgetsubsys.BudgetController;
 
 public class MainForm extends Form {
-    
+
     public MainForm(Window parent) {
         super(parent);
-        
+
         setGridLayout(6, 3);
 
         //addPlaceholder();
@@ -20,17 +20,15 @@ public class MainForm extends Form {
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
-<<<<<<< HEAD
         addButton("autoBillPay", "Add Automatic Bill Pay");
-=======
->>>>>>> origin/master
+
         addPlaceholders(2);
-        
+
     }
-    
+
     public void actionPerformed(ActionEvent event) {
         String name = buttonPressed(event);
-        
+
         switch (name) {
             case "BillPayReminder_Button":
                 changeForm(new BillPayReminderForm(this.getParent()));
@@ -52,12 +50,10 @@ public class MainForm extends Form {
             case "savings networth over time":
                 changeForm(new SavingsNetworthValueForm(this.getParent()));
                 break;
-<<<<<<< HEAD
             case "autoBillPay":
                 changeForm(new AutoBillPayForm(this.getParent()));
                 break;
-=======
->>>>>>> origin/master
+
         }
     }
 }
