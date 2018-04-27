@@ -1,5 +1,14 @@
 package main.repositorysys;
 import java.util.*;
+import main.repositorysys.Asset;
+import main.repositorysys.Account;
+import main.repositorysys.Loan;
+import main.repositorysys.Bill;
+import main.repositorysys.BillPayReminder;
+import main.repositorysys.Budget;
+import main.repositorysys.BudgetReport;
+import main.repositorysys.FinancialReport;
+
 
 public class Repository {
 
@@ -13,6 +22,48 @@ public class Repository {
     private static Collection<FinancialReport> financialReportCollection;
     private static Collection<Loan> loanCollection;
     // Transactions are located as a collection within Account
+
+    public static Collection<Asset> getAssets() {
+        return assets;
+    }
+
+    public static Collection<Account> getAccounts() {
+        return accounts;
+    }
+
+    public static Collection<Account> getSavingsAccounts() {
+        Collection<Account> sAccounts = null;
+        for (Account a: accounts) {
+            if(a.isSavings()) {
+                sAccounts.add(a);
+            }
+        }
+        return sAccounts;
+    }
+
+    public static Collection<Account> getCreditAccounts() {
+        Collection<Account> cAccounts = null;
+        for (Account a: accounts) {
+            if(a.isSavings()) {
+                cAccounts.add(a);
+            }
+        }
+        return cAccounts;
+    }
+
+    public static Collection<Loan> getLoans() {
+        return loans;
+    }
+
+    public static Loan getLoan(String nameIn) {
+        Loan targetLoan;
+        for (Loan l: loans) {
+            if(l.getName().equals(nameIn)) {
+                targetLoan = l;
+            }
+        }
+        return targetLoan;
+    }
 
     public static void init(){
         accountCollection = new ArrayList<Account>();

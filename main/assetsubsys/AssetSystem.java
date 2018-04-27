@@ -1,8 +1,13 @@
+package main.assetsubsys;
+import java.util.Date;
+import main.repositorysys.SavingsNetWorthValueController;
 
+public class AssetSystem {
 
-class AssetSystem {
+    private static SavingsNetWorthValueController savNetWorthController;
 
-    public void AssetSystem() {
-
+    public static void createSavingsNetWorthValueController(String userChoice, Date startDate, SavingsNetworthValueForm formIn) {
+        savNetWorthController = new SavingsNetWorthValueController(userChoice, startDate, formIn);
     }
+
 }
