@@ -14,17 +14,15 @@ public class SavingsNetworthValueForm extends Form {
     public SavingsNetworthValueForm(Window parent) {
         super(parent);
         
-        setGridLayout(4, 3);
+        setGridLayout(3, 3);
         
-        addButton("back", "Back");
         addLabel("Savings or Networth Over Time");
-        addPlaceholder();
         addButton("savings", "Show Savings");
-        addPlaceholder();
         addButton("networth", "Show Networth");
         addTextField("month", "4");
         addTextField("day", "26");
         addTextField("year", "2018");
+        addButton("back", "Back");
         
         graphPlaceholder = new JPanel();
         add(graphPlaceholder);
@@ -32,8 +30,7 @@ public class SavingsNetworthValueForm extends Form {
     }
     
     public void setGraph(Graph graph) {
-        remove(graphPlaceholder);
-        add(graph);
+        graphPlaceholder.add(graph);
         repaint();
     }
     
