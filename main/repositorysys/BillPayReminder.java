@@ -24,6 +24,17 @@ public class BillPayReminder {
 
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public void setReminderDate(Date reminderDate) {
+        this.reminderDate = reminderDate;
+    }
     public String getName() {
         return name;
     }

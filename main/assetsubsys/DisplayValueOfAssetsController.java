@@ -19,8 +19,6 @@ public class DisplayValueOfAssetsController {
 
     public DisplayValueOfAssetsController(Form form) {
 
-        System.out.println("in con");
-
         double assetSum = 0;
         String line = "";
 
@@ -28,15 +26,14 @@ public class DisplayValueOfAssetsController {
             while ((line = br.readLine()) != null) {
                 String[] rmdline = line.split(",");
                 assetSum += Double.parseDouble(rmdline[2]);
-            }
+            } // while
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        } // catch
 
         DecimalFormat formatter = new DecimalFormat("###,###,###.00");
         JOptionPane.showMessageDialog(form, "Value of assets: $"+ formatter.format(assetSum));
 
     } // DisplayValueOfAssetsController()
-
 
 } // DisplayValueOfAssetsController

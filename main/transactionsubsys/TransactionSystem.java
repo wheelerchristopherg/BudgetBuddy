@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class TransactionSystem {
     public ArrayList<Transaction> transactions = new ArrayList<Transaction>();
 
-    public void TransactionSystem() {
+    public TransactionSystem() {
 
     }
 
@@ -37,7 +37,7 @@ public class TransactionSystem {
             PrintWriter pw = new PrintWriter(new File("main/data/transactions.csv"));
             for (Transaction t : transactions) {
                 StringBuilder sb = new StringBuilder();
-                sb.append(t.getType());
+                sb.append(t.getCategory());
                 sb.append(',');
                 sb.append(t.getValue());
                 sb.append(',');

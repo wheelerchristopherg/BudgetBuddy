@@ -34,7 +34,7 @@ public class RecordTransactionForm extends Form {
         TransactionSystem tsys = new TransactionSystem();
         tsys.loadTransactions();
         for (Transaction t : tsys.transactions) {
-            transactionList += t.getType() + ",\t" + t.getValue() + ",\t" + t.getDateString() + "\n";
+            transactionList += t.getCategory() + ",\t" + t.getValue() + ",\t" + t.getDateString() + "\n";
         }
         setText("TransactionList", transactionList);
     }
@@ -49,7 +49,7 @@ public class RecordTransactionForm extends Form {
                 String transaction_date = getTextFromInput("transaction_date");
                 RecordTransactionController rTrans = new RecordTransactionController();
                 Transaction t = new Transaction(transaction_type, transaction_value, transaction_date);
-                transactionList += t.getType() + ",\t" + t.getValue() + ",\t" + t.getDateString() + "\n";
+                transactionList += t.getCategory() + ",\t" + t.getValue() + ",\t" + t.getDateString() + "\n";
                 setText("TransactionList", transactionList);
                 rTrans.recordTransaction(t);
                 break;

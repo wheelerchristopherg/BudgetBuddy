@@ -4,7 +4,6 @@ import java.awt.event.ActionEvent;
 import main.budgetsubsys.BudgetController;
 import main.assetsubsys.DisplayValueOfAssetsController;
 
-
 public class MainForm extends Form {
 
     public MainForm(Window parent) {
@@ -17,15 +16,14 @@ public class MainForm extends Form {
         //addPlaceholder();
         addButton("BillPayReminder_Button", "Add a Bill Reminder");
         addButton("RecordTransaction_Button", "Add a Transaction");
-        addPlaceholder();
+        //addPlaceholder();
         addButton("example", "Example Form");
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
         addButton("autoBillPay", "Add Automatic Bill Pay");
         addButton("value_of_assets_button", "Display Value of Assets");
-
-
+        addButton("assetValue_button", "View Value of Assets");
         addPlaceholders(2);
 
     }
@@ -56,6 +54,9 @@ public class MainForm extends Form {
                 break;
             case "autoBillPay":
                 changeForm(new AutoBillPayForm(this.getParent()));
+                break;
+            case "assetValue_button":
+                new DisplayValueOfAssetsController(this);
                 break;
 
             case "value_of_assets_button":
