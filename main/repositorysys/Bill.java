@@ -31,17 +31,12 @@ public class Bill {
         return dueDate;
     }
 
-<<<<<<< HEAD
     public boolean recurrance() {
         return recurrance;
     }
 
     public Account getDesiredAccount() {
         return desiredAccount;
-=======
-    public double getValue() {
-        return value;
->>>>>>> origin/master
     }
 
     public boolean equals(Bill bill) {
@@ -49,9 +44,5 @@ public class Bill {
             this.value == bill.value &&
             this.dueDate == bill.dueDate;
     } // compareTo
-
-    public String getName() {
-        return name;
-    }
 
 }

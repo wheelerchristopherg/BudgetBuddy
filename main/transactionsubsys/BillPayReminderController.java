@@ -12,7 +12,7 @@ import java.io.PrintWriter;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public final class BillPayReminderController {
+public class BillPayReminderController {
     private ArrayList<BillPayReminder> billReminders = new ArrayList<BillPayReminder>();
     //private int currentState;
     //private Form form;
@@ -83,7 +83,6 @@ public final class BillPayReminderController {
             sendNotification(billReminder);
         }
     }
-
 
     // Sends BillPay Notification to user
     public void sendNotification(BillPayReminder rmdr) {

@@ -1,9 +1,10 @@
 package main.graphsubsys;
 
+import java.util.Date;
+
 public class GraphFactory {
-    public static Graph createLineGraph(double[] x, double[] y, String xaxisLabel, String yaxisLabel) {
-        Graph lineGraph = new Graph(Graph.LINEGRAPH, x, y);
-        lineGraph.addLabels(xaxisLabel, yaxisLabel);
+    public static Graph createLineGraph(double[] x, double[] y, Date startDate, Date endDate ) {
+        Graph lineGraph = new Graph(x, y, startDate, endDate);
         return lineGraph;
     }
     
@@ -19,3 +20,4 @@ public class GraphFactory {
         return amCal;
     }
 }
+
