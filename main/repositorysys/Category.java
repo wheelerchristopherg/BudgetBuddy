@@ -17,8 +17,4 @@ public class Category  {
     public double getGoal() {
         return spendingGoal;
     }
-
-    public String toString(){
-        return Category.name;
-    }
 }

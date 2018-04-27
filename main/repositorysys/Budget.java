@@ -1,6 +1,6 @@
 package main.repositorysys;
-
 import java.util.*;
+import java.text.*;
 
 public class Budget{
     private String name;
@@ -23,11 +23,13 @@ public class Budget{
     }
 
     public String getStartDate(){
-        return this.startDate;
+        SimpleDateFormat sdf = new SimpleDateFormat();
+        return sdf.getDateInstance().format(this.startDate);
     }
 
     public String getEndDate(){
-        return this.endDate;
+        SimpleDateFormat sdf = new SimpleDateFormat();
+        return sdf.getDateInstance().format(this.endDate);
     }
 
     public Category getCategory(String findMe){
@@ -40,9 +42,18 @@ public class Budget{
         return null;
     }
 
+    public double getSpendingCap(){
+        return this.spendingCap;
+    }
+
     public Collection<Category> getCategories(){
         return categoriesList;
     }
 
+    public Category createCategory(String name, double spendingGoal){
+        Category nuevoCategory = new Category(name, spendingGoal);
+        categoriesList.add(nuevoCategory);
+        return nuevoCategory;
+    }
 
 }

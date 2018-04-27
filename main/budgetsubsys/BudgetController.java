@@ -69,7 +69,7 @@ public class BudgetController{
     }
 
     private void overSum(){
-        //JOptionPane.createDialog("Your spending goals sum to more than your spending cap! Retry.");
+        JOptionPane.showMessageDialog(null,"Your spending goals sum to more than your spending cap! Retry.");
         Arrays.fill(spendingGoalsData, 0);
     }
 
@@ -80,7 +80,7 @@ public class BudgetController{
         int i = 0;
         boolean searchDone = false;
         while (!searchDone) {
-            if (categoriesArray[i].equals("Other") || categoriesArray[i] == null)
+            if (i >= categoriesArray.length || categoriesArray[i].equals("Other") || categoriesArray[i] == null)
                 searchDone = true;
             else
                 i++;
@@ -110,7 +110,7 @@ public class BudgetController{
         goalsDone = true;
         currentState = 5;
         //Repository.createBudget(budgetName, budgetStartDate, budgetEndDate, categoriesArray, spendingCap, spendingGoalsData);
-        Budget nuevoBudget = Repository.getInstance().createBudget(budgetName, budgetStartDate, budgetEndDate, spendingCap);
+        Budget nuevoBudget = Repository.createBudget(budgetName, budgetStartDate, budgetEndDate, spendingCap);
         for(int e = 0; e < categoriesArray.length; e++){
             nuevoBudget.createCategory(categoriesArray[e],spendingGoalsData[e]);
         }

@@ -5,34 +5,16 @@ public class Repository {
 
     private static Repository single_instance = null;
 
-    private static Collection<Account> accountCollection;
-    private static Collection<Asset> assetCollection;
+    private static Collection<Account> accountCollection = new ArrayList<Account>();
+    private static Collection<Asset> assetCollection = new ArrayList<Asset>();
     //private static Collection<Bill> billCollection;
-    private static Collection<BillPayReminder> billPayReminderCollection;
-    private static Collection<Budget> budgetCollection;
-    private static Collection<BudgetReport> budgetReportCollection;
+    private static Collection<BillPayReminder> billPayReminderCollection = new ArrayList<BillPayReminder>();
+    private static Collection<Budget> budgetCollection = new ArrayList<Budget>();
+    private static Collection<BudgetReport> budgetReportCollection = new ArrayList<BudgetReport>();
     // Categories are located as a collection within Budget
-    private static Collection<FinancialReport> financialReportCollection;
-    private static Collection<Loan> loanCollection;
+    private static Collection<FinancialReport> financialReportCollection = new ArrayList<FinancialReport>();
+    private static Collection<Loan> loanCollection = new ArrayList<Loan>();
     // Transactions are located as a collection within Account
-
-    private Repository(){
-        System.out.println("Hi, i'm the init() method that is supposed to run for Repository");
-        accountCollection = new ArrayList<Account>();
-        assetCollection = new ArrayList<Asset>();
-        //billCollection = new ArrayList<Bill>();
-        billPayReminderCollection = new ArrayList<BillPayReminder>();
-        budgetCollection = new ArrayList<Budget>();
-        budgetReportCollection = new ArrayList<BudgetReport>();
-        financialReportCollection = new ArrayList<FinancialReport>();
-        loanCollection = new ArrayList<Loan>();
-    }
-
-    public static Repository getInstance(){
-        if (single_instance == null)
-            single_instance = new Repository();
-        return single_instance;
-    }
 
     public static Budget createBudget(String inName, Date inStart, Date inEnd, double inSpend){
         Budget constructedBudget =  new Budget(inName, inStart, inEnd, inSpend);
@@ -62,15 +44,19 @@ public class Repository {
     }
 
     public static void printBudgetCollection(){
-        System.out.println("\n");
-        for(Budget budg : budgetCollection){
-            Collection<Category> catsList = budg.getCategories();
-            System.out.println(budg.getName()+"\n"+budg.getStartDate()+" - "+budg.getEndDate());
-                    for (Category cat : catsList){
-                        System.out.println("\t" + cat + " | " + cat.getGoal());
-                    }
+        if (!budgetCollection.isEmpty()) {
             System.out.println("\n");
+            for (Budget budg : budgetCollection) {
+                Collection<Category> catsList = budg.getCategories();
+                System.out.println(budg.getName() + "\n" + budg.getStartDate() + " - " + budg.getEndDate());
+                for (Category cat : catsList) {
+                    System.out.println("\t" + cat.getName() + "\t| $" + cat.getGoal());
+                }
+                System.out.println("\tTotal : $" + budg.getSpendingCap() + "\n");
+            }
         }
+        else
+            System.out.println("You don't have any budgets!");
     }
 
 }
