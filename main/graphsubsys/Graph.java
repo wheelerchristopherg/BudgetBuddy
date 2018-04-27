@@ -5,9 +5,6 @@ import java.awt.geom.Path2D;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Color;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.awt.Dimension;
@@ -33,7 +30,8 @@ public class Graph extends JPanel {
     private double minX;
     private double maxY;
     private double minY; 
-    private HashMap<String, Double> labelToValue;
+    private String[] labels;
+    private double[] values;
     
     private double maxHeight;
     
@@ -68,10 +66,8 @@ public class Graph extends JPanel {
         this();
         this.type = PIECHART;
         
-        labelToValue = new HashMap<String, Double>();
-        for (int i = 0; i < values.length; i++) {
-            labelToValue.put(labels[i], values[i]);
-        }
+        this.labels = labels.clone();
+        this.values = values.clone();
     }
     
     private void setMinMax(double[] x, double[] y) {
@@ -172,17 +168,54 @@ public class Graph extends JPanel {
     }
     
     private void drawPieChart(Graphics2D g) {
-        Rectangle2D.Double Rect = new Rectangle2D.Double(0, 0, 300, 300);
-        Shape circleClip = new Ellipse2D.Double(0, 0, 300, 300);
-        Rectangle2D.Double rectClip = new Rectangle2D.Double(150, 0, 150, 300);
-        Rectangle2D.Double testRect = new Rectangle2D.Double(75, 150, 50, 50);
+        double total = 0;
+        for (int i = 0; i < values.length; i++) {
+            total += values[i];
+        }
         
-        g.setColor(Color.BLACK);
-        g.fill(testRect);
-        g.clip(circleClip);
-        g.clip(rectClip);
-        g.setColor(Color.GREEN);
-        g.fill(Rect);
+        double[] angles = new double[values.length];
+        double[] cummulativeAngles = new double[values.length];
+        
+        for (int i = 0; i < values.length; i++) {
+            angles[i] = (values[i] / total) * 2.0 * Math.PI;
+            if (i == 0) {
+                cummulativeAngles[i] = angles[i];
+            } else {
+                cummulativeAngles[i] = cummulativeAngles[i - 1] + angles[i];
+            }
+        }
+        
+        Color[] colors = {Color.RED, Color.BLUE, Color.GREEN, Color.ORANGE, Color.MAGENTA, Color.YELLOW, Color.PINK, Color.CYAN};
+        
+        Ellipse2D.Double circleClip = new Ellipse2D.Double(30, 30, 230, 230);
+        double[] center = {130, 130};
+        int slice = 0;
+        double defLength = 500.0;
+        double prevAngle = 0.0;
+        for (double octant = 1.0; octant <= 8.0; octant++) {
+            double currentAngle = (octant * Math.PI) / 4.0;
+            Path2D.Double wedgeClip = new Path2D.Double();
+            wedgeClip.moveTo(center[0], center[1]);
+            wedgeClip.lineTo(center[0] + (Math.cos(prevAngle) * defLength), center[1] + (Math.sin(prevAngle) * defLength));
+            wedgeClip.lineTo(center[0] + (Math.cos(currentAngle) * defLength), center[1] + (Math.sin(currentAngle) * defLength));
+            wedgeClip.closePath();
+            
+            g.clipRect(0,0,600,600);
+            g.clip(circleClip);
+            g.clip(wedgeClip);
+            
+            while (cummulativeAngles[slice]) {
+                g.setColor(colors[slice]);
+                Path2D.Double wedge = new Path2D.Double();
+                wedge.moveTo(center[0], center[1]);
+                wedge.lineTo(center[0] + (Math.cos(prevAngle) * defLength), center[1] + (Math.sin(prevAngle) * defLength));
+                wedge.lineTo(center[0] + (Math.cos(cummulativeAngles[slice]) * defLength), center[1] + (Math.sin(cummulativeAngles[slice]) * defLength));
+                wedge.closePath();
+                
+            }
+        }
+        
+        
     }
     
     private void drawAmortizationCalendar(Graphics2D g) {
