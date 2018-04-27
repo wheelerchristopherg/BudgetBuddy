@@ -5,8 +5,8 @@ package main;
 
 import main.transactionsubsys.BankDataInterface;
 import main.userinterface.Window;
-import javax.swing.SwingUtilities;
 import main.transactionsubsys.BillPayReminderController;
+import javax.swing.SwingUtilities;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class Main {
 
         //Create Bank Interface and generate transactions
         BankDataInterface bank = new BankDataInterface();
-        bank.generateTransactions(1000); // Comment out after first run
+        //bank.generateTransactions(1000); // Comment out after first run
         BillPayReminderController billReminderController = new BillPayReminderController();
         billReminderController.loadBillReminders();
 

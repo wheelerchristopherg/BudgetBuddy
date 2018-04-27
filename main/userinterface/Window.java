@@ -13,8 +13,8 @@ public class Window extends JFrame {
         super("Budget Buddy");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setFocusable(true);
-        setSize(640, 480);
-        setResizable(false);
+        setSize(1280, 960);
+        //setResizable(false);
         
         currentForm = new MainForm(this);
         

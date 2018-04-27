@@ -10,17 +10,14 @@ public class MainForm extends Form {
         
         setGridLayout(6, 3);
 
-        //addPlaceholder();
-        //addLabel("Budget Buddy");
-        //addPlaceholder();
         addButton("BillPayReminder_Button", "Add a Bill Reminder");
         addButton("RecordTransaction_Button", "Add a Transaction");
-        addPlaceholder();
         addButton("example", "Example Form");
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
-        addPlaceholders(2);
+        addButton("amor cal", "Amortization Calendar");
+        addPlaceholders(1);
         
     }
     
@@ -47,6 +44,9 @@ public class MainForm extends Form {
                 break;
             case "savings networth over time":
                 changeForm(new SavingsNetworthValueForm(this.getParent()));
+                break;
+            case "amor cal":
+                changeForm(new AmortizationCalendarForm(this.getParent()));
                 break;
         }
     }
