@@ -21,7 +21,7 @@ public class Repository {
     private static Collection<Budget> budgetCollection;
     private static Collection<BudgetReport> budgetReports;
     // Categories are located as a collection within Budget
-    private static Collection<FinancialReport>
+    private static Collection<FinancialReport> fReports;
     //private static Collection<FinancialReport> financialReports;
     // Transactions are located as a collection within Account
 
