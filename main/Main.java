@@ -3,7 +3,6 @@ package main;
 //compile javac main/Main.java
 //java main.Main
 
-import main.repositorysys.BillPayReminder;
 import main.transactionsubsys.BankDataInterface;
 import main.userinterface.Window;
 import javax.swing.SwingUtilities;
@@ -16,12 +15,10 @@ public class Main {
 
         //Create Bank Interface and generate transactions
         BankDataInterface bank = new BankDataInterface();
-        bank.generateTransactions(1000);
-
+        bank.generateTransactions(1000); // Comment out after first run
         BillPayReminderController billReminderController = new BillPayReminderController();
-
         billReminderController.loadBillReminders();
-        billReminderController.checkDate();
+
         
         // start window
         SwingUtilities.invokeLater(
@@ -31,11 +28,9 @@ public class Main {
                     }
                 });
 
-        // Testing
-        //BillPayReminder test1 = new BillPayReminder("Test4", 10, "10-12-2019");
-        //BillPayReminder test2 = new BillPayReminder("Test5", 200, "12-2-2019");
-        //BillPayReminder test3 = new BillPayReminder("Test6", 340, "01-20-2029");
 
+        // Check Dates
+        billReminderController.checkDate();
     }
 
 }

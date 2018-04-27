@@ -36,7 +36,7 @@ public class BillPayReminderForm extends Form {
                 bpr.loadBillReminders();
                 bpr.addBillPayReminder(temprmd);
                 bpr.saveBillReminders();
-                bpr.checkDate();
+                bpr.checkSingleDate(temprmd);
                 break;
             case "back":
                 goBack();
