@@ -14,9 +14,8 @@ public class GraphFactory {
         return pieChart;
     }
     
-    public static Graph createAmortizationCalendar(double maxHeight, double[] stepHeights, String xaxisLabel, String yaxisLabel) {
+    public static Graph createAmortizationCalendar(double maxHeight, double[] stepHeights) {
         Graph amCal = new Graph(maxHeight, stepHeights);
-        amCal.addLabels(xaxisLabel, yaxisLabel);
         return amCal;
     }
 
