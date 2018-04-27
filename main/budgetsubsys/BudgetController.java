@@ -4,7 +4,8 @@ import main.repositorysys.Repository;
 import main.userinterface.Form;
 import java.util.*; // REPLACE ME WITH SPECIFIC CLASSES
 import javax.swing.JOptionPane;
-//import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.text.ParsePosition;
 
 public class BudgetController{
 
@@ -28,8 +29,8 @@ public class BudgetController{
         int L = Integer.parseInt(JOptionPane.showInputDialog(someForm, "Input the number of categories"));
         categoriesArray = new String[L];
         SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
-        this.budgetStartDate = sdf.parse(JOptionPane.showInputDialog(someForm, "Input the budget start date in the format DD/MM/YYYY"),new ParsePosition(0)));
-        this.budgetEndDate = sdf.parse(JOptionPane.showInputDialog(someForm, "Input the budget end date in the format DD/MM/YYYY"),new ParsePosition(0)));
+        this.budgetStartDate = sdf.parse(JOptionPane.showInputDialog(someForm, "Input the budget start date in the format DD/MM/YYYY"),new ParsePosition(0));
+        this.budgetEndDate = sdf.parse(JOptionPane.showInputDialog(someForm, "Input the budget end date in the format DD/MM/YYYY"),new ParsePosition(0));
 
         System.out.println(budgetStartDate);
         System.out.println(budgetEndDate);
@@ -116,4 +117,3 @@ public class BudgetController{
         }
     }
 }
-

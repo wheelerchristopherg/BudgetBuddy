@@ -1,9 +1,5 @@
-
+package main.transactionsubsys;
 
 public class BankDataController {
-
-    public void BankDataController() {
-        
-    }
 
 }

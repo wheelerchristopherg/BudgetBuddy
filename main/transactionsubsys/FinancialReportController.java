@@ -1,4 +1,9 @@
-
+package main.transactionsubsys;
+import java.util.*;
+import main.repositorysys.Repository;
+import main.userinterface.Form;
+import main.repositorysys.Transaction;
+import main.repositorysys.Account;
 
 public class FinancialReportController {
 
@@ -6,10 +11,10 @@ public class FinancialReportController {
         System.out.println("Placeholder...");
     }
 
-    public displayFinancialReport(Form zForm, String textAreaName){
+    public void displayFinancialReport(Form zForm, String textAreaName){
         // The way setText works, you submit one large thing of "buildText"-- we will need to build it!
         String buildText = new String("");
-        for(Account acc : accountCollection)){
+        for(Account acc : Repository.getAccountCollection()){
             // add the Account title to the buildText
             buildText = buildText+acc.getName()+"\n"+acc.getType()+"\n$"+acc.getBalance()+"\n"+acc.getInterestRate()+"%\n";
             for(Transaction trans : acc.getTransactions()){

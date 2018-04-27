@@ -1,5 +1,4 @@
 package main.repositorysys;
-
 import java.util.*;
 
 public class Repository {
@@ -33,16 +32,23 @@ public class Repository {
     }
 
     public static FinancialReport createFinancialReport(String inText){
-        financialReportCollection.add(new FinancialReport(inText));
+        FinancialReport returnMe = new FinancialReport(inText);
+        financialReportCollection.add(returnMe);
+        return returnMe;
     }
 
     public static Account getAccount(String findMe){
-        Iterator itr = accountCollection.iterator();
+        Iterator<Account> itr = accountCollection.iterator();
         while(itr.hasNext()){
             Account checkMe = itr.next();
-            if String.equals(findMe,checkMe.getName())
+            if (findMe.equals(checkMe.getName()))
                     return checkMe;
         }
+        return null;
+    }
+
+    public static Collection<Account> getAccountCollection(){
+        return accountCollection;
     }
 
     public static void printBudgetCollection(){
@@ -56,4 +62,5 @@ public class Repository {
             System.out.println("\n");
         }
     }
+
 }
