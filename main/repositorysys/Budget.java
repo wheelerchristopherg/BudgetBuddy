@@ -22,10 +22,12 @@ public class Budget{
         return this.name;
     }
 
-    public Category createCategory(String name, double spendingGoal){
-        Category nuevoCategory = new Category(name, spendingGoal);
-        categoriesList.add(nuevoCategory);
-        return nuevoCategory;
+    public String getStartDate(){
+        return this.startDate;
+    }
+
+    public String getEndDate(){
+        return this.endDate;
     }
 
     public Category getCategory(String findMe){
@@ -41,4 +43,6 @@ public class Budget{
     public Collection<Category> getCategories(){
         return categoriesList;
     }
+
+
 }

@@ -3,6 +3,8 @@ import java.util.*;
 
 public class Repository {
 
+    private static Repository single_instance = null;
+
     private static Collection<Account> accountCollection;
     private static Collection<Asset> assetCollection;
     //private static Collection<Bill> billCollection;
@@ -14,7 +16,8 @@ public class Repository {
     private static Collection<Loan> loanCollection;
     // Transactions are located as a collection within Account
 
-    public static void init(){
+    private Repository(){
+        System.out.println("Hi, i'm the init() method that is supposed to run for Repository");
         accountCollection = new ArrayList<Account>();
         assetCollection = new ArrayList<Asset>();
         //billCollection = new ArrayList<Bill>();
@@ -25,8 +28,15 @@ public class Repository {
         loanCollection = new ArrayList<Loan>();
     }
 
+    public static Repository getInstance(){
+        if (single_instance == null)
+            single_instance = new Repository();
+        return single_instance;
+    }
+
     public static Budget createBudget(String inName, Date inStart, Date inEnd, double inSpend){
         Budget constructedBudget =  new Budget(inName, inStart, inEnd, inSpend);
+        //System.out.println("The new budget's name is : " + constructedBudget.getName());
         budgetCollection.add(constructedBudget);
         return constructedBudget;
     }
@@ -55,7 +65,7 @@ public class Repository {
         System.out.println("\n");
         for(Budget budg : budgetCollection){
             Collection<Category> catsList = budg.getCategories();
-            System.out.println(budg.getName());
+            System.out.println(budg.getName()+"\n"+budg.getStartDate()+" - "+budg.getEndDate());
                     for (Category cat : catsList){
                         System.out.println("\t" + cat + " | " + cat.getGoal());
                     }
