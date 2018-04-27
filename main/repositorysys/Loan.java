@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Loan {
 
+    private String name;
     private double amount;
     private double interestRate;
     private double monthlyPayment;
@@ -14,6 +15,10 @@ public class Loan {
         interestRate = interestRateIn;
         monthlyPayment = monthlyPaymentIn;
         startDate = startDateIn;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     public double getAmount() {
@@ -30,6 +35,10 @@ public class Loan {
 
     public Date getStartDate() {
         return this.startDate;
+    }
+
+    public void setName(String nameIn) {
+        this.name = nameIn;
     }
 
     public void setAmount(double amount) {

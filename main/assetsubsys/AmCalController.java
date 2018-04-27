@@ -2,10 +2,11 @@ package main.assetsubsys;
 
 import main.repositorysys.Loan;
 import main.userinterface.Form;
+import main.repositorysys.Repository;
+import main.graphsubsys.Graph;
 
 public class AmCalController {
-    private Form form;
-    private Loan loan;
+
     private double balance;
     private double interestRate;
     private double monthlyPayment;
@@ -13,14 +14,13 @@ public class AmCalController {
     private double[] principal = new double[1200];
     private double[] interest = new double[1200];
 
-    public AmCalController(Form formIn, Loan loanIn) {
-        form = formIn;
-        loan = loanIn;
-
-        createAmCal(loan);
+    public AmCalController(AmortizationCalendarForm formIn, String loanNameIn) {
+        Loan loan = Repository.getLoan(loanNameIn);
+        Graph graph = createAmCal(loan);
+        formIn.setGraph(graph);
     }
 
-    private void createAmCal(Loan loanIn) {
+    private Graph createAmCal(Loan loanIn) {
         getInformation(loanIn);
 
         double currentBalance = balance;

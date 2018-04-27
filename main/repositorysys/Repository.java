@@ -61,6 +61,16 @@ public class Repository {
         return loans;
     }
 
+    public static Loan getLoan(String nameIn) {
+        Loan targetLoan;
+        for (Loan l: loans) {
+            if(l.getName().equals(nameIn)) {
+                targetLoan = l;
+            }
+        }
+        return targetLoan;
+    }
+
     public static void init() {
         accounts = new ArrayList<Account>();
         //assets = new ArrayList<Assets>();
