@@ -1,5 +1,8 @@
 package main.graphsubsys;
 
+
+import java.util.Date;
+
 public class GraphFactory {
     public static Graph createLineGraph(double[] x, double[] y, String xaxisLabel, String yaxisLabel) {
         Graph lineGraph = new Graph(Graph.LINEGRAPH, x, y);
