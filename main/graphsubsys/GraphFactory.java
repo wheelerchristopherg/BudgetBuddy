@@ -19,5 +19,6 @@ public class GraphFactory {
         amCal.addLabels(xaxisLabel, yaxisLabel);
         return amCal;
     }
+
 }
 

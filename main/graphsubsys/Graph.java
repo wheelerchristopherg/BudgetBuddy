@@ -33,7 +33,7 @@ public class Graph extends JPanel {
     private double maxHeight;
     
     private Graph() {
-        this.setSize(300, 300);
+        this.setSize(600, 600);
     }
     
     protected Graph(double[] x, double[] y, Date startDate, Date endDate) {
@@ -118,9 +118,9 @@ public class Graph extends JPanel {
     }
     
     private double[] convertPoint(double x, double y) {
-        double convertedX = (((x-minX) / (maxX - minX)) * 200.0) + 60.0;
-        double convertedY = (((y-minY) / (maxY - minY)) * 200.0);
-        convertedY = 210 - convertedY;
+        double convertedX = (((x-minX) / (maxX - minX)) * 500.0) + 60.0;
+        double convertedY = (((y-minY) / (maxY - minY)) * 500.0);
+        convertedY = 510 - convertedY;
         double[] point = new double[2];
         point[0] = convertedX;
         point[1] = convertedY;
@@ -138,8 +138,8 @@ public class Graph extends JPanel {
         cal.setTime(endDate);
         String endString = cal.get(cal.MONTH) + "/" + cal.get(cal.DATE) + "/" + cal.get(cal.YEAR);
         
-        g.drawString(startString, 40, 245);
-        g.drawString(endString, 230, 245);
+        g.drawString(startString, 40, 545);
+        g.drawString(endString, 530, 545);
         
         double[] point = convertPoint(xPointData[0], yPointData[0]);
         Path2D.Double path = new Path2D.Double();
@@ -149,7 +149,6 @@ public class Graph extends JPanel {
             point = convertPoint(xPointData[i], yPointData[i]);
             path.lineTo(point[0], point[1]);
         }
-        
         
         g.setColor(Color.RED);
         g.draw(path);
@@ -167,12 +166,12 @@ public class Graph extends JPanel {
     private void drawAxes(Graphics2D g) {
         Path2D.Double axes = new Path2D.Double();
         axes.moveTo(60.0, 10.0);
-        axes.lineTo(60.0, 230.0);
-        axes.lineTo(260.0, 230.0);
+        axes.lineTo(60.0, 530.0);
+        axes.lineTo(560.0, 530.0);
         
         g.setColor(Color.BLACK);
         g.draw(axes);
-        g.drawString("$" + minY, 2, 210);
+        g.drawString("$" + minY, 2, 510);
         g.drawString("$" + maxY, 2, 20);
     }
 }

@@ -11,20 +11,14 @@ public class MainForm extends Form {
 
         setGridLayout(6, 3);
 
-        //addPlaceholder();
-        //addLabel("Budget Buddy");
-        //addPlaceholder();
         addButton("BillPayReminder_Button", "Add a Bill Reminder");
         addButton("RecordTransaction_Button", "Add a Transaction");
-        addPlaceholder();
         addButton("example", "Example Form");
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
         addButton("AssetValue_Button", "View Value of Assets");
-
-        addPlaceholders(2);
-
+        addButton("amor cal", "Amortization Calendar");
     }
 
     public void actionPerformed(ActionEvent event) {
@@ -54,6 +48,9 @@ public class MainForm extends Form {
             case "AssetValue_Button":
                 new DisplayValueOfAssetsController(this);
                 System.out.println("button clicked");
+                break;
+            case "amor cal":
+                changeForm(new AmortizationCalendarForm(this.getParent()));
                 break;
         }
     }
