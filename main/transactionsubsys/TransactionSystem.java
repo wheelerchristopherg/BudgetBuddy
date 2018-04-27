@@ -11,7 +11,7 @@ public class TransactionSystem {
 
     private static FilterController filterController;
 
-    public static void createFilterController(String userChoice, Date startDate, SavingsNetworthValueForm formIn) {
+    public static void createFilterController() {
         filterController = new FilterController();
     }
 

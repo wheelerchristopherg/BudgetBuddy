@@ -5,6 +5,7 @@ import main.graphsubsys.Graph;
 import java.awt.event.ActionEvent;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import main.transactionsubsys.TransactionSystem;
 
 public class FilterForm extends Form {
 
@@ -27,6 +28,9 @@ public class FilterForm extends Form {
         addPlaceholder();
 
         addButton("back", "Back");
+
+
+        transactionSystem.loadTransactions();
 
     }
 
