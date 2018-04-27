@@ -3,11 +3,9 @@ import main.repositorysys.Budget;
 import main.repositorysys.Repository;
 import main.userinterface.Form;
 import java.util.*; // REPLACE ME WITH SPECIFIC CLASSES
-
-// TO DO
-// import Form (?)
-// Does Form need to be an attribute? Somehow we need to know which Form to talk to, right?
-// What about categories?
+import javax.swing.JOptionPane;
+import java.text.SimpleDateFormat;
+import java.text.ParsePosition;
 
 public class BudgetController{
 
@@ -21,28 +19,33 @@ public class BudgetController{
     private double[] spendingGoalsData;
     private double sum;
 
-    BudgetController(){
+    public BudgetController(){
         currentState = 1;
         goalsDone = false;
     }
 
-    public void sendBudgetData(){
-        this.budgetName = Form.getInput("Input the name of the budget"); // .getInput is a placeholder
-        int L = Form.getInput("Input the number of categories"); // .getInput is a placeholder
+    public void sendBudgetData(Form someForm){
+        this.budgetName = JOptionPane.showInputDialog(someForm, "Input the name of the budget");
+        int L = Integer.parseInt(JOptionPane.showInputDialog(someForm, "Input the number of categories"));
         categoriesArray = new String[L];
-        this.budgetStartDate = Form.getInput("Input the budget start date"); // .getInput is a placeholder
-        this.budgetEndDate = Form.getInput("Input the budget end date"); // .getInput is a placeholder
-        this.spendingCap = Form.getInput("Input the budget's overall spendingCap"); // .getInput is a placeholder
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+        this.budgetStartDate = sdf.parse(JOptionPane.showInputDialog(someForm, "Input the budget start date in the format DD/MM/YYYY"),new ParsePosition(0));
+        this.budgetEndDate = sdf.parse(JOptionPane.showInputDialog(someForm, "Input the budget end date in the format DD/MM/YYYY"),new ParsePosition(0));
+
+        System.out.println(budgetStartDate);
+        System.out.println(budgetEndDate);
+        
+        this.spendingCap = Double.parseDouble(JOptionPane.showInputDialog(someForm, "Input the budget's overall spendingCap"));
         for (int i = 0; i<L; i++){
-            this.categoriesArray[i] = Form.getInput("Input a category"); // .getInput is a placeholder
+            this.categoriesArray[i] = JOptionPane.showInputDialog(someForm, "Input a category");
         }
         currentState = 2;
     }
 
-    public void sendSpendingGoals(){
+    public void sendSpendingGoals(Form someForm){
         this.spendingGoalsData = new double[categoriesArray.length];
         for (int i = 0; i<categoriesArray.length;i++){
-            this.spendingGoalsData[i] = Form.getInput("Input the spending goal for this category",categoriesArray[i]); // .getInput is a placeholder
+            this.spendingGoalsData[i] = Double.parseDouble(JOptionPane.showInputDialog(someForm,"Input the spending goal for the category \""+categoriesArray[i]+"\""));
         }
         sum = 0;
         for (int i = 0;i<spendingGoalsData.length;i++){
@@ -66,9 +69,8 @@ public class BudgetController{
     }
 
     private void overSum(){
-        //print "Your spending goals sum to more than your spending cap! Retry.";
-        for(int i = 0;i < spendingGoalsData.length;i++)
-            spendingGoalsData[i] = 0;
+        //JOptionPane.createDialog("Your spending goals sum to more than your spending cap! Retry.");
+        Arrays.fill(spendingGoalsData, 0);
     }
 
     private void underSum() {
@@ -97,6 +99,7 @@ public class BudgetController{
         }
 
         Budget nuevoBudget = Repository.createBudget(budgetName, budgetStartDate, budgetEndDate, spendingCap); //
+        
         // Categories?
         for(int e = 0; e < categoriesArray.length; e++){
             nuevoBudget.createCategory(categoriesArray[e],spendingGoalsData[e]);
