@@ -47,7 +47,6 @@ public class MainForm extends Form {
                 break;
             case "AssetValue_Button":
                 new DisplayValueOfAssetsController(this);
-                System.out.println("button clicked");
                 break;
             case "amor cal":
                 changeForm(new AmortizationCalendarForm(this.getParent()));

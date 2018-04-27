@@ -10,6 +10,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.awt.Dimension;
 
 public class Graph extends JPanel {
     
@@ -34,6 +35,7 @@ public class Graph extends JPanel {
     
     private Graph() {
         this.setSize(600, 600);
+        this.setPreferredSize(new Dimension(600,600));
     }
     
     protected Graph(double[] x, double[] y, Date startDate, Date endDate) {
