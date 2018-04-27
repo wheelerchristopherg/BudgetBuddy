@@ -20,6 +20,7 @@ public class MainForm extends Form {
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
+        addButton("autoBillPay", "Add Automatic Bill Pay");
         addPlaceholders(2);
         
     }
@@ -47,6 +48,9 @@ public class MainForm extends Form {
                 break;
             case "savings networth over time":
                 changeForm(new SavingsNetworthValueForm(this.getParent()));
+                break;
+            case "autoBillPay":
+                changeForm(new AutoBillPayForm(this.getParent()));
                 break;
         }
     }
