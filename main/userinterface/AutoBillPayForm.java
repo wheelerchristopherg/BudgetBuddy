@@ -21,6 +21,7 @@ public class AutoBillPayForm extends Form {
         addButton("back", "Back");
     }
 
+    AutomaticBillPayController abp = new AutomaticBillPayController();
     public void actionPerformed(ActionEvent event) {
         String name = buttonPressed(event);
         switch (name) {
@@ -29,9 +30,8 @@ public class AutoBillPayForm extends Form {
                 double reminder_amount = Double.parseDouble(getTextFromInput("billpay_amount"));
                 String reminder_date = getTextFromInput("billpay_date");
 
-                Bill bill = new Bill(reminder_name, reminder_amount, reminder_date);
-                AutomaticBillPayController abp = new AutomaticBillPayController();
                 abp.loadBillOnAutoPay();
+                Bill bill = new Bill(reminder_name, reminder_amount, reminder_date);
                 abp.setAutomaticBillPay(bill);
                 abp.saveBillsOnAutoPay();
                 abp.checkSingleDate(bill);

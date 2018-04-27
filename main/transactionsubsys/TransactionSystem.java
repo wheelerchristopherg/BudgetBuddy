@@ -53,7 +53,7 @@ public class TransactionSystem {
     }
 
     public void addTransaction(Transaction transaction) {
-       transactions.add(transaction);
+        transactions.add(transaction);
     }
 
 

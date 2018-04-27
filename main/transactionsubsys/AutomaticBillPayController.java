@@ -1,5 +1,6 @@
 package main.transactionsubsys;
 import main.repositorysys.Bill;
+import main.repositorysys.Transaction;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -81,10 +82,16 @@ public class AutomaticBillPayController {
         }
     }
 
+    TransactionSystem transys = new TransactionSystem();
+
     public void checkSingleDate(Bill bill) {
         Date today = new Date();
         if(bill.getDueDate().before(today)) {
             sendNotification(bill);
+            transys.loadTransactions();
+            Transaction transaction = new Transaction(bill.getName(), bill.getValue(), bill.getDateString());
+            transys.addTransaction(transaction);
+            transys.saveTransactions();
         }
     }
 
