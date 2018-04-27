@@ -2,6 +2,8 @@ package main.userinterface;
 
 import java.awt.event.ActionEvent;
 import main.budgetsubsys.BudgetController;
+import main.assetsubsys.DisplayValueOfAssetsController;
+
 
 public class MainForm extends Form {
 
@@ -21,6 +23,8 @@ public class MainForm extends Form {
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
         addButton("autoBillPay", "Add Automatic Bill Pay");
+        addButton("value_of_assets_button", "Display Value of Assets");
+
 
         addPlaceholders(2);
 
@@ -52,6 +56,10 @@ public class MainForm extends Form {
                 break;
             case "autoBillPay":
                 changeForm(new AutoBillPayForm(this.getParent()));
+                break;
+
+            case "value_of_assets_button":
+                new DisplayValueOfAssetsController(this);
                 break;
 
         }
