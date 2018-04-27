@@ -27,9 +27,10 @@ public class BudgetController{
         this.budgetName = JOptionPane.showInputDialog(someForm, "Input the name of the budget");
         int L = Integer.parseInt(JOptionPane.showInputDialog(someForm, "Input the number of categories"));
         categoriesArray = new String[L];
-        this.budgetStartDate = new Date(Date.parse(JOptionPane.showInputDialog(someForm, "Input the budget start date")));
-        this.budgetEndDate = new Date(Date.parse(JOptionPane.showInputDialog(someForm, "Input the budget end date")));
-        
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+        this.budgetStartDate = sdf.parse(JOptionPane.showInputDialog(someForm, "Input the budget start date in the format DD/MM/YYYY")));
+        this.budgetEndDate = sdf.parse(JOptionPane.showInputDialog(someForm, "Input the budget end date in the format DD/MM/YYYY")));
+
         System.out.println(budgetStartDate);
         System.out.println(budgetEndDate);
         
@@ -43,7 +44,7 @@ public class BudgetController{
     public void sendSpendingGoals(Form someForm){
         this.spendingGoalsData = new double[categoriesArray.length];
         for (int i = 0; i<categoriesArray.length;i++){
-            this.spendingGoalsData[i] = Double.parseDouble(JOptionPane.showInputDialog(someForm,"Input the spending goal for this category"));
+            this.spendingGoalsData[i] = Double.parseDouble(JOptionPane.showInputDialog(someForm,"Input the spending goal for the category \""+categoriesArray[i]+"\""));
         }
         sum = 0;
         for (int i = 0;i<spendingGoalsData.length;i++){
