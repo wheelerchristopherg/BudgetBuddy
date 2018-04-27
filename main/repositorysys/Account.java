@@ -19,10 +19,10 @@ public class Account {
         return type;
     }
     public double getBalance(){
-        return balance
+        return balance;
     }
     public double getInterestRate(){
-        return interestRate
+        return interestRate;
     }
 
     public Collection<Transaction> getTransactions(){

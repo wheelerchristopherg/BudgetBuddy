@@ -11,21 +11,21 @@ public class FilterController {
     public void FilterController() {
         buildText = "";
     }
-    public .... FilterByCategory(String acc,String targetCat){
+    public void FilterByCategory(String acc,String targetCat){
         Repository.getAccount(acc);
         for(Transaction trans : acc.getTransactions()){
             if (trans.getCategory().equals(targetCat))
                 buildText = buildText+"\t"trans.getVendor()+"\n"+trans.getCategory()+"\n"+trans.getDate()+"\n$"+trans.getValue()+"\n";
         }
     }
-    public .... FilterByDate(String acc, Date targetStart, Date targetEnd){
+    public void FilterByDate(String acc, Date targetStart, Date targetEnd){
         Repository.getAccount(acc);
         for(Transaction trans : acc.getTransactions()){
             if(trans.after(targetStart) && trans.after(targetEnd))
                 buildText = buildText+"\t"trans.getVendor()+"\n"+trans.getCategory()+"\n"+trans.getDate()+"\n$"+trans.getValue()+"\n";
         }
     }
-    public .... FilterByCategoryAndDate(String acc, String targetCat, Date targetStart, Date targetEnd){
+    public void FilterByCategoryAndDate(String acc, String targetCat, Date targetStart, Date targetEnd){
         Repository.getAccount(acc);
         for(Transaction trans : acc.getTransactions()){
             if(trans.after(targetStart) && trans.after(targetEnd) && trans.getCategory().equals(targetCat))
