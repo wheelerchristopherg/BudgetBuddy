@@ -2,6 +2,9 @@ package main.userinterface;
 
 import java.awt.event.ActionEvent;
 import main.budgetsubsys.BudgetController;
+import main.userinterface.SavingsNetworthValueForm;
+import main.userinterface.Form;
+import main.userinterface.Window;
 
 public class MainForm extends Form {
     

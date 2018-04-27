@@ -35,9 +35,7 @@ public class Repository {
 
     public static Collection<Account> getSavingsAccounts() {
         Collection<Account> sAccounts = null;
-        Iterator i = accounts.iterator();
-        while(i.hasNext()) {
-            Account a = i.next();
+        for (Account a: accounts) {
             if(a.isSavings()) {
                 sAccounts.add(a);
             }
@@ -47,9 +45,7 @@ public class Repository {
 
     public static Collection<Account> getCreditAccounts() {
         Collection<Account> cAccounts = null;
-        Iterator i = accounts.iterator();
-        while(i.hasNext()) {
-            Account a = i.next();
+        for (Account a: accounts) {
             if(a.isSavings()) {
                 cAccounts.add(a);
             }

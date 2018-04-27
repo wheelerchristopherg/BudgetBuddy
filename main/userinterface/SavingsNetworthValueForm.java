@@ -6,6 +6,9 @@ import java.awt.event.ActionEvent;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import javax.swing.JPanel;
+import main.userinterface.Form;
+import main.userinterface.Window;
+import main.assetsubsys.AssetSystem;
 
 public class SavingsNetworthValueForm extends Form {
     
@@ -48,10 +51,10 @@ public class SavingsNetworthValueForm extends Form {
         
         switch (name) {
             case "savings":
-                AssetSystem.createSavingsNetWorthController("savings", cal.getTime(), this);
+                AssetSystem.createSavingsNetWorthValueController("savings", cal.getTime(), this);
                 break;
             case "networth":
-                AssetSystem.createSavingsNetWorthController("net worth", cal.getTime(), this);
+                AssetSystem.createSavingsNetWorthValueController("net worth", cal.getTime(), this);
                 break;
             case "back":
                 goBack();
