@@ -2,15 +2,13 @@ package main.userinterface;
 
 import java.awt.event.ActionEvent;
 import main.budgetsubsys.BudgetController;
-import main.userinterface.SavingsNetworthValueForm;
-import main.userinterface.Form;
-import main.userinterface.Window;
+import main.assetsubsys.DisplayValueOfAssetsController;
 
 public class MainForm extends Form {
-    
+
     public MainForm(Window parent) {
         super(parent);
-        
+
         setGridLayout(6, 3);
 
         //addPlaceholder();
@@ -18,18 +16,21 @@ public class MainForm extends Form {
         //addPlaceholder();
         addButton("BillPayReminder_Button", "Add a Bill Reminder");
         addButton("RecordTransaction_Button", "Add a Transaction");
-        addPlaceholder();
+        //addPlaceholder();
         addButton("example", "Example Form");
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
+        addButton("autoBillPay", "Add Automatic Bill Pay");
+        addButton("value_of_assets_button", "Display Value of Assets");
+        addButton("assetValue_button", "View Value of Assets");
         addPlaceholders(2);
-        
+
     }
-    
+
     public void actionPerformed(ActionEvent event) {
         String name = buttonPressed(event);
-        
+
         switch (name) {
             case "BillPayReminder_Button":
                 changeForm(new BillPayReminderForm(this.getParent()));
@@ -51,6 +52,20 @@ public class MainForm extends Form {
             case "savings networth over time":
                 changeForm(new SavingsNetworthValueForm(this.getParent()));
                 break;
+            case "autoBillPay":
+                changeForm(new AutoBillPayForm(this.getParent()));
+                break;
+            case "assetValue_button":
+                new DisplayValueOfAssetsController(this);
+                break;
+            case "amor cal":
+                changeForm(new AmortizationCalendarForm(this.getParent()));
+                break;
+
+            case "value_of_assets_button":
+                new DisplayValueOfAssetsController(this);
+                break;
+
         }
     }
 }

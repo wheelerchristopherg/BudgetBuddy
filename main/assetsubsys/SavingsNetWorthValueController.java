@@ -26,7 +26,7 @@ public class SavingsNetWorthValueController {
         }
         Date now = new Date();
         Graph graphOfData = GraphFactory.createLineGraph(graphXData, yAxis, startDateIn, now);
-        form.setGraph(graphOfData);
+        formIn.setGraph(graphOfData);
     }
 
     private double[] savingsOverTime(Date startingDateIn) {

@@ -72,10 +72,16 @@ public class Repository {
         //assets = new ArrayList<Assets>();
         //bills = new ArrayList<Bill>();
         //billPayReminders = new ArrayList<BillPayReminder>();
+    }
+    public static void init(){
+        accountCollection = new ArrayList<Account>();
+        assetCollection = new ArrayList<Asset>();
+        //billCollection = new ArrayList<Bill>();
+        billPayReminderCollection = new ArrayList<BillPayReminder>();
         budgetCollection = new ArrayList<Budget>();
-        //budgetReports = new ArrayList<BudgetReport>();
-        //financialReports = new ArrayList<FinancialReport>();
-        loans = new ArrayList<Loan>();
+        budgetReportCollection = new ArrayList<BudgetReport>();
+        financialReportCollection = new ArrayList<FinancialReport>();
+        loanCollection = new ArrayList<Loan>();
     }
 
     public static Budget createBudget(String inName, Date inStart, Date inEnd, double inSpend){
@@ -84,8 +90,36 @@ public class Repository {
         return constructedBudget;
     }
 
-    public static void printBudgetCollection() {
-        System.out.println(budgetCollection);
+    public static FinancialReport createFinancialReport(String inText){
+        FinancialReport returnMe = new FinancialReport(inText);
+        financialReportCollection.add(returnMe);
+        return returnMe;
+    }
+
+    public static Account getAccount(String findMe){
+        Iterator<Account> itr = accountCollection.iterator();
+        while(itr.hasNext()){
+            Account checkMe = itr.next();
+            if (findMe.equals(checkMe.getName()))
+                    return checkMe;
+        }
+        return null;
+    }
+
+    public static Collection<Account> getAccountCollection(){
+        return accountCollection;
+    }
+
+    public static void printBudgetCollection(){
+        System.out.println("\n");
+        for(Budget budg : budgetCollection){
+            Collection<Category> catsList = budg.getCategories();
+            System.out.println(budg.getName());
+                    for (Category cat : catsList){
+                        System.out.println("\t" + cat + " | " + cat.getGoal());
+                    }
+            System.out.println("\n");
+        }
     }
 
 }
