@@ -12,6 +12,9 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.awt.Dimension;
 import java.awt.geom.Rectangle2D;
+import java.awt.geom.Ellipse2D;
+import java.awt.Shape;
+import java.awt.Polygon;
 
 public class Graph extends JPanel {
     
@@ -61,13 +64,13 @@ public class Graph extends JPanel {
         setMinMax(yPointData);
     }
     
-    protected Graph(double[] percentages, String[] labels) {
+    protected Graph(double[] values, String[] labels) {
         this();
         this.type = PIECHART;
         
         labelToValue = new HashMap<String, Double>();
-        for (int i = 0; i < percentages.length; i++) {
-            labelToValue.put(labels[i], percentages[i]);
+        for (int i = 0; i < values.length; i++) {
+            labelToValue.put(labels[i], values[i]);
         }
     }
     
@@ -169,7 +172,17 @@ public class Graph extends JPanel {
     }
     
     private void drawPieChart(Graphics2D g) {
+        Rectangle2D.Double Rect = new Rectangle2D.Double(0, 0, 300, 300);
+        Shape circleClip = new Ellipse2D.Double(0, 0, 300, 300);
+        Rectangle2D.Double rectClip = new Rectangle2D.Double(150, 0, 150, 300);
+        Rectangle2D.Double testRect = new Rectangle2D.Double(75, 150, 50, 50);
         
+        g.setColor(Color.BLACK);
+        g.fill(testRect);
+        g.clip(circleClip);
+        g.clip(rectClip);
+        g.setColor(Color.GREEN);
+        g.fill(Rect);
     }
     
     private void drawAmortizationCalendar(Graphics2D g) {
@@ -178,6 +191,7 @@ public class Graph extends JPanel {
         double width = (270 / yPointData.length)-2;
         double minPoint = 0;
         double midPoint = 0;
+        int midIndex = (yPointData.length % 2 == 0) ? ((yPointData.length + 1) / 2) : ((yPointData.length / 2));
         
         for (int i = 0; i < yPointData.length; i++) {
             point1 = convertPointAmor(i + 1.0, maxHeight);
@@ -186,7 +200,7 @@ public class Graph extends JPanel {
             if (i == 0) {
                 minPoint = point2[1];
             }
-            if (i == (yPointData.length / 2)) {
+            if (i == midIndex) {
                 midPoint = point2[1];
             }
             
@@ -205,7 +219,7 @@ public class Graph extends JPanel {
         
         drawAxes(g);
         g.drawString("$" + yPointData[0], 2, (int)minPoint + 5);
-        g.drawString("$" + yPointData[yPointData.length / 2], 2, (int)midPoint + 5);
+        g.drawString("$" + yPointData[midIndex], 2, (int)midPoint + 5);
         g.drawString("$" + maxY, 2, 20);
         
     }
