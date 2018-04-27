@@ -1,14 +1,19 @@
 package main.transactionsubsys;
 
 import java.io.*;
-import main.respositorysubsys.Transaction;
-import BankDataInterface;
+import main.repositorysys.Transaction;
+import main.transactionsubsys.BankDataInterface;
 
 public class BankDataController {
    
    public static Transaction parseAndMakeTransactions(String acctName, File bankFileName){
       BankDataInterface handler = new BankDataInterface();
-      String[] transactions = handler.getTransactions(acctName);
-      
+      try {
+         String[] transactions = handler.getTransactions(acctName);
+      }
+      catch(FileNotFoundException e){
+         System.out.println(e + "File Not found.");
+      }
+       return null;
    }
 }

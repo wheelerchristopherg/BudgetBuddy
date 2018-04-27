@@ -1,7 +1,10 @@
+package main.budgetsubsys;
 
 public class BudgetSystem {
-
-    public void BudgetSystem() {
+    
+    private static BudgetSystem budgetSys;
+    
+    public BudgetSystem() {
         
     }
 }

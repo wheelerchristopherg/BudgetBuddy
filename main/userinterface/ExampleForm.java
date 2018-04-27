@@ -1,44 +1,42 @@
 package main.userinterface;
 
+import main.graphsubsys.GraphFactory;
+import main.graphsubsys.Graph;
 import java.awt.event.ActionEvent;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class ExampleForm extends Form {
     
     public ExampleForm(Window parent) {
         super(parent);
         
-        setGridLayout(5, 2);
+        setGridLayout(2, 2);
         
-        addLabel("Example Form");
-        addPlaceholder();
-        addButton("button1","Print text");
-        addTextField("text1", "box 1");
-        addButton("button2","Print text");
-        addTextField("text2", "box 2");
-        addLabel("uneditable text area:");
-        addTextArea("output", 5, 20, false);
-        addButton("change","change the output");
+        double[] steps = {50, 110, 220, 370, 530, 720, 950};
+        
+        double[] x = {1, 2, 3, 4, 5, 6, 7, 8};
+        double[] y = {10, 20, 30, 30, 50, -30, 70, 80};
+        
+        
+        Date startDate = (new GregorianCalendar(2018, 4, 1)).getTime();
+        Date endDate = (new GregorianCalendar(2018, 4, 30)).getTime();
+        
+        Graph amorCal = GraphFactory.createAmortizationCalendar(1000.0, steps);
+        Graph lineGraph = GraphFactory.createLineGraph(x, y, startDate, endDate);
+        
+        add(amorCal);
+        add(lineGraph);
         addButton("back", "Back");
+        
     }
     
     public void actionPerformed(ActionEvent event) {
         String name = buttonPressed(event);
         switch (name) {
-            case "button1":
-                System.out.println(getTextFromInput("text1"));
-                break;
-            case "button2":
-                System.out.println(getTextFromInput("text2"));
-                break;
-            case "change":
-                setText("text1", "hello there, these");
-                setText("text2", "fields have changed");
-                setText("output", "Hello there\nthis field\nhas changed too\nnewline\nnewline\nnewline\nnewline\nnewline\nnewline");
-                break;
             case "back":
                 goBack();
                 break;
-            
         }
     }
 }
