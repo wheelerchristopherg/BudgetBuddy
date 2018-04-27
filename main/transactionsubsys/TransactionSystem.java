@@ -9,9 +9,15 @@ import java.util.ArrayList;
 public class TransactionSystem {
     public ArrayList<Transaction> transactions = new ArrayList<Transaction>();
 
-    public TransactionSystem() {
+    private static FilterController filterController;
 
+    public static void createFilterController(String userChoice, Date startDate, SavingsNetworthValueForm formIn) {
+        filterController = new FilterController();
     }
+
+
+    public TransactionSystem() { }
+
 
     //Loads Bill
     public void loadTransactions() {

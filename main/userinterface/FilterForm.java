@@ -13,15 +13,6 @@ public class FilterForm extends Form {
 
         setGridLayout(6, 3);
 
-        // filter transactionsubsys pl txt
-        // pl pl pl
-        // fliter by date  pl pl
-        // d1 d2 filter btn
-        // filter by category pl pl
-        // category btn
-        // back
-
-
         addLabel("Filter Transactions");
         addPlaceholder();
         addTextArea("TransactionList",100,1,false);
