@@ -7,12 +7,16 @@ public class MainForm extends Form {
     
     public MainForm(Window parent) {
         super(parent);
-        setGridLayout(3, 3);
         
+        setGridLayout(6, 3);
+
+        //addPlaceholder();
+        //addLabel("Budget Buddy");
+        //addPlaceholder();
+        addButton("BillPayReminder_Button", "Add a Bill Reminder");
+        addButton("RecordTransaction_Button", "Add a Transaction");
         addPlaceholder();
-        addLabel("Main Form");
-        addPlaceholder();
-        addButton("button1", "Example Form");
+        addButton("example", "Example Form");
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
@@ -24,7 +28,13 @@ public class MainForm extends Form {
         String name = buttonPressed(event);
         
         switch (name) {
-            case "button1":
+            case "BillPayReminder_Button":
+                changeForm(new BillPayReminderForm(this.getParent()));
+                break;
+            case "RecordTransaction_Button":
+                changeForm(new RecordTransactionForm(this.getParent()));
+                break;
+            case "example":
                 changeForm(new ExampleForm(this.getParent()));
                 break;
             case "budget":
