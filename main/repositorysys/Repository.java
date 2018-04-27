@@ -36,7 +36,7 @@ public class Repository {
         financialReportCollection.add(new FinancialReport(inText));
     }
 
-    public static getAccount(String findMe){
+    public static Account getAccount(String findMe){
         Iterator itr = accountCollection.iterator();
         while(itr.hasNext()){
             Account checkMe = itr.next();
