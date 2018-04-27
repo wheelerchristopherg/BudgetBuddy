@@ -35,7 +35,7 @@ public class Graph extends JPanel {
     private double maxHeight;
     
     private Graph() {
-        this.setSize(300, 300);
+        this.setSize(350, 350);
     }
     
     protected Graph(double[] x, double[] y, Date startDate, Date endDate) {

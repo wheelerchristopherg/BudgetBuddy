@@ -15,7 +15,7 @@ public class Main {
 
         //Create Bank Interface and generate transactions
         BankDataInterface bank = new BankDataInterface();
-        bank.generateTransactions(1000); // Comment out after first run
+        //bank.generateTransactions(1000); // Comment out after first run
         BillPayReminderController billReminderController = new BillPayReminderController();
         billReminderController.loadBillReminders();
 

@@ -23,8 +23,8 @@ public class MainForm extends Form {
         addButton("savings networth over time", "Savings Networth Over Time");
         addButton("autoBillPay", "Add Automatic Bill Pay");
         addButton("assetValue_button", "View Value of Assets");
+        addButton("amor cal", "Amortization Calendar");
 
-        addPlaceholders(2);
 
     }
 
@@ -57,6 +57,9 @@ public class MainForm extends Form {
                 break;
             case "assetValue_button":
                 new DisplayValueOfAssetsController(this);
+                break;
+            case "amor cal":
+                changeForm(new AmortizationCalendarForm(this.getParent()));
                 break;
 
         }
