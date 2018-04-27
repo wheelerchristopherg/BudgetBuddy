@@ -21,5 +21,4 @@ public class Transaction {
         return this.vendor;
     }
 
-
 }

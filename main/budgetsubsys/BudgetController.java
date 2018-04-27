@@ -27,8 +27,8 @@ public class BudgetController{
         this.budgetName = JOptionPane.showInputDialog(someForm, "Input the name of the budget");
         int L = Integer.parseInt(JOptionPane.showInputDialog(someForm, "Input the number of categories"));
         categoriesArray = new String[L];
-        this.budgetStartDate = new Date(Date.parse(JOptionPane.showInputDialog(someForm, "Input the budget start date")));
-        this.budgetEndDate = new Date(Date.parse(JOptionPane.showInputDialog(someForm, "Input the budget end date")));
+        //this.budgetStartDate = new Date(Date.parse(JOptionPane.showInputDialog(someForm, "Input the budget start date")));
+        //this.budgetEndDate = new Date(Date.parse(JOptionPane.showInputDialog(someForm, "Input the budget end date")));
         
         System.out.println(budgetStartDate);
         System.out.println(budgetEndDate);

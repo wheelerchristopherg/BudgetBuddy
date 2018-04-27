@@ -36,4 +36,8 @@ public class Budget{
         }
         return null;
     }
+
+    public Collection<Category> getCategories(){
+        return categoriesList;
+    }
 }
