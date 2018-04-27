@@ -1,4 +1,14 @@
-package main.transactionsubsys
+package main.transactionsubsys;
+
+import java.io.*;
+import main.respositorysubsys.Transaction;
+import BankDataInterface;
+
 public class BankDataController {
-   BankDataInterface handler = new BankDataInterface
+   
+   public static Transaction parseAndMakeTransactions(String acctName, File bankFileName){
+      BankDataInterface handler = new BankDataInterface();
+      String[] transactions = handler.getTransactions(acctName);
+      
+   }
 }
