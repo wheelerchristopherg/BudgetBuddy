@@ -1,5 +1,8 @@
 package main.repositorysys;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Bill {
@@ -11,10 +14,16 @@ public class Bill {
     private boolean recurrance;
     private Account desiredAccount;
 
-    public Bill(String name, double value, Date dueDate) {
+    public Bill(String name, double value, String dueDate) {
+        try {
+            DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
+            Date date = format.parse(dueDate);
+            this.dueDate = date;
+        } catch (ParseException e) {
+            // WRONG FORMAT
+        }
         this.name = name;
         this.value = value;
-        this.dueDate = dueDate;
     }
 
 
