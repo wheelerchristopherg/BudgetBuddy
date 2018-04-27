@@ -37,7 +37,7 @@ public class AmCalController {
             totalAmountPaid += interest[i];
         }
 
-        
+
 
     }
 
