@@ -25,7 +25,7 @@ public abstract class Form extends JPanel implements ActionListener {
     
     public Form(Window parent) {
         this.parent = parent;
-        this.setPreferredSize(new Dimension(640, 480));
+        this.setPreferredSize(new Dimension(1280, 960));
         this.setLayout(new GridLayout(10, 10, 3, 3));
         
         buttons = new HashMap<JButton, String>();

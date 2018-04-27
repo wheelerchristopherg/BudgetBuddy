@@ -15,7 +15,7 @@ public class Window extends JFrame {
         super("Budget Buddy");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setFocusable(true);
-        setSize(640, 480);
+        setSize(1280, 960);
         setResizable(false);
         centreWindow(this);
 
