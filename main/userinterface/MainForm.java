@@ -2,12 +2,13 @@ package main.userinterface;
 
 import java.awt.event.ActionEvent;
 import main.budgetsubsys.BudgetController;
+import main.assetsubsys.DisplayValueOfAssetsController;
 
 public class MainForm extends Form {
-    
+
     public MainForm(Window parent) {
         super(parent);
-        
+
         setGridLayout(6, 3);
 
         //addPlaceholder();
@@ -20,13 +21,15 @@ public class MainForm extends Form {
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
+        addButton("AssetValue_Button", "View Value of Assets");
+
         addPlaceholders(2);
-        
+
     }
-    
+
     public void actionPerformed(ActionEvent event) {
         String name = buttonPressed(event);
-        
+
         switch (name) {
             case "BillPayReminder_Button":
                 changeForm(new BillPayReminderForm(this.getParent()));
@@ -47,6 +50,10 @@ public class MainForm extends Form {
                 break;
             case "savings networth over time":
                 changeForm(new SavingsNetworthValueForm(this.getParent()));
+                break;
+            case "AssetValue_Button":
+                new DisplayValueOfAssetsController(this);
+                System.out.println("button clicked");
                 break;
         }
     }

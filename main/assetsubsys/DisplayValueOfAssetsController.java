@@ -1,5 +1,4 @@
 package main.assetsubsys;
-import main.repositorysys.Asset;
 import main.userinterface.Form;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -14,36 +13,28 @@ import java.io.PrintWriter;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.text.DecimalFormat;
 
 public class DisplayValueOfAssetsController {
 
-    private ArrayList<Asset> assets;
-
-
-    public void DisplayValueOfAssetsController() {
+    public DisplayValueOfAssetsController(Form form) {
 
         double assetSum = 0;
-        String csvFile = "/data/assets.csv";
         String line = "";
-        String cvsSplitBy = ",";
 
-        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("main/data/assets.csv"))) {
             while ((line = br.readLine()) != null) {
-                String[] rmdline = line.split(cvsSplitBy);
+                String[] rmdline = line.split(",");
                 assetSum += Double.parseDouble(rmdline[2]);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        sendNotification(assetSum);
+        DecimalFormat formatter = new DecimalFormat("###,###,###.00");
+        JOptionPane.showMessageDialog(form, "Value of assets: $"+ formatter.format(assetSum));
 
     } // DisplayValueOfAssetsController()
-
-    // Sends BillPay Notification to user
-    public void sendNotification(double sum) {
-        JOptionPane.showMessageDialog(null, "Value of assets: "+ sum + "!");
-    } // sendNotification()
 
 
 } // DisplayValueOfAssetsController

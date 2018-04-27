@@ -19,7 +19,7 @@ public class Main {
         BillPayReminderController billReminderController = new BillPayReminderController();
         billReminderController.loadBillReminders();
 
-        
+
         // start window
         SwingUtilities.invokeLater(
                 new Runnable() {
