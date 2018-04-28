@@ -7,29 +7,35 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class TransactionSystem {
-    public ArrayList<Transaction> transactions = new ArrayList<Transaction>();
+    public static ArrayList<Transaction> transactions = new ArrayList<Transaction>();
 
-    public static FilterController filterController;
+    private static FilterController filterController;
 
     public static void createFilterController() {
         filterController = new FilterController();
     }
 
+    public static FilterController getFilterController() {
+        return filterController;
+    }
 
-    public TransactionSystem() { }
+
+    public TransactionSystem() {
+
+    }
 
 
-    public String getAllTransactionsString() {
+    public static String getAllTransactionsString() {
         String ret = "";
-    //    for (Transaction t : transactions) {
-    //        ret += t.getTransactionString() + "\n";
-    //    }
+        for (Transaction t : transactions) {
+            ret += t.getTransactionString() + "\n";
+        }
         return ret;
     }
 
 
     //Loads Bill
-    public void loadTransactions() {
+    public static void loadTransactions() {
         String csvFile = "main/data/transactions.csv";
         String line = "";
         String cvsSplitBy = ",";
@@ -67,7 +73,7 @@ public class TransactionSystem {
         }
     }
 
-    public void addTransaction(Transaction transaction) {
+    public static void addTransaction(Transaction transaction) {
         transactions.add(transaction);
     }
 

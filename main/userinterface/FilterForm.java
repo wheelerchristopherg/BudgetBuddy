@@ -9,10 +9,6 @@ import java.text.ParseException;
 
 public class FilterForm extends Form {
 
-    private TransactionSystem transactionSystem;
-
-
-
     public FilterForm(Window parent) {
         super(parent);
 
@@ -31,8 +27,6 @@ public class FilterForm extends Form {
         addButton("f_byCategoryDate", "Filter By Date and Category");
         addButton("back", "Back");
 
-    //    String all = transactionSystem.getAllTransactionsString();
-    //    this.setText("TransactionList", all);
     } // FilterForm()
 
     public void actionPerformed(ActionEvent event) {
@@ -47,15 +41,17 @@ public class FilterForm extends Form {
                     DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
                     Date date1 = format.parse(getTextFromInput("startDate"));
                     Date date2 = format.parse(getTextFromInput("endDate"));
-                    transactionSystem.filterController.FilterByDate(getTextFromInput("accountName"), date1, date2);
-                    transactionSystem.filterController.DisplayFilteredTransactions(this, "TransactionList");
+                    TransactionSystem.getFilterController().FilterByDate(getTextFromInput("accountName"), date1, date2);
+                    TransactionSystem.getFilterController().DisplayFilteredTransactions(this, "TransactionList");
                     System.out.println("f_byDate");
-                } catch (ParseException e) { }
+                } catch (ParseException e) {
+                    System.out.println("Incorrect date format");
+                 }
                 break;
 
             case "f_byCategory":
-                transactionSystem.filterController.FilterByCategory(getTextFromInput("accountName"), getTextFromInput("category"));
-                transactionSystem.filterController.DisplayFilteredTransactions(this, "TransactionList");
+                TransactionSystem.getFilterController().FilterByCategory(getTextFromInput("accountName"), getTextFromInput("category"));
+                TransactionSystem.getFilterController().DisplayFilteredTransactions(this, "TransactionList");
                 System.out.println("f_byCategory");
                 break;
 
@@ -64,10 +60,12 @@ public class FilterForm extends Form {
                     DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
                     Date date1 = format.parse(getTextFromInput("startDate"));
                     Date date2 = format.parse(getTextFromInput("endDate"));
-                    transactionSystem.filterController.FilterByCategoryAndDate(getTextFromInput("accountName"), getTextFromInput("category"), date1, date2);
-                    transactionSystem.filterController.DisplayFilteredTransactions(this, "TransactionList");
+                    TransactionSystem.getFilterController().FilterByCategoryAndDate(getTextFromInput("accountName"), getTextFromInput("category"), date1, date2);
+                    TransactionSystem.getFilterController().DisplayFilteredTransactions(this, "TransactionList");
                     System.out.println("f_byCategoryDate");
-                } catch (ParseException e) { }
+                } catch (ParseException e) {
+                    System.out.println("Incorrect date format");
+                }
                 break;
         } // switch
 

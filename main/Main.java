@@ -12,6 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Controllers
+        TransactionSystem.loadTransactions();
 
         //Create Bank Interface and generate transactions
         BankDataInterface bank = new BankDataInterface();
@@ -19,7 +20,7 @@ public class Main {
         BillPayReminderController billReminderController = new BillPayReminderController();
         billReminderController.loadBillReminders();
 
-        
+
         // start window
         SwingUtilities.invokeLater(
                 new Runnable() {
