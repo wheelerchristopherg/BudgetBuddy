@@ -1,6 +1,9 @@
 package main.transactionsubsys;
-import main.repositorysys.Bill;
+
+import main.repositorysys.BillPayReminder;
 import main.repositorysys.Transaction;
+import main.repositorysys.Repository;
+import main.userinterface.Form;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,88 +15,60 @@ import java.io.PrintWriter;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 
 public class AutomaticBillPayController {
-    private ArrayList<Bill> billsOnAutoPay = new ArrayList<Bill>();
-
+    
+    private Form form;
+    private BillPayReminder reminder;
 
     // Save BillReminders
-    public void saveBillsOnAutoPay() {
-        try {
-            PrintWriter pw = new PrintWriter(new File("main/data/billsOnAutopay.csv"));
-            for (Bill r : billsOnAutoPay) {
-                StringBuilder sb = new StringBuilder();
-                sb.append(r.getName());
-                sb.append(',');
-                sb.append(r.getValue());
-                sb.append(',');
-                SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
-                sb.append(sdf.format(r.getDueDate()));
-                sb.append('\n');
-                pw.write(sb.toString());
-            }
-            pw.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("billreminders.csv Not Found");
-        }
-    } // saveBillsOnAutoPay()
+    
+    public AutomaticBillPayController(Form form) {
+        this.form = form;
+    }
 
-
-    public void setAutomaticBillPay(Bill bill) {
-
-        billsOnAutoPay.add(bill);
-        //saveBillsOnAutoPay();
+    public void setAutomaticBillPay(String name, double value, String dueDateString) {
+        TransactionSystem.loadBillOnAutoPay();
+        reminder = Repository.createAutomaticBillPayReminder(name, value, dueDateString);
+        TransactionSystem.saveBillsOnAutoPay();
 
     } // setAutomaticBillPay()
-
-
-    public void payBill(Bill bill) {
-        cancelAutomaticBillPay(bill);
-        saveBillsOnAutoPay();
-    } // payBIll()
 
 
     public void checkBillDates() {
 
         Date today = new Date();
 
-        for (Bill b : billsOnAutoPay) {
-            if (b.getDueDate().before(today)) {
-                payBill(b);
+        for (BillPayReminder b : Repository.getAutomaticBillPayReminders()) {
+            if (b.getReminderDate().before(today)) {
+                //sendNotification(reminder);
+                System.out.println("Bill payed: " + b.getName());
+                Repository.getAccount("cash").createTransaction(b.getName(), b.getAmount() * -1, b.getDateString());
+                
+                //Repository.getAutomaticBillPayReminders().remove(b);
             }
         }
+        
+        TransactionSystem.saveBillsOnAutoPay();
     }
 
-    TransactionSystem transys = new TransactionSystem();
-
-    public void checkSingleDate(Bill bill) {
+    public void checkSingleDate() {
         Date today = new Date();
-        if(bill.getDueDate().before(today)) {
-            sendNotification(bill);
+        if(reminder.getReminderDate().before(today)) {
+            //sendNotification(reminder);
+            System.out.println("Bill payed: " + reminder.getName());
+            Repository.getAccount("cash").createTransaction(reminder.getName(), reminder.getAmount() * -1, reminder.getDateString());
             
-            Repository.getAccount().createTransaction(bill.getName(), bill.getValue() * -1, bill.getDateString());
-            
-           
+            //Repository.getAutomaticBillPayReminders().remove(reminder);
         }
+        
+        TransactionSystem.saveBillsOnAutoPay();
     }
 
-    public void sendNotification(Bill bill) {
-        JOptionPane.showMessageDialog(null, "Pay Bill: "+ bill.getName() + "!");
+    public void sendNotification(BillPayReminder bill) {
+        JOptionPane.showMessageDialog((JPanel)form, "Pay Bill: "+ bill.getName() + "!");
     }
-
-
-    public boolean cancelAutomaticBillPay(Bill bill) {
-
-        for (Bill b : billsOnAutoPay) {
-            if (b.equals(bill)) {
-                billsOnAutoPay.remove(b);
-                b = null;
-                return true;
-            } // if compare
-        } // for : b
-
-        return false;
-    } // cancelAutomaticBillPay()
 
 } // AutomaticBillPay

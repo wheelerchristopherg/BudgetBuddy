@@ -9,8 +9,8 @@ public class GraphFactory {
     }
     
     
-    public static Graph createPieChart(double[] percentages, String[] labels) {
-        Graph pieChart = new Graph(percentages, labels);
+    public static Graph createPieChart(double[] values, String[] labels) {
+        Graph pieChart = new Graph(values, labels);
         return pieChart;
     }
     

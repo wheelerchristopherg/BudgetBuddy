@@ -3,6 +3,7 @@ package main.userinterface;
 import java.awt.event.ActionEvent;
 import main.budgetsubsys.BudgetController;
 import main.assetsubsys.DisplayValueOfAssetsController;
+import main.transactionsubsys.TransactionSystem;
 
 public class MainForm extends Form {
 
@@ -11,12 +12,8 @@ public class MainForm extends Form {
 
         setGridLayout(6, 4);
 
-        //addPlaceholder();
-        //addLabel("Budget Buddy");
-        //addPlaceholder();
         addButton("BillPayReminder_Button", "Add a Bill Reminder");
         addButton("RecordTransaction_Button", "Add a Transaction");
-        //addPlaceholder();
         addButton("example", "Example Form");
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
@@ -24,10 +21,8 @@ public class MainForm extends Form {
         addButton("autoBillPay", "Add Automatic Bill Pay");
         addButton("value_of_assets_button", "Display Value of Assets");
         addButton("amor_cal", "Amortization Calendar");
-
-
         addButton("filterTransactions_button", "Filter Transactions");
-
+        addButton("financialReport","Create a Financial Report");
 
     }
 

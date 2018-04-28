@@ -9,6 +9,7 @@ import main.repositorysys.Bill;
 import main.repositorysys.Transaction;
 import main.repositorysys.Account;
 
+
 public class BankDataInterface {
    private static String bankFileDirectory = "C:/Users/black/Desktop/BankTest/BudgetBuddy/main/transactionsubsys/Bank.txt";
    private static String dataDirectory = "C:/Users/black/Desktop/BankTest/BudgetBuddy/main/transactionsubsys/";
@@ -137,7 +138,6 @@ public class BankDataInterface {
       return numOfTransactions;
    }
 
-    TransactionSystem tsys = new TransactionSystem();
     //RecordTransactionController rtc = new RecordTransactionController();
 
     // Generate Transactions from bank
@@ -167,11 +167,11 @@ public class BankDataInterface {
             int dateLowy = 10;
             int randDatd_year = rand.nextInt((dateHighy - dateLowy) + 1) + dateLowy;
 
-            Transaction tempTransaction = new Transaction(randString, randValue,
+            
+            Repository.getAccount("cash").createTransaction(randString, randValue,
                     randDatd_month + "-" + randDatd_day + "-20" + randDatd_year);
-            tsys.addTransaction(tempTransaction);
         }
-        tsys.saveTransactions(); //Save the transactions
+        TransactionSystem.saveTransactions(); //Save the transactions
 
     }
 

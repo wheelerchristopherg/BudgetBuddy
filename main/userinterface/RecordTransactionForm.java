@@ -29,14 +29,7 @@ public class RecordTransactionForm extends Form {
         addButton("submit", "Add Transaction");
         addButton("back", "Back");
 
-        // Transaction List
-
-        TransactionSystem tsys = new TransactionSystem();
-        tsys.loadTransactions();
-        for (Transaction t : tsys.transactions) {
-            transactionList += t.getCategory() + ",\t" + t.getValue() + ",\t" + t.getDateString() + "\n";
-        }
-        setText("TransactionList", transactionList);
+        TransactionSystem.createRecordTransactionController(this);
     }
 
     public void actionPerformed(ActionEvent event) {
@@ -47,11 +40,9 @@ public class RecordTransactionForm extends Form {
                 String transaction_type = getTextFromInput("transaction_type");
                 double transaction_value = Double.parseDouble(getTextFromInput("transaction_value"));
                 String transaction_date = getTextFromInput("transaction_date");
-                RecordTransactionController rTrans = new RecordTransactionController();
-                Transaction t = new Transaction(transaction_type, transaction_value, transaction_date);
-                transactionList += t.getCategory() + ",\t" + t.getValue() + ",\t" + t.getDateString() + "\n";
-                setText("TransactionList", transactionList);
-                rTrans.recordTransaction(t);
+                
+                TransactionSystem.getRecordTransactionController().recordTransaction(transaction_type, transaction_value, transaction_date);
+                TransactionSystem.getRecordTransactionController().getTransactions();
                 break;
             case "back":
                 goBack();

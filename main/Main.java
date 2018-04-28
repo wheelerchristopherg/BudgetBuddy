@@ -16,7 +16,8 @@ public class Main {
     public static void main(String[] args)throws FileNotFoundException{
         String acctName = "account1";
         File bankFile = new File("Bank.txt");
-
+        Repository.createAccount("cash", "cash", 0.0, 0.0);
+        
         // Controllers
 
 
@@ -26,9 +27,14 @@ public class Main {
 
 
         //bank.generateTransactions(1000); // Comment out after first run
-        BillPayReminderController billReminderController = new BillPayReminderController();
-        billReminderController.loadBillReminders();
-
+        
+        TransactionSystem.loadCashTransactions();
+        TransactionSystem.loadBillOnAutoPay();
+        TransactionSystem.createAutomaticBillPayController(null);
+        
+        // Check Dates
+        TransactionSystem.getAutomaticBillPayController().checkBillDates();
+        
         // start window
         SwingUtilities.invokeLater(
                 new Runnable() {
@@ -36,13 +42,7 @@ public class Main {
                         new Window();
                     }
                 });
-
-
-        // Check Dates
-        billReminderController.checkDate();
-
-
-
+        
     }
 
 }
