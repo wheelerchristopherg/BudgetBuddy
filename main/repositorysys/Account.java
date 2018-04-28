@@ -52,7 +52,6 @@ public class Account {
   public void setInterestRate(double interestRate){
     this.interestRate = interestRate;
   }
-
   
   public Transaction createTransaction(String inCat, double inVal, String inDate){
     Transaction zTransaction = new Transaction(inCat, inVal, inDate);

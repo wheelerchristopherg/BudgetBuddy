@@ -1,5 +1,6 @@
 package main.transactionsubsys;
 import java.util.*;
+import java.text.SimpleDateFormat;
 import main.repositorysys.Repository;
 import main.userinterface.Form;
 import main.repositorysys.Transaction;
@@ -14,12 +15,13 @@ public class FinancialReportController {
     public void displayFinancialReport(Form zForm, String textAreaName){
         // The way setText works, you submit one large thing of "buildText"-- we will need to build it!
         String buildText = new String("");
+        SimpleDateFormat sdf = new SimpleDateFormat();
         for(Account acc : Repository.getAccountCollection()){
             // add the Account title to the buildText
             buildText = buildText+acc.getName()+"\n"+acc.getType()+"\n$"+acc.getBalance()+"\n"+acc.getInterestRate()+"%\n";
             for(Transaction trans : acc.getTransactions()){
                 // Add to the buildText the transaction vendor, category, value,and date
-                buildText = buildText+"\t"+"\n"+trans.getCategory()+"\n"+trans.getDate()+"\n$"+trans.getValue()+"\n";
+                buildText = buildText+"\t"+"\n"+trans.getCategory()+"\n"+sdf.getDateInstance().format(trans.getDate())+"\n$"+trans.getValue()+"\n";
             }
         }
         //System.out.println("Setting zForm to the buildText...");
