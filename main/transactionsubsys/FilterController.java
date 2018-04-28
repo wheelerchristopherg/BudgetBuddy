@@ -8,11 +8,11 @@ import main.repositorysys.Transaction;
 public class FilterController {
 
     String buildText;
-    Collection<Account> accColl;
 
     public void FilterController() {
         buildText = "";
     }
+
     public void FilterByCategory(String acc_lookup,String targetCat){
         Account acc = Repository.getAccount(acc_lookup);
         for(Transaction trans : acc.getTransactions()){

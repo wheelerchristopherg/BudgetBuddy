@@ -1,13 +1,15 @@
 package main.userinterface;
-
-import main.graphsubsys.GraphFactory;
-import main.graphsubsys.Graph;
 import java.awt.event.ActionEvent;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import main.transactionsubsys.TransactionSystem;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.text.ParseException;
 
 public class FilterForm extends Form {
+
+    private static TransactionSystem transactionSystem;
 
     public FilterForm(Window parent) {
         super(parent);
@@ -15,23 +17,21 @@ public class FilterForm extends Form {
         setGridLayout(6, 3);
 
         addLabel("Filter Transactions");
-        addPlaceholder();
+        addTextField("accountName", "Enter Account Name");
         addTextArea("TransactionList",100,1,false);
-        addTextField("billpay_name", "Start Date (mm-dd-yyyy)");
-        addTextField("billpay_amount", "End Date (mm-dd-yyyy)");
-        addButton("submit", "Filter By Date");
-        addTextField("billpay_name", "Filter by Category");
+        addTextField("startDate", "Start Date (mm-dd-yyyy)");
+        addTextField("endDate", "End Date (mm-dd-yyyy)");
+        addButton("fByDate", "Filter By Date");
+        addTextField("category", "Filter by Category");
         addPlaceholder();
-        addButton("submit", "Filter By Category");
+        addButton("f_byCategory", "Filter By Category");
         addPlaceholder();
         addPlaceholder();
         addPlaceholder();
-
         addButton("back", "Back");
 
-
-        transactionSystem.loadTransactions();
-
+        String all = transactionSystem.getAllTransactionsString();
+        this.setText("TransactionList", all);
     }
 
     public void actionPerformed(ActionEvent event) {
@@ -39,6 +39,20 @@ public class FilterForm extends Form {
         switch (name) {
             case "back":
                 goBack();
+                break;
+
+            case "f_byDate":
+                try {
+                    DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
+                    Date date1 = format.parse(getTextFromInput("startDate"));
+                    Date date2 = format.parse(getTextFromInput("endDate"));
+                    transactionSystem.filterController.FilterByDate(getTextFromInput("accountName"), date1, date2);
+                } catch (ParseException e) { }
+                break;
+
+            case "f_byCategory":
+                transactionSystem.filterController.FilterByCategory(getTextFromInput("accountName"), getTextFromInput("category"));
+                transactionSystem.filterController.DisplayFilteredTransactions(this, "TransactionList");
                 break;
         }
     }

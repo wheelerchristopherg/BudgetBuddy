@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class TransactionSystem {
     public ArrayList<Transaction> transactions = new ArrayList<Transaction>();
 
-    private static FilterController filterController;
+    public static FilterController filterController;
 
     public static void createFilterController() {
         filterController = new FilterController();
@@ -17,6 +17,15 @@ public class TransactionSystem {
 
 
     public TransactionSystem() { }
+
+
+    public String getAllTransactionsString() {
+        String ret = "";
+    //    for (Transaction t : transactions) {
+    //        ret += t.getTransactionString() + "\n";
+    //    }
+        return ret;
+    }
 
 
     //Loads Bill
