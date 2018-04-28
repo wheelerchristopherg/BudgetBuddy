@@ -11,11 +11,62 @@ public class BankDataInterface {
    private static String dataDirectory = "C:/Users/black/Desktop/BankTest/BudgetBuddy/main/transactionsubsys/";
 
 
+   public BankDataInterface() {
+       System.out.println("top of bank interface");
+       parseBills();
+   }
 
-   public static void getAccounts() {
+   // this is a helper method for parseBills() and parseAcccounts()
+   // inputs: filepath of csv file
+   // outputs: 2d list of data in csv file
+   public static ArrayList<String[]> parseGenericCSV(String filepath) {
+       System.out.println("top of bank parseGeneric");
+
+       String line = "";
+       ArrayList<String[]> result();
+
+       try (BufferedReader bra = new BufferedReader(new FileReader(filepath))) {
+           while ((line = bra.readLine()) != null) {
+               result.add(line.split(","));
+           } // while
+       } catch (IOException e) {
+           e.printStackTrace();
+       } // catch
+
+       return result;
+   } // parseGenericCSV
+
+//    public Bill(String name, double value, String dueDateString) {
+
+   public static void paseBills() {
+       System.out.println("top of bank parse bills");
+
+       String billFilePath = "/main/data/bank/bills.csv";
+       ArrayList<String[]>  parsedData = parseGenericCSV(billFilePath);
+
+       for (String[] dat : parsedData) {
+
+           Double value = Double.Double.parseDouble(dat[1]);
+           Bill b = new Bill(dat[0], value, dat[2]);
+           Repository.addBill(b);
+
+           System.out.println(dat);
+
+       }
+
+   } // paseBills()
+
+
+   public static void parseAccounts() {
+       String accountsFilePath = "/main/data/bank/bills.csv";
+
 
 
    } // getAccounts()
+
+
+
+
 
 
    public static boolean accountExists(String acctName)throws FileNotFoundException{

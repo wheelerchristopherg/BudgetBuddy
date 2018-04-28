@@ -65,7 +65,6 @@ public class MainForm extends Form {
                 new DisplayValueOfAssetsController(this);
                 break;
 
-
             case "filterTransactions_button":
                 changeForm(new FilterForm(this.getParent()));
                 break;

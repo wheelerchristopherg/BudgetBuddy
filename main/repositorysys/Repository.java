@@ -16,7 +16,7 @@ public class Repository {
 
     private static Collection<Account> accountCollection = new ArrayList<Account>();
     private static Collection<Asset> assetCollection = new ArrayList<Asset>();
-    //private static Collection<Bill> billCollection;
+    private static Collection<Bill> billCollection = new ArrayList<Bill>();
     private static Collection<BillPayReminder> billPayReminderCollection = new ArrayList<BillPayReminder>();
     private static Collection<Budget> budgetCollection = new ArrayList<Budget>();
     private static Collection<BudgetReport> budgetReportCollection = new ArrayList<BudgetReport>();
@@ -78,6 +78,11 @@ public class Repository {
         loanCollection = new ArrayList<Loan>();
     }
 
+    public static Bill addBill(Bill b) {
+        billCollection.add(b);
+        return b;
+    } // addBill()
+
     public static Account createAccount(String inName, String inType, double inBal, double inRate){
         Account zAccount = new Account(inName, inType, inBal, inRate);
         accountCollection.add(zAccount);
@@ -125,7 +130,7 @@ public class Repository {
         else
             System.out.println("You don't have any budgets!");
     }
-    
+
     public static void createLoan(String nameIn, double amountIn, double interestRateIn, double monthlyPaymentIn, Date startDateIn) {
         loanCollection.add(new Loan(nameIn, amountIn, interestRateIn, monthlyPaymentIn, startDateIn));
     }
