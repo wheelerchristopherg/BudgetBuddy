@@ -9,7 +9,15 @@ import main.repositorysys.Transaction;
 public class BankDataInterface {
    private static String bankFileDirectory = "C:/Users/black/Desktop/BankTest/BudgetBuddy/main/transactionsubsys/Bank.txt";
    private static String dataDirectory = "C:/Users/black/Desktop/BankTest/BudgetBuddy/main/transactionsubsys/";
-   
+
+
+
+   public static void getAccounts() {
+
+
+   } // getAccounts()
+
+
    public static boolean accountExists(String acctName)throws FileNotFoundException{
       File bankFile = new File(bankFileDirectory);
       if(bankFile.exists() != true){
@@ -18,7 +26,7 @@ public class BankDataInterface {
       if(bankFile.canRead() != true){
          return false;
       }
-      
+
       Scanner bankScan = new Scanner(bankFile);
       String line = bankScan.nextLine();
       System.out.println(acctName);
@@ -31,7 +39,7 @@ public class BankDataInterface {
       }
       return false;
    }
-   
+
    public static boolean loanExists(String acctName, String bankFileName, String loanName)throws FileNotFoundException{
       if(accountExists(acctName) != true){
          return false;
@@ -46,7 +54,7 @@ public class BankDataInterface {
       }
       return false;
    }
-   
+
    public static String[] getTransactions(String acctName)throws FileNotFoundException{
       if(accountExists(acctName) != true){
          throw new FileNotFoundException("Account Not Found.");
@@ -54,7 +62,7 @@ public class BankDataInterface {
       File acctTransFile = new File(dataDirectory + acctName + "Transactions.txt");
       Scanner transScan = new Scanner(acctTransFile);
       int num = getNumOfTransactions(acctName);
-      
+
       String line = null;
       String[] transactions = new String[num];
       int index = 0;
@@ -63,10 +71,10 @@ public class BankDataInterface {
          line = transScan.nextLine();
          index++;
       }
-      
+
       return transactions;
    }
-   
+
    public static int getNumOfTransactions(String acctName){
       int numOfTransactions = 0;
       File acctTransFile1 = new File(dataDirectory + acctName + "Transactions.txt");
@@ -84,7 +92,7 @@ public class BankDataInterface {
       }
       return numOfTransactions;
    }
-   
+
     TransactionSystem tsys = new TransactionSystem();
     //RecordTransactionController rtc = new RecordTransactionController();
 
