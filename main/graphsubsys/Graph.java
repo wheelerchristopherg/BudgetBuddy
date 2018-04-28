@@ -228,8 +228,12 @@ public class Graph extends JPanel {
             g.setClip(0,0,350, 350);
         }
         
-        g.setColor(Color.BLACK);
         
+        
+        for (int i = 0; i < 4 && i + j < labels.length; i++) {
+            g.setColor(colors[i]);
+            g.fillRect();
+        }
         
     }
     
