@@ -7,46 +7,42 @@ import main.repositorysys.Transaction;
 
 public class FilterController {
 
-    String buildText;
+    String buildText = "";
 
-    public void FilterController() {
-        buildText = "";
-    }
-
-    public void FilterByCategory(String acc_lookup,String targetCat) {
-        System.out.println("FilterByCategory");
-        System.out.println(Repository.getAccount(acc_lookup));
-
-        Account acc = Repository.getAccount(acc_lookup);
-    //    for(Transaction trans : acc.getTransactions()){
-    //        if (trans.getCategory().equals(targetCat))
-    //            buildText = buildText+"\t"+"\n"+trans.getCategory()+"\n"+trans.getDate()+"\n$"+trans.getValue()+"\n";
-    //    }
-    }
-
+    public void FilterByCategory(String acc_lookup, String targetCat) {
+        this.buildText = "";
+        for (Transaction t : Repository.getAccount(acc_lookup).getTransactions())
+            if (categoryMatches(t, targetCat))
+                this.buildText += "\t\n" + t.getTransactionString();
+    } // FilterByCategory()
 
     public void FilterByDate(String acc_lookup, Date targetStart, Date targetEnd) {
-        System.out.println("FilterByDate");
+        this.buildText = "";
+        for (Transaction t : Repository.getAccount(acc_lookup).getTransactions())
+            if (withinDates(t, targetStart, targetEnd))
+                this.buildText += "\t\n" + t.getTransactionString();
+    } // FilterByDate()
 
-        Account acc = Repository.getAccount(acc_lookup);
-        System.out.println("account is: " + acc);
-        //for(Transaction trans : acc.getTransactions()){
-        //    if(trans.getDate().after(targetStart) && trans.getDate().before(targetEnd))
-        //        buildText = buildText+"\t"+"\n"+trans.getCategory()+"\n"+trans.getDate()+"\n$"+trans.getValue()+"\n";
-        //}
-    }
+    public void FilterByCategoryAndDate(String acc_lookup, String targetCat, Date targetStart, Date targetEnd) {
+        this.buildText = "";
+        for (Transaction t : Repository.getAccount(acc_lookup).getTransactions())
+            if (categoryMatches(t, targetCat) && withinDates(t, targetStart, targetEnd))
+                this.buildText += "\t\n" + t.getTransactionString();
+    } // FilterByCategoryAndDate()
 
-
-    public void FilterByCategoryAndDate(String acc_lookup, String targetCat, Date targetStart, Date targetEnd){
-        Account acc = Repository.getAccount(acc_lookup);
-        for(Transaction trans : acc.getTransactions()) {
-            if(trans.getDate().after(targetStart) && trans.getDate().before(targetEnd) && trans.getCategory().equals(targetCat))
-                buildText = buildText+"\t"+"\n"+trans.getCategory()+"\n"+trans.getDate()+"\n$"+trans.getValue()+"\n";
-        }
-    }
-
-
+    // Display this.buildText
     public void DisplayFilteredTransactions(Form zForm, String textAreaName) {
         zForm.setText(textAreaName, this.buildText);
-    }
-}
+    } // DisplayFilteredTransactions()
+
+    // added this for readability
+    private Boolean categoryMatches(Transaction t, String c) {
+        return t.getCategory().equals(c);
+    } // categoryMatches()
+
+    // added this for readability
+    private Boolean withinDates(Transaction t, Date d1, Date d2) {
+        return d1.before(t.getDate()) && d2.after(t.getDate());
+    } // withinDates()
+
+} // FilterController
