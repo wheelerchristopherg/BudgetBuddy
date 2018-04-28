@@ -24,7 +24,10 @@ public class MainForm extends Form {
         addButton("autoBillPay", "Add Automatic Bill Pay");
         addButton("value_of_assets_button", "Display Value of Assets");
         addButton("amor_cal", "Amortization Calendar");
+
+
         addButton("filterTransactions_button", "Filter Transactions");
+
 
     }
 
@@ -61,8 +64,13 @@ public class MainForm extends Form {
             case "value_of_assets_button":
                 new DisplayValueOfAssetsController(this);
                 break;
+
+
             case "filterTransactions_button":
                 changeForm(new FilterForm(this.getParent()));
+                break;
+            case "financialReport":
+                changeForm(new FinancialReportForm(this.getParent()));
                 break;
 
         }

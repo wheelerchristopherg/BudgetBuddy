@@ -22,7 +22,7 @@ public class Transaction {
   public Transaction(String category, double value, String transDate) {
       this.dateString = transDate;
       try {
-          DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
+          DateFormat format = new SimpleDateFormat("MM/dd/yyyy");
           Date date = format.parse(transDate);
           this.date = date;
       } catch (ParseException e) {
