@@ -115,7 +115,6 @@ public class Repository {
 
     public static void createLoan(String nameIn, double amountIn, double interestRateIn, double monthlyPaymentIn, Date startDateIn) {
         loanCollection.add(new Loan(nameIn, amountIn, interestRateIn, monthlyPaymentIn, startDateIn));
-        System.out.println(loanCollection.size());
     }
 
     public static BillPayReminder createAutomaticBillPayReminder(String name, double value, String dueDateString) {

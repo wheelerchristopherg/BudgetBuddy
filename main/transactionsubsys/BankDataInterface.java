@@ -58,10 +58,8 @@ public class BankDataInterface {
                 System.out.println("Incorrect date format");
             } // catch
         } // for
-        
+
     } // getAccounts()
-
-
 
 
    public static void parseAccounts() {
