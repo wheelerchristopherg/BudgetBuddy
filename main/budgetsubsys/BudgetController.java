@@ -32,8 +32,8 @@ public class BudgetController{
         this.budgetStartDate = sdf.parse(JOptionPane.showInputDialog(someForm, "Input the budget start date in the format DD/MM/YYYY"),new ParsePosition(0));
         this.budgetEndDate = sdf.parse(JOptionPane.showInputDialog(someForm, "Input the budget end date in the format DD/MM/YYYY"),new ParsePosition(0));
 
-        System.out.println(budgetStartDate);
-        System.out.println(budgetEndDate);
+        //System.out.println(budgetStartDate);
+        //System.out.println(budgetEndDate);
         
         this.spendingCap = Double.parseDouble(JOptionPane.showInputDialog(someForm, "Input the budget's overall spendingCap"));
         for (int i = 0; i<L; i++){
@@ -69,7 +69,7 @@ public class BudgetController{
     }
 
     private void overSum(){
-        //JOptionPane.createDialog("Your spending goals sum to more than your spending cap! Retry.");
+        JOptionPane.showMessageDialog(null,"Your spending goals sum to more than your spending cap! Retry.");
         Arrays.fill(spendingGoalsData, 0);
     }
 
@@ -80,7 +80,7 @@ public class BudgetController{
         int i = 0;
         boolean searchDone = false;
         while (!searchDone) {
-            if (categoriesArray[i].equals("Other") || categoriesArray[i] == null)
+            if (i >= categoriesArray.length || categoriesArray[i].equals("Other") || categoriesArray[i] == null)
                 searchDone = true;
             else
                 i++;
@@ -111,7 +111,6 @@ public class BudgetController{
         currentState = 5;
         //Repository.createBudget(budgetName, budgetStartDate, budgetEndDate, categoriesArray, spendingCap, spendingGoalsData);
         Budget nuevoBudget = Repository.createBudget(budgetName, budgetStartDate, budgetEndDate, spendingCap);
-        // Categories?
         for(int e = 0; e < categoriesArray.length; e++){
             nuevoBudget.createCategory(categoriesArray[e],spendingGoalsData[e]);
         }

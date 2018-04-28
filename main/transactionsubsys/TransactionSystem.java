@@ -1,30 +1,45 @@
 package main.transactionsubsys;
 
-import main.repositorysys.Transaction;
+import main.repositorysys.Account;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class TransactionSystem {
-    public ArrayList<Transaction> transactions = new ArrayList<Transaction>();
-
-    public TransactionSystem() {
-
-    }
 
     //Loads Bill
-    public void loadTransactions() {
+    public static void loadCashTransactions() {
+        
         String csvFile = "main/data/transactions.csv";
         String line = "";
         String cvsSplitBy = ",";
+        
+        Account cash = Repository.createAccount("cash", "cash", 0.0, 0.0);
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
             while ((line = br.readLine()) != null) {
                 String[] rmdline = line.split(cvsSplitBy);
                 double amount = Double.parseDouble(rmdline[1]);
-                Transaction temprmd = new Transaction(rmdline[0], amount, rmdline[2]);
-                addTransaction(temprmd);
+                cash.createTransaction(rmdline[0], amount, rmdline[2]);
+                
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public void loadBillOnAutoPay() {
+        String csvFile = "main/data/billsOnAutopay.csv";
+        String line = "";
+        String cvsSplitBy = ",";
+
+        try (BufferedReader bra = new BufferedReader(new FileReader(csvFile))) {
+            while ((line = bra.readLine()) != null) {
+                String[] rmdline = line.split(cvsSplitBy);
+                double amount = Double.parseDouble(rmdline[1]);
+                Bill bill = new Bill(rmdline[0], amount, rmdline[2]);
+                setAutomaticBillPay(bill);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -32,10 +47,13 @@ public class TransactionSystem {
     }
 
     // Save BillReminders
-    public void saveTransactions() {
+    public static void saveTransactions() {
+        
+        Account cash = Repository.getAccount("cash");
+        
         try {
             PrintWriter pw = new PrintWriter(new File("main/data/transactions.csv"));
-            for (Transaction t : transactions) {
+            for (Transaction t : cash.getTransactions()) {
                 StringBuilder sb = new StringBuilder();
                 sb.append(t.getCategory());
                 sb.append(',');
@@ -51,11 +69,4 @@ public class TransactionSystem {
             System.out.println("transactions.csv Not Found");
         }
     }
-
-    public void addTransaction(Transaction transaction) {
-        transactions.add(transaction);
-    }
-
-
-    // This is where all transactions are stored
 }

@@ -9,9 +9,11 @@ public class BillPayReminder {
 
     private String name;
     private double amount;
+    private String accountName;
     private Date reminderDate; // MM-dd-yyyy Format
+    private boolean isAutomatic;
 
-    public BillPayReminder(String name, double amount, String reminderDate) {
+    public BillPayReminder(String name, double amount, String reminderDate, String accountName, boolean isAutomatic) {
         try {
             DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
             Date date = format.parse(reminderDate);
@@ -21,6 +23,8 @@ public class BillPayReminder {
         }
         this.name = name;
         this.amount = amount;
+        this.accountName = accountName;
+        this.isAutomatic
 
     }
 
@@ -45,6 +49,10 @@ public class BillPayReminder {
 
     public Date getReminderDate() {
         return reminderDate;
+    }
+    
+    public String getAccountName() {
+        return accountName;
     }
 
 }

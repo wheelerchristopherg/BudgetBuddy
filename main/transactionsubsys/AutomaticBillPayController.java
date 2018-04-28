@@ -17,23 +17,6 @@ import javax.swing.JOptionPane;
 public class AutomaticBillPayController {
     private ArrayList<Bill> billsOnAutoPay = new ArrayList<Bill>();
 
-    public void loadBillOnAutoPay() {
-        String csvFile = "main/data/billsOnAutopay.csv";
-        String line = "";
-        String cvsSplitBy = ",";
-
-        try (BufferedReader bra = new BufferedReader(new FileReader(csvFile))) {
-            while ((line = bra.readLine()) != null) {
-                String[] rmdline = line.split(cvsSplitBy);
-                double amount = Double.parseDouble(rmdline[1]);
-                Bill bill = new Bill(rmdline[0], amount, rmdline[2]);
-                setAutomaticBillPay(bill);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
 
     // Save BillReminders
     public void saveBillsOnAutoPay() {
@@ -88,10 +71,10 @@ public class AutomaticBillPayController {
         Date today = new Date();
         if(bill.getDueDate().before(today)) {
             sendNotification(bill);
-            transys.loadTransactions();
-            Transaction transaction = new Transaction(bill.getName(), bill.getValue(), bill.getDateString());
-            transys.addTransaction(transaction);
-            transys.saveTransactions();
+            
+            Repository.getAccount().createTransaction(bill.getName(), bill.getValue() * -1, bill.getDateString());
+            
+           
         }
     }
 
