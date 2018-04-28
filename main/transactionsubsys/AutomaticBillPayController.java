@@ -44,7 +44,7 @@ public class AutomaticBillPayController {
             if (b.getReminderDate().before(today)) {
                 sendNotification(reminder);
             
-                Repository.getAccount("cash").createTransaction(bill.getName(), bill.getAmount() * -1, bill.getDateString());
+                Repository.getAccount("cash").createTransaction(b.getName(), b.getAmount() * -1, b.getDateString());
                 
                 Repository.getAutomaticBillPayReminders().remove(b);
             }
@@ -56,9 +56,9 @@ public class AutomaticBillPayController {
         if(reminder.getReminderDate().before(today)) {
             sendNotification(reminder);
             
-            Repository.getAccount("cash").createTransaction(bill.getName(), bill.getAmount() * -1, bill.getDateString());
+            Repository.getAccount("cash").createTransaction(reminder.getName(), reminder.getAmount() * -1, reminder.getDateString());
             
-            Repository.getAutomaticBillPayReminders().remove(b);
+            Repository.getAutomaticBillPayReminders().remove(reminder);
         }
     }
 
