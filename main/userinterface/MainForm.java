@@ -25,6 +25,7 @@ public class MainForm extends Form {
         addButton("value_of_assets_button", "Display Value of Assets");
         addButton("assetValue_button", "View Value of Assets");
         addButton("amor_cal", "Amortization Calendar");
+        addButton("financialReport","Create a Financial Report");
 
     }
 
@@ -66,7 +67,9 @@ public class MainForm extends Form {
             case "value_of_assets_button":
                 new DisplayValueOfAssetsController(this);
                 break;
-
+            case "financialReport":
+                changeForm(new FinancialReportForm(this.getParent()));
+                break;
         }
     }
 }
