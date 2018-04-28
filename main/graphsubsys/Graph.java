@@ -183,7 +183,7 @@ public class Graph extends JPanel {
             } else {
                 cummulativeAngles[i] = cummulativeAngles[i - 1] + angles[i];
             }
-            System.out.println("cummulativeAngles[" + i + "]: " + cummulativeAngles[i]);
+            
         }
         
         Color[] colors = {Color.RED, Color.BLUE, Color.GREEN, Color.ORANGE, Color.MAGENTA, Color.YELLOW, Color.PINK, Color.CYAN};
@@ -205,8 +205,7 @@ public class Graph extends JPanel {
             g.clip(wedgeClip);
             
             while (prevAngle < currentAngle) {
-                System.out.println("slice: " + slice);
-                System.out.println("current slice angle: " + cummulativeAngles[slice]);
+                
                 g.setColor(colors[slice]);
                 Path2D.Double wedge = new Path2D.Double();
                 wedge.moveTo(center[0], center[1]);
@@ -230,9 +229,17 @@ public class Graph extends JPanel {
         
         
         
-        for (int i = 0; i < 4 && i + j < labels.length; i++) {
+        for (int i = 0; i < 4 && i < labels.length; i++) {
             g.setColor(colors[i]);
-            g.fillRect();
+            g.fillRect(10 + i*75, 265, 10, 10);
+            g.setColor(Color.BLACK);
+            g.drawString(labels[i], 22 + i*75, 275);
+        }
+        for (int i = 0; i < 4 && i < labels.length - 4; i++) {
+            g.setColor(colors[i + 4]);
+            g.fillRect(10 + i*75, 285, 10, 10);
+            g.setColor(Color.BLACK);
+            g.drawString(labels[i + 4], 22 + i*75, 295);
         }
         
     }
