@@ -13,7 +13,7 @@ public class BillPayReminderForm extends Form {
 
         setGridLayout(4, 2);
 
-        addLabel("Example Form");
+        addLabel("Add Bill Reminder");
         addPlaceholder();
         addTextField("reminder_name", "Bill Name");
         addTextField("reminder_amount", "Bill Amount (numbers only)");

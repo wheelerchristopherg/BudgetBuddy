@@ -3,6 +3,7 @@ package main.userinterface;
 import java.awt.event.ActionEvent;
 import main.repositorysys.FinancialReport;
 import main.transactionsubsys.FinancialReportController;
+import javax.swing.JOptionPane;
 
 public class FinancialReportForm extends Form {
     public FinancialReportForm(Window parent){
@@ -15,6 +16,8 @@ public class FinancialReportForm extends Form {
         addButton("submit", "Generate Financial Report");
         addTextArea("finRepArea",40,200,false);
         addButton("back","Back");
+        addButton("export", "Export Financial Report");
+
     }
 
 
@@ -24,6 +27,10 @@ public class FinancialReportForm extends Form {
         switch (name) {
             case "submit":
                 frc.displayFinancialReport(this,"finRepArea");
+                break;
+            case "export":
+                frc.exportReportToTextFile();
+                JOptionPane.showMessageDialog(this, "Report Exported!");
                 break;
             case "back":
                 goBack();

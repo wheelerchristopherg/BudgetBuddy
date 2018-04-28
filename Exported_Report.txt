@@ -1,0 +1,8169 @@
+cash
+cash
+$0.0
+0.0%
+	
+Gift
+Sep 11, 2017
+$-6535.29
+	
+DSADF
+Jan 22, 2010
+$-1001.0
+	
+asdfasdf
+Jan 20, 2010
+$-100.0
+	
+testtransautopay
+Feb 24, 2011
+$-4206969.0
+	
+DSADF
+Jan 22, 2010
+$-1001.0
+	
+asdfasdf
+Jan 20, 2010
+$-100.0
+	
+DSADF
+Jan 22, 2010
+$-1001.0
+	
+asdfasdf
+Jan 20, 2010
+$-100.0
+	
+asdfasdf
+Jan 20, 2010
+$-100.0
+	
+testtransautopay
+Feb 24, 2011
+$-4206969.0
+	
+test2
+Apr 24, 2011
+$-10000.0
+	
+test5
+Feb 12, 2010
+$-100.0
+	
+rent
+Apr 28, 2018
+$-400.0
+	
+test2
+Mar 4, 2012
+$-1000.0
+	
+dupe
+Feb 22, 2002
+$-10000.0
+	
+dupe2
+Mar 3, 2003
+$-20000.0
+	
+dupe2
+Mar 3, 2003
+$-20000.0
+	
+dupe5
+Feb 22, 2222
+$10000.0
+	
+DSADF
+Jan 22, 2010
+$-1001.0
+	
+asdfasdf
+Jan 20, 2010
+$-100.0
+	
+DSADF
+Jan 22, 2010
+$-1001.0
+	
+asdfasdf
+Jan 20, 2010
+$-100.0
+	
+asdfasdf
+Jan 20, 2010
+$-100.0
+	
+testtransautopay
+Feb 24, 2011
+$-4206969.0
+	
+test2
+Apr 24, 2011
+$-10000.0
+	
+test5
+Feb 12, 2010
+$-100.0
+	
+rent
+Apr 28, 2018
+$-400.0
+	
+test2
+Mar 4, 2012
+$-1000.0
+	
+dupe
+Feb 22, 2002
+$-10000.0
+	
+dupe2
+Mar 3, 2003
+$-20000.0
+	
+dupe2
+Mar 3, 2003
+$-20000.0
+	
+AHHHHHHHHHHHHH
+Nov 11, 1111
+$3.243423423E9
+	
+DSADF
+Jan 22, 2010
+$-1001.0
+	
+asdfasdf
+Jan 20, 2010
+$-100.0
+	
+DSADF
+Jan 22, 2010
+$-1001.0
+	
+asdfasdf
+Jan 20, 2010
+$-100.0
+	
+asdfasdf
+Jan 20, 2010
+$-100.0
+	
+testtransautopay
+Feb 24, 2011
+$-4206969.0
+	
+test2
+Apr 24, 2011
+$-10000.0
+	
+test5
+Feb 12, 2010
+$-100.0
+	
+rent
+Apr 28, 2018
+$-400.0
+	
+test2
+Mar 4, 2012
+$-1000.0
+	
+dupe
+Feb 22, 2002
+$-10000.0
+	
+dupe2
+Mar 3, 2003
+$-20000.0
+	
+dupe2
+Mar 3, 2003
+$-20000.0
+life_savings
+savings
+$1.0
+0.01%
+	
+Bill
+Jan 20, 2016
+$-4206.4
+	
+Bill
+Oct 8, 2010
+$-5071.35
+	
+Games
+Feb 12, 2012
+$-196.73
+	
+Office
+Nov 28, 2014
+$-2220.11
+	
+Gift
+Dec 17, 2014
+$-7672.65
+	
+Medical
+Dec 15, 2017
+$-776.09
+	
+Insurance
+Apr 20, 2017
+$-9531.58
+	
+Games
+Sep 2, 2013
+$-2566.37
+	
+Fuel
+Nov 28, 2014
+$3710.66
+	
+Office
+Aug 9, 2017
+$-8524.97
+	
+Games
+Mar 15, 2016
+$5582.44
+	
+Insurance
+Dec 10, 2013
+$1875.17
+	
+Office
+Jun 15, 2016
+$-9700.88
+	
+Games
+May 22, 2018
+$7660.52
+	
+Supplies
+Dec 1, 2014
+$2448.72
+	
+Automotive
+Mar 14, 2013
+$-2959.25
+	
+Gift
+Nov 12, 2012
+$1126.44
+	
+Insurance
+Sep 16, 2011
+$8746.08
+	
+Office
+Apr 27, 2013
+$-4744.08
+	
+Insurance
+Oct 29, 2011
+$279.75
+	
+Medical
+Jan 14, 2017
+$-3090.77
+	
+Supplies
+May 15, 2016
+$7180.62
+	
+Fuel
+Jun 5, 2015
+$-3929.35
+	
+Automotive
+Jul 24, 2012
+$4527.57
+	
+Games
+Nov 16, 2011
+$-639.65
+	
+Fuel
+Jun 4, 2014
+$5642.35
+	
+Supplies
+Feb 12, 2011
+$1683.61
+	
+Fuel
+Nov 11, 2016
+$2107.69
+	
+Supplies
+Feb 3, 2017
+$-7395.2
+	
+Medical
+Apr 27, 2010
+$9224.2
+	
+Groceries
+Nov 7, 2016
+$-3472.8
+	
+Item
+Aug 23, 2014
+$-1145.3
+	
+Fuel
+Nov 30, 2018
+$9621.24
+	
+Bill
+Aug 10, 2010
+$-9216.65
+	
+Medical
+Aug 30, 2014
+$-1926.19
+	
+Automotive
+Dec 7, 2016
+$-652.77
+	
+Office
+Dec 16, 2014
+$6885.96
+	
+Office
+Jul 9, 2015
+$-4160.07
+	
+Bill
+Apr 23, 2016
+$440.57
+	
+Games
+Apr 2, 2014
+$-7737.2
+	
+Medical
+Mar 14, 2014
+$3775.03
+	
+Groceries
+Jan 28, 2018
+$8194.7
+	
+Supplies
+May 4, 2018
+$-5632.4
+	
+Supplies
+Jul 8, 2017
+$-8785.96
+	
+Office
+Nov 21, 2016
+$-215.5
+	
+Supplies
+Jul 29, 2018
+$346.08
+	
+Automotive
+Jan 21, 2015
+$-2696.66
+	
+Groceries
+Dec 19, 2011
+$-9101.6
+	
+Item
+Feb 6, 2016
+$2257.04
+	
+Games
+Dec 24, 2012
+$3821.79
+	
+Insurance
+Mar 5, 2017
+$-3978.12
+	
+Insurance
+Dec 13, 2010
+$991.13
+	
+Item
+Mar 8, 2012
+$57.65
+	
+Insurance
+May 5, 2012
+$-6299.3
+	
+Bill
+Jun 2, 2011
+$6013.59
+	
+Gift
+Nov 4, 2017
+$934.17
+	
+Office
+Oct 14, 2017
+$4519.84
+	
+Medical
+Aug 22, 2016
+$8885.42
+	
+Groceries
+Jan 26, 2017
+$6831.77
+	
+Gift
+Jan 10, 2012
+$-2379.18
+	
+Services
+Dec 18, 2017
+$7987.54
+	
+Services
+Sep 25, 2014
+$5096.65
+	
+Office
+May 11, 2017
+$644.63
+	
+Services
+Dec 13, 2016
+$4949.17
+	
+Services
+Jan 2, 2010
+$2407.03
+	
+Gift
+Apr 23, 2015
+$1095.09
+	
+Supplies
+Dec 25, 2014
+$2432.86
+	
+Medical
+Dec 27, 2013
+$-685.36
+	
+Supplies
+Dec 17, 2017
+$-4323.01
+	
+Groceries
+Jan 12, 2018
+$-9702.85
+	
+Services
+Jul 30, 2013
+$4590.03
+	
+Medical
+Mar 24, 2017
+$-1665.28
+	
+Groceries
+Sep 5, 2012
+$1843.7
+	
+Medical
+Feb 25, 2013
+$9735.69
+	
+Groceries
+Oct 5, 2014
+$6124.06
+	
+Supplies
+Aug 18, 2017
+$1446.66
+	
+Services
+Dec 15, 2010
+$2732.33
+	
+Medical
+Feb 5, 2011
+$6227.36
+	
+Gift
+Jul 17, 2017
+$-2775.55
+	
+Fuel
+Jan 26, 2017
+$491.57
+	
+Games
+May 19, 2016
+$3234.2
+	
+Gift
+Jan 23, 2017
+$-4357.05
+	
+Item
+Apr 22, 2018
+$3651.67
+	
+Office
+Nov 19, 2012
+$-4004.14
+	
+Games
+Jun 19, 2017
+$-9776.28
+	
+Fuel
+Jul 9, 2010
+$-4662.26
+	
+Groceries
+Jul 10, 2010
+$2221.01
+	
+Supplies
+Jan 22, 2018
+$583.92
+	
+Fuel
+Jan 22, 2015
+$-4042.26
+	
+Insurance
+Jul 27, 2012
+$2083.55
+	
+Games
+Nov 11, 2010
+$-1404.82
+	
+Supplies
+Jun 10, 2013
+$-5196.79
+	
+Services
+Apr 26, 2013
+$813.75
+	
+Gift
+Dec 18, 2016
+$8254.75
+	
+Games
+Apr 1, 2010
+$-8334.24
+	
+Groceries
+Mar 19, 2017
+$2615.97
+	
+Fuel
+Nov 11, 2014
+$7352.58
+	
+Office
+Oct 6, 2012
+$-2444.67
+	
+Gift
+Feb 16, 2016
+$-5004.44
+	
+Item
+Aug 20, 2014
+$-6090.91
+	
+Supplies
+May 3, 2011
+$-2055.17
+	
+Bill
+Jan 14, 2014
+$-1765.48
+	
+Item
+Oct 12, 2017
+$5109.9
+	
+Medical
+Dec 17, 2016
+$-403.42
+	
+Bill
+Nov 3, 2015
+$-8420.63
+	
+Office
+May 4, 2016
+$-3476.63
+	
+Services
+Apr 11, 2010
+$-1133.43
+	
+Groceries
+Sep 17, 2017
+$1236.61
+	
+Groceries
+Feb 20, 2013
+$1976.1
+	
+Services
+Nov 11, 2017
+$5935.17
+	
+Insurance
+Sep 8, 2010
+$7700.38
+	
+Insurance
+Oct 8, 2018
+$-8442.28
+	
+Insurance
+Oct 7, 2014
+$8754.16
+	
+Bill
+Dec 18, 2015
+$9107.37
+	
+Services
+Feb 20, 2013
+$-4770.22
+	
+Office
+Dec 9, 2016
+$-5113.41
+	
+Automotive
+Aug 8, 2016
+$6160.36
+	
+Groceries
+Oct 30, 2017
+$-1976.76
+	
+Groceries
+Oct 6, 2011
+$-3470.55
+	
+Services
+Jun 2, 2016
+$7192.28
+	
+Games
+Dec 22, 2018
+$9741.99
+	
+Services
+May 20, 2018
+$-4263.84
+	
+Medical
+Oct 5, 2010
+$2313.89
+	
+Services
+Nov 23, 2015
+$4309.63
+	
+Office
+Jul 5, 2011
+$351.74
+	
+Fuel
+Apr 10, 2014
+$8130.15
+	
+Item
+Sep 26, 2016
+$9343.92
+	
+Bill
+Mar 21, 2017
+$-6123.06
+	
+Item
+Dec 30, 2013
+$7001.34
+	
+Insurance
+May 6, 2011
+$7784.87
+	
+Supplies
+Jul 6, 2017
+$9558.95
+	
+Supplies
+Jun 15, 2011
+$-8378.89
+	
+Gift
+May 12, 2015
+$-4665.25
+	
+Medical
+Jul 22, 2010
+$-6326.04
+	
+Item
+Apr 8, 2014
+$-5245.45
+	
+Fuel
+Dec 1, 2015
+$5845.57
+	
+Automotive
+Apr 30, 2016
+$-3129.69
+	
+Office
+May 13, 2013
+$210.32
+	
+Supplies
+Jan 24, 2017
+$-8933.81
+	
+Medical
+May 7, 2017
+$-4675.49
+	
+Fuel
+Jul 1, 2016
+$5665.25
+	
+Games
+Apr 12, 2018
+$7062.37
+	
+Item
+Dec 12, 2017
+$8086.38
+	
+Groceries
+Oct 7, 2018
+$5279.01
+	
+Medical
+Sep 8, 2017
+$3685.08
+	
+Item
+Sep 22, 2016
+$7200.43
+	
+Fuel
+Feb 9, 2016
+$-8866.03
+	
+Medical
+Apr 19, 2017
+$3708.95
+	
+Supplies
+Aug 14, 2013
+$-6086.04
+	
+Services
+Jun 28, 2017
+$4792.37
+	
+Supplies
+Dec 25, 2011
+$2010.56
+	
+Groceries
+Nov 30, 2013
+$-3923.34
+	
+Office
+Jul 19, 2016
+$1121.25
+	
+Automotive
+Sep 28, 2014
+$-3146.91
+	
+Services
+Mar 14, 2016
+$3520.63
+	
+Medical
+Mar 25, 2018
+$-9813.69
+	
+Automotive
+Mar 8, 2013
+$4203.33
+	
+Gift
+Sep 15, 2010
+$2962.27
+	
+Services
+Nov 3, 2012
+$6098.25
+	
+Medical
+Feb 17, 2011
+$-4924.42
+	
+Groceries
+Jun 16, 2014
+$-8851.31
+	
+Insurance
+Jan 2, 2012
+$5900.23
+	
+Services
+Nov 22, 2016
+$-8925.36
+	
+Medical
+Nov 22, 2014
+$7833.7
+	
+Automotive
+Apr 1, 2016
+$-2071.93
+	
+Bill
+Jul 4, 2013
+$-7288.28
+	
+Automotive
+Feb 11, 2011
+$-5562.68
+	
+Bill
+Apr 18, 2017
+$-9517.21
+	
+Insurance
+Feb 29, 2012
+$5990.57
+	
+Supplies
+Jul 13, 2016
+$492.68
+	
+Fuel
+Feb 22, 2017
+$-2627.06
+	
+Item
+Mar 12, 2015
+$5406.95
+	
+Games
+Sep 24, 2012
+$9550.27
+	
+Fuel
+Aug 30, 2011
+$-5894.71
+	
+Games
+Apr 11, 2017
+$5452.36
+	
+Insurance
+May 3, 2012
+$2286.26
+	
+Item
+Jul 24, 2011
+$3477.15
+	
+Medical
+Feb 5, 2012
+$-5938.58
+	
+Medical
+Nov 18, 2018
+$7007.85
+	
+Bill
+Jul 24, 2014
+$-7909.45
+	
+Automotive
+Oct 7, 2018
+$5359.58
+	
+Supplies
+Mar 21, 2013
+$-8024.66
+	
+Groceries
+Nov 26, 2016
+$3068.75
+	
+Medical
+May 26, 2016
+$4410.29
+	
+Gift
+Jul 5, 2011
+$-8815.0
+	
+Insurance
+Mar 22, 2014
+$-1729.07
+	
+Gift
+Apr 25, 2012
+$-3836.61
+	
+Services
+Apr 23, 2013
+$3249.88
+	
+Automotive
+Mar 20, 2010
+$-6910.97
+	
+Automotive
+Apr 23, 2017
+$2239.69
+	
+Gift
+Jan 22, 2010
+$-6638.7
+	
+Item
+Nov 6, 2014
+$-6619.05
+	
+Groceries
+Aug 16, 2015
+$-247.83
+daily_checking
+checking
+$100.0
+0.005%
+	
+Services
+May 16, 2015
+$8274.58
+	
+Bill
+Oct 2, 2015
+$-4870.1
+	
+Medical
+Oct 24, 2016
+$-5518.08
+	
+Groceries
+Dec 28, 2017
+$-8604.11
+	
+Services
+Sep 20, 2012
+$-2534.41
+	
+Office
+Oct 18, 2017
+$217.62
+	
+Medical
+Sep 16, 2010
+$2446.02
+	
+Supplies
+Sep 20, 2013
+$-6643.93
+	
+Services
+May 8, 2013
+$-6563.42
+	
+Insurance
+May 14, 2017
+$8695.53
+	
+Gift
+Jun 25, 2016
+$4558.17
+	
+Services
+Dec 7, 2012
+$6172.48
+	
+Fuel
+Nov 12, 2012
+$-7529.54
+	
+Office
+Sep 18, 2010
+$6007.96
+	
+Gift
+Jul 21, 2016
+$9646.52
+	
+Supplies
+Apr 3, 2010
+$-8132.99
+	
+Supplies
+Apr 23, 2018
+$-222.24
+	
+Supplies
+Aug 3, 2015
+$-2298.87
+	
+Bill
+Oct 30, 2018
+$-9255.96
+	
+Medical
+Feb 27, 2013
+$3144.86
+	
+Office
+Nov 12, 2011
+$-4064.44
+	
+Games
+Mar 19, 2013
+$-7172.0
+	
+Item
+Dec 19, 2013
+$-7308.32
+	
+Bill
+Feb 28, 2013
+$9539.21
+	
+Medical
+Aug 6, 2017
+$6468.03
+	
+Insurance
+Jun 27, 2010
+$-146.59
+	
+Insurance
+Sep 22, 2013
+$-6894.33
+	
+Bill
+Aug 9, 2012
+$-1052.67
+	
+Services
+Jun 26, 2013
+$9120.0
+	
+Services
+Jun 1, 2011
+$-5481.83
+	
+Office
+Jan 22, 2015
+$-6073.73
+	
+Supplies
+Aug 28, 2010
+$-1051.91
+	
+Services
+May 5, 2013
+$-1136.7
+	
+Services
+Nov 6, 2018
+$5390.23
+	
+Games
+Aug 29, 2013
+$9066.36
+	
+Games
+Jan 3, 2010
+$3873.32
+	
+Games
+Feb 8, 2014
+$6788.69
+	
+Groceries
+Jan 7, 2014
+$4725.65
+	
+Fuel
+Nov 9, 2018
+$2603.6
+	
+Automotive
+Jul 13, 2010
+$812.27
+	
+Groceries
+Mar 5, 2011
+$-4225.22
+	
+Fuel
+Nov 16, 2014
+$9781.55
+	
+Groceries
+May 24, 2013
+$1511.12
+	
+Insurance
+Nov 28, 2013
+$560.58
+	
+Fuel
+Apr 2, 2018
+$-6811.71
+	
+Automotive
+Sep 16, 2015
+$-7132.28
+	
+Gift
+Jul 11, 2017
+$-2902.86
+	
+Services
+Dec 23, 2011
+$-2017.93
+	
+Groceries
+Oct 2, 2018
+$8858.61
+	
+Services
+Sep 25, 2013
+$7193.37
+	
+Games
+Apr 6, 2017
+$124.89
+	
+Office
+Sep 21, 2017
+$-9666.18
+	
+Fuel
+Sep 14, 2013
+$5182.61
+	
+Fuel
+Sep 25, 2018
+$-40.47
+	
+Office
+Mar 20, 2013
+$6009.88
+	
+Supplies
+Jul 11, 2014
+$-8187.97
+	
+Gift
+Jan 26, 2018
+$-4545.91
+	
+Office
+Apr 10, 2017
+$4167.71
+	
+Medical
+Sep 21, 2012
+$-1457.49
+	
+Supplies
+Dec 4, 2017
+$-2092.05
+	
+Services
+Jul 11, 2016
+$6375.58
+	
+Games
+Nov 24, 2011
+$-3740.47
+	
+Fuel
+Jan 5, 2018
+$-6740.53
+	
+Groceries
+Jan 1, 2018
+$-5879.34
+	
+Automotive
+Apr 28, 2017
+$-8801.65
+	
+Medical
+Oct 22, 2010
+$-2028.24
+	
+Medical
+Jun 13, 2018
+$-5111.39
+	
+Bill
+Oct 28, 2010
+$-9844.99
+	
+Medical
+Nov 19, 2010
+$1049.83
+	
+Gift
+Jun 17, 2014
+$7685.71
+	
+Bill
+Feb 18, 2014
+$-2782.66
+	
+Item
+Mar 17, 2012
+$-7059.6
+	
+Groceries
+Feb 10, 2012
+$-6254.05
+	
+Supplies
+May 22, 2010
+$9069.4
+	
+Insurance
+May 16, 2013
+$8285.53
+	
+Groceries
+Sep 25, 2016
+$9638.01
+	
+Games
+Dec 24, 2011
+$1749.15
+	
+Medical
+Jul 25, 2017
+$2955.59
+	
+Fuel
+Dec 12, 2014
+$-1020.09
+	
+Medical
+Jun 15, 2012
+$-4738.97
+	
+Insurance
+Aug 21, 2011
+$-6078.84
+	
+Supplies
+Nov 2, 2018
+$2168.07
+	
+Groceries
+Nov 28, 2018
+$8907.28
+	
+Games
+Dec 8, 2018
+$8614.68
+	
+Item
+Apr 15, 2013
+$9332.77
+	
+Insurance
+Oct 21, 2017
+$-1596.65
+	
+Fuel
+Jun 19, 2014
+$-150.0
+	
+Services
+Aug 15, 2017
+$-5030.42
+	
+Fuel
+Jun 21, 2012
+$-4368.65
+	
+Gift
+Jan 24, 2012
+$-4705.68
+	
+Medical
+Jan 26, 2017
+$4157.92
+	
+Fuel
+Mar 26, 2013
+$-5785.66
+	
+Gift
+May 15, 2013
+$9329.82
+	
+Bill
+Aug 16, 2011
+$2427.0
+	
+Automotive
+Mar 30, 2015
+$-6893.47
+	
+Item
+Jul 16, 2011
+$-810.05
+	
+Bill
+Aug 7, 2010
+$-9130.54
+	
+Item
+Nov 22, 2017
+$1350.96
+	
+Services
+Feb 5, 2017
+$8552.2
+	
+Groceries
+Aug 4, 2010
+$490.99
+	
+Games
+Aug 12, 2011
+$-6578.17
+	
+Bill
+Nov 14, 2017
+$6518.79
+	
+Automotive
+May 14, 2016
+$140.74
+	
+Insurance
+Jan 27, 2012
+$-8774.76
+	
+Medical
+Oct 28, 2014
+$1133.66
+	
+Games
+Dec 11, 2016
+$-8390.96
+	
+Supplies
+Sep 18, 2018
+$9876.81
+	
+Office
+Jun 12, 2014
+$8055.75
+	
+Supplies
+Feb 23, 2011
+$-118.37
+	
+Gift
+Oct 28, 2018
+$-5167.89
+	
+Fuel
+Oct 1, 2014
+$6036.95
+	
+Bill
+Feb 2, 2011
+$-6693.93
+	
+Item
+Apr 18, 2016
+$1592.44
+	
+Automotive
+Apr 23, 2018
+$-4412.2
+	
+Groceries
+Aug 19, 2010
+$9210.22
+	
+Item
+Jan 27, 2011
+$-3008.24
+	
+Office
+Apr 24, 2012
+$-8203.37
+	
+Games
+Mar 12, 2015
+$9237.74
+	
+Office
+Nov 6, 2011
+$-5323.98
+	
+Fuel
+May 24, 2016
+$-2652.12
+	
+Fuel
+Jul 5, 2016
+$9323.14
+	
+Medical
+Jul 4, 2018
+$-3224.33
+	
+Office
+Apr 14, 2017
+$-2620.69
+	
+Services
+Nov 30, 2014
+$3754.69
+	
+Insurance
+Dec 17, 2018
+$-3095.36
+	
+Services
+Mar 7, 2018
+$-8177.16
+	
+Services
+Jan 23, 2010
+$8439.67
+	
+Office
+Feb 27, 2012
+$-3079.62
+	
+Item
+Jun 14, 2016
+$1952.12
+	
+Automotive
+Apr 29, 2018
+$8645.45
+	
+Games
+Sep 16, 2012
+$-4569.15
+	
+Automotive
+Jul 24, 2014
+$-2238.04
+	
+Fuel
+Sep 25, 2011
+$-2129.59
+	
+Services
+Dec 13, 2011
+$-8214.36
+	
+Gift
+Jul 10, 2012
+$2593.74
+	
+Supplies
+Dec 17, 2010
+$-1367.66
+	
+Automotive
+Nov 29, 2016
+$-1975.37
+	
+Item
+Aug 9, 2016
+$416.81
+	
+Fuel
+Nov 1, 2010
+$-8303.89
+	
+Item
+Jun 8, 2010
+$-1626.23
+	
+Groceries
+Jul 23, 2017
+$6830.87
+	
+Services
+Jul 16, 2014
+$8679.01
+	
+Fuel
+May 30, 2018
+$9428.53
+	
+Bill
+Mar 18, 2013
+$-3865.3
+	
+Medical
+Jun 1, 2015
+$-4567.43
+	
+Gift
+Sep 8, 2013
+$7019.21
+	
+Gift
+Mar 22, 2012
+$-6973.55
+	
+Insurance
+Aug 20, 2013
+$-2030.78
+	
+Item
+Feb 11, 2011
+$3037.45
+	
+Item
+Jun 22, 2013
+$8956.09
+	
+Automotive
+Jul 2, 2018
+$-7765.69
+	
+Services
+Apr 30, 2012
+$-5054.65
+	
+Automotive
+Nov 15, 2010
+$9228.24
+	
+Groceries
+Aug 1, 2015
+$2708.46
+	
+Insurance
+Oct 18, 2017
+$-7221.69
+	
+Insurance
+Dec 7, 2016
+$1820.36
+	
+Medical
+May 19, 2015
+$-2576.7
+	
+Medical
+Apr 19, 2010
+$-2229.08
+	
+Gift
+Dec 11, 2016
+$-5809.76
+	
+Bill
+Apr 9, 2013
+$1298.39
+	
+Office
+Jun 26, 2013
+$-4847.81
+	
+Supplies
+Sep 3, 2012
+$2789.85
+	
+Automotive
+Aug 27, 2014
+$3125.56
+	
+Insurance
+Apr 1, 2015
+$467.6
+	
+Services
+Apr 15, 2012
+$-7076.24
+	
+Fuel
+Aug 16, 2015
+$-7012.53
+	
+Automotive
+Dec 30, 2014
+$-7755.31
+	
+Automotive
+Nov 1, 2015
+$-6778.68
+	
+Services
+Dec 19, 2017
+$-9796.69
+	
+Office
+Dec 23, 2017
+$2901.2
+	
+Automotive
+Jan 3, 2018
+$4277.31
+	
+Medical
+Dec 19, 2016
+$-4700.63
+	
+Office
+Apr 24, 2017
+$-5621.9
+	
+Insurance
+Jan 10, 2013
+$-6650.04
+	
+Fuel
+May 30, 2010
+$-8934.88
+	
+Item
+Feb 6, 2015
+$-2956.91
+	
+Office
+Dec 18, 2018
+$6579.24
+	
+Groceries
+Dec 25, 2012
+$-9691.19
+	
+Games
+Jan 4, 2010
+$8179.44
+	
+Groceries
+Jan 7, 2013
+$3039.34
+	
+Automotive
+Nov 9, 2017
+$6840.74
+	
+Supplies
+Aug 10, 2014
+$-2232.34
+	
+Groceries
+Feb 15, 2017
+$-2864.28
+	
+Services
+Apr 26, 2011
+$-2463.86
+	
+Medical
+Aug 23, 2017
+$315.38
+	
+Medical
+Jul 22, 2010
+$6669.43
+	
+Games
+Aug 21, 2013
+$-722.16
+	
+Bill
+Oct 26, 2016
+$9844.13
+	
+Insurance
+Sep 21, 2016
+$6129.89
+	
+Medical
+Apr 17, 2013
+$-2332.58
+	
+Item
+Mar 1, 2018
+$-1919.15
+	
+Gift
+Jun 23, 2014
+$-5104.32
+	
+Games
+Dec 26, 2015
+$950.36
+	
+Office
+Aug 29, 2017
+$6711.5
+	
+Services
+Jun 26, 2018
+$-78.41
+	
+Games
+Oct 17, 2018
+$-9285.15
+	
+Insurance
+Jun 3, 2016
+$-9557.93
+	
+Medical
+May 29, 2015
+$9366.83
+	
+Office
+Jan 19, 2011
+$-2707.57
+	
+Office
+May 30, 2012
+$6759.17
+	
+Services
+Nov 19, 2010
+$-6453.63
+	
+Gift
+Dec 23, 2015
+$2288.68
+	
+Item
+Feb 12, 2017
+$-7015.89
+	
+Item
+Mar 21, 2013
+$-5074.6
+	
+Supplies
+Mar 4, 2012
+$6860.18
+	
+Bill
+Feb 10, 2011
+$-1578.64
+	
+Item
+Apr 5, 2010
+$-1060.56
+	
+Services
+Sep 27, 2012
+$-1530.7
+	
+Insurance
+Jul 24, 2015
+$9392.29
+	
+Supplies
+Mar 23, 2012
+$6258.75
+	
+Services
+Jul 16, 2013
+$-719.5
+	
+Office
+Oct 16, 2018
+$3170.78
+	
+Groceries
+May 4, 2017
+$-8416.28
+	
+Automotive
+Oct 15, 2015
+$-7101.57
+	
+Supplies
+Sep 22, 2018
+$3437.59
+	
+Gift
+Apr 24, 2011
+$9783.38
+	
+Supplies
+Oct 2, 2014
+$6717.81
+	
+Bill
+May 11, 2011
+$-4358.83
+	
+Gift
+May 30, 2011
+$-7640.89
+	
+Item
+Feb 22, 2010
+$7138.5
+	
+Groceries
+May 18, 2018
+$7708.9
+	
+Groceries
+Apr 26, 2013
+$7531.66
+	
+Gift
+May 24, 2018
+$-1542.68
+	
+Fuel
+Dec 10, 2011
+$-8767.48
+	
+Games
+May 11, 2018
+$7746.71
+	
+Office
+Nov 9, 2013
+$-1493.69
+	
+Office
+Apr 16, 2016
+$-1754.49
+	
+Groceries
+May 8, 2013
+$7206.19
+	
+Item
+Aug 3, 2018
+$9387.02
+	
+Fuel
+Nov 29, 2018
+$5708.3
+	
+Office
+Oct 16, 2015
+$-4451.71
+	
+Groceries
+Sep 9, 2015
+$8333.51
+	
+Medical
+Jan 26, 2014
+$3417.27
+	
+Supplies
+Feb 11, 2014
+$-5950.59
+	
+Insurance
+Oct 3, 2012
+$-7283.0
+	
+Medical
+Dec 14, 2018
+$8968.58
+	
+Fuel
+Sep 1, 2018
+$6189.09
+	
+Item
+Jun 16, 2013
+$-8756.87
+	
+Item
+Oct 26, 2013
+$7458.46
+	
+Office
+Aug 4, 2013
+$-3143.38
+	
+Games
+Sep 11, 2016
+$2098.18
+	
+Games
+Nov 2, 2015
+$302.6
+	
+Fuel
+Jan 4, 2015
+$-6314.25
+	
+Fuel
+May 18, 2012
+$4296.9
+	
+Groceries
+Dec 8, 2018
+$6504.92
+	
+Automotive
+Jun 24, 2012
+$6891.82
+	
+Fuel
+Apr 6, 2015
+$6225.76
+	
+Supplies
+Dec 20, 2014
+$-2647.52
+	
+Fuel
+Sep 16, 2016
+$3627.82
+	
+Gift
+May 25, 2015
+$8937.91
+	
+Supplies
+Jul 12, 2011
+$-8731.33
+	
+Services
+Oct 6, 2018
+$7633.97
+	
+Bill
+Nov 27, 2011
+$3804.71
+	
+Insurance
+Oct 14, 2011
+$1556.85
+	
+Groceries
+Jan 3, 2010
+$7120.75
+	
+Fuel
+Oct 10, 2015
+$2141.03
+	
+Bill
+Nov 11, 2012
+$5005.24
+	
+Automotive
+Oct 12, 2011
+$-8385.53
+	
+Office
+Apr 8, 2017
+$3122.25
+	
+Groceries
+Jan 12, 2016
+$3227.9
+	
+Groceries
+Jun 12, 2013
+$-5408.65
+	
+Office
+Oct 29, 2012
+$-6860.69
+	
+Gift
+Jun 10, 2017
+$8518.15
+	
+Gift
+Jun 7, 2014
+$-7034.15
+	
+Office
+Jun 1, 2016
+$9060.75
+	
+Office
+Feb 13, 2014
+$7323.09
+	
+Gift
+Sep 14, 2010
+$7620.35
+	
+Games
+Sep 24, 2015
+$4007.74
+	
+Bill
+Jan 26, 2012
+$1871.52
+	
+Groceries
+Oct 3, 2017
+$-1010.51
+	
+Services
+Oct 26, 2010
+$2775.42
+	
+Games
+Sep 28, 2012
+$-7483.17
+	
+Insurance
+Feb 9, 2014
+$-7565.42
+	
+Insurance
+Aug 17, 2013
+$5181.16
+	
+Supplies
+Dec 22, 2012
+$-7546.84
+	
+Office
+Mar 25, 2011
+$7803.98
+	
+Groceries
+Sep 22, 2015
+$2973.69
+	
+Office
+Dec 6, 2011
+$-9090.53
+	
+Item
+Apr 23, 2017
+$-1803.37
+	
+Fuel
+Aug 22, 2014
+$-1975.59
+	
+Insurance
+May 13, 2016
+$-5808.73
+	
+Gift
+May 12, 2014
+$2131.24
+	
+Supplies
+Sep 8, 2018
+$1225.43
+	
+Groceries
+Oct 23, 2015
+$1617.3
+	
+Item
+Apr 26, 2012
+$5541.18
+	
+Insurance
+Aug 7, 2014
+$-3339.1
+	
+Item
+Sep 27, 2012
+$-2840.42
+	
+Office
+Feb 6, 2018
+$-9871.54
+	
+Insurance
+Feb 3, 2013
+$-8601.6
+	
+Office
+Dec 26, 2014
+$-3.7
+	
+Item
+Jul 20, 2018
+$5632.1
+	
+Bill
+Aug 3, 2015
+$9638.37
+	
+Item
+Sep 8, 2013
+$528.39
+	
+Automotive
+Jun 25, 2016
+$-5069.05
+	
+Automotive
+Feb 3, 2010
+$484.44
+	
+Medical
+Oct 18, 2010
+$-4775.07
+	
+Medical
+Sep 3, 2016
+$-7002.59
+	
+Insurance
+Sep 27, 2014
+$-8655.31
+investment_fund
+brokerage
+$90.0
+0.0%
+	
+Item
+Aug 18, 2016
+$5722.16
+	
+Insurance
+Mar 17, 2014
+$6028.36
+	
+Bill
+Jun 20, 2011
+$-4290.28
+	
+Automotive
+Jul 14, 2018
+$-6878.08
+	
+Item
+Jan 1, 2017
+$4493.46
+	
+Insurance
+Dec 12, 2015
+$8294.86
+	
+Medical
+Feb 21, 2017
+$8618.18
+	
+Medical
+Apr 3, 2017
+$6299.6
+	
+Insurance
+Mar 26, 2010
+$-3980.42
+	
+Supplies
+Sep 29, 2011
+$759.71
+	
+Bill
+Sep 2, 2013
+$3032.08
+	
+Automotive
+Nov 18, 2013
+$-8760.81
+	
+Office
+Mar 24, 2016
+$-2191.03
+	
+Supplies
+Nov 10, 2017
+$-8597.91
+	
+Bill
+Dec 20, 2016
+$-4024.03
+	
+Gift
+Feb 3, 2011
+$627.72
+	
+Gift
+Jan 26, 2018
+$2469.83
+	
+Games
+Jan 17, 2017
+$-8958.88
+	
+Office
+Oct 5, 2018
+$2037.18
+	
+Bill
+Apr 29, 2013
+$-4218.45
+	
+Supplies
+Aug 4, 2012
+$5740.44
+	
+Bill
+Jan 4, 2016
+$7951.63
+	
+Games
+Aug 26, 2012
+$8307.97
+	
+Games
+Jun 18, 2014
+$1367.75
+	
+Fuel
+Sep 25, 2016
+$2856.36
+	
+Games
+Jan 8, 2016
+$81.56
+	
+Automotive
+Nov 14, 2017
+$-2701.31
+	
+Bill
+Apr 19, 2010
+$2588.19
+	
+Gift
+Jun 11, 2018
+$7839.93
+	
+Gift
+Jun 1, 2018
+$-4581.8
+	
+Services
+Jan 19, 2016
+$6870.27
+	
+Automotive
+Apr 2, 2016
+$-1022.75
+	
+Fuel
+Feb 23, 2014
+$8129.8
+	
+Groceries
+Aug 5, 2017
+$-6585.75
+	
+Services
+Mar 25, 2010
+$-5621.03
+	
+Automotive
+May 23, 2014
+$4139.9
+	
+Games
+Apr 24, 2013
+$-9574.92
+	
+Insurance
+Oct 21, 2016
+$-6627.35
+	
+Games
+Dec 30, 2016
+$5996.2
+	
+Gift
+Jun 18, 2010
+$-3442.13
+	
+Fuel
+Feb 16, 2010
+$2700.75
+	
+Games
+Dec 21, 2016
+$-697.47
+	
+Gift
+Mar 1, 2015
+$1560.12
+	
+Automotive
+Sep 11, 2013
+$3017.02
+	
+Groceries
+Apr 18, 2013
+$-7941.92
+	
+Gift
+Feb 10, 2017
+$4996.88
+	
+Item
+Nov 5, 2010
+$-9664.15
+	
+Automotive
+Feb 11, 2016
+$-6739.73
+	
+Supplies
+Feb 7, 2012
+$-1594.28
+	
+Gift
+Feb 4, 2016
+$7945.86
+	
+Gift
+Apr 2, 2012
+$-6294.7
+	
+Item
+Jul 19, 2018
+$2145.8
+	
+Insurance
+Feb 24, 2011
+$9924.32
+	
+Games
+Jan 19, 2010
+$-3812.12
+	
+Fuel
+Apr 17, 2013
+$7077.31
+	
+Services
+Aug 17, 2012
+$-6108.65
+	
+Automotive
+Jul 23, 2010
+$-2150.7
+	
+Groceries
+Aug 15, 2012
+$-1686.06
+	
+Supplies
+Jan 15, 2016
+$5203.23
+	
+Automotive
+Jan 28, 2015
+$1911.08
+	
+Fuel
+Dec 16, 2018
+$5313.82
+	
+Supplies
+Jan 2, 2016
+$3578.95
+	
+Groceries
+May 18, 2016
+$2602.73
+	
+Medical
+Mar 10, 2012
+$-2697.96
+	
+Insurance
+Jun 18, 2018
+$7825.62
+	
+Groceries
+Oct 17, 2014
+$6437.08
+	
+Gift
+Jan 15, 2016
+$3949.03
+	
+Medical
+May 21, 2016
+$-786.33
+	
+Automotive
+May 30, 2017
+$-8591.39
+	
+Medical
+Apr 10, 2011
+$7806.34
+	
+Groceries
+Jul 22, 2014
+$-1967.69
+	
+Gift
+Feb 22, 2011
+$1133.69
+	
+Item
+Nov 29, 2017
+$8522.36
+	
+Games
+Sep 20, 2010
+$-6018.88
+	
+Gift
+Aug 8, 2014
+$3314.66
+	
+Office
+Apr 21, 2011
+$8550.37
+	
+Services
+Jul 7, 2016
+$-8420.95
+	
+Games
+Feb 23, 2015
+$-6650.62
+	
+Insurance
+Nov 2, 2012
+$3109.37
+	
+Fuel
+Nov 15, 2017
+$5501.28
+	
+Supplies
+Nov 24, 2018
+$9210.28
+	
+Automotive
+Sep 2, 2011
+$934.78
+	
+Services
+Jun 26, 2011
+$-5938.08
+	
+Item
+Jun 28, 2013
+$-9805.16
+	
+Item
+Apr 18, 2017
+$1392.39
+	
+Supplies
+Oct 15, 2015
+$1272.13
+	
+Services
+Nov 3, 2014
+$-7120.39
+	
+Bill
+Feb 5, 2013
+$3191.5
+	
+Automotive
+Aug 3, 2014
+$6121.55
+	
+Medical
+Mar 14, 2012
+$-8762.24
+	
+Supplies
+Jun 7, 2013
+$3151.19
+	
+Supplies
+Jun 27, 2013
+$-4442.6
+	
+Services
+Nov 10, 2011
+$-7463.4
+	
+Supplies
+Apr 16, 2014
+$6194.94
+	
+Fuel
+Apr 19, 2016
+$-3382.39
+	
+Gift
+May 14, 2016
+$8953.84
+	
+Services
+Jul 23, 2012
+$3219.81
+	
+Office
+Jan 8, 2016
+$5177.58
+	
+Services
+Jul 8, 2016
+$-8600.9
+	
+Fuel
+Nov 7, 2014
+$4801.97
+	
+Services
+Apr 12, 2014
+$1862.57
+	
+Office
+Jan 8, 2012
+$-6176.34
+	
+Fuel
+Apr 18, 2016
+$-6546.08
+	
+Insurance
+Oct 21, 2011
+$5462.8
+	
+Fuel
+Nov 8, 2017
+$1565.33
+	
+Games
+Mar 25, 2014
+$-2616.61
+	
+Services
+Nov 9, 2011
+$6938.14
+	
+Gift
+Mar 1, 2014
+$-3201.85
+	
+Groceries
+May 7, 2010
+$-6252.12
+	
+Supplies
+Aug 12, 2018
+$365.01
+	
+Bill
+Dec 25, 2017
+$-5844.42
+	
+Games
+May 24, 2016
+$8529.46
+	
+Insurance
+Jul 11, 2014
+$7978.2
+	
+Automotive
+Nov 17, 2013
+$4244.82
+	
+Insurance
+May 5, 2012
+$-3568.5
+	
+Gift
+Oct 28, 2018
+$-3513.36
+	
+Groceries
+Jul 27, 2013
+$8985.22
+	
+Groceries
+Apr 21, 2012
+$155.96
+	
+Bill
+May 8, 2016
+$-6486.64
+	
+Games
+Nov 14, 2018
+$-859.69
+	
+Item
+Jun 3, 2014
+$-1297.3
+	
+Groceries
+Jan 6, 2010
+$9583.98
+	
+Bill
+Jun 7, 2010
+$996.01
+	
+Supplies
+Mar 1, 2016
+$9736.19
+	
+Groceries
+Mar 6, 2014
+$-1601.42
+	
+Supplies
+Aug 15, 2013
+$-7164.59
+	
+Item
+Mar 19, 2011
+$2788.87
+	
+Insurance
+Feb 23, 2016
+$-5098.29
+	
+Insurance
+Aug 3, 2013
+$-1223.87
+	
+Services
+Aug 15, 2010
+$2408.79
+	
+Fuel
+Jun 3, 2010
+$8786.59
+	
+Insurance
+Sep 6, 2018
+$770.01
+	
+Automotive
+Jul 29, 2012
+$4390.36
+	
+Office
+Aug 14, 2011
+$6386.16
+	
+Automotive
+May 26, 2013
+$-3325.44
+	
+Services
+Jul 21, 2015
+$-1532.06
+	
+Fuel
+Oct 12, 2016
+$2805.0
+	
+Item
+Jun 23, 2010
+$5575.71
+	
+Supplies
+Jul 14, 2011
+$1195.14
+	
+Bill
+Apr 3, 2018
+$-7760.03
+	
+Item
+May 15, 2017
+$-1377.47
+	
+Insurance
+Nov 19, 2017
+$-2624.56
+	
+Gift
+Jul 12, 2012
+$-5780.22
+	
+Bill
+Sep 5, 2014
+$5531.01
+	
+Bill
+Jan 27, 2010
+$7851.85
+	
+Insurance
+Jun 24, 2018
+$-809.98
+	
+Fuel
+Dec 13, 2014
+$-5382.92
+	
+Office
+Feb 9, 2010
+$-6973.37
+	
+Groceries
+Dec 16, 2014
+$9034.89
+	
+Automotive
+Jun 9, 2010
+$-5277.97
+	
+Medical
+May 14, 2014
+$-1823.94
+	
+Gift
+Jan 23, 2011
+$-49.61
+	
+Gift
+May 18, 2013
+$-5864.15
+	
+Groceries
+Oct 18, 2017
+$7571.79
+	
+Services
+Jul 7, 2011
+$4738.61
+	
+Automotive
+Oct 4, 2017
+$3843.17
+	
+Fuel
+Mar 7, 2016
+$-5596.32
+	
+Bill
+Feb 17, 2011
+$-1681.94
+	
+Games
+Mar 2, 2018
+$2214.66
+	
+Automotive
+Jul 5, 2015
+$8600.77
+	
+Bill
+Aug 19, 2013
+$-5749.84
+	
+Groceries
+Jun 27, 2018
+$3615.65
+	
+Automotive
+Jan 14, 2017
+$5297.89
+	
+Fuel
+Sep 28, 2014
+$-4278.57
+	
+Office
+Oct 12, 2015
+$9643.57
+	
+Automotive
+Jan 30, 2010
+$8833.75
+	
+Games
+May 19, 2016
+$469.65
+	
+Groceries
+Dec 28, 2016
+$-6484.12
+	
+Insurance
+Jul 14, 2018
+$-3400.71
+	
+Automotive
+Dec 22, 2018
+$9372.46
+	
+Office
+May 28, 2017
+$-1726.84
+	
+Insurance
+Oct 6, 2010
+$1458.2
+	
+Fuel
+Feb 18, 2012
+$-9943.81
+	
+Fuel
+Aug 26, 2015
+$-9966.91
+	
+Services
+Jul 12, 2015
+$-1140.58
+	
+Medical
+Dec 22, 2010
+$3906.7
+	
+Groceries
+Dec 6, 2011
+$-6240.42
+	
+Supplies
+Oct 21, 2015
+$-3318.95
+	
+Games
+May 13, 2013
+$-2548.9
+	
+Gift
+May 4, 2014
+$5099.73
+	
+Supplies
+Feb 21, 2012
+$7728.29
+	
+Bill
+Jun 30, 2016
+$9928.66
+	
+Item
+Sep 16, 2010
+$-7360.0
+	
+Item
+Nov 2, 2010
+$-4368.04
+	
+Services
+May 6, 2016
+$-8534.12
+	
+Item
+Jun 24, 2018
+$-3321.88
+	
+Bill
+Apr 9, 2012
+$-7671.72
+	
+Services
+Jul 13, 2014
+$-457.17
+	
+Services
+Dec 6, 2017
+$-1717.3
+	
+Games
+Feb 14, 2010
+$-7896.35
+	
+Automotive
+Sep 2, 2018
+$-356.88
+	
+Office
+Aug 2, 2013
+$-9300.79
+	
+Gift
+May 9, 2016
+$-1072.42
+	
+Gift
+Apr 22, 2013
+$-7985.54
+	
+Supplies
+Jul 2, 2017
+$4299.15
+	
+Bill
+Apr 22, 2012
+$7330.43
+	
+Groceries
+Dec 3, 2010
+$1185.24
+	
+Medical
+Jan 9, 2013
+$-6470.73
+	
+Groceries
+Nov 4, 2012
+$3652.28
+	
+Gift
+Sep 29, 2010
+$-5625.5
+	
+Item
+Jul 20, 2017
+$6177.09
+	
+Services
+Mar 4, 2018
+$-9394.45
+	
+Insurance
+Jul 2, 2011
+$-7916.58
+	
+Insurance
+Feb 8, 2015
+$4719.95
+	
+Games
+Aug 30, 2010
+$1810.6
+	
+Services
+Apr 11, 2015
+$-9794.35
+	
+Gift
+Sep 16, 2010
+$7369.77
+	
+Fuel
+Jul 3, 2013
+$-7521.1
+	
+Groceries
+Mar 15, 2012
+$-846.02
+	
+Services
+Sep 16, 2013
+$4744.77
+	
+Bill
+Jul 8, 2012
+$8346.11
+	
+Games
+Oct 1, 2015
+$-5897.62
+	
+Item
+Sep 22, 2015
+$8470.41
+	
+Gift
+Feb 28, 2010
+$-3045.68
+	
+Services
+Sep 10, 2013
+$-571.98
+	
+Supplies
+Feb 26, 2016
+$-3550.2
+	
+Groceries
+May 25, 2012
+$8227.73
+	
+Games
+Oct 12, 2015
+$4407.24
+	
+Services
+Aug 29, 2011
+$-5536.64
+	
+Fuel
+Aug 11, 2018
+$-5149.57
+	
+Item
+Sep 22, 2018
+$2606.6
+	
+Insurance
+Feb 4, 2015
+$-7309.54
+	
+Fuel
+Aug 13, 2016
+$4898.14
+	
+Medical
+May 5, 2015
+$8745.3
+	
+Automotive
+Jun 14, 2012
+$-9137.55
+	
+Office
+May 11, 2013
+$-1427.52
+	
+Fuel
+May 19, 2015
+$5387.07
+	
+Groceries
+Oct 7, 2016
+$7673.73
+	
+Bill
+Apr 30, 2015
+$5353.12
+	
+Insurance
+Sep 15, 2013
+$7502.98
+	
+Groceries
+Aug 10, 2017
+$-6251.0
+	
+Games
+Oct 2, 2011
+$6169.77
+	
+Services
+Jan 25, 2011
+$-5873.51
+	
+Services
+Dec 15, 2016
+$3393.95
+	
+Games
+Jan 27, 2011
+$1561.63
+	
+Groceries
+Nov 25, 2011
+$-7440.85
+	
+Fuel
+Dec 27, 2016
+$8669.27
+	
+Gift
+Mar 19, 2012
+$-7129.36
+	
+Insurance
+Aug 14, 2018
+$6709.78
+	
+Item
+Nov 4, 2017
+$3698.57
+	
+Gift
+Jan 10, 2011
+$7750.16
+	
+Item
+Oct 6, 2010
+$1043.71
+	
+Insurance
+Sep 1, 2015
+$9845.66
+	
+Office
+Jul 17, 2017
+$5374.58
+	
+Bill
+Oct 23, 2017
+$4247.64
+	
+Gift
+Oct 1, 2014
+$1342.19
+	
+Services
+Jul 16, 2015
+$2989.32
+	
+Fuel
+Sep 30, 2016
+$6380.31
+	
+Gift
+Feb 15, 2013
+$3434.69
+	
+Games
+Jun 23, 2010
+$-1939.78
+	
+Item
+Sep 29, 2017
+$392.11
+	
+Groceries
+Jul 26, 2018
+$7812.72
+	
+Bill
+Dec 8, 2013
+$1336.07
+	
+Services
+Jun 29, 2018
+$8250.49
+	
+Medical
+Oct 26, 2010
+$9515.14
+	
+Bill
+Jul 21, 2011
+$7234.55
+	
+Services
+Jun 30, 2011
+$1782.33
+	
+Services
+Jul 27, 2018
+$-6981.62
+	
+Services
+Aug 3, 2010
+$-3721.09
+	
+Medical
+Feb 17, 2014
+$5607.64
+	
+Groceries
+Jul 27, 2016
+$-2141.84
+	
+Gift
+Apr 23, 2015
+$-3089.99
+	
+Automotive
+Apr 15, 2012
+$-864.86
+	
+Gift
+Oct 23, 2012
+$8221.83
+	
+Office
+Jun 5, 2012
+$-1931.73
+	
+Fuel
+Oct 1, 2015
+$-5452.85
+	
+Fuel
+Jan 7, 2011
+$8677.25
+	
+Fuel
+Oct 15, 2012
+$-3499.98
+	
+Item
+Feb 14, 2018
+$-4845.67
+	
+Supplies
+Jun 22, 2018
+$5053.08
+	
+Insurance
+Mar 18, 2014
+$5999.92
+	
+Supplies
+Feb 21, 2010
+$-9766.93
+	
+Medical
+Nov 18, 2011
+$880.4
+	
+Services
+Jul 20, 2011
+$4154.15
+	
+Services
+Jun 24, 2010
+$-7797.55
+	
+Office
+Feb 25, 2017
+$2715.35
+	
+Automotive
+Aug 10, 2013
+$1020.31
+	
+Insurance
+Nov 4, 2010
+$-5877.47
+	
+Bill
+Apr 24, 2012
+$4501.68
+	
+Automotive
+Aug 18, 2011
+$-9555.85
+	
+Services
+Feb 4, 2013
+$2996.08
+	
+Medical
+Mar 20, 2013
+$9053.37
+	
+Games
+Jul 17, 2018
+$-1437.94
+	
+Games
+Mar 28, 2014
+$-8512.49
+	
+Automotive
+Dec 16, 2011
+$4964.59
+	
+Fuel
+Jun 19, 2014
+$-526.52
+	
+Services
+Jul 1, 2015
+$9560.52
+	
+Games
+Jul 15, 2012
+$-7808.42
+	
+Groceries
+Nov 3, 2017
+$9621.97
+	
+Games
+May 17, 2012
+$9907.87
+	
+Fuel
+Feb 12, 2013
+$5539.1
+	
+Office
+Mar 18, 2016
+$589.85
+	
+Services
+Mar 1, 2011
+$-1406.8
+	
+Automotive
+Apr 29, 2013
+$-4216.17
+	
+Games
+May 10, 2018
+$-4241.76
+	
+Insurance
+Apr 27, 2018
+$-3306.85
+	
+Insurance
+Jul 5, 2015
+$-6003.3
+	
+Automotive
+Aug 28, 2010
+$1931.81
+	
+Services
+Jan 6, 2014
+$-5951.08
+	
+Supplies
+Jul 23, 2014
+$-5219.39
+	
+Fuel
+Jul 19, 2017
+$2621.69
+	
+Medical
+Feb 27, 2017
+$3945.56
+	
+Services
+May 15, 2015
+$2572.08
+	
+Bill
+Apr 4, 2013
+$-9121.74
+	
+Services
+Jun 21, 2012
+$5128.51
+	
+Games
+Oct 28, 2015
+$8080.12
+	
+Office
+Aug 1, 2018
+$121.43
+	
+Services
+Oct 25, 2011
+$4451.25
+	
+Insurance
+May 15, 2017
+$-4722.68
+	
+Games
+Jul 15, 2018
+$2209.82
+	
+Office
+Feb 26, 2017
+$-4171.87
+	
+Gift
+Feb 1, 2018
+$-6732.87
+	
+Insurance
+Oct 5, 2016
+$-9239.9
+	
+Services
+Feb 21, 2012
+$6926.63
+	
+Item
+Jul 13, 2015
+$9338.47
+	
+Automotive
+Feb 27, 2013
+$-3984.65
+	
+Automotive
+Feb 22, 2013
+$4267.95
+	
+Bill
+Apr 16, 2011
+$3405.1
+	
+Insurance
+Jun 28, 2010
+$-6569.53
+	
+Item
+Jul 13, 2014
+$-8337.22
+	
+Supplies
+Nov 29, 2016
+$9572.77
+	
+Games
+May 29, 2013
+$3050.03
+	
+Office
+Nov 2, 2012
+$-9266.41
+	
+Automotive
+Apr 28, 2017
+$5369.77
+	
+Bill
+Apr 3, 2011
+$1736.0
+	
+Bill
+Jul 11, 2016
+$-9611.17
+	
+Fuel
+Jul 6, 2013
+$-9461.1
+	
+Groceries
+Apr 4, 2011
+$6476.19
+	
+Insurance
+Oct 3, 2010
+$-1476.3
+	
+Supplies
+May 6, 2016
+$-7030.49
+	
+Services
+Apr 12, 2017
+$-4171.86
+	
+Item
+Feb 21, 2015
+$-533.7
+	
+Office
+Jan 21, 2011
+$-9366.86
+	
+Bill
+May 19, 2010
+$-5858.44
+	
+Services
+Mar 12, 2018
+$-7073.25
+	
+Groceries
+Sep 23, 2015
+$8291.63
+	
+Supplies
+Oct 10, 2012
+$-9158.43
+	
+Bill
+Nov 8, 2011
+$-6868.23
+	
+Groceries
+Aug 18, 2017
+$2378.0
+	
+Gift
+Jun 30, 2011
+$-5471.57
+	
+Bill
+Apr 15, 2010
+$-7558.62
+	
+Fuel
+Mar 29, 2015
+$-6512.53
+	
+Office
+Jan 8, 2015
+$8951.2
+	
+Gift
+Feb 24, 2017
+$8069.17
+	
+Games
+Apr 19, 2012
+$-9295.07
+	
+Medical
+May 11, 2017
+$5744.75
+	
+Services
+Nov 8, 2011
+$1138.73
+	
+Bill
+Jun 24, 2018
+$5394.91
+	
+Games
+Dec 26, 2013
+$7626.43
+	
+Item
+Aug 25, 2010
+$3089.27
+	
+Games
+Oct 24, 2011
+$-3937.19
+	
+Services
+Mar 12, 2015
+$4948.34
+	
+Services
+Feb 28, 2012
+$9816.68
+	
+Bill
+Feb 17, 2010
+$9812.68
+	
+Office
+Apr 29, 2017
+$4404.53
+	
+Office
+Nov 7, 2016
+$1724.79
+	
+Games
+Apr 15, 2018
+$2181.0
+	
+Bill
+Sep 12, 2018
+$-8472.61
+	
+Item
+Apr 7, 2018
+$1783.96
+	
+Bill
+Jan 1, 2015
+$-6078.97
+	
+Gift
+Jul 6, 2010
+$-4111.03
+	
+Insurance
+Jan 11, 2013
+$-6611.76
+	
+Supplies
+May 25, 2011
+$-2038.54
+	
+Groceries
+Mar 30, 2016
+$3329.73
+	
+Medical
+Sep 26, 2015
+$8148.96
+	
+Fuel
+Oct 12, 2014
+$-2021.02
+	
+Medical
+Jul 25, 2015
+$-6702.98
+	
+Supplies
+Aug 23, 2015
+$-1860.46
+	
+Groceries
+Feb 20, 2011
+$-6570.85
+	
+Fuel
+Oct 10, 2011
+$8057.39
+	
+Office
+Feb 9, 2015
+$3095.56
+	
+Services
+Sep 24, 2013
+$-8100.91
+	
+Medical
+Apr 9, 2014
+$-8979.33
+	
+Office
+Feb 26, 2018
+$1012.43
+	
+Office
+Jan 21, 2018
+$-5217.35
+	
+Insurance
+Oct 1, 2011
+$-4374.85
+	
+Supplies
+Jan 5, 2010
+$2217.32
+	
+Item
+Aug 26, 2011
+$-8327.6
+	
+Services
+Jan 22, 2018
+$296.59
+	
+Item
+Feb 9, 2013
+$1383.48
+	
+Services
+Jan 23, 2013
+$1890.43
+	
+Insurance
+Mar 15, 2012
+$-1987.07
+	
+Insurance
+Jul 7, 2013
+$-3350.96
+	
+Supplies
+May 29, 2017
+$-4856.96
+	
+Games
+Mar 10, 2017
+$3866.16
+	
+Insurance
+Mar 19, 2013
+$-9651.06
+	
+Games
+Nov 8, 2018
+$-8702.09
+	
+Groceries
+Sep 12, 2016
+$-5697.63
+	
+Supplies
+Oct 15, 2012
+$-2733.57
+	
+Medical
+Sep 10, 2016
+$-1245.13
+	
+Fuel
+Jun 12, 2012
+$5792.63
+	
+Supplies
+Jan 10, 2018
+$1009.05
+	
+Medical
+Feb 8, 2011
+$-8146.25
+	
+Fuel
+Jan 29, 2017
+$-4257.42
+	
+Games
+Aug 17, 2011
+$1093.18
+	
+Insurance
+Feb 25, 2015
+$-3758.56
+	
+Automotive
+Feb 22, 2014
+$-5576.07
+	
+Groceries
+Nov 8, 2018
+$1636.47
+	
+Item
+Jun 20, 2013
+$-8969.06
+	
+Services
+Jun 27, 2011
+$-8406.06
+	
+Groceries
+Aug 12, 2011
+$5419.74
+	
+Supplies
+Apr 2, 2017
+$-1379.45
+	
+Automotive
+Sep 13, 2018
+$6570.48
+	
+Item
+May 10, 2016
+$5805.17
+	
+Games
+Feb 14, 2016
+$-4807.73
+	
+Supplies
+Apr 8, 2017
+$6092.44
+	
+Office
+Nov 26, 2015
+$2848.16
+	
+Supplies
+Apr 29, 2017
+$1290.8
+	
+Games
+Aug 13, 2012
+$-7284.12
+	
+Insurance
+Jun 17, 2018
+$4744.2
+	
+Games
+Mar 15, 2013
+$3404.51
+	
+Services
+Sep 12, 2014
+$2290.49
+	
+Item
+Dec 9, 2014
+$-3933.6
+	
+Automotive
+May 27, 2015
+$-299.71
+	
+Services
+Feb 8, 2011
+$-8405.93
+	
+Insurance
+May 11, 2014
+$711.25
+	
+Bill
+Oct 27, 2015
+$-6398.84
+	
+Services
+Aug 9, 2013
+$4077.99
+	
+Groceries
+May 3, 2016
+$7847.43
+	
+Item
+Apr 4, 2013
+$-1653.13
+	
+Insurance
+Jan 24, 2013
+$7533.39
+	
+Insurance
+Dec 3, 2015
+$3495.78
+	
+Office
+Mar 14, 2015
+$-6722.99
+	
+Gift
+Jan 14, 2012
+$-5124.03
+	
+Gift
+Aug 11, 2016
+$-2527.6
+	
+Fuel
+Mar 22, 2010
+$9340.39
+	
+Item
+Sep 1, 2013
+$-4940.93
+	
+Gift
+Sep 21, 2015
+$9888.74
+	
+Services
+Sep 13, 2017
+$-9495.23
+	
+Automotive
+Jan 23, 2018
+$4013.29
+	
+Bill
+Jul 13, 2017
+$-2908.58
+	
+Insurance
+Nov 27, 2018
+$4165.26
+	
+Fuel
+May 6, 2013
+$-3479.07
+	
+Gift
+Sep 5, 2016
+$4912.6
+	
+Supplies
+Jan 17, 2016
+$617.01
+	
+Services
+Dec 7, 2016
+$525.64
+	
+Games
+Apr 25, 2010
+$2745.11
+	
+Insurance
+Oct 18, 2011
+$5566.65
+	
+Supplies
+Jun 29, 2017
+$-6179.33
+	
+Gift
+Sep 14, 2010
+$-2204.72
+	
+Office
+Jan 27, 2010
+$-194.19
+	
+Supplies
+Apr 24, 2011
+$-7879.62
+	
+Bill
+Mar 14, 2010
+$-3152.77
+	
+Games
+Aug 8, 2015
+$2775.85
+	
+Groceries
+Aug 1, 2015
+$-6812.36
+	
+Office
+Apr 26, 2010
+$1286.05
+	
+Bill
+Sep 12, 2016
+$9255.71
+	
+Item
+Mar 14, 2016
+$-5414.54
+	
+Games
+Jun 16, 2013
+$-1465.57
+	
+Services
+Feb 22, 2016
+$1904.95
+	
+Medical
+May 3, 2013
+$615.99
+	
+Item
+Dec 20, 2013
+$3329.08
+	
+Automotive
+Jun 4, 2016
+$7027.4
+	
+Gift
+Dec 20, 2013
+$6426.72
+	
+Supplies
+Jan 2, 2017
+$-8229.74
+	
+Automotive
+Jul 17, 2015
+$-9217.13
+	
+Services
+Jun 14, 2015
+$-2059.07
+	
+Medical
+Jan 7, 2014
+$-9101.63
+	
+Fuel
+Apr 14, 2012
+$-5776.52
+	
+Games
+Sep 12, 2014
+$4623.88
+	
+Insurance
+Dec 5, 2014
+$9482.65
+	
+Games
+Apr 1, 2010
+$2464.93
+	
+Groceries
+Nov 18, 2016
+$8193.08
+	
+Services
+Jun 28, 2012
+$-290.93
+	
+Games
+May 29, 2014
+$-3846.8
+	
+Medical
+Mar 27, 2013
+$1919.06
+	
+Insurance
+Apr 18, 2016
+$6039.84
+	
+Bill
+Jun 4, 2013
+$5.36
+	
+Insurance
+Aug 17, 2018
+$1115.08
+	
+Groceries
+Mar 27, 2011
+$5496.98
+	
+Automotive
+Jul 13, 2014
+$7118.0
+	
+Bill
+Feb 13, 2016
+$-7004.9
+	
+Insurance
+Jun 9, 2014
+$-4561.04
+	
+Fuel
+Jan 17, 2014
+$-5096.82
+	
+Office
+Feb 18, 2012
+$2524.36
+	
+Supplies
+Sep 30, 2016
+$4728.86
+	
+Gift
+Jun 24, 2015
+$2599.47
+	
+Office
+Jul 13, 2011
+$-2543.19
+	
+Fuel
+Aug 24, 2012
+$-6207.67
+	
+Games
+Aug 12, 2017
+$-1829.75
+	
+Fuel
+Mar 24, 2018
+$-3778.26
+	
+Games
+Jan 22, 2014
+$-712.66
+	
+Office
+Sep 27, 2015
+$8268.3
+	
+Automotive
+Apr 18, 2013
+$-9924.85
+	
+Supplies
+Nov 11, 2017
+$-8166.46
+	
+Automotive
+Jan 26, 2014
+$3667.8
+	
+Insurance
+Jun 24, 2018
+$5724.28
+	
+Games
+Oct 14, 2011
+$-7629.86
+	
+Medical
+Feb 23, 2012
+$9257.13
+	
+Games
+Apr 21, 2018
+$3858.43
+	
+Gift
+Jan 8, 2013
+$-4298.02
+	
+Bill
+Jan 30, 2016
+$-7157.08
+	
+Office
+Jun 16, 2015
+$1278.37
+	
+Games
+Apr 30, 2011
+$5244.45
+	
+Games
+Mar 13, 2010
+$3149.93
+	
+Bill
+Sep 6, 2011
+$-3070.08
+	
+Fuel
+Nov 18, 2018
+$6360.11
+	
+Gift
+Aug 7, 2010
+$5086.06
+	
+Office
+Jan 26, 2016
+$-8893.16
+	
+Office
+Jul 28, 2018
+$-2515.99
+	
+Office
+Oct 12, 2017
+$8420.23
+	
+Gift
+Apr 3, 2013
+$-140.43
+	
+Bill
+Feb 6, 2016
+$-6499.5
+	
+Insurance
+Mar 22, 2010
+$2628.01
+	
+Office
+Oct 28, 2015
+$-4925.95
+	
+Games
+Jun 19, 2014
+$-46.67
+	
+Office
+Mar 19, 2016
+$8573.12
+	
+Supplies
+Oct 21, 2011
+$-6852.9
+	
+Groceries
+Jul 14, 2010
+$-2755.57
+	
+Medical
+Feb 8, 2016
+$9392.47
+	
+Bill
+Nov 10, 2014
+$-5989.51
+	
+Office
+Mar 2, 2011
+$346.16
+	
+Groceries
+May 4, 2011
+$7671.97
+	
+Fuel
+Jan 14, 2011
+$-5698.51
+	
+Automotive
+Dec 7, 2014
+$8543.54
+	
+Item
+Sep 5, 2014
+$-7104.48
+	
+Games
+Dec 1, 2014
+$-6388.38
+	
+Supplies
+Sep 12, 2011
+$-2025.98
+	
+Fuel
+Apr 19, 2018
+$1607.32
+	
+Office
+Feb 24, 2014
+$-3088.63
+	
+Fuel
+Mar 13, 2015
+$-119.32
+	
+Supplies
+Aug 7, 2013
+$2704.16
+	
+Services
+Feb 13, 2013
+$2584.04
+	
+Games
+Dec 1, 2013
+$7364.7
+	
+Gift
+Sep 2, 2011
+$2427.44
+	
+Supplies
+Jun 26, 2016
+$8943.94
+	
+Automotive
+Sep 3, 2014
+$4223.01
+	
+Groceries
+May 4, 2014
+$885.3
+	
+Fuel
+Nov 29, 2013
+$-281.57
+	
+Insurance
+Nov 12, 2015
+$886.69
+	
+Fuel
+Jul 27, 2010
+$-8978.3
+	
+Item
+Apr 12, 2010
+$-9875.02
+	
+Games
+Sep 20, 2013
+$-504.08
+	
+Bill
+May 27, 2011
+$-5763.86
+	
+Groceries
+Feb 9, 2016
+$-7331.26
+	
+Insurance
+Dec 23, 2011
+$8066.88
+	
+Services
+Mar 21, 2015
+$-8163.18
+	
+Fuel
+Sep 16, 2011
+$-3293.65
+	
+Automotive
+Feb 14, 2016
+$5090.9
+	
+Bill
+Sep 13, 2011
+$-2984.64
+	
+Automotive
+Nov 26, 2015
+$-4052.65
+	
+Groceries
+Apr 5, 2011
+$-5292.37
+	
+Automotive
+Oct 25, 2018
+$-2787.37
+	
+Supplies
+Mar 23, 2012
+$1473.6
+	
+Groceries
+Dec 19, 2014
+$7757.33
+	
+Supplies
+Dec 4, 2015
+$-9291.12
+	
+Medical
+Feb 12, 2014
+$-9771.96
+	
+Bill
+Oct 5, 2016
+$6713.78
+	
+Supplies
+Feb 11, 2010
+$-1868.68
+	
+Games
+Dec 4, 2015
+$-5073.3
+	
+Insurance
+Jan 5, 2015
+$-1998.34
+	
+Automotive
+Apr 30, 2015
+$5567.22
+	
+Games
+Sep 11, 2012
+$-2606.63
+	
+Gift
+Dec 22, 2016
+$2277.16
+	
+Supplies
+Sep 6, 2012
+$-7844.3
+	
+Automotive
+Jan 21, 2014
+$-5190.32
+	
+Item
+Feb 13, 2017
+$-9134.65
+	
+Groceries
+Jun 14, 2016
+$935.88
+	
+Item
+Jun 5, 2014
+$3468.07
+	
+Bill
+May 11, 2016
+$-510.47
+	
+Gift
+Dec 11, 2014
+$2248.31
+	
+Groceries
+Mar 19, 2012
+$2387.46
+	
+Automotive
+Mar 2, 2014
+$-7603.45
+	
+Gift
+Nov 20, 2011
+$-1355.69
+	
+Services
+Aug 28, 2012
+$-3070.05
+	
+Item
+Sep 22, 2010
+$-5494.55
+	
+Games
+Dec 19, 2018
+$-4138.87
+	
+Office
+May 15, 2012
+$-926.33
+	
+Bill
+Apr 22, 2015
+$-4319.86
+	
+Bill
+Jul 22, 2018
+$-1010.96
+	
+Office
+Mar 25, 2015
+$4858.0
+	
+Automotive
+Nov 15, 2017
+$-4815.48
+	
+Supplies
+Mar 12, 2014
+$-9299.4
+	
+Medical
+Dec 14, 2012
+$2393.03
+	
+Games
+May 16, 2010
+$8044.7
+	
+Office
+Jun 2, 2012
+$2396.76
+	
+Automotive
+Feb 1, 2011
+$623.44
+	
+Insurance
+Dec 3, 2011
+$6022.63
+	
+Item
+Apr 2, 2017
+$-9872.09
+	
+Item
+Jan 28, 2011
+$-804.39
+	
+Games
+Feb 10, 2014
+$8807.36
+	
+Office
+Oct 30, 2016
+$4124.88
+	
+Bill
+Nov 24, 2015
+$701.26
+	
+Insurance
+Jun 1, 2010
+$-1360.61
+	
+Services
+May 2, 2018
+$159.25
+	
+Automotive
+Dec 25, 2012
+$-7906.48
+	
+Item
+Apr 7, 2018
+$9122.16
+	
+Automotive
+Jan 20, 2013
+$-6021.11
+	
+Gift
+Jul 2, 2016
+$5712.61
+	
+Services
+Sep 27, 2016
+$6814.58
+	
+Medical
+Jan 6, 2018
+$-5916.82
+	
+Office
+Feb 20, 2013
+$5017.65
+	
+Supplies
+Nov 10, 2012
+$1323.43
+	
+Groceries
+Jan 10, 2018
+$9814.69
+	
+Fuel
+Dec 3, 2018
+$2724.63
+	
+Games
+Nov 2, 2014
+$-8060.45
+	
+Office
+Jan 22, 2017
+$7097.74
+	
+Services
+Sep 25, 2013
+$534.66
+	
+Office
+Jul 18, 2015
+$-6548.38
+	
+Insurance
+Mar 13, 2010
+$1553.27
+	
+Insurance
+Sep 7, 2011
+$-2455.77
+	
+Gift
+Jul 24, 2013
+$-8164.15
+	
+Automotive
+Mar 13, 2016
+$9060.25
+	
+Services
+Aug 22, 2011
+$7250.49
+	
+Insurance
+Mar 25, 2012
+$-1050.82
+	
+Item
+Nov 13, 2015
+$-7243.11
+	
+Supplies
+Oct 13, 2013
+$-7656.18
+	
+Office
+Jun 20, 2017
+$-1552.49
+	
+Supplies
+Aug 30, 2014
+$99.56
+	
+Bill
+Feb 19, 2010
+$4573.86
+	
+Supplies
+Sep 8, 2015
+$-4958.29
+	
+Bill
+Jan 5, 2018
+$7877.69
+	
+Supplies
+Mar 20, 2013
+$-4765.35
+	
+Bill
+Aug 10, 2015
+$5376.7
+	
+Fuel
+May 6, 2016
+$2809.44
+	
+Bill
+Nov 12, 2016
+$-4175.53
+	
+Office
+Jul 10, 2018
+$-6015.27
+	
+Fuel
+Dec 1, 2010
+$-4339.84
+	
+Supplies
+Jan 5, 2017
+$3830.53
+	
+Insurance
+May 1, 2014
+$-767.17
+	
+Automotive
+Jun 17, 2014
+$-7940.0
+	
+Automotive
+Oct 2, 2017
+$2837.56
+	
+Office
+Jun 4, 2012
+$6756.45
+	
+Insurance
+Mar 4, 2016
+$609.35
+	
+Office
+Oct 20, 2013
+$-1418.85
+	
+Office
+Dec 7, 2018
+$-3879.12
+	
+Automotive
+Mar 2, 2010
+$4852.98
+	
+Games
+Jun 5, 2013
+$-3281.29
+	
+Supplies
+Jan 7, 2013
+$1197.47
+	
+Supplies
+Oct 21, 2010
+$4870.77
+	
+Office
+Oct 3, 2015
+$7547.3
+	
+Insurance
+Oct 5, 2014
+$-9692.54
+	
+Bill
+Nov 14, 2018
+$-1483.22
+	
+Groceries
+Feb 2, 2010
+$3305.3
+	
+Supplies
+Aug 3, 2017
+$-1988.35
+	
+Services
+Aug 29, 2012
+$9433.08
+	
+Supplies
+Nov 20, 2010
+$875.89
+	
+Fuel
+Jul 29, 2017
+$2366.39
+	
+Services
+Apr 1, 2016
+$5985.98
+	
+Games
+Jan 11, 2017
+$-1550.66
+	
+Supplies
+Jan 10, 2017
+$-4891.28
+	
+Gift
+Dec 29, 2017
+$-4421.91
+	
+Supplies
+Jan 15, 2017
+$8733.1
+	
+Office
+Jul 5, 2017
+$2296.57
+	
+Gift
+May 3, 2013
+$6723.44
+	
+Games
+Mar 1, 2013
+$-109.15
+	
+Medical
+Mar 26, 2015
+$9836.51
+	
+Office
+Jan 30, 2012
+$1467.87
+	
+Automotive
+Jul 2, 2016
+$-6221.2
+	
+Office
+Sep 13, 2014
+$-5208.72
+	
+Automotive
+Feb 15, 2016
+$-4507.61
+	
+Supplies
+Aug 11, 2015
+$8870.37
+	
+Bill
+Dec 6, 2017
+$-9246.35
+	
+Medical
+Apr 24, 2018
+$-6633.01
+	
+Item
+Oct 26, 2011
+$-8986.39
+	
+Fuel
+Nov 30, 2012
+$-8227.14
+	
+Insurance
+Mar 12, 2010
+$7832.69
+	
+Fuel
+Dec 10, 2017
+$-2448.8
+	
+Fuel
+Nov 20, 2012
+$-3544.93
+	
+Item
+Oct 28, 2012
+$-7870.86
+	
+Bill
+Jun 9, 2018
+$1285.27
+	
+Bill
+Apr 30, 2010
+$-3568.0
+	
+Groceries
+Apr 21, 2011
+$9586.1
+	
+Office
+Nov 17, 2013
+$6788.77
+	
+Insurance
+Nov 12, 2013
+$3993.11
+	
+Gift
+Mar 4, 2012
+$1296.36
+	
+Item
+Aug 16, 2015
+$6877.07
+	
+Medical
+Sep 3, 2010
+$-4545.08
+	
+Bill
+Sep 12, 2015
+$1686.52
+	
+Groceries
+Jun 10, 2010
+$-6010.98
+	
+Fuel
+Nov 23, 2010
+$8733.62
+	
+Insurance
+Dec 3, 2015
+$8721.2
+	
+Supplies
+Jul 5, 2018
+$77.84
+	
+Bill
+Apr 10, 2013
+$-3798.32
+	
+Games
+Jan 3, 2016
+$3903.5
+	
+Automotive
+Jul 4, 2012
+$-8882.39
+	
+Fuel
+Jul 5, 2016
+$-9165.51
+	
+Services
+Mar 4, 2015
+$6467.94
+	
+Item
+Mar 6, 2010
+$9797.43
+	
+Office
+May 5, 2017
+$-5182.26
+	
+Automotive
+Nov 16, 2015
+$-9786.85
+	
+Gift
+May 21, 2014
+$-1075.26
+	
+Automotive
+Feb 15, 2015
+$406.54
+	
+Automotive
+Sep 20, 2016
+$-1492.37
+	
+Medical
+Oct 21, 2010
+$-6819.73
+	
+Automotive
+Feb 3, 2016
+$-6688.95
+	
+Supplies
+Jun 19, 2012
+$1565.75
+	
+Office
+Aug 5, 2012
+$2888.86
+	
+Bill
+Oct 17, 2011
+$-2026.76
+	
+Automotive
+Jun 16, 2010
+$9209.79
+	
+Office
+Apr 8, 2015
+$-5496.58
+	
+Supplies
+Jul 13, 2010
+$9386.43
+	
+Groceries
+Sep 5, 2015
+$-8689.68
+	
+Item
+Jun 24, 2010
+$9199.2
+	
+Item
+Dec 29, 2013
+$2934.42
+	
+Insurance
+Oct 7, 2017
+$1854.43
+	
+Groceries
+Mar 25, 2011
+$2836.31
+	
+Supplies
+Apr 9, 2016
+$-4635.1
+	
+Automotive
+Nov 21, 2010
+$6394.87
+	
+Fuel
+Nov 27, 2013
+$2420.39
+	
+Bill
+Feb 3, 2012
+$-1105.05
+	
+Services
+Jun 5, 2012
+$-8465.97
+	
+Automotive
+Jun 1, 2016
+$3083.34
+	
+Supplies
+Aug 7, 2014
+$2081.48
+	
+Office
+Sep 15, 2013
+$-9652.06
+	
+Medical
+Mar 1, 2017
+$-371.8
+	
+Games
+Jan 6, 2013
+$-835.25
+	
+Medical
+Dec 16, 2015
+$-5736.12
+	
+Bill
+Jul 24, 2014
+$-3085.77
+	
+Groceries
+Jul 26, 2013
+$2691.93
+	
+Groceries
+Aug 11, 2010
+$8309.46
+	
+Bill
+Sep 22, 2010
+$5278.85
+	
+Games
+Sep 22, 2018
+$1382.34
+	
+Bill
+Mar 5, 2014
+$-561.49
+	
+Games
+Feb 9, 2011
+$5181.58
+	
+Gift
+Jul 10, 2018
+$-543.05
+	
+Gift
+Mar 11, 2014
+$1052.23
+	
+Automotive
+Jan 9, 2016
+$-4434.61
+	
+Office
+Jan 14, 2014
+$9656.92
+	
+Supplies
+May 9, 2010
+$-1285.6
+	
+Services
+Mar 6, 2012
+$892.17
+	
+Item
+Jan 22, 2018
+$5626.25
+	
+Automotive
+Feb 24, 2011
+$4742.35
+	
+Supplies
+Aug 3, 2010
+$-3596.66
+	
+Medical
+Jun 26, 2011
+$-6849.93
+	
+Supplies
+Nov 22, 2017
+$-4092.71
+	
+Games
+Jan 5, 2013
+$-9515.17
+	
+Supplies
+Mar 30, 2017
+$3520.23
+	
+Games
+Jun 9, 2013
+$-8462.55
+	
+Gift
+Apr 30, 2018
+$3540.06
+	
+Groceries
+Sep 28, 2014
+$8599.56
+	
+Groceries
+Nov 19, 2013
+$1694.48
+	
+Automotive
+Nov 8, 2010
+$-5391.63
+	
+Supplies
+Jul 15, 2016
+$-6.21
+	
+Games
+Mar 29, 2018
+$-1886.45
+	
+Insurance
+Mar 14, 2015
+$-8148.15
+	
+Gift
+Sep 12, 2014
+$2584.28
+	
+Bill
+Jul 30, 2017
+$8124.86
+	
+Services
+Apr 5, 2016
+$1011.77
+	
+Groceries
+Jan 1, 2016
+$45.06
+	
+Fuel
+Dec 17, 2010
+$4629.89
+	
+Supplies
+Feb 20, 2017
+$-8878.48
+	
+Bill
+Jul 29, 2013
+$8689.86
+	
+Games
+Mar 4, 2010
+$-7333.48
+	
+Services
+Jan 12, 2014
+$9463.96
+	
+Medical
+Feb 6, 2013
+$8967.01
+	
+Medical
+Aug 27, 2013
+$4958.59
+	
+Item
+Oct 12, 2011
+$2105.73
+	
+Groceries
+Mar 26, 2018
+$-8807.2
+	
+Gift
+Apr 24, 2016
+$3454.48
+	
+Item
+Mar 24, 2017
+$-588.23
+	
+Bill
+Nov 19, 2010
+$-9113.23
+	
+Gift
+Oct 30, 2013
+$4383.17
+	
+Gift
+Feb 17, 2013
+$6322.02
+	
+Item
+Aug 4, 2014
+$-3839.46
+	
+Fuel
+Jul 6, 2012
+$7418.69
+	
+Automotive
+May 29, 2016
+$7645.33
+	
+Bill
+Jul 4, 2014
+$6736.6
+	
+Games
+May 7, 2011
+$7253.65
+	
+Groceries
+Mar 14, 2017
+$9714.48
+	
+Fuel
+Nov 20, 2017
+$3375.68
+	
+Automotive
+Nov 15, 2015
+$4140.66
+	
+Services
+Jul 14, 2017
+$-2455.52
+	
+Item
+Jun 19, 2010
+$-5218.25
+	
+Games
+Jul 19, 2014
+$-7187.62
+	
+Fuel
+Jan 24, 2014
+$-9614.75
+	
+Medical
+Nov 15, 2014
+$-1667.89
+	
+Office
+Aug 14, 2014
+$-9138.78
+	
+Automotive
+Mar 14, 2010
+$186.49
+	
+Games
+Jan 21, 2017
+$-8891.07
+	
+Bill
+Apr 14, 2013
+$-9204.81
+	
+Bill
+Nov 28, 2012
+$7286.34
+	
+Games
+Feb 17, 2016
+$-2495.32
+	
+Medical
+Aug 14, 2010
+$-9518.44
+	
+Office
+Nov 29, 2012
+$-2946.53
+	
+Groceries
+Jan 27, 2013
+$-7539.52
+	
+Automotive
+Jul 4, 2017
+$2378.77
+	
+Fuel
+Jan 13, 2014
+$5717.57
+	
+Office
+Oct 12, 2014
+$6633.82
+	
+Games
+Jun 15, 2015
+$4295.37
+	
+Bill
+Jul 5, 2010
+$5321.22
+	
+Insurance
+Jun 27, 2016
+$8173.07
+	
+Bill
+Feb 25, 2015
+$9183.29
+	
+Games
+Jun 16, 2016
+$9427.45
+	
+Gift
+Jun 12, 2014
+$-9945.64
+	
+Fuel
+Dec 20, 2012
+$6376.77
+	
+Gift
+Jan 14, 2013
+$463.74
+	
+Medical
+Sep 8, 2012
+$-2373.71
+	
+Services
+Oct 18, 2017
+$635.49
+	
+Supplies
+Feb 20, 2012
+$-6995.63
+	
+Groceries
+Feb 7, 2016
+$-2021.31
+	
+Supplies
+Jan 4, 2015
+$6031.86
+	
+Medical
+Dec 21, 2013
+$2578.4
+	
+Medical
+Mar 4, 2010
+$-7408.37
+	
+Office
+Sep 17, 2015
+$5024.42
+	
+Games
+Feb 24, 2015
+$-5794.82
+	
+Item
+Jun 4, 2017
+$1656.17
+	
+Office
+Dec 13, 2014
+$9691.3
+	
+Office
+Apr 24, 2018
+$-2475.99
+	
+Supplies
+Jan 14, 2016
+$-4550.39
+	
+Groceries
+Feb 18, 2014
+$3698.76
+	
+Item
+Nov 25, 2017
+$8214.09
+	
+Medical
+Apr 29, 2015
+$-3305.98
+	
+Services
+Apr 1, 2014
+$-7542.65
+	
+Medical
+Jan 9, 2017
+$1452.93
+	
+Medical
+Aug 7, 2010
+$-8145.52
+	
+Insurance
+May 9, 2016
+$-7589.56
+	
+Services
+Apr 2, 2015
+$6058.86
+	
+Medical
+Nov 7, 2010
+$450.87
+	
+Automotive
+Sep 29, 2016
+$2786.81
+	
+Fuel
+Dec 17, 2013
+$-2918.7
+	
+Item
+Mar 2, 2018
+$4700.19
+	
+Services
+Jul 28, 2017
+$4837.92
+	
+Bill
+Mar 20, 2013
+$-8772.44
+	
+Gift
+Oct 13, 2016
+$-2099.63
+	
+Supplies
+Aug 25, 2016
+$-753.99
+	
+Automotive
+Jan 21, 2016
+$-3761.47
+	
+Medical
+Jun 16, 2015
+$-8005.18
+	
+Groceries
+Oct 2, 2010
+$-3452.59
+	
+Fuel
+Oct 1, 2011
+$2803.81
+	
+Office
+Mar 25, 2012
+$-6006.37
+	
+Services
+Mar 14, 2012
+$-4143.96
+	
+Office
+Oct 30, 2014
+$-283.16
+	
+Bill
+Jan 15, 2015
+$8487.36
+	
+Automotive
+Feb 9, 2012
+$3481.45
+	
+Medical
+Feb 9, 2012
+$3240.4
+	
+Office
+Jul 16, 2010
+$-8701.67
+	
+Supplies
+Mar 5, 2013
+$9385.12
+	
+Office
+Nov 9, 2016
+$737.7
+	
+Supplies
+Sep 6, 2018
+$-4197.81
+	
+Item
+May 25, 2010
+$-2401.03
+	
+Bill
+Oct 20, 2018
+$-5527.92
+	
+Insurance
+Dec 11, 2012
+$6219.99
+	
+Office
+Dec 6, 2012
+$-2643.11
+	
+Services
+May 6, 2015
+$-9311.65
+	
+Insurance
+May 9, 2012
+$1801.04
+	
+Insurance
+Jun 13, 2018
+$8315.27
+	
+Gift
+Oct 28, 2014
+$-128.35
+	
+Games
+Jun 27, 2017
+$1763.85
+	
+Automotive
+Aug 7, 2010
+$-3967.99
+	
+Automotive
+Oct 27, 2011
+$8067.84
+	
+Gift
+Feb 9, 2015
+$2477.05
+	
+Insurance
+Sep 18, 2018
+$-3624.49
+	
+Medical
+Jan 5, 2015
+$1206.3
+	
+Games
+Jan 30, 2011
+$-9390.35
+	
+Gift
+Sep 21, 2013
+$-8122.6
+	
+Bill
+May 29, 2013
+$-3584.47
+	
+Office
+Jul 1, 2011
+$1643.96
+	
+Services
+Jun 14, 2014
+$5903.22
+	
+Bill
+Sep 8, 2010
+$1071.54
+	
+Automotive
+Jul 1, 2014
+$-30.62
+	
+Insurance
+Jun 11, 2014
+$3941.7
+	
+Medical
+Oct 6, 2013
+$1661.7
+	
+Insurance
+Jan 3, 2015
+$-43.23
+	
+Item
+Sep 10, 2011
+$9441.77
+	
+Bill
+Jul 19, 2016
+$-8729.81
+	
+Bill
+Apr 19, 2011
+$-5310.78
+	
+Fuel
+Apr 6, 2015
+$-3826.71
+	
+Games
+Apr 4, 2015
+$-9188.1
+	
+Groceries
+Sep 7, 2011
+$-2481.82
+	
+Item
+Nov 25, 2016
+$-6611.21
+	
+Item
+Jun 5, 2018
+$-2543.05
+	
+Games
+Apr 15, 2017
+$-7560.8
+	
+Insurance
+Nov 5, 2010
+$3302.63
+	
+Supplies
+Apr 5, 2017
+$-6186.08
+	
+Games
+Oct 26, 2017
+$7803.15
+	
+Insurance
+May 3, 2010
+$-9468.08
+	
+Supplies
+Jan 30, 2016
+$8462.58
+	
+Automotive
+May 28, 2017
+$4393.76
+	
+Games
+Feb 19, 2017
+$-1095.18
+	
+Groceries
+Feb 17, 2018
+$207.36
+	
+Gift
+Sep 17, 2011
+$6376.46
+	
+Fuel
+Apr 2, 2017
+$-9659.07
+	
+Fuel
+Jun 30, 2016
+$-4387.26
+	
+Insurance
+Jul 20, 2011
+$-3985.94
+	
+Fuel
+Nov 14, 2018
+$-5709.48
+	
+Bill
+Feb 22, 2018
+$7754.63
+	
+Gift
+Nov 12, 2010
+$-423.45
+	
+Services
+Oct 19, 2011
+$3852.51
+	
+Fuel
+Feb 19, 2017
+$818.75
+	
+Games
+Jan 8, 2015
+$-439.08
+	
+Medical
+Jul 10, 2013
+$8759.79
+	
+Services
+Mar 13, 2017
+$-2577.49
+	
+Automotive
+Oct 16, 2014
+$-3127.9
+	
+Services
+Sep 19, 2018
+$-9314.34
+	
+Item
+Sep 20, 2014
+$-7817.23
+	
+Gift
+Jan 2, 2013
+$-3358.44
+	
+Services
+Jan 1, 2017
+$-502.32
+	
+Gift
+Jan 28, 2014
+$8234.82
+	
+Insurance
+Jul 6, 2015
+$9031.94
+	
+Gift
+Jul 7, 2010
+$2920.29
+	
+Games
+Nov 30, 2017
+$-543.87
+	
+Automotive
+May 2, 2010
+$3960.36
+	
+Office
+Nov 16, 2015
+$-815.21
+	
+Supplies
+Jan 15, 2011
+$-3253.07
+	
+Insurance
+Feb 12, 2018
+$2838.08
+	
+Insurance
+Oct 22, 2017
+$-9080.69
+	
+Medical
+Oct 4, 2015
+$-1765.66
+	
+Office
+Jan 1, 2010
+$6724.84
+	
+Fuel
+Jun 9, 2014
+$-5381.67
+	
+Medical
+Dec 21, 2018
+$3987.06
+	
+Groceries
+May 6, 2013
+$4257.52
+	
+Services
+Jul 8, 2016
+$-3977.11
+	
+Fuel
+Mar 1, 2017
+$7768.79
+	
+Office
+Jan 1, 2014
+$-5234.83
+	
+Automotive
+Nov 30, 2015
+$5856.82
+	
+Medical
+May 6, 2015
+$2140.32
+	
+Gift
+Jun 23, 2011
+$-4600.7
+	
+Automotive
+Jul 23, 2017
+$-4572.27
+	
+Services
+Apr 9, 2013
+$-8585.19
+	
+Insurance
+Feb 3, 2013
+$8954.0
+	
+Groceries
+Mar 29, 2017
+$-4632.42
+	
+Bill
+May 7, 2018
+$-6820.8
+	
+Services
+Feb 28, 2018
+$-1963.74
+	
+Groceries
+Jul 19, 2016
+$6207.32
+	
+Services
+Apr 12, 2015
+$6897.77
+	
+Fuel
+Apr 8, 2016
+$7250.66
+	
+Item
+May 22, 2017
+$5312.74
+	
+Fuel
+Aug 29, 2011
+$916.38
+	
+Insurance
+Aug 10, 2018
+$6969.16
+	
+Games
+Mar 6, 2018
+$-6259.74
+	
+Supplies
+Aug 25, 2016
+$-6170.27
+	
+Services
+Sep 1, 2015
+$7610.75
+	
+Groceries
+Feb 9, 2014
+$584.81
+	
+Gift
+Dec 23, 2013
+$107.52
+	
+Services
+Feb 16, 2018
+$-8753.51
+	
+Fuel
+Dec 4, 2010
+$-107.82
+	
+Services
+Jun 3, 2017
+$3502.03
+	
+Gift
+Nov 25, 2016
+$-9239.9
+	
+Bill
+Oct 1, 2014
+$-186.01
+	
+Fuel
+Feb 25, 2013
+$-5513.75
+	
+Services
+Feb 6, 2017
+$-1395.35
+	
+Gift
+May 13, 2010
+$7925.58
+	
+Gift
+Feb 17, 2017
+$-1643.53
+	
+Games
+Jul 23, 2013
+$778.25
+	
+Supplies
+Dec 14, 2010
+$7819.59
+	
+Games
+Feb 16, 2017
+$-2120.42
+	
+Gift
+Jun 27, 2016
+$-972.83
+	
+Automotive
+Jan 16, 2013
+$3766.06
+	
+Office
+Sep 19, 2017
+$327.61
+	
+Services
+Sep 17, 2018
+$1605.62
+	
+Games
+Nov 8, 2010
+$-5440.7
+	
+Office
+Oct 16, 2014
+$-3570.76
+	
+Insurance
+Jan 18, 2018
+$-5208.62
+	
+Groceries
+Jan 24, 2010
+$1090.91
+	
+Gift
+Feb 6, 2015
+$-4732.06
+	
+Automotive
+Mar 5, 2015
+$-1295.3
+	
+Supplies
+Jul 7, 2010
+$8420.94
+	
+Medical
+Feb 11, 2015
+$7716.18
+	
+Supplies
+Jul 6, 2010
+$6719.25
+	
+Automotive
+Dec 3, 2016
+$-5423.9
+	
+Insurance
+Mar 18, 2013
+$-1080.09
+	
+Gift
+Dec 28, 2017
+$-2423.41
+	
+Supplies
+Dec 29, 2013
+$-1231.87
+	
+Office
+Feb 16, 2013
+$6225.27
+	
+Office
+Dec 6, 2017
+$-3296.94
+	
+Groceries
+Apr 27, 2012
+$74.76
+	
+Item
+Jan 14, 2011
+$4575.82
+	
+Games
+Dec 7, 2018
+$4760.34
+	
+Games
+Mar 26, 2011
+$-5751.3
+	
+Groceries
+Feb 25, 2018
+$-9244.44
+	
+Automotive
+Jan 18, 2015
+$4254.14
+	
+Groceries
+Nov 12, 2012
+$-9273.07
+	
+Insurance
+Jul 26, 2010
+$7046.89
+	
+Supplies
+Jan 15, 2017
+$7106.65
+	
+Gift
+Mar 22, 2014
+$-8057.03
+	
+Bill
+Jan 15, 2014
+$4424.82
+	
+Item
+Nov 24, 2016
+$6327.28
+	
+Item
+Mar 24, 2015
+$-3072.74
+	
+Insurance
+Jun 15, 2018
+$-2587.0
+	
+Office
+Jul 15, 2015
+$5994.17
+	
+Gift
+Dec 11, 2017
+$7597.86
+	
+Automotive
+Apr 5, 2010
+$2871.88
+	
+Fuel
+Feb 13, 2015
+$-6304.19
+	
+Insurance
+Apr 29, 2012
+$-1698.32
+	
+Bill
+Mar 22, 2012
+$998.68
+	
+Bill
+Sep 8, 2015
+$3904.27
+	
+Supplies
+May 25, 2011
+$-9221.51
+	
+Office
+Nov 4, 2013
+$-8151.5
+	
+Item
+Oct 12, 2014
+$9572.27
+	
+Bill
+Aug 23, 2017
+$-5348.84
+	
+Insurance
+Mar 26, 2015
+$-7939.8
+	
+Games
+Oct 4, 2015
+$-9761.98
+	
+Automotive
+May 17, 2013
+$-224.98
+	
+Insurance
+Aug 25, 2011
+$7024.04
+	
+Bill
+Jul 12, 2013
+$-4946.83
+	
+Bill
+Aug 1, 2016
+$7183.26
+	
+Fuel
+Jun 11, 2010
+$4901.58
+	
+Automotive
+Mar 8, 2011
+$4981.09
+	
+Groceries
+Sep 30, 2015
+$-9279.04
+	
+Gift
+Apr 2, 2010
+$-8400.15
+	
+Groceries
+Aug 24, 2017
+$-3433.11
+	
+Item
+Apr 14, 2013
+$-7069.57
+	
+Services
+Jan 17, 2010
+$-3118.32
+	
+Fuel
+Feb 24, 2018
+$-3978.02
+	
+Gift
+Jun 29, 2014
+$-8011.76
+	
+Fuel
+Jan 3, 2016
+$-8970.35
+	
+Gift
+Jun 30, 2017
+$-9735.68
+	
+Automotive
+Jun 3, 2018
+$-4604.81
+	
+Automotive
+Oct 19, 2011
+$-4467.88
+	
+Item
+Apr 19, 2010
+$6515.62
+	
+Supplies
+Oct 25, 2010
+$-908.77
+	
+Services
+Mar 7, 2018
+$8241.24
+	
+Services
+Dec 7, 2013
+$1838.79
+	
+Item
+Apr 14, 2011
+$9202.25
+	
+Insurance
+Mar 24, 2015
+$3470.23
+	
+Fuel
+Aug 10, 2017
+$-9743.32
+	
+Item
+Jun 27, 2016
+$-5190.47
+	
+Insurance
+Aug 18, 2011
+$1413.08
+	
+Insurance
+Oct 8, 2016
+$4414.66
+	
+Medical
+May 19, 2011
+$1598.26
+	
+Games
+Jun 10, 2010
+$1839.74
+	
+Supplies
+Oct 29, 2013
+$-2130.78
+	
+Office
+Jul 29, 2010
+$3970.14
+	
+Fuel
+Jul 30, 2012
+$-6575.55
+	
+Automotive
+Jan 13, 2016
+$5903.35
+	
+Groceries
+May 3, 2018
+$-567.8
+	
+Services
+Oct 2, 2012
+$8711.8
+	
+Games
+Jan 13, 2017
+$-3295.82
+	
+Insurance
+May 21, 2016
+$-558.13
+	
+Services
+Feb 27, 2016
+$-3894.79
+	
+Services
+Nov 13, 2014
+$6785.87
+	
+Services
+Dec 21, 2011
+$6869.87
+	
+Item
+Dec 3, 2015
+$3483.89
+	
+Gift
+Apr 6, 2010
+$9325.09
+	
+Bill
+Oct 11, 2015
+$-5295.19
+	
+Item
+Apr 14, 2016
+$1583.5
+	
+Insurance
+Nov 26, 2010
+$-6981.33
+	
+Bill
+Apr 27, 2015
+$1331.2
+	
+Games
+Dec 11, 2012
+$4265.23
+	
+Fuel
+Jul 24, 2016
+$5700.85
+	
+Supplies
+Oct 22, 2010
+$5370.04
+	
+Medical
+Oct 2, 2014
+$276.47
+	
+Supplies
+Sep 26, 2018
+$2242.96
+	
+Item
+Nov 10, 2011
+$7460.28
+	
+Services
+Jul 19, 2016
+$2164.39
+	
+Supplies
+Oct 2, 2012
+$-6250.32
+	
+Automotive
+Jul 26, 2016
+$5929.97
+	
+Item
+Jul 6, 2013
+$-7010.88
+	
+Automotive
+Feb 26, 2015
+$7459.39
+	
+Supplies
+Sep 7, 2017
+$-9493.13
+	
+Games
+Jun 22, 2013
+$-3887.31
+	
+Fuel
+Jul 22, 2014
+$2411.78
+	
+Fuel
+Aug 5, 2010
+$-5302.47
+	
+Games
+Oct 19, 2017
+$463.77
+	
+Automotive
+Jun 22, 2012
+$-4248.22
+	
+Services
+Aug 8, 2012
+$160.42
+	
+Gift
+Dec 1, 2018
+$3371.39
+	
+Services
+Feb 19, 2014
+$-3619.85
+	
+Office
+Sep 1, 2016
+$-2591.66
+	
+Gift
+Jul 7, 2013
+$-5469.76
+	
+Services
+Nov 30, 2013
+$-7364.86
+	
+Fuel
+Dec 21, 2018
+$-2829.34
+	
+Games
+Mar 14, 2010
+$5371.74
+	
+Insurance
+Oct 27, 2013
+$-2912.07
+	
+Medical
+May 11, 2018
+$3569.31
+	
+Groceries
+Nov 4, 2012
+$-7594.26
+	
+Insurance
+Dec 28, 2010
+$9479.42
+	
+Office
+Nov 17, 2017
+$1233.22
+grandkid_fund
+savings
+$43000.0
+0.02%
+	
+Item
+Oct 17, 2018
+$-2619.9
+	
+Services
+Mar 20, 2010
+$-6263.61
+	
+Games
+Apr 30, 2016
+$-7409.25
+	
+Fuel
+Mar 14, 2017
+$613.93
+	
+Automotive
+Sep 14, 2014
+$622.4
+	
+Insurance
+Aug 10, 2013
+$-7574.4
+	
+Games
+Oct 8, 2017
+$-10.86
+	
+Fuel
+Apr 6, 2016
+$2305.06
+	
+Insurance
+Nov 18, 2011
+$-4474.71
+	
+Supplies
+Apr 9, 2013
+$1220.55
+	
+Office
+Sep 17, 2010
+$-2086.56
+	
+Bill
+Nov 20, 2017
+$-6952.7
+	
+Fuel
+Jan 24, 2016
+$9578.02
+	
+Office
+Jun 13, 2016
+$-9269.05
+	
+Supplies
+Feb 4, 2013
+$9432.32
+	
+Groceries
+Apr 17, 2014
+$3827.58
+	
+Medical
+Sep 6, 2017
+$-1452.33
+	
+Bill
+Feb 1, 2017
+$444.59
+	
+Gift
+Dec 16, 2017
+$-4114.27
+	
+Games
+Jan 18, 2017
+$-5927.57
+	
+Insurance
+Sep 7, 2012
+$9849.03
+	
+Supplies
+Jan 3, 2018
+$3322.72
+	
+Medical
+Jun 30, 2013
+$-2574.58
+	
+Fuel
+May 10, 2017
+$-4181.45
+	
+Gift
+Jul 10, 2010
+$-9197.32
+	
+Automotive
+Aug 1, 2016
+$-2625.74
+	
+Services
+May 7, 2013
+$-7998.96
+	
+Office
+Apr 22, 2013
+$-4576.09
+	
+Medical
+May 18, 2012
+$2612.0
+	
+Automotive
+Jan 4, 2015
+$-2006.42
+	
+Fuel
+Sep 20, 2015
+$9257.29
+	
+Office
+Oct 11, 2017
+$-6745.27
+	
+Bill
+Dec 9, 2018
+$-184.59
+	
+Bill
+Aug 2, 2010
+$2053.66
+	
+Fuel
+Jun 20, 2014
+$-7454.11
+	
+Automotive
+May 12, 2014
+$9302.94
+	
+Fuel
+Dec 20, 2011
+$-5478.75
+	
+Fuel
+Feb 7, 2015
+$-2421.54
+	
+Games
+Jul 18, 2014
+$9619.35
+	
+Services
+Oct 19, 2015
+$5833.3
+	
+Insurance
+Jan 6, 2018
+$4908.28
+	
+Bill
+Apr 20, 2012
+$1275.47
+	
+Supplies
+Apr 5, 2016
+$-9438.16
+	
+Supplies
+May 19, 2017
+$-3070.82
+	
+Insurance
+Jul 29, 2010
+$8275.57
+	
+Automotive
+Feb 25, 2012
+$291.28
+	
+Fuel
+Mar 14, 2012
+$125.76
+	
+Supplies
+Oct 16, 2015
+$9200.04
+	
+Bill
+Jul 2, 2010
+$351.4
+	
+Groceries
+Dec 25, 2013
+$-5739.9
+	
+Services
+Sep 15, 2014
+$-9119.13
+	
+Services
+Mar 18, 2018
+$7933.63
+	
+Supplies
+Jun 7, 2011
+$4621.68
+	
+Supplies
+Jul 4, 2018
+$-952.66
+	
+Services
+Nov 18, 2018
+$-6553.9
+	
+Supplies
+Jul 15, 2018
+$8620.2
+	
+Medical
+Dec 26, 2013
+$-1886.28
+	
+Office
+Aug 29, 2013
+$4547.03
+	
+Automotive
+Apr 28, 2017
+$562.46
+	
+Bill
+Jul 5, 2018
+$-4954.35
+	
+Gift
+Jan 23, 2013
+$3372.7
+	
+Supplies
+Dec 4, 2016
+$-4525.59
+	
+Games
+Apr 27, 2016
+$-7121.22
+	
+Automotive
+Mar 2, 2018
+$2045.04
+	
+Insurance
+Mar 6, 2014
+$293.18
+	
+Games
+Aug 28, 2013
+$6301.46
+	
+Games
+Jan 30, 2011
+$-3939.7
+	
+Gift
+Apr 29, 2015
+$-6472.63
+	
+Item
+Oct 3, 2016
+$-3980.52
+	
+Insurance
+May 20, 2014
+$9315.71
+	
+Fuel
+May 2, 2012
+$-8806.77
+	
+Groceries
+Mar 5, 2012
+$-5472.71
+	
+Supplies
+Feb 2, 2010
+$-3696.08
+	
+Office
+Feb 9, 2010
+$8239.34
+	
+Gift
+Apr 12, 2015
+$3447.0
+	
+Gift
+May 29, 2017
+$-191.5
+	
+Bill
+Sep 15, 2018
+$7513.21
+	
+Supplies
+Mar 3, 2016
+$8927.77
+	
+Games
+Jun 3, 2011
+$7568.96
+	
+Office
+Aug 10, 2010
+$938.64
+	
+Fuel
+Nov 15, 2017
+$4898.7
+	
+Fuel
+Mar 14, 2011
+$3373.93
+	
+Office
+Jul 3, 2012
+$-6975.4
+	
+Automotive
+Jun 22, 2013
+$8774.68
+	
+Gift
+Dec 4, 2011
+$9797.19
+	
+Insurance
+Apr 10, 2016
+$-6423.54
+	
+Insurance
+May 16, 2012
+$6459.76
+	
+Supplies
+Mar 28, 2014
+$-1057.71
+	
+Games
+Feb 5, 2017
+$6104.65
+	
+Automotive
+Dec 7, 2017
+$-2212.95
+	
+Fuel
+Nov 27, 2012
+$-5350.6
+	
+Gift
+Jan 4, 2014
+$-5837.4
+	
+Groceries
+Jan 20, 2013
+$-5333.91
+	
+Services
+Nov 10, 2016
+$3234.24
+	
+Bill
+Aug 27, 2011
+$7211.03
+	
+Supplies
+Sep 13, 2012
+$-826.22
+	
+Medical
+Feb 18, 2012
+$-6849.52
+	
+Automotive
+Apr 28, 2010
+$-3371.94
+	
+Bill
+Mar 25, 2011
+$5098.85
+	
+Office
+Dec 30, 2018
+$1514.84
+	
+Services
+Jul 9, 2018
+$-1469.38
+	
+Supplies
+Aug 10, 2015
+$-3418.3
+	
+Medical
+Apr 11, 2012
+$-1741.64
+	
+Supplies
+Mar 2, 2013
+$4583.24
+	
+Games
+Jan 12, 2012
+$-536.75
+	
+Groceries
+Jun 10, 2012
+$-9456.19
+	
+Gift
+Jun 7, 2018
+$3808.91
+	
+Office
+Nov 3, 2011
+$8147.72
+	
+Gift
+Oct 12, 2011
+$-3334.04
+	
+Bill
+Mar 20, 2011
+$2916.64
+	
+Item
+Aug 13, 2017
+$-5264.37
+	
+Office
+Nov 10, 2011
+$-4107.94
+	
+Groceries
+Apr 17, 2010
+$812.85
+	
+Automotive
+Feb 3, 2014
+$-9257.4
+	
+Fuel
+Aug 18, 2010
+$-1690.17
+	
+Insurance
+Feb 12, 2013
+$9585.17
+	
+Supplies
+Feb 8, 2011
+$9521.86
+	
+Bill
+Sep 3, 2011
+$-1326.31
+	
+Automotive
+Jun 21, 2015
+$3320.6
+	
+Medical
+Mar 10, 2013
+$5117.28
+	
+Item
+Feb 20, 2017
+$-2317.62
+	
+Medical
+Jan 21, 2011
+$5895.26
+	
+Insurance
+Jul 19, 2010
+$5688.61
+	
+Games
+Oct 14, 2016
+$-3088.19
+	
+Games
+Mar 11, 2015
+$8672.7
+	
+Automotive
+Oct 5, 2018
+$4257.68
+	
+Item
+Nov 26, 2010
+$3146.17
+	
+Automotive
+Nov 1, 2011
+$4116.64
+	
+Bill
+Nov 28, 2011
+$7942.34
+	
+Supplies
+Jul 27, 2013
+$-923.46
+	
+Automotive
+May 16, 2015
+$1406.14
+	
+Groceries
+May 19, 2013
+$-5501.63
+	
+Groceries
+Jan 11, 2018
+$-5014.51
+	
+Groceries
+Nov 8, 2010
+$1893.84
+	
+Games
+Nov 27, 2015
+$-3394.56
+	
+Bill
+Dec 8, 2010
+$107.57
+	
+Office
+Oct 26, 2018
+$4907.04
+	
+Fuel
+Feb 27, 2015
+$7949.97
+	
+Groceries
+May 5, 2012
+$-8202.81
+	
+Groceries
+Jul 12, 2014
+$-7447.54
+	
+Groceries
+May 24, 2012
+$6584.12
+	
+Office
+Feb 26, 2014
+$198.0
+	
+Supplies
+Sep 12, 2017
+$8878.76
+	
+Fuel
+Aug 22, 2013
+$-4886.84
+	
+Medical
+May 9, 2011
+$851.15
+	
+Fuel
+Feb 8, 2017
+$-3600.87
+	
+Office
+Jan 15, 2015
+$-8418.52
+	
+Groceries
+May 7, 2018
+$-6051.97
+	
+Games
+Nov 5, 2016
+$-812.2
+	
+Supplies
+Jun 27, 2016
+$-3830.16
+	
+Games
+Jun 4, 2011
+$10.72
+	
+Games
+Dec 29, 2016
+$-8711.73
+	
+Medical
+Aug 12, 2018
+$1064.57
+	
+Insurance
+Dec 14, 2018
+$-9191.32
+	
+Gift
+Mar 24, 2015
+$-7286.28
+	
+Gift
+Sep 16, 2012
+$-213.59
+	
+Insurance
+Jul 22, 2012
+$6401.87
+	
+Bill
+Feb 7, 2016
+$-9687.61
+	
+Gift
+Apr 3, 2010
+$-1634.61
+	
+Bill
+Dec 22, 2016
+$9078.86
+	
+Groceries
+Dec 26, 2017
+$-1476.19
+	
+Insurance
+Feb 6, 2013
+$-801.85
+	
+Groceries
+Oct 20, 2018
+$-4098.97
+	
+Medical
+Jul 10, 2016
+$3142.24
+	
+Insurance
+Mar 14, 2015
+$-7460.77
+	
+Insurance
+Feb 20, 2018
+$-4419.09
+	
+Groceries
+May 11, 2014
+$9287.84
+	
+Games
+Sep 30, 2014
+$-9832.27
+	
+Games
+Jan 24, 2017
+$4257.86
+	
+Games
+Jan 8, 2012
+$-3588.42
+	
+Fuel
+Dec 22, 2015
+$1115.62
+	
+Office
+Jan 16, 2013
+$5447.27
+	
+Games
+Feb 3, 2014
+$-4449.67
+	
+Supplies
+Jan 17, 2013
+$5864.12
+	
+Item
+Apr 4, 2010
+$-2199.9
+	
+Bill
+Dec 19, 2016
+$2159.77
+	
+Office
+Oct 21, 2013
+$-6513.11
+	
+Gift
+May 26, 2012
+$3566.28
+	
+Games
+Aug 5, 2018
+$-1569.01
+	
+Services
+Jan 15, 2012
+$-5034.68
+	
+Gift
+Apr 18, 2012
+$2639.93
+	
+Item
+Nov 3, 2014
+$-5298.8
+	
+Automotive
+Jul 21, 2016
+$9159.61
+	
+Supplies
+Jan 20, 2013
+$6959.76
+	
+Gift
+Jun 21, 2018
+$-7388.34
+	
+Services
+Jun 23, 2016
+$-5036.31
+	
+Groceries
+May 27, 2014
+$5509.76
+	
+Automotive
+Oct 22, 2018
+$-8188.68
+	
+Automotive
+Apr 27, 2017
+$6148.79
+	
+Games
+Jan 19, 2014
+$-62.65
+	
+Services
+Oct 19, 2010
+$-3891.59
+	
+Automotive
+Apr 4, 2012
+$-203.96
+	
+Insurance
+Aug 20, 2018
+$-2868.06
+	
+Office
+Dec 19, 2015
+$-9334.46
+	
+Insurance
+Jan 5, 2014
+$3071.2
+	
+Office
+Sep 9, 2016
+$8967.73
+	
+Item
+Jan 24, 2012
+$-7721.65
+	
+Gift
+Jul 7, 2018
+$-4978.7
+	
+Fuel
+Mar 19, 2017
+$6641.09
+	
+Automotive
+Dec 15, 2017
+$-9157.02
+	
+Office
+Mar 8, 2018
+$-4427.97
+	
+Gift
+Sep 22, 2010
+$-2061.57
+	
+Bill
+Dec 7, 2017
+$4666.64
+	
+Supplies
+Jul 9, 2010
+$3751.4
+	
+Services
+Jul 6, 2018
+$236.58
+	
+Item
+Apr 4, 2016
+$-7352.26
+	
+Fuel
+Apr 13, 2015
+$-8880.28
+	
+Games
+May 21, 2013
+$6395.44
+	
+Fuel
+Nov 9, 2015
+$-508.57
+	
+Services
+Dec 11, 2015
+$9769.91
+	
+Medical
+Nov 30, 2016
+$2090.9
+	
+Games
+Jul 9, 2011
+$-816.0
+	
+Insurance
+Aug 25, 2012
+$-5616.93
+	
+Insurance
+Dec 15, 2011
+$-8552.13
+	
+Insurance
+Sep 23, 2010
+$-7436.27
+	
+Fuel
+Nov 6, 2012
+$-8451.58
+	
+Automotive
+Feb 10, 2014
+$4658.89
+	
+Medical
+Oct 27, 2012
+$-6340.73
+	
+Games
+Dec 4, 2011
+$-7242.26
+	
+Insurance
+Aug 25, 2017
+$-280.95
+	
+Office
+Dec 17, 2016
+$-3048.49
+	
+Bill
+Feb 20, 2013
+$1431.13
+	
+Supplies
+Apr 26, 2011
+$8943.02
+	
+Fuel
+Feb 15, 2011
+$1334.91
+	
+Services
+Oct 21, 2013
+$-6532.11
+	
+Item
+Sep 14, 2012
+$8886.05
+	
+Bill
+Mar 16, 2010
+$367.65
+	
+Gift
+May 8, 2013
+$-9221.1
+	
+Item
+Dec 14, 2017
+$-6072.29
+	
+Medical
+Jan 25, 2013
+$8881.36
+	
+Item
+Jan 8, 2010
+$1302.44
+	
+Supplies
+Jul 16, 2010
+$-7724.88
+	
+Games
+Mar 17, 2014
+$-6328.29
+	
+Item
+Aug 10, 2011
+$-4540.47
+	
+Groceries
+Sep 9, 2012
+$5195.94
+	
+Insurance
+Oct 9, 2018
+$-3445.41
+	
+Fuel
+Feb 1, 2016
+$-8338.75
+	
+Services
+Nov 1, 2017
+$6410.34
+	
+Medical
+Feb 20, 2016
+$6545.54
+	
+Automotive
+Oct 1, 2010
+$-8709.73
+	
+Games
+Feb 15, 2013
+$-6483.81
+	
+Insurance
+Mar 7, 2011
+$2952.18
+	
+Fuel
+Apr 22, 2017
+$5329.32
+	
+Automotive
+Mar 10, 2014
+$-4478.31
+	
+Automotive
+Nov 28, 2013
+$6788.92
+	
+Medical
+Oct 16, 2010
+$-1128.03
+	
+Games
+Oct 16, 2018
+$-1294.0
+	
+Office
+Oct 20, 2010
+$3933.92
+	
+Bill
+Feb 22, 2012
+$-1651.66
+	
+Fuel
+Jun 11, 2012
+$-7579.69
+	
+Item
+Feb 6, 2015
+$-4820.87
+	
+Office
+Aug 28, 2013
+$-1874.5
+	
+Medical
+Nov 25, 2018
+$-2952.0
+	
+Fuel
+Dec 30, 2011
+$840.17
+	
+Gift
+Jul 12, 2014
+$7534.65
+	
+Item
+Mar 30, 2013
+$8894.1
+	
+Services
+Sep 2, 2016
+$-1221.12
+	
+Services
+Sep 12, 2018
+$9615.01
+	
+Services
+Jan 6, 2016
+$-7400.75
+	
+Bill
+Jul 24, 2010
+$-3911.58
+	
+Item
+Jan 14, 2010
+$5557.6
+	
+Medical
+Jan 28, 2011
+$6353.6
+	
+Bill
+Jun 29, 2017
+$8230.38
+	
+Automotive
+Mar 23, 2010
+$-9280.66
+	
+Fuel
+Feb 1, 2011
+$5476.92
+	
+Groceries
+Feb 20, 2015
+$-7313.52
+	
+Services
+Apr 19, 2017
+$-9063.08
+	
+Services
+Jul 9, 2013
+$-2207.18
+	
+Automotive
+Apr 20, 2015
+$-3853.85
+	
+Insurance
+Sep 13, 2013
+$-3369.59
+	
+Fuel
+Mar 25, 2013
+$1142.85
+	
+Services
+Apr 4, 2010
+$7721.64
+	
+Insurance
+Jul 13, 2016
+$-9325.28
+	
+Services
+Dec 12, 2012
+$2584.88
+	
+Bill
+Dec 14, 2013
+$-2655.49
+	
+Fuel
+Jan 20, 2017
+$9192.49
+	
+Supplies
+Feb 19, 2017
+$2303.12
+	
+Bill
+Feb 13, 2011
+$-3543.99
+	
+Medical
+Sep 20, 2010
+$5275.36
+	
+Services
+Jan 4, 2012
+$-2990.36
+	
+Office
+Jun 18, 2011
+$1460.96
+	
+Item
+Sep 18, 2015
+$9360.89
+	
+Groceries
+Apr 4, 2010
+$3680.43
+	
+Services
+Apr 4, 2013
+$4705.72
+	
+Supplies
+Nov 26, 2017
+$-2666.84
+	
+Bill
+Jan 8, 2015
+$-5052.91
+	
+Supplies
+Nov 21, 2010
+$-5584.15
+	
+Fuel
+Feb 15, 2012
+$3604.94
+	
+Services
+Aug 27, 2015
+$-5059.71
+	
+Item
+Nov 27, 2012
+$-7431.01
+	
+Games
+Aug 6, 2012
+$1327.28
+	
+Services
+Nov 20, 2017
+$-2456.74
+	
+Gift
+Jul 20, 2016
+$-1709.25
+	
+Groceries
+May 16, 2016
+$-8604.96
+	
+Office
+Feb 27, 2014
+$9724.18
+	
+Medical
+Oct 3, 2010
+$5594.94
+	
+Fuel
+Feb 6, 2013
+$-9662.45
+	
+Item
+Jun 3, 2018
+$-1023.33
+	
+Supplies
+Nov 22, 2011
+$-3744.71
+	
+Insurance
+Feb 28, 2011
+$3924.16
+	
+Fuel
+Jul 23, 2010
+$1273.52
+	
+Office
+Jun 1, 2014
+$-8108.25
+	
+Item
+Jul 24, 2013
+$7603.85
+	
+Gift
+Mar 9, 2018
+$-7724.97
+	
+Item
+Jul 10, 2015
+$-1875.28
+	
+Insurance
+Jun 23, 2016
+$5782.71
+	
+Insurance
+Jan 16, 2011
+$5659.38
+	
+Supplies
+May 26, 2014
+$632.75
+	
+Item
+Nov 27, 2013
+$-9347.76
+	
+Bill
+Jun 3, 2012
+$7441.07
+	
+Games
+Jul 7, 2010
+$6686.3
+	
+Fuel
+Jan 3, 2013
+$-2766.49
+	
+Automotive
+Dec 12, 2012
+$-8751.38
+	
+Games
+Nov 12, 2010
+$2547.58
+	
+Supplies
+Jun 30, 2013
+$2497.68
+	
+Groceries
+Mar 26, 2014
+$369.72
+	
+Bill
+May 3, 2017
+$9815.85
+	
+Insurance
+Feb 7, 2010
+$9258.94
+	
+Services
+Jul 13, 2017
+$2755.84
+	
+Office
+Jun 28, 2011
+$-6667.75
+	
+Item
+Jan 18, 2015
+$8537.62
+	
+Gift
+Oct 9, 2011
+$-9960.89
+	
+Groceries
+Oct 8, 2018
+$-740.09
+	
+Medical
+Sep 29, 2010
+$-5649.43
+	
+Gift
+Nov 13, 2018
+$6009.38
+	
+Office
+Jun 2, 2010
+$1965.44
+	
+Bill
+Feb 19, 2012
+$5443.4
+	
+Fuel
+Sep 19, 2017
+$1536.17
+	
+Bill
+Sep 3, 2015
+$5365.42
+	
+Insurance
+May 1, 2018
+$-803.38
+	
+Games
+Aug 20, 2014
+$7293.55
+	
+Automotive
+Dec 26, 2018
+$-3395.51
+	
+Medical
+Jan 11, 2018
+$6843.1
+	
+Bill
+Dec 29, 2018
+$371.74
+	
+Gift
+Jul 28, 2016
+$-4482.83
+	
+Medical
+Feb 10, 2015
+$-9455.24
+	
+Automotive
+Mar 7, 2013
+$-8349.96
+	
+Services
+Oct 19, 2015
+$-1583.46
+	
+Medical
+Nov 8, 2012
+$-6983.98
+	
+Games
+Jun 5, 2012
+$9426.84
+	
+Insurance
+Jan 11, 2010
+$-8949.12
+	
+Gift
+Dec 12, 2011
+$565.16
+	
+Office
+Mar 28, 2012
+$6598.35
+	
+Services
+Aug 16, 2014
+$9178.78
+	
+Gift
+Aug 25, 2014
+$2266.09
+	
+Insurance
+May 30, 2011
+$2362.67
+	
+Bill
+Jul 12, 2015
+$-2659.03
+	
+Bill
+Aug 21, 2017
+$-5561.8
+	
+Office
+Aug 1, 2010
+$1075.94
+	
+Insurance
+Jan 27, 2011
+$995.5
+	
+Gift
+May 25, 2015
+$130.06
+	
+Groceries
+Jul 9, 2014
+$-1524.91
+	
+Fuel
+Oct 16, 2013
+$9948.6
+	
+Games
+Aug 23, 2013
+$504.32
+	
+Gift
+Apr 18, 2011
+$9646.8
+	
+Office
+Aug 15, 2017
+$-1296.62
+	
+Insurance
+Sep 11, 2015
+$-9937.8
+	
+Services
+Nov 17, 2010
+$-5734.38
+	
+Medical
+Feb 20, 2016
+$7427.46
+	
+Office
+Jan 14, 2011
+$-4557.05
+	
+Groceries
+Feb 5, 2015
+$-4233.7
+	
+Games
+Jul 7, 2012
+$8585.25
+	
+Medical
+Feb 13, 2012
+$-7384.44
+	
+Fuel
+Dec 29, 2017
+$-9636.69
+	
+Automotive
+Mar 13, 2011
+$829.16
+	
+Item
+Aug 5, 2018
+$-4670.38
+	
+Item
+Aug 11, 2015
+$-2362.58
+	
+Bill
+Jun 19, 2018
+$5434.83
+	
+Office
+Dec 16, 2011
+$-2757.25
+	
+Item
+Apr 15, 2015
+$-8773.31
+	
+Bill
+Sep 16, 2012
+$-729.72
+	
+Gift
+Mar 14, 2015
+$3232.92
+	
+Games
+Sep 24, 2011
+$-591.37
+	
+Fuel
+Oct 11, 2010
+$-3198.52
+	
+Automotive
+Aug 14, 2017
+$-4564.32
+	
+Gift
+Dec 29, 2018
+$5084.77
+	
+Office
+Nov 28, 2010
+$-796.87
+	
+Services
+Feb 4, 2018
+$8867.49
+	
+Insurance
+Dec 26, 2013
+$8539.04
+	
+Services
+Jan 1, 2016
+$-5181.62
+	
+Supplies
+Jan 14, 2016
+$-9278.67
+	
+Office
+Aug 25, 2014
+$7077.54
+	
+Office
+Jan 30, 2010
+$-2710.33
+	
+Supplies
+Jan 12, 2012
+$2767.55
+	
+Automotive
+May 14, 2018
+$-2574.85
+	
+Item
+Jan 12, 2012
+$7244.66
+	
+Groceries
+Feb 13, 2011
+$-9326.4
+	
+Bill
+Dec 8, 2018
+$7206.46
+	
+Bill
+Aug 15, 2012
+$8971.45
+	
+Supplies
+Sep 24, 2018
+$-8024.29
+	
+Item
+May 6, 2015
+$115.13
+	
+Bill
+Mar 10, 2016
+$8531.72
+	
+Groceries
+Mar 11, 2015
+$-9828.06
+	
+Bill
+May 2, 2012
+$-7382.87
+	
+Supplies
+Mar 23, 2015
+$-1148.98
+	
+Groceries
+Nov 25, 2015
+$5279.48
+	
+Insurance
+Jun 25, 2014
+$337.48
+	
+Fuel
+Mar 5, 2010
+$5594.77
+	
+Insurance
+May 18, 2010
+$1154.72
+	
+Item
+Oct 20, 2012
+$-9540.35
+	
+Bill
+Apr 2, 2011
+$-2314.84
+	
+Games
+Oct 7, 2016
+$936.23
+	
+Fuel
+Jul 14, 2018
+$8286.24
+	
+Bill
+Jan 28, 2011
+$-8291.23
+	
+Item
+Feb 11, 2010
+$537.17
+	
+Games
+Aug 26, 2013
+$1096.68
+	
+Fuel
+Jan 19, 2018
+$-7093.43
+	
+Medical
+Mar 20, 2011
+$-592.31
+	
+Item
+Apr 6, 2017
+$-5283.52
+	
+Item
+Jan 12, 2012
+$-5834.3
+	
+Automotive
+Jul 20, 2011
+$9183.74
+	
+Gift
+Nov 24, 2013
+$3179.76
+	
+Bill
+Nov 25, 2014
+$-5155.03
+	
+Insurance
+Jun 25, 2017
+$-2884.88
+	
+Medical
+Aug 14, 2017
+$1931.1
+	
+Supplies
+Oct 6, 2018
+$9079.55
+	
+Office
+Feb 2, 2012
+$6175.47
+	
+Services
+Feb 21, 2011
+$1954.55
+	
+Supplies
+Nov 19, 2017
+$4856.45
+	
+Office
+Sep 27, 2018
+$-2697.99
+	
+Gift
+Apr 26, 2014
+$-6860.03
+	
+Gift
+Jan 2, 2016
+$493.45
+	
+Bill
+Jan 10, 2018
+$5364.09
+	
+Insurance
+Feb 28, 2011
+$3386.15
+	
+Services
+Jan 26, 2013
+$972.08
+	
+Supplies
+Sep 18, 2017
+$-8134.2
+	
+Supplies
+Jul 25, 2010
+$-8659.93
+	
+Bill
+Sep 1, 2011
+$4657.09
+	
+Medical
+Oct 4, 2011
+$-2437.56
+	
+Supplies
+May 15, 2017
+$-8944.99
+	
+Insurance
+Jun 13, 2012
+$3964.19
+	
+Insurance
+Feb 15, 2011
+$8044.84
+	
+Item
+Jun 15, 2013
+$4131.85
+	
+Automotive
+Jun 15, 2013
+$-3635.73
+	
+Services
+Nov 7, 2016
+$-169.24
+	
+Bill
+Sep 23, 2017
+$5437.5
+	
+Supplies
+Dec 14, 2017
+$5357.23
+	
+Medical
+May 21, 2010
+$-890.85
+	
+Office
+Jul 11, 2015
+$-4477.04
+	
+Gift
+Jan 1, 2017
+$8371.39
+	
+Medical
+Dec 15, 2016
+$-7738.08
+	
+Bill
+Feb 17, 2017
+$9766.53
+
