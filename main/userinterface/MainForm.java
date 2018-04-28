@@ -21,6 +21,7 @@ public class MainForm extends Form {
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
         addButton("autoBillPay", "Add Automatic Bill Pay");
+        addButton("finaicialReport","Create a Financial Report");
 
         addPlaceholders(2);
 
@@ -53,7 +54,9 @@ public class MainForm extends Form {
             case "autoBillPay":
                 changeForm(new AutoBillPayForm(this.getParent()));
                 break;
-
+            case "financialReport":
+                changeForm(new FinancialReportForm(this.getParent()));
+                break;
         }
     }
 }

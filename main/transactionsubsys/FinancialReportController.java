@@ -7,8 +7,8 @@ import main.repositorysys.Account;
 
 public class FinancialReportController {
 
-    public void FinancialReportController(Form zForm) {
-        System.out.println("Placeholder...");
+    public void FinancialReportController() {
+        //System.out.println("Placeholder...");
     }
 
     public void displayFinancialReport(Form zForm, String textAreaName){
