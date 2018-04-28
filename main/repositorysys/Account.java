@@ -16,7 +16,7 @@ public class Account {
   public Account(String inName, String inType, double inBal, double inRate) {
       this.name = inName;
       this.type = inType;
-      this.balance = inbal;
+      this.balance = inBal;
       this.interestRate = inRate;
   }
 
@@ -56,8 +56,8 @@ public class Account {
     this.interestRate = interestRate;
   }
 
-  public Transaction createTransaction(String inCat, double inVal, String inDate, String inVen){
-    zTransaction = new Transaction(inCat, inVal, inDate, inVen);
+  public Transaction createTransaction(String inCat, double inVal, String inDate){
+    Transaction zTransaction = new Transaction(inCat, inVal, inDate);
     transactionCollection.add(zTransaction);
     return zTransaction;
   }
