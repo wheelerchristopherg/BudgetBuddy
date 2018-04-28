@@ -14,7 +14,7 @@ public class MainForm extends Form {
 
         addButton("BillPayReminder_Button", "Add a Bill Reminder");
         addButton("RecordTransaction_Button", "Add a Transaction");
-        addButton("example", "Example Form");
+        addButton("new_asset", "New Asset");
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
@@ -23,6 +23,7 @@ public class MainForm extends Form {
         addButton("amor_cal", "Amortization Calendar");
         addButton("filterTransactions_button", "Filter Transactions");
         addButton("financialReport","Create a Financial Report");
+        addPlaceholders(8);
 
     }
 
@@ -66,6 +67,8 @@ public class MainForm extends Form {
             case "financialReport":
                 changeForm(new FinancialReportForm(this.getParent()));
                 break;
+            case "new_asset":
+                changeForm(new NewAssetForm(this.getParent()));
 
         }
     }

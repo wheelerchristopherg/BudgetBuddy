@@ -29,6 +29,10 @@ public class Repository {
     public static Collection<Asset> getAssets() {
         return assetCollection;
     }
+    
+    public static void createAsset(String name, String type, double value, Date date) {
+        assetCollection.add(new Asset(name, type, value, date));
+    }
 
     public static Collection<Account> getAccounts() {
         return accountCollection;
