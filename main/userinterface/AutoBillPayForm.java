@@ -28,7 +28,7 @@ public class AutoBillPayForm extends Form {
         String reminder_name = "";
         double reminder_amount = 0;
         String reminder_date = "";
-        System.out.println("line 29");
+        
         String name = buttonPressed(event);
         switch (name) {
             case "submit":
