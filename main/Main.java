@@ -1,5 +1,6 @@
 package main;
 
+import java.io.*;
 //compile javac main/Main.java
 //java main.Main
 
@@ -11,8 +12,10 @@ import main.repositorysys.Repository;
 import java.util.Date;
 
 public class Main {
-    public static void main(String[] args) {
-
+    public static void main(String[] args)throws FileNotFoundException{
+        String acctName = "account1";
+        File bankFile = new File("Bank.txt");
+        
         // Controllers
 
         //Create Bank Interface and generate transactions
@@ -21,9 +24,6 @@ public class Main {
         BillPayReminderController billReminderController = new BillPayReminderController();
         billReminderController.loadBillReminders();
         Repository.init();
-        Repository.createLoan("test", 10000.0, 0.005, 2000.0, new Date());
-        
-        System.out.println(Repository.getLoan("test"));
         
         // start window
         SwingUtilities.invokeLater(

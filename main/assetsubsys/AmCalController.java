@@ -32,9 +32,12 @@ public class AmCalController {
             principal.add(i, (currentBalance + (currentBalance * interestRate) > monthlyPayment ?
                     monthlyPayment - (currentBalance * interestRate) :
                     currentBalance - (currentBalance * interestRate)));
-            currentBalance -= principal.get(i);
+            currentBalance -= (currentBalance * interestRate) + principal.get(i);
             i++;
         }
+        principal.remove(principal.size() - 1);
+        principal.add(monthlyPayment);
+
         
         Double[] principalArrayWrapper = new Double[0];
         principalArrayWrapper = principal.<Double>toArray(principalArrayWrapper);
