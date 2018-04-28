@@ -8,11 +8,11 @@ public class Account {
   private double interestRate;
   private String name;
   private Collection<Transaction> transactionCollection;
-  
+
   public Account() {
-      
+
   }
-  
+
   public String getType(){
     return type;
   }
@@ -32,7 +32,7 @@ public class Account {
   public Collection<Transaction> getTransactions(){
     return transactionCollection;
   }
-  
+
   public void setType(String type){
     this.type = type;
   }
@@ -48,4 +48,18 @@ public class Account {
   public void setInterestRate(String name){
     this.name = name;
   }
+
+  public boolean isSavings() {
+      if(type.equals("savings")) {
+          return true;
+      }
+      return false;
+  }
+
+    public boolean isCredit() {
+        if(type.equals("credit")) {
+            return true;
+        }
+        return false;
+    }
 }

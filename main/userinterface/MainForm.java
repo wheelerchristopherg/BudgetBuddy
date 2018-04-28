@@ -9,7 +9,7 @@ public class MainForm extends Form {
     public MainForm(Window parent) {
         super(parent);
 
-        setGridLayout(6, 3);
+        setGridLayout(6, 4);
 
         //addPlaceholder();
         //addLabel("Budget Buddy");
@@ -23,8 +23,8 @@ public class MainForm extends Form {
         addButton("savings networth over time", "Savings Networth Over Time");
         addButton("autoBillPay", "Add Automatic Bill Pay");
         addButton("value_of_assets_button", "Display Value of Assets");
-        addButton("filterTransactions_button", "Filter Transactions");
-        addPlaceholders(2);
+        addButton("assetValue_button", "View Value of Assets");
+        addButton("amor_cal", "Amortization Calendar");
 
     }
 
@@ -55,18 +55,17 @@ public class MainForm extends Form {
             case "autoBillPay":
                 changeForm(new AutoBillPayForm(this.getParent()));
                 break;
-            case "amor cal":
+            case "assetValue_button":
+                new DisplayValueOfAssetsController(this);
+                break;
+            case "amor_cal":
+                
                 changeForm(new AmortizationCalendarForm(this.getParent()));
                 break;
 
             case "value_of_assets_button":
                 new DisplayValueOfAssetsController(this);
                 break;
-
-            case "filterTransactions_button":
-                changeForm(new FilterForm(this.getParent()));
-                break;
-
 
         }
     }
