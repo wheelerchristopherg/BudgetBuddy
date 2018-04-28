@@ -24,16 +24,16 @@ public class Repository {
     // Transactions are located as a collection within Account
 
     public static Collection<Asset> getAssets() {
-        return assets;
+        return assetCollection;
     }
 
     public static Collection<Account> getAccounts() {
-        return accounts;
+        return accountCollection;
     }
 
     public static Collection<Account> getSavingsAccounts() {
         Collection<Account> sAccounts = null;
-        for (Account a: accounts) {
+        for (Account a: accountCollection) {
             if(a.isSavings()) {
                 sAccounts.add(a);
             }
@@ -43,7 +43,7 @@ public class Repository {
 
     public static Collection<Account> getCreditAccounts() {
         Collection<Account> cAccounts = null;
-        for (Account a: accounts) {
+        for (Account a: accountCollection) {
             if(a.isSavings()) {
                 cAccounts.add(a);
             }
@@ -52,12 +52,12 @@ public class Repository {
     }
 
     public static Collection<Loan> getLoans() {
-        return loans;
+        return loanCollection;
     }
 
     public static Loan getLoan(String nameIn) {
-        Loan targetLoan;
-        for (Loan l: loans) {
+        Loan targetLoan = null;
+        for (Loan l: loanCollection) {
             if(l.getName().equals(nameIn)) {
                 targetLoan = l;
             }
@@ -112,6 +112,10 @@ public class Repository {
                     }
             System.out.println("\n");
         }
+    }
+    
+    public static void createLoan(String nameIn, double amountIn, double interestRateIn, double monthlyPaymentIn, Date startDateIn) {
+        loanCollection.add(new Loan(nameIn, amountIn, interestRateIn, monthlyPaymentIn, startDateIn));
     }
 
 }

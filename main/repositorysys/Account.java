@@ -33,10 +33,6 @@ public class Account {
     return transactionCollection;
   }
 
-  public Collection<Transaction> getTransactions(){
-    return transactionCollection;
-  }
-
   public void setType(String type){
     this.type = type;
   }
@@ -66,8 +62,4 @@ public class Account {
         }
         return false;
     }
-
-  public Collection<Transaction> getTransactions() {
-      return transactions;
-  }
 }

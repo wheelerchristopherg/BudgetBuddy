@@ -10,7 +10,8 @@ public class Loan {
     private double monthlyPayment;
     private Date startDate;
 
-    public Loan(double amountIn, double interestRateIn, double monthlyPaymentIn, Date startDateIn) {
+    public Loan(String nameIn, double amountIn, double interestRateIn, double monthlyPaymentIn, Date startDateIn) {
+        name = nameIn;
         amount = amountIn;
         interestRate = interestRateIn;
         monthlyPayment = monthlyPaymentIn;
@@ -59,5 +60,9 @@ public class Loan {
 
     public boolean isBefore(Date dateIn) {
         return startDate.before(dateIn);
+    }
+    
+    public String toString() {
+        return "Loan(" + name + ", " + amount + ", " + interestRate + ", " + monthlyPayment + ")";
     }
 }

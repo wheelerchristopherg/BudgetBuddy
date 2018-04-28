@@ -99,7 +99,7 @@ public class SavingsNetWorthValueController {
     private double calculateSavingsAtDate(Date dateIn) {
         Collection<Account> sAccounts = Repository.getSavingsAccounts();
         Collection<Transaction> transactions = null;
-        double totalSavings;
+        double totalSavings = 0;
 
         for (Account acc : sAccounts) {
             totalSavings += acc.getBalance();
@@ -112,16 +112,16 @@ public class SavingsNetWorthValueController {
         for (Transaction t : transactions) {
             if (t.isBefore(dateIn)) {
                 totalSavings += t.getValue();
-            }
-
-            return totalSavings;
+            }   
         }
+        
+        return totalSavings;
     }
 
     private double calculateCreditAtDate(Date dateIn) {
         Collection<Account> cAccounts = Repository.getCreditAccounts();
         Collection<Transaction> transactions = null;
-        double totalCredit;
+        double totalCredit = 0;
 
         for (Account acc : cAccounts) {
             totalCredit -= acc.getBalance();
@@ -135,8 +135,8 @@ public class SavingsNetWorthValueController {
             if (t.isAfter(dateIn)) {
                 totalCredit += t.getValue();
             }
-
-            return totalCredit;
         }
+        
+        return totalCredit;
     }
 }
