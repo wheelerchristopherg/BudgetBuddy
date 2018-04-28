@@ -19,7 +19,7 @@ public class FinancialReportController {
             buildText = buildText+acc.getName()+"\n"+acc.getType()+"\n$"+acc.getBalance()+"\n"+acc.getInterestRate()+"%\n";
             for(Transaction trans : acc.getTransactions()){
                 // Add to the buildText the transaction vendor, category, value,and date
-                buildText = buildText+"\t"+trans.getVendor()+"\n"+trans.getCategory()+"\n"+trans.getDate()+"\n$"+trans.getValue()+"\n";
+                buildText = buildText+"\t"+"\n"+trans.getCategory()+"\n"+trans.getDate()+"\n$"+trans.getValue()+"\n";
             }
         }
         //System.out.println("Setting zForm to the buildText...");
