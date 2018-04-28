@@ -13,7 +13,8 @@ public class ExampleForm extends Form {
         
         setGridLayout(2, 2);
         
-        String[] labels = {"first", "second", "third", "fourth", "fifth", "sixth", "seventh"};
+        String[] labels = {"first", "second", "third", "fourth", "fifth"};
+        double[] parts = {10, 10, 10, 10, 10};
         
         double[] steps = {50, 110, 220, 370, 530, 720, 950};
         
@@ -26,7 +27,7 @@ public class ExampleForm extends Form {
         
         Graph amorCal = GraphFactory.createAmortizationCalendar(1000.0, steps);
         Graph lineGraph = GraphFactory.createLineGraph(x, y, startDate, endDate);
-        Graph piechart = GraphFactory.createPieChart(steps, labels);
+        Graph piechart = GraphFactory.createPieChart(parts, labels);
         
         add(amorCal);
         add(lineGraph);

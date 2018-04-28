@@ -183,12 +183,13 @@ public class Graph extends JPanel {
             } else {
                 cummulativeAngles[i] = cummulativeAngles[i - 1] + angles[i];
             }
+            System.out.println("cummulativeAngles[" + i + "]: " + cummulativeAngles[i]);
         }
         
         Color[] colors = {Color.RED, Color.BLUE, Color.GREEN, Color.ORANGE, Color.MAGENTA, Color.YELLOW, Color.PINK, Color.CYAN};
         
         Ellipse2D.Double circleClip = new Ellipse2D.Double(30, 30, 230, 230);
-        double[] center = {130, 130};
+        double[] center = {145, 145};
         int slice = 0;
         double defLength = 500.0;
         double prevAngle = 0.0;
@@ -200,20 +201,34 @@ public class Graph extends JPanel {
             wedgeClip.lineTo(center[0] + (Math.cos(currentAngle) * defLength), center[1] + (Math.sin(currentAngle) * defLength));
             wedgeClip.closePath();
             
-            g.clipRect(0,0,600,600);
             g.clip(circleClip);
             g.clip(wedgeClip);
             
-            /*while (cummulativeAngles[slice]) {
+            while (prevAngle < currentAngle) {
+                System.out.println("slice: " + slice);
+                System.out.println("current slice angle: " + cummulativeAngles[slice]);
                 g.setColor(colors[slice]);
                 Path2D.Double wedge = new Path2D.Double();
                 wedge.moveTo(center[0], center[1]);
                 wedge.lineTo(center[0] + (Math.cos(prevAngle) * defLength), center[1] + (Math.sin(prevAngle) * defLength));
-                wedge.lineTo(center[0] + (Math.cos(cummulativeAngles[slice]) * defLength), center[1] + (Math.sin(cummulativeAngles[slice]) * defLength));
+                wedge.lineTo(center[0] + (Math.cos(currentAngle) * defLength), center[1] + (Math.sin(currentAngle) * defLength));
                 wedge.closePath();
                 
-            }*/
+                g.fill(wedge);
+                g.draw(wedge);
+                
+                if (cummulativeAngles[slice] < currentAngle) {
+                    prevAngle = cummulativeAngles[slice];
+                    slice++;
+                } else {
+                    prevAngle = currentAngle;
+                }
+                
+            }
+            g.setClip(0,0,350, 350);
         }
+        
+        g.setColor(Color.BLACK);
         
         
     }
