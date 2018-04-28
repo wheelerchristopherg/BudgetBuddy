@@ -30,7 +30,7 @@ public class AutomaticBillPayController {
     }
 
     public void setAutomaticBillPay(String name, double value, String dueDateString) {
-        TransactionSystem.loadBillOnAutoPay();
+        //TransactionSystem.loadBillOnAutoPay();
         reminder = Repository.createAutomaticBillPayReminder(name, value, dueDateString);
         TransactionSystem.saveBillsOnAutoPay();
 

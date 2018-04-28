@@ -15,19 +15,20 @@ public class RecordTransactionController {
     }
     
     public void recordTransaction(String category, double value, String transDate) {
-        
         Repository.getAccount("cash").createTransaction(category, value, transDate);
         TransactionSystem.saveTransactions();
     }
     
     public void getTransactions() {
-        TransactionSystem.loadCashTransactions();
+        //TransactionSystem.loadCashTransactions();
         String transactionList = "";
-        for (Transaction t : Repository.getAccount("cash").getTransactions()) {
-            transactionList += t.getCategory() + ",\t" + t.getValue() + ",\t" + t.getDateString() + "\n";
+        if(!Repository.getAccount("cash").getTransactions().isEmpty()) {
+            for (Transaction t : Repository.getAccount("cash").getTransactions()) {
+                transactionList += t.getCategory() + ",\t" + t.getValue() + ",\t" + t.getDateString() + "\n";
+            }
         }
-        
         form.setText("TransactionList", transactionList);
+        //TransactionSystem.saveTransactions();
     }
 
 }
