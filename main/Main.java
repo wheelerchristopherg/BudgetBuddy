@@ -10,6 +10,7 @@ import javax.swing.SwingUtilities;
 import main.transactionsubsys.BillPayReminderController;
 import main.repositorysys.Repository;
 import java.util.Date;
+import main.transactionsubsys.TransactionSystem;
 
 public class Main {
     public static void main(String[] args)throws FileNotFoundException{
@@ -19,11 +20,13 @@ public class Main {
         // Controllers
 
         //Create Bank Interface and generate transactions
-        BankDataInterface bank = new BankDataInterface();
+        //BankDataInterface bank = new BankDataInterface();
         //bank.generateTransactions(1000); // Comment out after first run
         BillPayReminderController billReminderController = new BillPayReminderController();
         billReminderController.loadBillReminders();
         Repository.init();
+        
+        TransactionSystem.loadCashTransactions();
         
         // start window
         SwingUtilities.invokeLater(
