@@ -11,6 +11,7 @@ import java.util.ArrayList;
 public class TransactionSystem {
     
     private static RecordTransactionController recordTransactionController;
+    private static AutomaticBillPayController abp;
 
     //Loads Bill
     public static void loadCashTransactions() {
@@ -98,5 +99,13 @@ public class TransactionSystem {
     
     public static RecordTransactionController getRecordTransactionController() {
         return recordTransactionController;
+    }
+    
+    public static void createAutomaticBillPayController(Form form) {
+        abp = new AutomaticBillPayController(form);
+    }
+    
+    public static AutomaticBillPayController getAutomaticBillPayController() {
+        return abp;
     }
 }

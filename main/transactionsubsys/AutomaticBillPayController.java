@@ -2,6 +2,8 @@ package main.transactionsubsys;
 
 import main.repositorysys.BillPayReminder;
 import main.repositorysys.Transaction;
+import main.repositorysys.Repository;
+import main.userinterface.Form;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,33 +18,35 @@ import javax.swing.JOptionPane;
 
 
 public class AutomaticBillPayController {
+    
+    private Form form;
     private BillPayReminder reminder;
 
     // Save BillReminders
     
-
+    public AutomaticBillPayController(Form form) {
+        this.form = form;
+    }
 
     public void setAutomaticBillPay(String name, double value, String dueDateString) {
-
+        TransactionSystem.loadBillOnAutoPay();
         reminder = Repository.createAutomaticBillPayReminder(name, value, dueDateString);
         TransactionSystem.saveBillsOnAutoPay();
 
     } // setAutomaticBillPay()
 
 
-    public void payBill(Bill bill) {
-        cancelAutomaticBillPay(bill);
-        saveBillsOnAutoPay();
-    } // payBIll()
-
-
     public void checkBillDates() {
 
         Date today = new Date();
 
-        for (Bill b : billsOnAutoPay) {
-            if (b.getDueDate().before(today)) {
-                payBill(b);
+        for (BillPayReminder b : Repository.getAutomaticBillPayReminders()) {
+            if (b.getReminderDate().before(today)) {
+                sendNotification(reminder);
+            
+                Repository.getAccount("cash").createTransaction(bill.getName(), bill.getAmount() * -1, bill.getDateString());
+                
+                Repository.getAutomaticBillPayReminders().remove(b);
             }
         }
     }
@@ -50,30 +54,16 @@ public class AutomaticBillPayController {
     public void checkSingleDate() {
         Date today = new Date();
         if(reminder.getReminderDate().before(today)) {
-            sendNotification(bill);
+            sendNotification(reminder);
             
-            Repository.getAccount("cash").createTransaction(bill.getName(), bill.getValue() * -1, bill.getDateString());
+            Repository.getAccount("cash").createTransaction(bill.getName(), bill.getAmount() * -1, bill.getDateString());
             
-           
+            Repository.getAutomaticBillPayReminders().remove(b);
         }
     }
 
-    public void sendNotification(Bill bill) {
-        JOptionPane.showMessageDialog(null, "Pay Bill: "+ bill.getName() + "!");
+    public void sendNotification(BillPayReminder bill) {
+        JOptionPane.showMessageDialog(form, "Pay Bill: "+ bill.getName() + "!");
     }
-
-
-    public boolean cancelAutomaticBillPay(Bill bill) {
-
-        for (Bill b : billsOnAutoPay) {
-            if (b.equals(bill)) {
-                billsOnAutoPay.remove(b);
-                b = null;
-                return true;
-            } // if compare
-        } // for : b
-
-        return false;
-    } // cancelAutomaticBillPay()
 
 } // AutomaticBillPay

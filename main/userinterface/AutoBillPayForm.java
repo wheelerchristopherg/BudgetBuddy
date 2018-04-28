@@ -26,15 +26,13 @@ public class AutoBillPayForm extends Form {
         String name = buttonPressed(event);
         switch (name) {
             case "submit":
-                AutomaticBillPayController abp = new AutomaticBillPayController();
+                
                 String reminder_name = getTextFromInput("billpay_name");
                 double reminder_amount = Double.parseDouble(getTextFromInput("billpay_amount"));
                 String reminder_date = getTextFromInput("billpay_date");
 
-                TransactionSystem.loadBillOnAutoPay();
-                abp.setAutomaticBillPay(reminder_name, reminder_amount, reminder_date);
-                TransactionSystem.saveBillsOnAutoPay();
-                abp.checkSingleDate();
+                TransactionSystem.getAutomaticBillPayController().setAutomaticBillPay(reminder_name, reminder_amount, reminder_date);
+                TransactionSystem.getAutomaticBillPayController().checkSingleDate();
                 break;
             case "back":
                 goBack();
