@@ -21,7 +21,7 @@ public class MainForm extends Form {
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
         addButton("autoBillPay", "Add Automatic Bill Pay");
-        addButton("finaicialReport","Create a Financial Report");
+        addButton("financialReport","Create a Financial Report");
 
         addPlaceholders(2);
 

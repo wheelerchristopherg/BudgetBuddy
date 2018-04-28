@@ -22,6 +22,7 @@ public class FinancialReportController {
                 buildText = buildText+"\t"+trans.getVendor()+"\n"+trans.getCategory()+"\n"+trans.getDate()+"\n$"+trans.getValue()+"\n";
             }
         }
+        //System.out.println("Setting zForm to the buildText...");
         zForm.setText(textAreaName,buildText);
         Repository.createFinancialReport(buildText);
     }
