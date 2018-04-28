@@ -83,14 +83,13 @@ public class Repository {
         return b;
     } // addBill()
 
-    public static Account addAccount(Account a) {
-        accountCollection.add(a);
-        return a;
-    } // addAccount()
+
 
     public static Account createAccount(String inName, String inType, double inBal, double inRate){
         Account zAccount = new Account(inName, inType, inBal, inRate);
         accountCollection.add(zAccount);
+        System.out.println("acc_col_instance: " + accountCollection + accountCollection.size());
+
         return zAccount;
     }
 
@@ -106,15 +105,15 @@ public class Repository {
         return returnMe;
     }
 
-    public static Account getAccount(String findMe){
-        Iterator<Account> itr = accountCollection.iterator();
-        while(itr.hasNext()){
-            Account checkMe = itr.next();
-            if (findMe.equals(checkMe.getName()))
-                    return checkMe;
-        }
+    public static Account getAccount(String findMe) {
+        System.out.println("acc_col_instance: " + accountCollection + accountCollection.size());
+
+        for (Account a : accountCollection)
+            if (findMe.equals(a.getName()))
+                return a;
+
         return null;
-    }
+    } // getAccount()
 
     public static Collection<Account> getAccountCollection(){
         return accountCollection;

@@ -15,12 +15,24 @@ public class FilterForm extends Form {
 
         setGridLayout(6, 3);
         addLabel("Filter Transactions");
-        addTextField("accountName", "Enter Account Name");
+
+//        addTextField("accountName", "Enter Account Name");
+        addTextField("accountName", "life_savings");
+
         addTextArea("TransactionList",100,1,false);
-        addTextField("startDate", "Start Date (mm-dd-yyyy)");
-        addTextField("endDate", "End Date (mm-dd-yyyy)");
-        addButton("fByDate", "Filter By Date");
-        addTextField("category", "Filter by Category");
+
+
+        addTextField("startDate", "01-01-1800");
+        addTextField("endDate", "04-27-2018");
+//        addTextField("startDate", "Start Date (mm-dd-yyyy)");
+//        addTextField("endDate", "End Date (mm-dd-yyyy)");
+
+
+        addButton("f_byDate", "Filter By Date");
+
+        addTextField("category", "Bill");
+//       addTextField("category", "Filter by Category");
+
         addPlaceholder();
         addButton("f_byCategory", "Filter By Category");
         addPlaceholder();
@@ -43,14 +55,17 @@ public class FilterForm extends Form {
                     Date date1 = format.parse(getTextFromInput("startDate"));
                     Date date2 = format.parse(getTextFromInput("endDate"));
                     TransactionSystem.getFilterController().FilterByDate(getTextFromInput("accountName"), date1, date2);
-                    TransactionSystem.getFilterController().DisplayFilteredTransactions(this, "TransactionList");
-                    System.out.println("f_byDate");
+                    //TransactionSystem.getFilterController().DisplayFilteredTransactions(this, "TransactionList");
                 } catch (ParseException e) {
                     System.out.println("Incorrect date format");
                  }
                 break;
 
             case "f_byCategory":
+                System.out.println(getTextFromInput("accountName"));
+                System.out.println(getTextFromInput("category"));
+
+                System.out.println(TransactionSystem.getFilterController());
                 TransactionSystem.getFilterController().FilterByCategory(getTextFromInput("accountName"), getTextFromInput("category"));
                 TransactionSystem.getFilterController().DisplayFilteredTransactions(this, "TransactionList");
                 System.out.println("f_byCategory");

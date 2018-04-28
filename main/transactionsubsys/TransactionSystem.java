@@ -10,12 +10,10 @@ import java.util.ArrayList;
 public class TransactionSystem {
     public static ArrayList<Transaction> transactions = new ArrayList<Transaction>();
 
-    private static FilterController filterController;
+    private static FilterController filterController = new FilterController();
 
 
     public TransactionSystem() { }
-
-
 
     // this is a helper method for parseBills()
     // inputs: filepath of csv file
