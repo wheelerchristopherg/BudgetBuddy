@@ -67,16 +67,6 @@ public class Repository {
         return targetLoan;
     }
 
-    public static void init(){
-        accountCollection = new ArrayList<Account>();
-        assetCollection = new ArrayList<Asset>();
-        billCollection = new ArrayList<Bill>();
-        billPayReminderCollection = new ArrayList<BillPayReminder>();
-        budgetCollection = new ArrayList<Budget>();
-        budgetReportCollection = new ArrayList<BudgetReport>();
-        financialReportCollection = new ArrayList<FinancialReport>();
-        loanCollection = new ArrayList<Loan>();
-    }
 
     public static Bill addBill(Bill b) {
         billCollection.add(b);
@@ -88,8 +78,6 @@ public class Repository {
     public static Account createAccount(String inName, String inType, double inBal, double inRate){
         Account zAccount = new Account(inName, inType, inBal, inRate);
         accountCollection.add(zAccount);
-        System.out.println("acc_col_instance: " + accountCollection + accountCollection.size());
-
         return zAccount;
     }
 
@@ -106,12 +94,9 @@ public class Repository {
     }
 
     public static Account getAccount(String findMe) {
-        System.out.println("acc_col_instance: " + accountCollection + accountCollection.size());
-
         for (Account a : accountCollection)
             if (findMe.equals(a.getName()))
                 return a;
-
         return null;
     } // getAccount()
 

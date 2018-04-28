@@ -22,16 +22,16 @@ public class FilterForm extends Form {
         addTextArea("TransactionList",100,1,false);
 
 
-        addTextField("startDate", "01-01-1800");
-        addTextField("endDate", "04-27-2018");
+//        addTextField("startDate", "01-01-1800");
+//        addTextField("endDate", "04-27-2018");
 //        addTextField("startDate", "Start Date (mm-dd-yyyy)");
 //        addTextField("endDate", "End Date (mm-dd-yyyy)");
 
 
-        addButton("f_byDate", "Filter By Date");
+//        addButton("f_byDate", "Filter By Date");
 
-        addTextField("category", "Bill");
-//       addTextField("category", "Filter by Category");
+        //addTextField("category", "Bill");
+       addTextField("category", "Filter by Category");
 
         addPlaceholder();
         addButton("f_byCategory", "Filter By Category");
@@ -55,7 +55,7 @@ public class FilterForm extends Form {
                     Date date1 = format.parse(getTextFromInput("startDate"));
                     Date date2 = format.parse(getTextFromInput("endDate"));
                     TransactionSystem.getFilterController().FilterByDate(getTextFromInput("accountName"), date1, date2);
-                    //TransactionSystem.getFilterController().DisplayFilteredTransactions(this, "TransactionList");
+                    TransactionSystem.getFilterController().DisplayFilteredTransactions(this, "TransactionList");
                 } catch (ParseException e) {
                     System.out.println("Incorrect date format");
                  }

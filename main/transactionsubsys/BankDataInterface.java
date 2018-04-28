@@ -15,7 +15,7 @@ public class BankDataInterface {
 
 
    public BankDataInterface() {
-       parseBills();
+     //  parseBills();
        parseAccounts();
    } // BankDataInterface()
 
@@ -38,28 +38,12 @@ public class BankDataInterface {
        return result;
    } // parseGenericCSV
 
-
-   public static void parseBills() {
-       String billFilePath = "./main/data/bank/bills.csv";
-
-       ArrayList<String[]>  parsedData = parseGenericCSV(billFilePath);
-
-       for (String[] dat : parsedData) {
-           Double value = Double.parseDouble(dat[1]);
-           Bill b = new Bill(dat[0], value, dat[2]);
-           Repository.addBill(b);
-       } // for
-
-   } // paseBills()
-
    public static void parseAccounts() {
-       String accountsFilePath = "./main/data/bank/accounts.csv";
-       ArrayList<String[]>  parsedData = parseGenericCSV(accountsFilePath);
+       ArrayList<String[]> parsedData = parseGenericCSV("./main/data/bank/accounts.csv");
 
        for (String[] dat : parsedData) {
-           Double value = Double.parseDouble(dat[1]);
-           Double interestRate = Double.parseDouble(dat[2]);
-           Account a = Repository.createAccount(dat[3], dat[0], value, interestRate);
+           Account a = Repository.createAccount(dat[3], dat[0], Double.parseDouble(dat[1]), Double.parseDouble(dat[2]));
+           parseAccountTransactions(a);
        } // for
 
    } // getAccounts()
@@ -71,8 +55,8 @@ public class BankDataInterface {
 
        for (String[] dat : parsedData) {
            if (dat[0] != null) {
-               Double value = Double.parseDouble(dat[1]);
-               account.createTransaction(dat[0], value, dat[2]);
+               Transaction t = account.createTransaction(dat[0], Double.parseDouble(dat[1]), dat[2]);
+               System.out.println(t.getTransactionString());
            } // if dat.len
        } // for
 
