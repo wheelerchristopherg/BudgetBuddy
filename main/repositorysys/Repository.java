@@ -16,9 +16,14 @@ public class Repository {
     private static Collection<Loan> loanCollection = new ArrayList<Loan>();
     // Transactions are located as a collection within Account
 
+    public static Account createAccount(String inName, String inType, double inBal, double inRate){
+        Account zAccount = new Account(inName, inType, inBal, inRate);
+        accountCollection.add(zAccount);
+        return zAccount;
+    }
+
     public static Budget createBudget(String inName, Date inStart, Date inEnd, double inSpend){
         Budget constructedBudget =  new Budget(inName, inStart, inEnd, inSpend);
-        //System.out.println("The new budget's name is : " + constructedBudget.getName());
         budgetCollection.add(constructedBudget);
         return constructedBudget;
     }
