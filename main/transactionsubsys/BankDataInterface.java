@@ -38,6 +38,8 @@ public class BankDataInterface {
        return result;
    } // parseGenericCSV
 
+
+
    public static void parseAccounts() {
        ArrayList<String[]> parsedData = parseGenericCSV("./main/data/bank/accounts.csv");
 
@@ -54,10 +56,7 @@ public class BankDataInterface {
        ArrayList<String[]>  parsedData = parseGenericCSV(accountFilePath);
 
        for (String[] dat : parsedData) {
-           if (dat[0] != null) {
-               Transaction t = account.createTransaction(dat[0], Double.parseDouble(dat[1]), dat[2]);
-               System.out.println(t.getTransactionString());
-           } // if dat.len
+           Transaction t = account.createTransaction(dat[0], Double.parseDouble(dat[1]), dat[2]);
        } // for
 
    } // parseAccountTransactions()
