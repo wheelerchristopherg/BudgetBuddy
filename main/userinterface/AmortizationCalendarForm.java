@@ -2,11 +2,11 @@ package main.userinterface;
 
 import main.graphsubsys.Graph;
 import main.graphsubsys.GraphFactory;
+import main.assetsubsys.AssetSystem;
 import java.awt.event.ActionEvent;
 import javax.swing.JPanel;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import javax.swing.JScrollPane;
 
 public class AmortizationCalendarForm extends Form {
     
@@ -24,19 +24,11 @@ public class AmortizationCalendarForm extends Form {
         addTextField("loan", "Loan name");
         addButton("back", "Back");
         graphPanel = new JPanel();
-        add(new JScrollPane(graphPanel));
+        add(graphPanel);
     }
     
-    public void setGraph() {
-        double[] x = {1, 2, 3, 4};
-        double[] y = {8000, 8000.75, 8000.25, 8001};
-        
-        Date start = (new GregorianCalendar(2018, 4, 1)).getTime();
-        Date end = (new GregorianCalendar(2018, 4, 30)).getTime();
-        
-        Graph lineGraph = GraphFactory.createLineGraph(x, y, start, end);
-        
-        graphPanel.add(lineGraph);
+    public void setGraph(Graph graph) {
+        graphPanel.add(graph);
         repaint();
     }
     
@@ -46,8 +38,7 @@ public class AmortizationCalendarForm extends Form {
         switch (name) {
             case "get graph":
                 String loanName = getTextFromInput("loan");
-                setGraph();
-                //call the amortization calendar controller here
+                AssetSystem.createAmCalController(this, loanName);
                 break;
             case "back":
                 goBack();

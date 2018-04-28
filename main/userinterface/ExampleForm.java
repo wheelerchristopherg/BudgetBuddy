@@ -11,24 +11,32 @@ public class ExampleForm extends Form {
     public ExampleForm(Window parent) {
         super(parent);
         
-        setGridLayout(1, 1);
+        setGridLayout(2, 2);
         
-        double[] x = {1, 2, 3, 4};
-        double[] y = {8000, 8000.75, 8000.25, 8001};
+        double[] steps = {50, 110, 220, 370, 530, 720, 950};
         
-        Date start = (new GregorianCalendar(2018, 4, 1)).getTime();
-        Date end = (new GregorianCalendar(2018, 4, 30)).getTime();
+        double[] x = {1, 2, 3, 4, 5, 6, 7, 8};
+        double[] y = {10, 20, 30, 30, 50, -30, 70, 80};
         
-        Graph lineGraph = GraphFactory.createLineGraph(x, y, start, end);
         
+        Date startDate = (new GregorianCalendar(2018, 4, 1)).getTime();
+        Date endDate = (new GregorianCalendar(2018, 4, 30)).getTime();
+        
+        Graph amorCal = GraphFactory.createAmortizationCalendar(1000.0, steps);
+        Graph lineGraph = GraphFactory.createLineGraph(x, y, startDate, endDate);
+        
+        add(amorCal);
         add(lineGraph);
+        addButton("back", "Back");
         
     }
     
     public void actionPerformed(ActionEvent event) {
         String name = buttonPressed(event);
         switch (name) {
-            
+            case "back":
+                goBack();
+                break;
         }
     }
 }

@@ -42,4 +42,16 @@ public class Transaction {
       return dateString;
   }
 
+  public String getVendor(){
+      return vendor;
+  }
+
+  public boolean isBefore(Date dateIn) {
+      return date.before(dateIn);
+  }
+
+  public boolean isAfter(Date dateIn) {
+      return date.after(dateIn);
+  }
+
 }

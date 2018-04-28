@@ -9,11 +9,8 @@ public class Account {
   private double interestRate;
   private Collection<Transaction> transactionCollection;
 
-  public Account() {
-    transactionCollection = new ArrayList<Transaction>();
-  }
-
   public Account(String inName, String inType, double inBal, double inRate) {
+      transactionCollection = new ArrayList<Transaction>();
       this.name = inName;
       this.type = inType;
       this.balance = inBal;
@@ -61,5 +58,19 @@ public class Account {
     transactionCollection.add(zTransaction);
     return zTransaction;
   }
+
+  public boolean isSavings() {
+      if(type.equals("savings")) {
+          return true;
+      }
+      return false;
+  }
+
+    public boolean isCredit() {
+        if(type.equals("credit")) {
+            return true;
+        }
+        return false;
+    }
 
 }
