@@ -45,20 +45,24 @@ public class BankDataInterface {
        return result;
    } // parseGenericCSV
 
+
    public static void parseLoans() {
        ArrayList<String[]> parsedData = parseGenericCSV("./main/data/bank/loans.csv");
 
-       for (String[] dat : parsedData) {}
+       for (String[] dat : parsedData) {
            try {
                DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
                Date date = format.parse(dat[4]);
-               Repository.createLoan(dat[0], Double.parseDouble(dat[1]), Double.parseDouble(dat[2]), Double.parseDouble(dat[3]), date);
-           } catch (ParseException e) {
-               System.out.println("Incorrect date format");
-           } // catch
-       } // for
+              Repository.createLoan(dat[0], Double.parseDouble(dat[1]), Double.parseDouble(dat[2]), Double.parseDouble(dat[3]), date);
+            } catch (ParseException e) {
+                System.out.println("Incorrect date format");
+            } // catch
+        } // for
+        
+    } // getAccounts()
 
-   } // getAccounts()
+
+
 
    public static void parseAccounts() {
        ArrayList<String[]> parsedData = parseGenericCSV("./main/data/bank/accounts.csv");
