@@ -3,6 +3,7 @@ package main.userinterface;
 import java.awt.event.ActionEvent;
 import main.budgetsubsys.BudgetController;
 import main.assetsubsys.DisplayValueOfAssetsController;
+import main.transactionsubsys.TransactionSystem;
 
 public class MainForm extends Form {
 
@@ -26,7 +27,6 @@ public class MainForm extends Form {
         addButton("assetValue_button", "View Value of Assets");
         addButton("amor_cal", "Amortization Calendar");
         addButton("financialReport","Create a Financial Report");
-
     }
 
     public void actionPerformed(ActionEvent event) {

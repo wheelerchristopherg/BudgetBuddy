@@ -15,6 +15,7 @@ import java.io.PrintWriter;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 
 public class AutomaticBillPayController {
@@ -42,28 +43,32 @@ public class AutomaticBillPayController {
 
         for (BillPayReminder b : Repository.getAutomaticBillPayReminders()) {
             if (b.getReminderDate().before(today)) {
-                sendNotification(reminder);
-            
+                //sendNotification(reminder);
+                System.out.println("Bill payed: " + b.getName());
                 Repository.getAccount("cash").createTransaction(b.getName(), b.getAmount() * -1, b.getDateString());
                 
-                Repository.getAutomaticBillPayReminders().remove(b);
+                //Repository.getAutomaticBillPayReminders().remove(b);
             }
         }
+        
+        TransactionSystem.saveBillsOnAutoPay();
     }
 
     public void checkSingleDate() {
         Date today = new Date();
         if(reminder.getReminderDate().before(today)) {
-            sendNotification(reminder);
-            
+            //sendNotification(reminder);
+            System.out.println("Bill payed: " + reminder.getName());
             Repository.getAccount("cash").createTransaction(reminder.getName(), reminder.getAmount() * -1, reminder.getDateString());
             
-            Repository.getAutomaticBillPayReminders().remove(reminder);
+            //Repository.getAutomaticBillPayReminders().remove(reminder);
         }
+        
+        TransactionSystem.saveBillsOnAutoPay();
     }
 
     public void sendNotification(BillPayReminder bill) {
-        JOptionPane.showMessageDialog(form, "Pay Bill: "+ bill.getName() + "!");
+        JOptionPane.showMessageDialog((JPanel)form, "Pay Bill: "+ bill.getName() + "!");
     }
 
 } // AutomaticBillPay

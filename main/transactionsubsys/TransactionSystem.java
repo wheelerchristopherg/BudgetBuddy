@@ -3,6 +3,8 @@ package main.transactionsubsys;
 import main.repositorysys.Account;
 import main.repositorysys.Repository;
 import main.userinterface.Form;
+import main.repositorysys.Transaction;
+import main.repositorysys.BillPayReminder;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
@@ -20,7 +22,7 @@ public class TransactionSystem {
         String line = "";
         String cvsSplitBy = ",";
         
-        Account cash = Repository.createAccount("cash", "cash", 0.0, 0.0);
+        Account cash = Repository.getAccount("cash");
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
             while ((line = br.readLine()) != null) {
