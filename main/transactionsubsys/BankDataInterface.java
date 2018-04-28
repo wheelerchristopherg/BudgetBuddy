@@ -5,7 +5,7 @@ import java.util.Random;
 
 
 public class BankDataInterface {
-    TransactionSystem tsys = new TransactionSystem();
+
     //RecordTransactionController rtc = new RecordTransactionController();
 
     // Generate Transactions from bank
@@ -37,9 +37,9 @@ public class BankDataInterface {
 
             Transaction tempTransaction = new Transaction(randString, randValue,
                     randDatd_month + "-" + randDatd_day + "-20" + randDatd_year);
-            tsys.addTransaction(tempTransaction);
+            TransactionSystem.addTransaction(tempTransaction);
         }
-        tsys.saveTransactions(); //Save the transactions
+        TransactionSystem.saveTransactions(); //Save the transactions
 
     }
 

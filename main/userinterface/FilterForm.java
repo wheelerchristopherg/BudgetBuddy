@@ -6,6 +6,7 @@ import main.transactionsubsys.TransactionSystem;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.text.ParseException;
+import main.repositorysys.Repository;
 
 public class FilterForm extends Form {
 
