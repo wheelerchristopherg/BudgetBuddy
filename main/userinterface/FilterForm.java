@@ -9,7 +9,9 @@ import java.text.ParseException;
 
 public class FilterForm extends Form {
 
-    private static TransactionSystem transactionSystem;
+    private TransactionSystem transactionSystem;
+
+
 
     public FilterForm(Window parent) {
         super(parent);
@@ -31,7 +33,7 @@ public class FilterForm extends Form {
 
     //    String all = transactionSystem.getAllTransactionsString();
     //    this.setText("TransactionList", all);
-    }
+    } // FilterForm()
 
     public void actionPerformed(ActionEvent event) {
         String name = buttonPressed(event);
@@ -67,6 +69,8 @@ public class FilterForm extends Form {
                     System.out.println("f_byCategoryDate");
                 } catch (ParseException e) { }
                 break;
-        }
-    }
-}
+        } // switch
+
+    } // actionPerformed()
+
+} // FilterForm
