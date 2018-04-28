@@ -13,14 +13,20 @@ public class Transaction {
   private String dateString;
   private String vendor;
 
+
+  public String getTransactionString() {
+      String ret = this.dateString + " " + this.category + " " + this.value;
+      return ret;
+  }
+
   public Transaction(String category, double value, String transDate) {
       this.dateString = transDate;
       try {
-          DateFormat format = new SimpleDateFormat("MM/dd/yyyy");
+          DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
           Date date = format.parse(transDate);
           this.date = date;
       } catch (ParseException e) {
-          // WRONG FORMAT
+          System.out.println("unable to pase date");
       }
       this.category = category;
       this.value = value;

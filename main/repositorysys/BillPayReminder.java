@@ -46,5 +46,11 @@ public class BillPayReminder {
     public Date getReminderDate() {
         return reminderDate;
     }
+    
+    public String getDateString() {
+        DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
+        System.out.println(format.format(reminderDate));
+        return format.format(reminderDate);
+    }
 
 }
