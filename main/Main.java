@@ -21,9 +21,6 @@ public class Main {
         BillPayReminderController billReminderController = new BillPayReminderController();
         billReminderController.loadBillReminders();
         Repository.init();
-        Repository.createLoan("test", 10000.0, 0.005, 2000.0, new Date());
-        
-        System.out.println(Repository.getLoan("test"));
         
         // start window
         SwingUtilities.invokeLater(
