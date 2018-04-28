@@ -24,9 +24,10 @@ public class Main {
         //bank.generateTransactions(1000); // Comment out after first run
         BillPayReminderController billReminderController = new BillPayReminderController();
         billReminderController.loadBillReminders();
-        Repository.init();
         
         TransactionSystem.loadCashTransactions();
+        
+        System.out.println();
         
         // start window
         SwingUtilities.invokeLater(

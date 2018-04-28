@@ -12,12 +12,11 @@ import main.repositorysys.FinancialReport;
 
 public class Repository {
 
-    private static Repository single_instance = null;
-
     private static Collection<Account> accountCollection = new ArrayList<Account>();
     private static Collection<Asset> assetCollection = new ArrayList<Asset>();
-    //private static Collection<Bill> billCollection;
+    //private static Collection<Bill> billCollection = new ArrayList<Bill>();
     private static Collection<BillPayReminder> billPayReminderCollection = new ArrayList<BillPayReminder>();
+    private static Collection<BillPayReminder> automaticBillPayReminderCollection = new ArrayList<BillPayReminder>();
     private static Collection<Budget> budgetCollection = new ArrayList<Budget>();
     private static Collection<BudgetReport> budgetReportCollection = new ArrayList<BudgetReport>();
     // Categories are located as a collection within Budget
@@ -65,17 +64,6 @@ public class Repository {
             }
         }
         return targetLoan;
-    }
-
-    public static void init(){
-        accountCollection = new ArrayList<Account>();
-        assetCollection = new ArrayList<Asset>();
-        //billCollection = new ArrayList<Bill>();
-        billPayReminderCollection = new ArrayList<BillPayReminder>();
-        budgetCollection = new ArrayList<Budget>();
-        budgetReportCollection = new ArrayList<BudgetReport>();
-        financialReportCollection = new ArrayList<FinancialReport>();
-        loanCollection = new ArrayList<Loan>();
     }
 
     public static Account createAccount(String inName, String inType, double inBal, double inRate){
@@ -128,6 +116,16 @@ public class Repository {
     
     public static void createLoan(String nameIn, double amountIn, double interestRateIn, double monthlyPaymentIn, Date startDateIn) {
         loanCollection.add(new Loan(nameIn, amountIn, interestRateIn, monthlyPaymentIn, startDateIn));
+    }
+    
+    public static BillPayReminder createAutomaticBillPayReminder(String name, double value, String dueDateString) {
+        BillPayReminder reminder = new BillPayReminder(name, value, dueDateString);
+        automaticBillPayReminderCollection.add(reminder);
+        return reminder;
+    }
+    
+    public static Collection<BillPayReminder> getAutomaticBillPayReminders() {
+        return automaticBillPayReminderCollection;
     }
 
 }

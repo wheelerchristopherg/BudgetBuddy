@@ -1,12 +1,16 @@
 package main.transactionsubsys;
 
 import main.repositorysys.Account;
+import main.repositorysys.Repository;
+import main.userinterface.Form;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class TransactionSystem {
+    
+    private static RecordTransactionController recordTransactionController;
 
     //Loads Bill
     public static void loadCashTransactions() {
@@ -29,7 +33,7 @@ public class TransactionSystem {
         }
     }
     
-    public void loadBillOnAutoPay() {
+    public static void loadBillOnAutoPay() {
         String csvFile = "main/data/billsOnAutopay.csv";
         String line = "";
         String cvsSplitBy = ",";
@@ -38,15 +42,33 @@ public class TransactionSystem {
             while ((line = bra.readLine()) != null) {
                 String[] rmdline = line.split(cvsSplitBy);
                 double amount = Double.parseDouble(rmdline[1]);
-                Bill bill = new Bill(rmdline[0], amount, rmdline[2]);
-                setAutomaticBillPay(bill);
+                Repository.createAutomaticBillPayReminder(rmdline[0], amount, rmdline[2]);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+    
+    public static void saveBillsOnAutoPay() {
+        try {
+            PrintWriter pw = new PrintWriter(new File("main/data/billsOnAutopay.csv"));
+            for (BillPayReminder r : Repository.getAutomaticBillPayReminders()) {
+                StringBuilder sb = new StringBuilder();
+                sb.append(r.getName());
+                sb.append(',');
+                sb.append(r.getAmount());
+                sb.append(',');
+                SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
+                sb.append(sdf.format(r.getReminderDate()));
+                sb.append('\n');
+                pw.write(sb.toString());
+            }
+            pw.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("billreminders.csv Not Found");
+        }
+    } // saveBillsOnAutoPay()
 
-    // Save BillReminders
     public static void saveTransactions() {
         
         Account cash = Repository.getAccount("cash");
@@ -68,5 +90,13 @@ public class TransactionSystem {
         } catch (FileNotFoundException e) {
             System.out.println("transactions.csv Not Found");
         }
+    }
+    
+    public static void createRecordTransactionController(Form form) {
+        recordTransactionController = new RecordTransactionController(form);
+    }
+    
+    public static RecordTransactionController getRecordTransactionController() {
+        return recordTransactionController;
     }
 }

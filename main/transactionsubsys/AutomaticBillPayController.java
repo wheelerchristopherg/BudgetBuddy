@@ -1,5 +1,6 @@
 package main.transactionsubsys;
-import main.repositorysys.Bill;
+
+import main.repositorysys.BillPayReminder;
 import main.repositorysys.Transaction;
 
 import java.io.IOException;
@@ -15,35 +16,16 @@ import javax.swing.JOptionPane;
 
 
 public class AutomaticBillPayController {
-    private ArrayList<Bill> billsOnAutoPay = new ArrayList<Bill>();
-
+    private BillPayReminder reminder;
 
     // Save BillReminders
-    public void saveBillsOnAutoPay() {
-        try {
-            PrintWriter pw = new PrintWriter(new File("main/data/billsOnAutopay.csv"));
-            for (Bill r : billsOnAutoPay) {
-                StringBuilder sb = new StringBuilder();
-                sb.append(r.getName());
-                sb.append(',');
-                sb.append(r.getValue());
-                sb.append(',');
-                SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
-                sb.append(sdf.format(r.getDueDate()));
-                sb.append('\n');
-                pw.write(sb.toString());
-            }
-            pw.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("billreminders.csv Not Found");
-        }
-    } // saveBillsOnAutoPay()
+    
 
 
-    public void setAutomaticBillPay(Bill bill) {
+    public void setAutomaticBillPay(String name, double value, String dueDateString) {
 
-        billsOnAutoPay.add(bill);
-        //saveBillsOnAutoPay();
+        reminder = Repository.createAutomaticBillPayReminder(name, value, dueDateString);
+        TransactionSystem.saveBillsOnAutoPay();
 
     } // setAutomaticBillPay()
 
@@ -65,14 +47,12 @@ public class AutomaticBillPayController {
         }
     }
 
-    TransactionSystem transys = new TransactionSystem();
-
-    public void checkSingleDate(Bill bill) {
+    public void checkSingleDate() {
         Date today = new Date();
-        if(bill.getDueDate().before(today)) {
+        if(reminder.getReminderDate().before(today)) {
             sendNotification(bill);
             
-            Repository.getAccount().createTransaction(bill.getName(), bill.getValue() * -1, bill.getDateString());
+            Repository.getAccount("cash").createTransaction(bill.getName(), bill.getValue() * -1, bill.getDateString());
             
            
         }

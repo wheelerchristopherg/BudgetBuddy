@@ -204,7 +204,7 @@ public class Graph extends JPanel {
             g.clip(circleClip);
             g.clip(wedgeClip);
             
-            while (cummulativeAngles[slice]) {
+            /*while (cummulativeAngles[slice]) {
                 g.setColor(colors[slice]);
                 Path2D.Double wedge = new Path2D.Double();
                 wedge.moveTo(center[0], center[1]);
@@ -212,7 +212,7 @@ public class Graph extends JPanel {
                 wedge.lineTo(center[0] + (Math.cos(cummulativeAngles[slice]) * defLength), center[1] + (Math.sin(cummulativeAngles[slice]) * defLength));
                 wedge.closePath();
                 
-            }
+            }*/
         }
         
         
