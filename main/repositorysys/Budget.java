@@ -10,7 +10,7 @@ public class Budget{
     private Collection<Category> categoriesList;
     //private double[] spendingGoalsData;
 
-    Budget(String inName, Date inStart, Date inEnd, double inSpend){
+    public Budget(String inName, Date inStart, Date inEnd, double inSpend){
         this.name = inName;
         this.startDate = inStart;
         this.endDate = inEnd;
@@ -36,5 +36,9 @@ public class Budget{
                 return checkMe;
         }
         return null;
+    }
+
+    public Collection<Category> getCategories(){
+        return categoriesList;
     }
 }

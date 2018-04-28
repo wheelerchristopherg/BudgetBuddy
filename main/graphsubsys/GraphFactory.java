@@ -18,6 +18,5 @@ public class GraphFactory {
         Graph amCal = new Graph(maxHeight, stepHeights);
         return amCal;
     }
-
 }
 

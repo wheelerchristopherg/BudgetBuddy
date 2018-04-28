@@ -9,16 +9,23 @@ public class MainForm extends Form {
     public MainForm(Window parent) {
         super(parent);
 
-        setGridLayout(6, 3);
+        setGridLayout(6, 4);
 
+        //addPlaceholder();
+        //addLabel("Budget Buddy");
+        //addPlaceholder();
         addButton("BillPayReminder_Button", "Add a Bill Reminder");
         addButton("RecordTransaction_Button", "Add a Transaction");
+        //addPlaceholder();
         addButton("example", "Example Form");
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
         addButton("savings networth over time", "Savings Networth Over Time");
-        addButton("AssetValue_Button", "View Value of Assets");
-        addButton("amor cal", "Amortization Calendar");
+        addButton("autoBillPay", "Add Automatic Bill Pay");
+        addButton("value_of_assets_button", "Display Value of Assets");
+        addButton("assetValue_button", "View Value of Assets");
+        addButton("amor_cal", "Amortization Calendar");
+
     }
 
     public void actionPerformed(ActionEvent event) {
@@ -45,12 +52,21 @@ public class MainForm extends Form {
             case "savings networth over time":
                 changeForm(new SavingsNetworthValueForm(this.getParent()));
                 break;
-            case "AssetValue_Button":
+            case "autoBillPay":
+                changeForm(new AutoBillPayForm(this.getParent()));
+                break;
+            case "assetValue_button":
                 new DisplayValueOfAssetsController(this);
                 break;
-            case "amor cal":
+            case "amor_cal":
+                
                 changeForm(new AmortizationCalendarForm(this.getParent()));
                 break;
+
+            case "value_of_assets_button":
+                new DisplayValueOfAssetsController(this);
+                break;
+
         }
     }
 }

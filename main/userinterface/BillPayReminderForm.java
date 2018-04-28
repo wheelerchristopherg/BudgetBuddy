@@ -2,7 +2,6 @@ package main.userinterface;
 
 import main.repositorysys.BillPayReminder;
 import main.transactionsubsys.BillPayReminderController;
-import main.transactionsubsys.TransactionSystem;
 
 import java.awt.event.ActionEvent;
 

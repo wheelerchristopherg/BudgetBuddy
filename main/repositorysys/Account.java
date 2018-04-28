@@ -1,4 +1,5 @@
 package main.repositorysys;
+import java.util.*;
 
 public class Account {
 
@@ -6,36 +7,59 @@ public class Account {
   private double balance;
   private double interestRate;
   private String name;
-  
+  private Collection<Transaction> transactionCollection;
+
+  public Account() {
+
+  }
+
   public String getType(){
-      return type;
+    return type;
   }
   
   public double getBalance(){
-      return balance;
+    return balance;
   }
   
   public double getInterestRate(){
-      return interestRate;
+    return interestRate;
   }
   
   public String getName(){
-      return name;
+    return name;
   }
   
+  public Collection<Transaction> getTransactions(){
+    return transactionCollection;
+  }
+
   public void setType(String type){
-      this.type = type;
+    this.type = type;
   }
   
   public void setBalance(double balance){
-      this.balance = balance;
+    this.balance = balance;
   }
   
   public void setInterestRate(double interestRate){
-      this.interestRate = interestRate;
+    this.interestRate = interestRate;
   }
   
   public void setInterestRate(String name){
-      this.name = name;
+    this.name = name;
   }
+
+  public boolean isSavings() {
+      if(type.equals("savings")) {
+          return true;
+      }
+      return false;
+  }
+
+    public boolean isCredit() {
+        if(type.equals("credit")) {
+            return true;
+        }
+        return false;
+    }
 }

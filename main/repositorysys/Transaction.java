@@ -7,12 +7,13 @@ import java.util.*;
 
 public class Transaction {
 
-  private String type;
+  private String category;
   private double value;
   private Date date;
   private String dateString;
+  private String vendor;
 
-  public Transaction(String type, double value, String transDate) {
+  public Transaction(String category, double value, String transDate) {
       this.dateString = transDate;
       try {
           DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
@@ -21,12 +22,12 @@ public class Transaction {
       } catch (ParseException e) {
           // WRONG FORMAT
       }
-      this.type = type;
+      this.category = category;
       this.value = value;
   }
 
-  public String getType() {
-      return type;
+  public String getCategory(){
+      return this.category;
   }
 
   public double getValue() {
@@ -41,5 +42,16 @@ public class Transaction {
       return dateString;
   }
 
-}
+  public String getVendor(){
+      return vendor;
+  }
 
+  public boolean isBefore(Date dateIn) {
+      return date.before(dateIn);
+  }
+
+  public boolean isAfter(Date dateIn) {
+      return date.after(dateIn);
+  }
+
+}

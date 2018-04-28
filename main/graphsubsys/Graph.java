@@ -36,8 +36,7 @@ public class Graph extends JPanel {
     private double maxHeight;
     
     private Graph() {
-        this.setSize(600, 600);
-        this.setPreferredSize(new Dimension(600,600));
+        this.setSize(350, 350);
     }
     
     protected Graph(double[] x, double[] y, Date startDate, Date endDate) {
@@ -110,6 +109,7 @@ public class Graph extends JPanel {
     }
     
     private double[] convertPoint(double x, double y) {
+        
         double convertedX = (((x-minX) / (maxX - minX)) * 270.0) + 60.0;
         double convertedY = (((y-minY) / (maxY - minY)) * 270.0);
         convertedY = 300 - convertedY;
@@ -146,7 +146,7 @@ public class Graph extends JPanel {
         
         g.drawString(startString, 40, 315);
         g.drawString(endString, 300, 315);
-        
+       
         double[] point = convertPoint(xPointData[0], yPointData[0]);
         Path2D.Double path = new Path2D.Double();
         

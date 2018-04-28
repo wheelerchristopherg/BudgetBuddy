@@ -1,19 +1,20 @@
 package main.repositorysys;
+
 import java.util.*;
 
 public class Asset {
 
-    private String name;
-    private String type;
-    private double value;
-    private Date date;
+  private String type;
+  private String name;
+  private double value;
+  private Date date;
 
-    public void Asset(String name, String type, double value, Date date) {
+    public Asset(String name, String type, double value, Date date) {
         this.name = name;
         this.type = type;
         this.value = value;
         this.date = date;
-    } // Asset()
+    }
 
     public String getName() {
         return name;
@@ -21,6 +22,10 @@ public class Asset {
 
     public String getType() {
         return type;
+    }
+
+    public boolean isBefore(Date dateIn) {
+        return date.before(dateIn);
     }
 
     public double getValue() {

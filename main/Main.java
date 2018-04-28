@@ -5,8 +5,10 @@ package main;
 
 import main.transactionsubsys.BankDataInterface;
 import main.userinterface.Window;
-import main.transactionsubsys.BillPayReminderController;
 import javax.swing.SwingUtilities;
+import main.transactionsubsys.BillPayReminderController;
+import main.repositorysys.Repository;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,8 +20,11 @@ public class Main {
         //bank.generateTransactions(1000); // Comment out after first run
         BillPayReminderController billReminderController = new BillPayReminderController();
         billReminderController.loadBillReminders();
-
-
+        Repository.init();
+        Repository.createLoan("test", 10000.0, 0.005, 2000.0, new Date());
+        
+        System.out.println(Repository.getLoan("test"));
+        
         // start window
         SwingUtilities.invokeLater(
                 new Runnable() {
