@@ -18,7 +18,6 @@ public class Main {
 
         // Controllers
 
-        System.out.println("main .jav");
 
         //Create Bank Interface and generate transactions
         BankDataInterface bank = new BankDataInterface();
@@ -40,6 +39,9 @@ public class Main {
 
         // Check Dates
         billReminderController.checkDate();
+
+
+
     }
 
 }

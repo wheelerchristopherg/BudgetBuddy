@@ -1,10 +1,13 @@
 package main.transactionsubsys;
-
+import java.util.*;
 import java.util.Date;
 import java.util.Scanner;
 import java.io.*;
 import java.util.Random;
+import main.repositorysys.Repository;
+import main.repositorysys.Bill;
 import main.repositorysys.Transaction;
+import main.repositorysys.Account;
 
 public class BankDataInterface {
    private static String bankFileDirectory = "C:/Users/black/Desktop/BankTest/BudgetBuddy/main/transactionsubsys/Bank.txt";
@@ -12,18 +15,17 @@ public class BankDataInterface {
 
 
    public BankDataInterface() {
-       System.out.println("top of bank interface");
        parseBills();
-   }
+       parseAccounts();
+   } // BankDataInterface()
+
 
    // this is a helper method for parseBills() and parseAcccounts()
    // inputs: filepath of csv file
    // outputs: 2d list of data in csv file
    public static ArrayList<String[]> parseGenericCSV(String filepath) {
-       System.out.println("top of bank parseGeneric");
-
        String line = "";
-       ArrayList<String[]> result();
+       ArrayList<String[]> result = new ArrayList<String[]>();
 
        try (BufferedReader bra = new BufferedReader(new FileReader(filepath))) {
            while ((line = bra.readLine()) != null) {
@@ -36,37 +38,45 @@ public class BankDataInterface {
        return result;
    } // parseGenericCSV
 
-//    public Bill(String name, double value, String dueDateString) {
 
-   public static void paseBills() {
-       System.out.println("top of bank parse bills");
+   public static void parseBills() {
+       String billFilePath = "./main/data/bank/bills.csv";
 
-       String billFilePath = "/main/data/bank/bills.csv";
        ArrayList<String[]>  parsedData = parseGenericCSV(billFilePath);
 
        for (String[] dat : parsedData) {
-
-           Double value = Double.Double.parseDouble(dat[1]);
+           Double value = Double.parseDouble(dat[1]);
            Bill b = new Bill(dat[0], value, dat[2]);
            Repository.addBill(b);
-
-           System.out.println(dat);
-
-       }
+       } // for
 
    } // paseBills()
 
-
    public static void parseAccounts() {
-       String accountsFilePath = "/main/data/bank/bills.csv";
+       String accountsFilePath = "./main/data/bank/accounts.csv";
+       ArrayList<String[]>  parsedData = parseGenericCSV(accountsFilePath);
 
-
+       for (String[] dat : parsedData) {
+           Double value = Double.parseDouble(dat[1]);
+           Double interestRate = Double.parseDouble(dat[2]);
+           Account a = Repository.createAccount(dat[3], dat[0], value, interestRate);
+       } // for
 
    } // getAccounts()
 
 
+   public static void parseAccountTransactions(Account account) {
+       String accountFilePath = "./main/data/bank/accounts/" + account.getName() + ".csv";
+       ArrayList<String[]>  parsedData = parseGenericCSV(accountFilePath);
 
+       for (String[] dat : parsedData) {
+           if (dat[0] != null) {
+               Double value = Double.parseDouble(dat[1]);
+               account.createTransaction(dat[0], value, dat[2]);
+           } // if dat.len
+       } // for
 
+   } // parseAccountTransactions()
 
 
    public static boolean accountExists(String acctName)throws FileNotFoundException{

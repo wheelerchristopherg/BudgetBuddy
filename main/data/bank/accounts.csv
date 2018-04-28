@@ -1,4 +1,4 @@
-savings, 1, 0.01, life savings
-checking 100, 0.005, daily checking
-savings, 43000, 0.02, grandkid fund
-brokerage, 90, 0.00, investment fund
+savings,1,0.01,life_savings
+checking,100,0.005,daily_checking
+brokerage,90,0.00,investment_fund
+savings,43000,0.02,grandkid_fund
