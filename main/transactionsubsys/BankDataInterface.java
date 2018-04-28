@@ -8,6 +8,12 @@ import main.repositorysys.Repository;
 import main.repositorysys.Bill;
 import main.repositorysys.Transaction;
 import main.repositorysys.Account;
+import main.repositorysys.Loan;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.text.ParseException;
+
 
 
 public class BankDataInterface {
@@ -16,8 +22,8 @@ public class BankDataInterface {
 
 
    public BankDataInterface() {
-     //  parseBills();
        parseAccounts();
+       parseLoans();
    } // BankDataInterface()
 
 
@@ -39,7 +45,20 @@ public class BankDataInterface {
        return result;
    } // parseGenericCSV
 
+   public static void parseLoans() {
+       ArrayList<String[]> parsedData = parseGenericCSV("./main/data/bank/loans.csv");
 
+       for (String[] dat : parsedData) {}
+           try {
+               DateFormat format = new SimpleDateFormat("MM-dd-yyyy");
+               Date date = format.parse(dat[4]);
+               Repository.createLoan(dat[0], Double.parseDouble(dat[1]), Double.parseDouble(dat[2]), Double.parseDouble(dat[3]), date);
+           } catch (ParseException e) {
+               System.out.println("Incorrect date format");
+           } // catch
+       } // for
+
+   } // getAccounts()
 
    public static void parseAccounts() {
        ArrayList<String[]> parsedData = parseGenericCSV("./main/data/bank/accounts.csv");
@@ -167,7 +186,7 @@ public class BankDataInterface {
             int dateLowy = 10;
             int randDatd_year = rand.nextInt((dateHighy - dateLowy) + 1) + dateLowy;
 
-            
+
             Repository.getAccount("cash").createTransaction(randString, randValue,
                     randDatd_month + "-" + randDatd_day + "-20" + randDatd_year);
         }
