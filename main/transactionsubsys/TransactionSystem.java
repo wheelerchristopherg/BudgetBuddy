@@ -81,7 +81,6 @@ public class TransactionSystem {
         String cvsSplitBy = ",";
         
         Account cash = Repository.getAccount("cash");
-
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
             while ((line = br.readLine()) != null) {
                 String[] rmdline = line.split(cvsSplitBy);
