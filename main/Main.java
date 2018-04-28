@@ -16,18 +16,20 @@ public class Main {
     public static void main(String[] args)throws FileNotFoundException{
         String acctName = "account1";
         File bankFile = new File("Bank.txt");
-        
+
         // Controllers
 
+
         //Create Bank Interface and generate transactions
-        //BankDataInterface bank = new BankDataInterface();
+
+        BankDataInterface bank = new BankDataInterface();
+
+
         //bank.generateTransactions(1000); // Comment out after first run
         BillPayReminderController billReminderController = new BillPayReminderController();
         billReminderController.loadBillReminders();
         Repository.init();
-        
-        TransactionSystem.loadCashTransactions();
-        
+
         // start window
         SwingUtilities.invokeLater(
                 new Runnable() {
@@ -39,6 +41,9 @@ public class Main {
 
         // Check Dates
         billReminderController.checkDate();
+
+
+
     }
 
 }

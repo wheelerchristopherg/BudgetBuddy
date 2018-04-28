@@ -13,6 +13,12 @@ public class Transaction {
   private String dateString;
   private String vendor;
 
+
+  public String getTransactionString() {
+      String ret = this.dateString + " " + this.vendor + " " + this.category + " " + this.value;
+      return ret;
+  }
+
   public Transaction(String category, double value, String transDate) {
       this.dateString = transDate;
       try {

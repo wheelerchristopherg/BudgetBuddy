@@ -23,9 +23,11 @@ public class MainForm extends Form {
         addButton("savings networth over time", "Savings Networth Over Time");
         addButton("autoBillPay", "Add Automatic Bill Pay");
         addButton("value_of_assets_button", "Display Value of Assets");
-        addButton("assetValue_button", "View Value of Assets");
         addButton("amor_cal", "Amortization Calendar");
-        addButton("financialReport","Create a Financial Report");
+
+
+        addButton("filterTransactions_button", "Filter Transactions");
+
 
     }
 
@@ -56,20 +58,20 @@ public class MainForm extends Form {
             case "autoBillPay":
                 changeForm(new AutoBillPayForm(this.getParent()));
                 break;
-            case "assetValue_button":
-                new DisplayValueOfAssetsController(this);
-                break;
             case "amor_cal":
-                
                 changeForm(new AmortizationCalendarForm(this.getParent()));
                 break;
-
             case "value_of_assets_button":
                 new DisplayValueOfAssetsController(this);
+                break;
+
+            case "filterTransactions_button":
+                changeForm(new FilterForm(this.getParent()));
                 break;
             case "financialReport":
                 changeForm(new FinancialReportForm(this.getParent()));
                 break;
+
         }
     }
 }

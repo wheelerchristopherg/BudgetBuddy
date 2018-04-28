@@ -1,15 +1,84 @@
 package main.transactionsubsys;
-
+import java.util.*;
 import java.util.Date;
 import java.util.Scanner;
 import java.io.*;
 import java.util.Random;
+import main.repositorysys.Repository;
+import main.repositorysys.Bill;
 import main.repositorysys.Transaction;
+import main.repositorysys.Account;
 
 public class BankDataInterface {
    private static String bankFileDirectory = "C:/Users/black/Desktop/BankTest/BudgetBuddy/main/transactionsubsys/Bank.txt";
    private static String dataDirectory = "C:/Users/black/Desktop/BankTest/BudgetBuddy/main/transactionsubsys/";
-   
+
+
+   public BankDataInterface() {
+       parseBills();
+       parseAccounts();
+   } // BankDataInterface()
+
+
+   // this is a helper method for parseBills() and parseAcccounts()
+   // inputs: filepath of csv file
+   // outputs: 2d list of data in csv file
+   public static ArrayList<String[]> parseGenericCSV(String filepath) {
+       String line = "";
+       ArrayList<String[]> result = new ArrayList<String[]>();
+
+       try (BufferedReader bra = new BufferedReader(new FileReader(filepath))) {
+           while ((line = bra.readLine()) != null) {
+               result.add(line.split(","));
+           } // while
+       } catch (IOException e) {
+           e.printStackTrace();
+       } // catch
+
+       return result;
+   } // parseGenericCSV
+
+
+   public static void parseBills() {
+       String billFilePath = "./main/data/bank/bills.csv";
+
+       ArrayList<String[]>  parsedData = parseGenericCSV(billFilePath);
+
+       for (String[] dat : parsedData) {
+           Double value = Double.parseDouble(dat[1]);
+           Bill b = new Bill(dat[0], value, dat[2]);
+           Repository.addBill(b);
+       } // for
+
+   } // paseBills()
+
+   public static void parseAccounts() {
+       String accountsFilePath = "./main/data/bank/accounts.csv";
+       ArrayList<String[]>  parsedData = parseGenericCSV(accountsFilePath);
+
+       for (String[] dat : parsedData) {
+           Double value = Double.parseDouble(dat[1]);
+           Double interestRate = Double.parseDouble(dat[2]);
+           Account a = Repository.createAccount(dat[3], dat[0], value, interestRate);
+       } // for
+
+   } // getAccounts()
+
+
+   public static void parseAccountTransactions(Account account) {
+       String accountFilePath = "./main/data/bank/accounts/" + account.getName() + ".csv";
+       ArrayList<String[]>  parsedData = parseGenericCSV(accountFilePath);
+
+       for (String[] dat : parsedData) {
+           if (dat[0] != null) {
+               Double value = Double.parseDouble(dat[1]);
+               account.createTransaction(dat[0], value, dat[2]);
+           } // if dat.len
+       } // for
+
+   } // parseAccountTransactions()
+
+
    public static boolean accountExists(String acctName)throws FileNotFoundException{
       File bankFile = new File(bankFileDirectory);
       if(bankFile.exists() != true){
@@ -18,7 +87,7 @@ public class BankDataInterface {
       if(bankFile.canRead() != true){
          return false;
       }
-      
+
       Scanner bankScan = new Scanner(bankFile);
       String line = bankScan.nextLine();
       System.out.println(acctName);
@@ -31,7 +100,7 @@ public class BankDataInterface {
       }
       return false;
    }
-   
+
    public static boolean loanExists(String acctName, String bankFileName, String loanName)throws FileNotFoundException{
       if(accountExists(acctName) != true){
          return false;
@@ -46,7 +115,7 @@ public class BankDataInterface {
       }
       return false;
    }
-   
+
    public static String[] getTransactions(String acctName)throws FileNotFoundException{
       if(accountExists(acctName) != true){
          throw new FileNotFoundException("Account Not Found.");
@@ -54,7 +123,7 @@ public class BankDataInterface {
       File acctTransFile = new File(dataDirectory + acctName + "Transactions.txt");
       Scanner transScan = new Scanner(acctTransFile);
       int num = getNumOfTransactions(acctName);
-      
+
       String line = null;
       String[] transactions = new String[num];
       int index = 0;
@@ -63,10 +132,10 @@ public class BankDataInterface {
          line = transScan.nextLine();
          index++;
       }
-      
+
       return transactions;
    }
-   
+
    public static int getNumOfTransactions(String acctName){
       int numOfTransactions = 0;
       File acctTransFile1 = new File(dataDirectory + acctName + "Transactions.txt");
@@ -84,7 +153,7 @@ public class BankDataInterface {
       }
       return numOfTransactions;
    }
-   
+
     TransactionSystem tsys = new TransactionSystem();
     //RecordTransactionController rtc = new RecordTransactionController();
 

@@ -16,7 +16,7 @@ public class Repository {
 
     private static Collection<Account> accountCollection = new ArrayList<Account>();
     private static Collection<Asset> assetCollection = new ArrayList<Asset>();
-    //private static Collection<Bill> billCollection;
+    private static Collection<Bill> billCollection = new ArrayList<Bill>();
     private static Collection<BillPayReminder> billPayReminderCollection = new ArrayList<BillPayReminder>();
     private static Collection<Budget> budgetCollection = new ArrayList<Budget>();
     private static Collection<BudgetReport> budgetReportCollection = new ArrayList<BudgetReport>();
@@ -36,7 +36,7 @@ public class Repository {
     public static Collection<Account> getSavingsAccounts() {
         Collection<Account> sAccounts = null;
         for (Account a: accountCollection) {
-            if(a.isSavings()) {
+            if (a.isSavings()) {
                 sAccounts.add(a);
             }
         }
@@ -46,7 +46,7 @@ public class Repository {
     public static Collection<Account> getCreditAccounts() {
         Collection<Account> cAccounts = null;
         for (Account a: accountCollection) {
-            if(a.isSavings()) {
+            if (a.isSavings()) {
                 cAccounts.add(a);
             }
         }
@@ -60,7 +60,7 @@ public class Repository {
     public static Loan getLoan(String nameIn) {
         Loan targetLoan = null;
         for (Loan l: loanCollection) {
-            if(l.getName().equals(nameIn)) {
+            if (l.getName().equals(nameIn)) {
                 targetLoan = l;
             }
         }
@@ -70,7 +70,7 @@ public class Repository {
     public static void init(){
         accountCollection = new ArrayList<Account>();
         assetCollection = new ArrayList<Asset>();
-        //billCollection = new ArrayList<Bill>();
+        billCollection = new ArrayList<Bill>();
         billPayReminderCollection = new ArrayList<BillPayReminder>();
         budgetCollection = new ArrayList<Budget>();
         budgetReportCollection = new ArrayList<BudgetReport>();
@@ -78,9 +78,18 @@ public class Repository {
         loanCollection = new ArrayList<Loan>();
     }
 
+    public static Bill addBill(Bill b) {
+        billCollection.add(b);
+        return b;
+    } // addBill()
+
+
+
     public static Account createAccount(String inName, String inType, double inBal, double inRate){
         Account zAccount = new Account(inName, inType, inBal, inRate);
         accountCollection.add(zAccount);
+        System.out.println("acc_col_instance: " + accountCollection + accountCollection.size());
+
         return zAccount;
     }
 
@@ -96,15 +105,15 @@ public class Repository {
         return returnMe;
     }
 
-    public static Account getAccount(String findMe){
-        Iterator<Account> itr = accountCollection.iterator();
-        while(itr.hasNext()){
-            Account checkMe = itr.next();
-            if (findMe.equals(checkMe.getName()))
-                    return checkMe;
-        }
+    public static Account getAccount(String findMe) {
+        System.out.println("acc_col_instance: " + accountCollection + accountCollection.size());
+
+        for (Account a : accountCollection)
+            if (findMe.equals(a.getName()))
+                return a;
+
         return null;
-    }
+    } // getAccount()
 
     public static Collection<Account> getAccountCollection(){
         return accountCollection;
@@ -125,7 +134,7 @@ public class Repository {
         else
             System.out.println("You don't have any budgets!");
     }
-    
+
     public static void createLoan(String nameIn, double amountIn, double interestRateIn, double monthlyPaymentIn, Date startDateIn) {
         loanCollection.add(new Loan(nameIn, amountIn, interestRateIn, monthlyPaymentIn, startDateIn));
     }
