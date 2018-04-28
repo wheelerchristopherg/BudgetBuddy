@@ -8,6 +8,8 @@ import main.transactionsubsys.BankDataInterface;
 import main.userinterface.Window;
 import javax.swing.SwingUtilities;
 import main.transactionsubsys.BillPayReminderController;
+import main.repositorysys.Repository;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args)throws FileNotFoundException{
@@ -21,7 +23,7 @@ public class Main {
         //bank.generateTransactions(1000); // Comment out after first run
         BillPayReminderController billReminderController = new BillPayReminderController();
         billReminderController.loadBillReminders();
-
+        Repository.init();
         
         // start window
         SwingUtilities.invokeLater(

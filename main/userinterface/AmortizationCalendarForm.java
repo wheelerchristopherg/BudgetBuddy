@@ -2,6 +2,7 @@ package main.userinterface;
 
 import main.graphsubsys.Graph;
 import main.graphsubsys.GraphFactory;
+import main.assetsubsys.AssetSystem;
 import java.awt.event.ActionEvent;
 import javax.swing.JPanel;
 import java.util.Date;
@@ -26,13 +27,8 @@ public class AmortizationCalendarForm extends Form {
         add(graphPanel);
     }
     
-    public void setGraph() {
-        double maxHeight = 1000;
-        double[] steps = {50, 110, 220, 370, 530, 720, 950};
-        
-        Graph amorCal = GraphFactory.createAmortizationCalendar(maxHeight, steps);
-        
-        graphPanel.add(amorCal);
+    public void setGraph(Graph graph) {
+        graphPanel.add(graph);
         repaint();
     }
     
@@ -42,8 +38,7 @@ public class AmortizationCalendarForm extends Form {
         switch (name) {
             case "get graph":
                 String loanName = getTextFromInput("loan");
-                setGraph();
-                //call the amortization calendar controller here
+                AssetSystem.createAmCalController(this, loanName);
                 break;
             case "back":
                 goBack();
