@@ -9,7 +9,7 @@ import main.repositorysys.Transaction;
 
 public class FilterController {
 
-    String buildText = "";
+    private String buildText;
 
     public void FilterByCategory(String acc_lookup, String targetCat) {
         this.buildText = "";
