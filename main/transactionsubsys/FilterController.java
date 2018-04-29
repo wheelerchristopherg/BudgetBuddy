@@ -1,13 +1,13 @@
 package main.transactionsubsys;
 import java.util.*;
+import java.util.function.Function;
+
 import main.userinterface.Form;
 import main.repositorysys.Account;
 import main.repositorysys.Repository;
 import main.repositorysys.Transaction;
 
 public class FilterController {
-
-    String buildText = "";
 
     public void FilterByCategory(String acc_lookup, String targetCat) {
         this.buildText = "";

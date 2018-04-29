@@ -40,7 +40,7 @@ public class FinancialReportController {
     public void exportReportToTextFile() {
 
         try {
-            File file = new File("Exported_Report.txt");
+            File file = new File("Exported_Financial_Report.txt");
 
             PrintWriter writer = new PrintWriter(file);
             writer.println(getFinancialReport());
