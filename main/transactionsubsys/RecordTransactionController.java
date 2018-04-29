@@ -22,7 +22,7 @@ public class RecordTransactionController {
         String transactionList = "";
         if(!Repository.getAccount("cash").getTransactions().isEmpty()) {
             for (Transaction t : Repository.getAccount("cash").getTransactions()) {
-                transactionList += t.getTransactionString();
+                transactionList += t.getTransactionString() + "\n";
             }
         }
         form.setText("TransactionList", transactionList);
