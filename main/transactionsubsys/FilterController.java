@@ -8,7 +8,7 @@ import main.repositorysys.Repository;
 import main.repositorysys.Transaction;
 
 public class FilterController {
-    
+
     private String buildText;
 
     public void FilterByCategory(String acc_lookup, String targetCat) {
