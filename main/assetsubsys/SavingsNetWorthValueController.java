@@ -121,7 +121,7 @@ public class SavingsNetWorthValueController {
                 }
             }
         }
-        
+
         return totalSavings;
     }
 
@@ -149,7 +149,7 @@ public class SavingsNetWorthValueController {
                 }
             }
         }
-        
+
         return totalCredit;
     }
 }
