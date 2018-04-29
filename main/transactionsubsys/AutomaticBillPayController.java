@@ -10,10 +10,10 @@ import java.util.ArrayList;
 
 
 public class AutomaticBillPayController {
-    
+
     private Form form;
     private BillPayReminder reminder;
-    
+
     public AutomaticBillPayController(Form form) {
         this.form = form;
     }
@@ -45,7 +45,7 @@ public class AutomaticBillPayController {
             Repository.getAccount("cash").createTransaction(reminder.getName(), reminder.getAmount() * -1, reminder.getDateString());
             Repository.removeAutomaticBillPay(reminder);
         }
-        
+
         TransactionSystem.saveBillsOnAutoPay();
     }
 

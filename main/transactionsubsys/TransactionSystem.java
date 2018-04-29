@@ -14,86 +14,40 @@ import java.util.ArrayList;
 
 public class TransactionSystem {
 
-
     private static FilterController filterController = new FilterController();
     private static RecordTransactionController recordTransactionController;
     private static AutomaticBillPayController abp;
     private static BillPayReminderController bpr;
 
 
-    // this is a helper method for parseBills()
-    // inputs: filepath of csv file
-    // outputs: 2d list of data in csv file
-    public static ArrayList<String[]> parseGenericCSV(String filepath) {
-        String line = "";
-        ArrayList<String[]> result = new ArrayList<String[]>();
-
-        try (BufferedReader bra = new BufferedReader(new FileReader(filepath))) {
-            while ((line = bra.readLine()) != null) {
-                result.add(line.split(","));
-            } // while
-        } catch (IOException e) {
-            e.printStackTrace();
-        } // catch
-
-        return result;
-    } // parseGenericCSV
-
-
-    /*public static void parseBills() {
-        String billFilePath = "./main/data/bank/bills.csv";
-
-        ArrayList<String[]>  parsedData = parseGenericCSV(billFilePath);
-
-        for (String[] dat : parsedData) {
-            Double value = Double.parseDouble(dat[1]);
-            Bill b = new Bill(dat[0], value, dat[2]);
-            Repository.addBill(b);
-        } // for
-
-    } // paseBills()*/
-
-
     public static void createFilterController() {
         filterController = new FilterController();
     }
-    
+
 
     public static FilterController getFilterController() {
         return filterController;
     }
 
-
-
-    /*public static String getAllTransactionsString() {
-        String ret = "";
-        for (Transaction t : transactions) {
-            ret += t.getTransactionString() + "\n";
-        }
-        return ret;
-    }*/
-
-    //Loads Bill
-
     public static void loadCashTransactions() {
-        
+
         String csvFile = "main/data/transactions.csv";
         String line = "";
         String cvsSplitBy = ",";
-        
+
         Account cash = Repository.getAccount("cash");
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
             while ((line = br.readLine()) != null) {
                 String[] rmdline = line.split(cvsSplitBy);
                 double amount = Double.parseDouble(rmdline[1]);
                 cash.createTransaction(rmdline[0], amount, rmdline[2]);
-                
+
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    
+
     public static void loadBillOnAutoPay() {
         String csvFile = "main/data/billsOnAutopay.csv";
         String line = "";
@@ -109,7 +63,7 @@ public class TransactionSystem {
             e.printStackTrace();
         }
     }
-    
+
     public static void saveBillsOnAutoPay() {
         try {
             PrintWriter pw = new PrintWriter(new File("main/data/billsOnAutopay.csv"));
@@ -131,9 +85,9 @@ public class TransactionSystem {
     } // saveBillsOnAutoPay()
 
     public static void saveTransactions() {
-        
+
         Account cash = Repository.getAccount("cash");
-        
+
         try {
             PrintWriter pw = new PrintWriter(new File("main/data/transactions.csv"));
             for (Transaction t : cash.getTransactions()) {
@@ -190,15 +144,15 @@ public class TransactionSystem {
             System.out.println("billreminders.csv Not Found");
         }
     }
-    
+
     public static void createRecordTransactionController(Form form) {
         recordTransactionController = new RecordTransactionController(form);
     }
-    
+
     public static RecordTransactionController getRecordTransactionController() {
         return recordTransactionController;
     }
-    
+
     public static void createAutomaticBillPayController(Form form) {
         abp = new AutomaticBillPayController(form);
     }
