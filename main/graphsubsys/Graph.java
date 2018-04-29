@@ -13,6 +13,7 @@ import java.awt.geom.Ellipse2D;
 import java.awt.Shape;
 import java.awt.Polygon;
 
+
 public class Graph extends JPanel {
     
     protected static final int LINEGRAPH = 0;

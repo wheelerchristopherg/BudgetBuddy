@@ -18,7 +18,7 @@ public class SavingsNetWorthValueController {
     public SavingsNetWorthValueController(String userChoice, Date startDateIn, SavingsNetworthValueForm formIn) {
         double[] graphXData = new double[10];
         //double[] testXValues = {2.0,3.0,4.0,2.0,5.0,3.0,6.0,2.0,4.0,2.0,4.0};
-        double[] yAxis = {0,1,2,3,4,5,6,7,8,9};
+        double[] xAxis = {0,1,2,3,4,5,6,7,8,9};
         if(userChoice.equals("savings")) {
             graphXData = savingsOverTime(startDateIn);
         }
@@ -26,7 +26,7 @@ public class SavingsNetWorthValueController {
             graphXData = netWorthOverTime(startDateIn);
         }
         Date now = new Date();
-        Graph graphOfData = GraphFactory.createLineGraph(yAxis, graphXData, now, startDateIn);
+        Graph graphOfData = GraphFactory.createLineGraph(xAxis, graphXData, startDateIn, now);
         formIn.setGraph(graphOfData);
     }
 
