@@ -24,28 +24,25 @@ public class BudgetController{
         goalsDone = false;
     }
 
-    public void sendBudgetData(Form someForm){
-        this.budgetName = JOptionPane.showInputDialog(someForm, "Input the name of the budget");
-        int L = Integer.parseInt(JOptionPane.showInputDialog(someForm, "Input the number of categories"));
+    public void sendBudgetData(Form zForm,String inName,String inLength, String inStart, String inEnd, String inCap){
+        this.budgetName = inName;
+        int L = Integer.parseInt(inLength);
         categoriesArray = new String[L];
         SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
-        this.budgetStartDate = sdf.parse(JOptionPane.showInputDialog(someForm, "Input the budget start date in the format MM-dd-yyyy"),new ParsePosition(0));
-        this.budgetEndDate = sdf.parse(JOptionPane.showInputDialog(someForm, "Input the budget end date in the format MM-dd-yyyy"),new ParsePosition(0));
-
-        //System.out.println(budgetStartDate);
-        //System.out.println(budgetEndDate);
+        this.budgetStartDate = sdf.parse(inStart, new ParsePosition(0));
+        this.budgetEndDate = sdf.parse(inEnd,new ParsePosition(0));
         
-        this.spendingCap = Double.parseDouble(JOptionPane.showInputDialog(someForm, "Input the budget's overall spendingCap"));
+        this.spendingCap = Double.parseDouble(inCap);
         for (int i = 0; i<L; i++){
-            this.categoriesArray[i] = JOptionPane.showInputDialog(someForm, "Input a category");
+            this.categoriesArray[i] = JOptionPane.showInputDialog(zForm, "Input a category");
         }
         currentState = 2;
     }
 
-    public void sendSpendingGoals(Form someForm){
+    public void sendSpendingGoals(Form zForm){
         this.spendingGoalsData = new double[categoriesArray.length];
         for (int i = 0; i<categoriesArray.length;i++){
-            this.spendingGoalsData[i] = Double.parseDouble(JOptionPane.showInputDialog(someForm,"Input the spending goal for the category \""+categoriesArray[i]+"\""));
+            this.spendingGoalsData[i] = Double.parseDouble(JOptionPane.showInputDialog(zForm,"Input the spending goal for the category \""+categoriesArray[i]+"\""));
         }
         sum = 0;
         for (int i = 0;i<spendingGoalsData.length;i++){
