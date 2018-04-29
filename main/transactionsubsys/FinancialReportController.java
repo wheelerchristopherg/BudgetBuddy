@@ -11,9 +11,7 @@ import main.repositorysys.Account;
 
 public class FinancialReportController {
 
-    public void FinancialReportController() {
-        //System.out.println("Placeholder...");
-    }
+    public void FinancialReportController() { }
 
     private String getFinancialReport() {
         String buildText = new String("");
@@ -23,7 +21,7 @@ public class FinancialReportController {
             buildText = buildText+acc.getName()+"\n"+acc.getType()+"\n$"+acc.getBalance()+"\n"+acc.getInterestRate()+"%\n";
             for(Transaction trans : acc.getTransactions()){
                 // Add to the buildText the transaction vendor, category, value,and date
-                buildText = buildText+"\t"+"\n"+trans.getCategory()+"\n"+sdf.getDateInstance().format(trans.getDate())+"\n$"+trans.getValue()+"\n";
+                buildText = buildText+"\t\n" + trans.getTransactionString();
             }
         }
         return buildText;
@@ -38,17 +36,14 @@ public class FinancialReportController {
 
 
     public void exportReportToTextFile() {
-
         try {
             File file = new File("Exported_Financial_Report.txt");
-
             PrintWriter writer = new PrintWriter(file);
             writer.println(getFinancialReport());
             writer.close();
-    } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }
-
+        } // catch
     } // exportReportToTextFile
 
 }

@@ -28,8 +28,6 @@ public class Bill {
         this.value = value;
     }
 
-
-
     public String getName() {
         return name;
     }
