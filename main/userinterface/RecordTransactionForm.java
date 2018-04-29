@@ -23,7 +23,7 @@ public class RecordTransactionForm extends Form {
 
         addLabel("<html><center>View/Record </br> Transaction</center></html>");
         addTextArea("TransactionList",100,1,false);
-        addTextField("transaction_type", "Transaction Name");
+        addTextField("transaction_type", "Transaction Category");
         addTextField("transaction_value", "Transaction Amount (numbers only)");
         addTextField("transaction_date", "Transaction Date (mm-dd-yyyy)");
         addButton("submit", "Add Transaction");
