@@ -1,15 +1,14 @@
 package main;
 
 import java.io.*;
+
 //compile javac main/Main.java
 //java main.Main
 
 import main.transactionsubsys.BankDataInterface;
 import main.userinterface.Window;
 import javax.swing.SwingUtilities;
-import main.transactionsubsys.BillPayReminderController;
 import main.repositorysys.Repository;
-import java.util.Date;
 import main.transactionsubsys.TransactionSystem;
 
 public class Main {
@@ -31,9 +30,13 @@ public class Main {
         TransactionSystem.loadCashTransactions();
         TransactionSystem.loadBillOnAutoPay();
         TransactionSystem.createAutomaticBillPayController(null);
+
+        TransactionSystem.loadBillReminders();
+        TransactionSystem.createBillPayReminderController(null);
         
         // Check Dates
         TransactionSystem.getAutomaticBillPayController().checkBillDates();
+        TransactionSystem.getBillPayReminderController().checkBillDates();
         
         // start window
         SwingUtilities.invokeLater(

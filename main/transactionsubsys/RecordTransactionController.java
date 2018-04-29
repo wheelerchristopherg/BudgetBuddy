@@ -2,7 +2,6 @@ package main.transactionsubsys;
 
 import main.repositorysys.Transaction;
 import main.repositorysys.Repository;
-import java.util.ArrayList;
 import main.userinterface.Form;
 
 public class RecordTransactionController {
@@ -20,7 +19,6 @@ public class RecordTransactionController {
     }
     
     public void getTransactions() {
-        //TransactionSystem.loadCashTransactions();
         String transactionList = "";
         if(!Repository.getAccount("cash").getTransactions().isEmpty()) {
             for (Transaction t : Repository.getAccount("cash").getTransactions()) {
@@ -28,7 +26,6 @@ public class RecordTransactionController {
             }
         }
         form.setText("TransactionList", transactionList);
-        //TransactionSystem.saveTransactions();
     }
 
 }

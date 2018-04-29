@@ -2,10 +2,10 @@ package main.transactionsubsys;
 
 import main.repositorysys.BillPayReminder;
 import main.repositorysys.Repository;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import javax.swing.JOptionPane;
-
-import main.repositorysys.Transaction;
 import main.userinterface.Form;
 
 
@@ -19,8 +19,20 @@ public class BillPayReminderController {
     }
 
     public void addBillPayReminder(String name, double value, String dueDateString) {
-        TransactionSystem.loadBillReminders();
         reminder = Repository.createBillPayReminder(name, value, dueDateString);
+        TransactionSystem.saveBillReminders();
+    }
+
+    public void checkBillDates() {
+        Date today = new Date();
+        Collection<BillPayReminder> rmdr = new ArrayList<>();
+        for (BillPayReminder b : Repository.getBillPayReminders()) {
+            if (b.getReminderDate().before(today)) {
+                sendNotification(b);
+                ((ArrayList<BillPayReminder>) rmdr).add(b);
+            }
+        }
+        Repository.getBillPayReminders().removeAll(rmdr);
         TransactionSystem.saveBillReminders();
     }
 
