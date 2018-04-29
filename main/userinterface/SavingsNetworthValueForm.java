@@ -9,10 +9,13 @@ import javax.swing.JPanel;
 import main.userinterface.Form;
 import main.userinterface.Window;
 import main.assetsubsys.AssetSystem;
+import java.text.SimpleDateFormat;
+import javax.swing.JOptionPane;
 
 public class SavingsNetworthValueForm extends Form {
     
     private JPanel graphPlaceholder;
+    private Graph currentGraph;
     
     public SavingsNetworthValueForm(Window parent) {
         super(parent);
@@ -22,36 +25,44 @@ public class SavingsNetworthValueForm extends Form {
         addLabel("<html><center> Savings or Net Worth Over Time </center></html>");
         addButton("savings", "Show Savings");
         addButton("networth", "Show Networth");
-        addTextField("month", "4");
-        addTextField("day", "26");
-        addTextField("year", "2018");
-        addButton("back", "Back");
-        
+        addTextField("date", "date to look back to (mm-dd-yyyy)");
         graphPlaceholder = new JPanel();
         add(graphPlaceholder);
+        addPlaceholder();
+        addButton("back", "Back");
+        
+        
         
     }
     
     public void setGraph(Graph graph) {
-        graphPlaceholder.add(graph);
+        if (currentGraph != null) {
+            graphPlaceholder.remove(currentGraph);
+        }
+        currentGraph = graph;
+        graphPlaceholder.add(currentGraph);
         repaint();
     }
     
     public void actionPerformed(ActionEvent event) {
         String name = buttonPressed(event);
         
-        int year = Integer.parseInt(getTextFromInput("year"));
-        int month = Integer.parseInt(getTextFromInput("month"));
-        int day = Integer.parseInt(getTextFromInput("day"));
+        SimpleDateFormat formatter = new SimpleDateFormat("MM-dd-yyyy");
+        Date date = new Date();
+        try {
+            date = formatter.parse(getTextFromInput("date"));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Incorrect date format");
+            return;
+        }
         
-        GregorianCalendar cal = new GregorianCalendar(year, month, day); 
         
         switch (name) {
             case "savings":
-                AssetSystem.createSavingsNetWorthValueController("savings", cal.getTime(), this);
+                AssetSystem.createSavingsNetWorthValueController("savings", date, this);
                 break;
             case "networth":
-                AssetSystem.createSavingsNetWorthValueController("net worth", cal.getTime(), this);
+                AssetSystem.createSavingsNetWorthValueController("net worth", date, this);
                 break;
             case "back":
                 goBack();

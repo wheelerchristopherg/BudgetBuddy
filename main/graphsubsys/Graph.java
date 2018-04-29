@@ -12,6 +12,7 @@ import java.awt.geom.Rectangle2D;
 import java.awt.geom.Ellipse2D;
 import java.awt.Shape;
 import java.awt.Polygon;
+import java.text.SimpleDateFormat;
 
 
 public class Graph extends JPanel {
@@ -138,15 +139,13 @@ public class Graph extends JPanel {
         g.drawString("$" + minY, 2, 295);
         g.drawString("$" + maxY, 2, 20);
         
-        GregorianCalendar cal = new GregorianCalendar();
+        SimpleDateFormat formatter = new SimpleDateFormat("MM-dd-yyyy");
         
-        cal.setTime(startDate);
-        String startString = cal.get(cal.MONTH) + "/" + cal.get(cal.DATE) + "/" + cal.get(cal.YEAR);
-        cal.setTime(endDate);
-        String endString = cal.get(cal.MONTH) + "/" + cal.get(cal.DATE) + "/" + cal.get(cal.YEAR);
+        String startString = formatter.format(startDate);
+        String endString = formatter.format(endDate);
         
         g.drawString(startString, 40, 315);
-        g.drawString(endString, 300, 315);
+        g.drawString(endString, 280, 315);
        
         double[] point = convertPoint(xPointData[0], yPointData[0]);
         Path2D.Double path = new Path2D.Double();
