@@ -8,6 +8,8 @@ import main.repositorysys.BillPayReminder;
 import main.repositorysys.Budget;
 import main.repositorysys.BudgetReport;
 import main.repositorysys.FinancialReport;
+import main.transactionsubsys.AutomaticBillPayController;
+import main.transactionsubsys.TransactionSystem;
 
 
 public class Repository {
@@ -129,6 +131,32 @@ public class Repository {
 
     public static Collection<BillPayReminder> getAutomaticBillPayReminders() {
         return automaticBillPayReminderCollection;
+    }
+
+    public static void setBillPayReminders(Collection<BillPayReminder> bill) {
+        automaticBillPayReminderCollection = bill;
+    }
+
+    public static BillPayReminder createBillPayReminder(String name, double value, String dueDateString) {
+        BillPayReminder reminder = new BillPayReminder(name, value, dueDateString);
+        billPayReminderCollection.add(reminder);
+        return reminder;
+    }
+
+    public static void removeBillPayReminder(BillPayReminder bill) {
+        billPayReminderCollection.remove(bill);
+    }
+
+    public static void removeAutomaticBillPay(BillPayReminder bill) {
+        automaticBillPayReminderCollection.remove(bill);
+    }
+
+    public static Collection<BillPayReminder> getBillPayReminders() {
+        return billPayReminderCollection;
+    }
+
+    public static void setAutomaticBillPayReminders(Collection<BillPayReminder> bill) {
+        billPayReminderCollection = bill;
     }
 
 }

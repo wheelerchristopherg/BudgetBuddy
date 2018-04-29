@@ -1,21 +1,18 @@
 package main.transactionsubsys;
 
+import main.repositorysys.Bill;
 import main.repositorysys.BillPayReminder;
-import main.repositorysys.Transaction;
 import main.repositorysys.Repository;
+import main.repositorysys.Transaction;
 import main.userinterface.Form;
 
-import java.io.IOException;
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
-import java.text.SimpleDateFormat;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.io.BufferedReader;
-import java.io.FileReader;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Iterator;
 
 
 public class AutomaticBillPayController {
@@ -41,34 +38,34 @@ public class AutomaticBillPayController {
 
         Date today = new Date();
 
-        for (BillPayReminder b : Repository.getAutomaticBillPayReminders()) {
+        Collection<BillPayReminder> rmdr = Repository.getAutomaticBillPayReminders();
+        for (BillPayReminder b : rmdr) {
             if (b.getReminderDate().before(today)) {
-                //sendNotification(reminder);
-                System.out.println("Bill payed: " + b.getName());
+                sendNotification(b);
+                //System.out.println("Bill payed: " + b.getName());
                 Repository.getAccount("cash").createTransaction(b.getName(), b.getAmount() * -1, b.getDateString());
-                
-                //Repository.getAutomaticBillPayReminders().remove(b);
+                //Repository.removeAutomaticBillPay(b);
+                Repository.getAutomaticBillPayReminders().remove(rmdr);
             }
         }
-        
+
         TransactionSystem.saveBillsOnAutoPay();
     }
 
     public void checkSingleDate() {
         Date today = new Date();
         if(reminder.getReminderDate().before(today)) {
-            //sendNotification(reminder);
-            System.out.println("Bill payed: " + reminder.getName());
+            sendNotification(reminder);
+            //System.out.println("Bill payed: " + reminder.getName());
             Repository.getAccount("cash").createTransaction(reminder.getName(), reminder.getAmount() * -1, reminder.getDateString());
-            
-            //Repository.getAutomaticBillPayReminders().remove(reminder);
+            Repository.removeAutomaticBillPay(reminder);
         }
         
         TransactionSystem.saveBillsOnAutoPay();
     }
 
-    public void sendNotification(BillPayReminder bill) {
-        JOptionPane.showMessageDialog((JPanel)form, "Pay Bill: "+ bill.getName() + "!");
+    public void sendNotification(BillPayReminder rmdr) {
+        JOptionPane.showMessageDialog(null, "Bill: "+ rmdr.getName() + " payed!");
     }
 
 } // AutomaticBillPay
