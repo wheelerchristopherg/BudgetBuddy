@@ -40,21 +40,29 @@ public class Repository {
         return accountCollection;
     }
 
-    public static Collection<Account> getSavingsAccounts() {
-        Collection<Account> sAccounts = null;
-        for (Account a: accountCollection) {
+    public static Account[] getSavingsAccounts() {
+        if (accountCollection.isEmpty()) {
+            return null;
+        }
+        Account[] sAccounts = new Account[accountCollection.size()];
+        int i = 0;
+        for (Account a : accountCollection) {
             if (a.isSavings()) {
-                sAccounts.add(a);
+                sAccounts[i++] = a;
             }
         }
         return sAccounts;
     }
 
-    public static Collection<Account> getCreditAccounts() {
-        Collection<Account> cAccounts = null;
-        for (Account a: accountCollection) {
-            if (a.isSavings()) {
-                cAccounts.add(a);
+    public static Account[] getCreditAccounts() {
+        if (accountCollection.isEmpty()) {
+            return null;
+        }
+        Account[] cAccounts = new Account[accountCollection.size()];
+        int i = 0;
+        for (Account a : accountCollection) {
+            if (a.isCredit()) {
+                cAccounts[i++] = a;
             }
         }
         return cAccounts;

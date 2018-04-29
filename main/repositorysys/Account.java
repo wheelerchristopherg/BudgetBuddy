@@ -1,5 +1,6 @@
 package main.repositorysys;
 import java.util.*;
+import main.repositorysys.Transaction;
 
 public class Account {
 
@@ -34,7 +35,10 @@ public class Account {
   }
 
   public Collection<Transaction> getTransactions(){
-    return transactionCollection;
+      if (transactionCollection.isEmpty()) {
+          return null;
+      }
+      return transactionCollection;
   }
 
   public void setName(String name){

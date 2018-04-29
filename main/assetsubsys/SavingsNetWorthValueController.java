@@ -17,6 +17,7 @@ public class SavingsNetWorthValueController {
 
     public SavingsNetWorthValueController(String userChoice, Date startDateIn, SavingsNetworthValueForm formIn) {
         double[] graphXData = new double[10];
+        //double[] testXValues = {2.0,3.0,4.0,2.0,5.0,3.0,6.0,2.0,4.0,2.0,4.0};
         double[] yAxis = {0,1,2,3,4,5,6,7,8,9};
         if(userChoice.equals("savings")) {
             graphXData = savingsOverTime(startDateIn);
@@ -97,43 +98,55 @@ public class SavingsNetWorthValueController {
     }
 
     private double calculateSavingsAtDate(Date dateIn) {
-        Collection<Account> sAccounts = Repository.getSavingsAccounts();
-        Collection<Transaction> transactions = null;
+        Account[] sAccounts = Repository.getSavingsAccounts();
+        Collection<Transaction> transactions = new ArrayList<Transaction>();
         double totalSavings = 0;
-
-        for (Account acc : sAccounts) {
-            totalSavings += acc.getBalance();
-            Collection<Transaction> currentTransactions = acc.getTransactions();
-            for (Transaction t : currentTransactions) {
-                transactions.add(t);
+        if (sAccounts != null) {
+            for (int i = 0; i < sAccounts.length; i++) {
+                if (sAccounts[i] != null) {
+                    totalSavings += sAccounts[i].getBalance();
+                    Collection<Transaction> currentTransactions = sAccounts[i].getTransactions();
+                    if (currentTransactions != null) {
+                        for (Transaction t : currentTransactions) {
+                            if (t != null) {
+                                transactions.add(t);
+                            }
+                        }
+                    }
+                }
             }
-        }
-
-        for (Transaction t : transactions) {
-            if (t.isBefore(dateIn)) {
-                totalSavings += t.getValue();
-            }   
+            for (Transaction t : transactions) {
+                if (t != null && t.isBefore(dateIn)) {
+                    totalSavings += t.getValue();
+                }
+            }
         }
         
         return totalSavings;
     }
 
     private double calculateCreditAtDate(Date dateIn) {
-        Collection<Account> cAccounts = Repository.getCreditAccounts();
-        Collection<Transaction> transactions = null;
+        Account[] cAccounts = Repository.getCreditAccounts();
+        Collection<Transaction> transactions = new ArrayList<Transaction>();
         double totalCredit = 0;
-
-        for (Account acc : cAccounts) {
-            totalCredit -= acc.getBalance();
-            Collection<Transaction> currentTransactions = acc.getTransactions();
-            for (Transaction t : currentTransactions) {
-                transactions.add(t);
+        if (cAccounts != null) {
+            for (int i = 0; i < cAccounts.length; i++) {
+                if (cAccounts[i] != null) {
+                    totalCredit -= cAccounts[i].getBalance();
+                    Collection<Transaction> currentTransactions = cAccounts[i].getTransactions();
+                    if (currentTransactions != null) {
+                        for (Transaction t : currentTransactions) {
+                            if (t != null) {
+                                transactions.add(t);
+                            }
+                        }
+                    }
+                }
             }
-        }
-
-        for (Transaction t : transactions) {
-            if (t.isAfter(dateIn)) {
-                totalCredit += t.getValue();
+            for (Transaction t : transactions) {
+                if (t != null && t.isAfter(dateIn)) {
+                    totalCredit += t.getValue();
+                }
             }
         }
         
