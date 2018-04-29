@@ -89,6 +89,12 @@ public class Repository {
         financialReportCollection.add(returnMe);
         return returnMe;
     }
+    
+    public static BudgetReport createBudgetReport(String name, String reportText) {
+        BudgetReport report = new BudgetReport(name, reportText);
+        budgetReportCollection.add(report);
+        return report;
+    }
 
     public static Account getAccount(String findMe) {
         for (Account a : accountCollection)
@@ -115,6 +121,28 @@ public class Repository {
         }
         else
             System.out.println("You don't have any budgets!");
+    }
+    
+    public static String[] getBudgetNames() {
+        if (budgetCollection.isEmpty()) {
+            return null;
+        }
+        String[] names = new String[budgetCollection.size()];
+        int i = 0;
+        for (Budget b : budgetCollection) {
+            names[i++] = b.getName();
+        }
+        
+        return names;
+    }
+    
+    public static Budget getBudget(String name) {
+        for (Budget b : budgetCollection) {
+            if (b.getName().equals(name)) {
+                return b;
+            }
+        }
+        return null;
     }
 
     public static void createLoan(String nameIn, double amountIn, double interestRateIn, double monthlyPaymentIn, Date startDateIn) {

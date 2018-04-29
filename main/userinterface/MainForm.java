@@ -23,7 +23,8 @@ public class MainForm extends Form {
         addButton("amor_cal", "Amortization Calendar");
         addButton("filterTransactions_button", "Filter Transactions");
         addButton("financialReport","Create a Financial Report");
-        addPlaceholders(8);
+        addButton("budgetReport", "Create a Budget Report");
+        addPlaceholders(7);
 
     }
 
@@ -69,6 +70,10 @@ public class MainForm extends Form {
                 break;
             case "new_asset":
                 changeForm(new NewAssetForm(this.getParent()));
+                break;
+            case "budgetReport":
+                changeForm(new BudgetReportForm(this.getParent()));
+                break;
 
         }
     }
