@@ -17,9 +17,9 @@ public class MainForm extends Form {
         addButton("new_asset", "New Asset");
         addButton("print_budget", "Print Budgets");
         addButton("budget", "Create Budget");
-        addButton("savings networth over time", "Savings Networth Over Time");
+        addButton("savings networth over time", "<html> <center> Savings and </br> Net Worth Over Time </center></html>");
         addButton("autoBillPay", "Add Automatic Bill Pay");
-        addButton("value_of_assets_button", "Display Value of Assets");
+        addButton("value_of_assets_button", "<html> <center> Display Value </br> of Assets </center></html>");
         addButton("amor_cal", "Amortization Calendar");
         addButton("filterTransactions_button", "Filter Transactions");
         addButton("financialReport","Create a Financial Report");

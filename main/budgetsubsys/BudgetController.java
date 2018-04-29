@@ -6,6 +6,10 @@ import java.util.*; // REPLACE ME WITH SPECIFIC CLASSES
 import javax.swing.JOptionPane;
 import java.text.SimpleDateFormat;
 import java.text.ParsePosition;
+import java.awt.Font;
+import javax.swing.plaf.FontUIResource;
+import java.awt.Dimension;
+import javax.swing.UIManager;
 
 public class BudgetController{
 
@@ -24,9 +28,21 @@ public class BudgetController{
         goalsDone = false;
     }
 
+//<<<<<<< HEAD
     public void sendBudgetData(Form zForm,String inName,String inLength, String inStart, String inEnd, String inCap){
         this.budgetName = inName;
         int L = Integer.parseInt(inLength);
+//=======
+   // public void sendBudgetData(Form someForm){
+        //Clean up text size, font, etc.
+        UIManager.put("OptionPane.minimumSize",new Dimension(800,300));
+        UIManager.put("OptionPane.messageFont", new Font("Arial", Font.PLAIN, 40));
+        UIManager.put("OptionPane.buttonFont", new FontUIResource(new Font("Arial",Font.PLAIN,35)));
+        UIManager.put("TextField.font", new FontUIResource(new Font("Arial", Font.PLAIN, 30)));
+        
+/*        this.budgetName = JOptionPane.showInputDialog(someForm, "Input the name of the budget");
+        int L = Integer.parseInt(JOptionPane.showInputDialog(someForm, "Input the number of categories"));
+>>>>>>> jack*/
         categoriesArray = new String[L];
         SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
         this.budgetStartDate = sdf.parse(inStart, new ParsePosition(0));

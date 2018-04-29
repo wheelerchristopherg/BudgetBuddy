@@ -21,7 +21,7 @@ public class RecordTransactionForm extends Form {
 
         setGridLayout(4, 2);
 
-        addLabel("View/Record Transaction");
+        addLabel("<html><center>View/Record </br> Transaction</center></html>");
         addTextArea("TransactionList",100,1,false);
         addTextField("transaction_type", "Transaction Name");
         addTextField("transaction_value", "Transaction Amount (numbers only)");
