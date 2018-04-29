@@ -36,10 +36,10 @@ public class BudgetReportForm extends Form {
         switch (name) {
             case "submit":
                 BudgetSystem.getBudgetReportController().generateReport();
-                BudgetSystem.getBudgetReportController().outputReport();
                 break;
             case "export":
                 BudgetSystem.getBudgetReportController().exportReport();
+                break;
             case "back":
                 goBack();
                 break;

@@ -13,4 +13,8 @@ public class BudgetReport {
     public String getReport(){
         return reportText;
     }
+    
+    public String getName() {
+        return name;
+    }
 }

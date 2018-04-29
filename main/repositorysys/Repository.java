@@ -97,6 +97,16 @@ public class Repository {
         budgetReportCollection.add(report);
         return report;
     }
+    
+    public static BudgetReport getBudgetReport(String nameIn) {
+        BudgetReport target = null;
+        for (BudgetReport r: budgetReportCollection) {
+            if (r.getName().equals(nameIn)) {
+                target = r;
+            }
+        }
+        return target;
+    }
 
     public static Account getAccount(String findMe) {
         for (Account a : accountCollection)

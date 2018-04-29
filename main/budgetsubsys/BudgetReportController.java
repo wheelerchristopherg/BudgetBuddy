@@ -10,6 +10,9 @@ import main.repositorysys.Budget;
 import main.repositorysys.Category;
 import main.graphsubsys.GraphFactory;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Collection;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -51,7 +54,7 @@ public class BudgetReportController {
         Collection<Transaction> old = new ArrayList<Transaction>();
         
         if (budget == null) {
-            JOptionPane.showMessageDialog(form, "That budget does not exist!");
+            JOptionPane.showMessageDialog(form, "That budget or budget report does not exist!");
             return;
         }
         for (Account acc : Repository.getAccounts()) {
@@ -102,7 +105,7 @@ public class BudgetReportController {
         report += "Total Spent:    " + formatter.format(total);
         
         bReport = Repository.createBudgetReport(budget.getName(), report);
-        
+        outputReport();
     }
     
     public void outputReport() {
@@ -112,8 +115,26 @@ public class BudgetReportController {
     
     public void exportReport() {
         if (bReport == null) {
-            
+            String name = form.getTextFromInput("budget");
+            bReport = Repository.getBudgetReport(name);
+            if (bReport == null) {
+                generateReport();
+            }
         }
+        
+        if (bReport != null) {
+            try {
+                File file = new File("BudgetReport_" + bReport.getName() + ".txt");
+
+                PrintWriter writer = new PrintWriter(file);
+                writer.println(bReport.getReport());
+                writer.close();
+                JOptionPane.showMessageDialog(form, "Report is saved in BudgetReport_" + bReport.getName() + ".txt");
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+        
     }
     
 }
