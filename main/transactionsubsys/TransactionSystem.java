@@ -18,6 +18,7 @@ public class TransactionSystem {
     private static FilterController filterController = new FilterController();
     private static RecordTransactionController recordTransactionController;
     private static AutomaticBillPayController abp;
+    private static BillPayReminderController bpr;
 
 
     // this is a helper method for parseBills()
@@ -151,6 +152,44 @@ public class TransactionSystem {
             System.out.println("transactions.csv Not Found");
         }
     }
+
+    //Loads Bill
+    public static void loadBillReminders() {
+        String csvFile = "main/data/billreminders.csv";
+        String line = "";
+        String cvsSplitBy = ",";
+
+        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+            while ((line = br.readLine()) != null) {
+                String[] rmdline = line.split(cvsSplitBy);
+                double amount = Double.parseDouble(rmdline[1]);
+                Repository.createBillPayReminder(rmdline[0], amount, rmdline[2]);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Save BillReminders
+    public static void saveBillReminders() {
+        try {
+            PrintWriter pw = new PrintWriter(new File("main/data/billreminders.csv"));
+            for (BillPayReminder r : Repository.getBillPayReminders()) {
+                StringBuilder sb = new StringBuilder();
+                sb.append(r.getName());
+                sb.append(',');
+                sb.append(r.getAmount());
+                sb.append(',');
+                SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
+                sb.append(sdf.format(r.getReminderDate()));
+                sb.append('\n');
+                pw.write(sb.toString());
+            }
+            pw.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("billreminders.csv Not Found");
+        }
+    }
     
     public static void createRecordTransactionController(Form form) {
         recordTransactionController = new RecordTransactionController(form);
@@ -163,8 +202,17 @@ public class TransactionSystem {
     public static void createAutomaticBillPayController(Form form) {
         abp = new AutomaticBillPayController(form);
     }
-    
+
+    public static void createBillPayReminderController(Form form) {
+        bpr = new BillPayReminderController(form);
+    }
+
+    public static BillPayReminderController getBillPayReminderController() {
+        return bpr;
+    }
+
     public static AutomaticBillPayController getAutomaticBillPayController() {
         return abp;
     }
+
 }
