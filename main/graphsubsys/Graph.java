@@ -13,6 +13,7 @@ import java.awt.geom.Ellipse2D;
 import java.awt.Shape;
 import java.awt.Polygon;
 import java.text.SimpleDateFormat;
+import java.text.DecimalFormat;
 
 
 public class Graph extends JPanel {
@@ -135,9 +136,9 @@ public class Graph extends JPanel {
     
     private void drawLineGraph(Graphics2D g) {
         drawAxes(g);
-        
-        g.drawString("$" + minY, 2, 295);
-        g.drawString("$" + maxY, 2, 20);
+        DecimalFormat dollarFormatter = new DecimalFormat("###,###,##0.00");
+        g.drawString("$" + dollarFormatter.format(minY), 2, 295);
+        g.drawString("$" + dollarFormatter.format(maxY), 2, 20);
         
         SimpleDateFormat formatter = new SimpleDateFormat("MM-dd-yyyy");
         

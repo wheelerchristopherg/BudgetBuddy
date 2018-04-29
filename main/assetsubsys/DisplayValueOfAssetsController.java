@@ -19,11 +19,7 @@ public class DisplayValueOfAssetsController {
         for (Asset a : Repository.getAssets())
             assetSum += a.getValue();
 
-        UIManager.put("OptionPane.minimumSize",new Dimension(800,300));
-        UIManager.put("OptionPane.messageFont", new Font("Arial", Font.PLAIN, 40));
-        UIManager.put("OptionPane.buttonFont", new FontUIResource(new Font("Arial",Font.PLAIN,35)));
-
-        DecimalFormat formatter = new DecimalFormat("###,###,###.00");
+        DecimalFormat formatter = new DecimalFormat("###,###,##0.00");
         JOptionPane.showMessageDialog(form, "Value of assets: $"+ formatter.format(assetSum));
 
     } // DisplayValueOfAssetsController()
