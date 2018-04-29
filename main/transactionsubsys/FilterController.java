@@ -9,6 +9,8 @@ import main.repositorysys.Transaction;
 
 public class FilterController {
 
+    private String buildText;
+
     public void FilterByCategory(String acc_lookup, String targetCat) {
         this.buildText = "";
         for (Transaction t : Repository.getAccount(acc_lookup).getTransactions())

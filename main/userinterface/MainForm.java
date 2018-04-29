@@ -43,8 +43,7 @@ public class MainForm extends Form {
                 break;
             case "budget":
                 BudgetController budgetController = new BudgetController();
-                budgetController.sendBudgetData(this);
-                budgetController.sendSpendingGoals(this);
+                changeForm(new BudgetForm(this.getParent()));
                 break;
             case "print_budget":
                 main.repositorysys.Repository.printBudgetCollection();

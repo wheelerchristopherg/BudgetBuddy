@@ -67,7 +67,7 @@ public class BudgetReportController {
         String report = "\"" + budget.getName() + "\" Report:\n";
         
         categoryTotals = new double[budget.getCategories().size()];
-        String[] categoryNames = new String[budget.getCategories().size()];
+        categoryNames = new String[budget.getCategories().size()];
         double total = 0;
         int i = 0;
         for (Category c : budget.getCategories()) {
