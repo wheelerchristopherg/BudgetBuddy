@@ -59,5 +59,9 @@ public class Transaction {
   public boolean isAfter(Date dateIn) {
       return date.after(dateIn);
   }
+  
+  public String toString() {
+      return getTransactionString();
+  }
 
 }

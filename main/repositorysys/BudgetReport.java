@@ -1,10 +1,16 @@
 package main.repositorysys;
 
-
-import java.util.*;
-
-
 public class BudgetReport {
-  Date startDate;
-  Date endDate;
+
+    private String name;
+    private String reportText;
+
+    public BudgetReport(String nameIn, String inText){
+        name = nameIn;
+        reportText = inText;
+    }
+
+    public String getReport(){
+        return reportText;
+    }
 }
