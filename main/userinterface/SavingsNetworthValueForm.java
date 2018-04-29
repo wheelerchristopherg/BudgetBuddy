@@ -19,7 +19,7 @@ public class SavingsNetworthValueForm extends Form {
         
         setGridLayout(3, 3);
         
-        addLabel("Savings or Networth Over Time");
+        addLabel("<html><center> Savings or Net Worth Over Time </center></html>");
         addButton("savings", "Show Savings");
         addButton("networth", "Show Networth");
         addTextField("month", "4");

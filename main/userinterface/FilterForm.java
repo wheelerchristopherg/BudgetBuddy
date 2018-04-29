@@ -14,7 +14,7 @@ public class FilterForm extends Form {
         super(parent);
 
         setGridLayout(6, 3);
-        addLabel("Filter Transactions");
+        addLabel("<html> <center> Filter Transactions </center> </html>");
         addTextField("accountName", "Enter Account Name");
         addTextArea("TransactionList",100,1,false);
         addTextField("startDate", "Start Date (mm-dd-yyyy)");

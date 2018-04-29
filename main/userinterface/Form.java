@@ -15,6 +15,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.awt.Font;
 
 public abstract class Form extends JPanel implements ActionListener {
     
@@ -22,6 +23,7 @@ public abstract class Form extends JPanel implements ActionListener {
     private Collection<JComponent> allComponents;
     private HashMap<JButton, String> buttons;
     private HashMap<String, JTextComponent> textElements;
+    private int fontSize = 27;
     
     public Form(Window parent) {
         this.parent = parent;
@@ -52,6 +54,7 @@ public abstract class Form extends JPanel implements ActionListener {
     
     public void addButton(String name, String label) {
         JButton newButton = new JButton(label);
+        newButton.setFont(new Font("Arial", Font.PLAIN, fontSize));
         newButton.addActionListener(this);
         buttons.put(newButton, name);
         allComponents.add(newButton);
@@ -60,6 +63,7 @@ public abstract class Form extends JPanel implements ActionListener {
     
     public void addTextField(String name, String defaultValue) {
         JTextField newField = new JTextField(defaultValue);
+        newField.setFont(new Font("Arial", Font.PLAIN, fontSize));
         textElements.put(name, newField);
         allComponents.add(newField);
         this.add(newField);
@@ -67,6 +71,7 @@ public abstract class Form extends JPanel implements ActionListener {
     
     public void addTextField(String name) {
         JTextField newField = new JTextField();
+        newField.setFont(new Font("Arial", Font.PLAIN, fontSize));
         textElements.put(name, newField);
         allComponents.add(newField);
         this.add(newField);
@@ -74,12 +79,16 @@ public abstract class Form extends JPanel implements ActionListener {
     
     public void addLabel(String text) {
         JLabel label = new JLabel(text);
+        label.setFont(new Font("Helvetica", Font.BOLD, 55));
+        label.setHorizontalAlignment(JLabel.CENTER);
+        label.setVerticalAlignment(JLabel.CENTER);
         allComponents.add(label);
         this.add(label);
     }
     
     public void addTextArea(String name, int rows, int columns, boolean editable) {
         JTextArea newTextArea = new JTextArea(rows, columns);
+        newTextArea.setFont(new Font("Arial", Font.PLAIN, fontSize));
         textElements.put(name, newTextArea);
         JScrollPane textPane = new JScrollPane(newTextArea);
         
@@ -93,6 +102,7 @@ public abstract class Form extends JPanel implements ActionListener {
     
     public void addPlaceholder() {
         JPanel panel = new JPanel();
+        panel.setFont(new Font("Arial", Font.PLAIN, fontSize));
         this.add(panel);
         allComponents.add(panel);
     }
@@ -121,7 +131,7 @@ public abstract class Form extends JPanel implements ActionListener {
     
     public void setText(String name, String text) {
         JTextComponent element = textElements.get(name);
-        
+        element.setFont(new Font("Arial", Font.PLAIN, 25));
         if (element != null) {
             element.setText(text);
         }
