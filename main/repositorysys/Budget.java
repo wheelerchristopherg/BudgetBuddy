@@ -22,12 +22,20 @@ public class Budget{
         return this.name;
     }
 
-    public String getStartDate(){
+    public Date getStartDate(){
+        return this.startDate;
+    }
+
+    public Date getEndDate(){
+        return this.endDate;
+    }
+
+    public String getStartDateString(){
         SimpleDateFormat sdf = new SimpleDateFormat();
         return sdf.getDateInstance().format(this.startDate);
     }
 
-    public String getEndDate(){
+    public String getEndDateString(){
         SimpleDateFormat sdf = new SimpleDateFormat();
         return sdf.getDateInstance().format(this.endDate);
     }
